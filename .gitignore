@@ -15,6 +15,7 @@
 *.zsrc
 /.minecraft/config/jei/worldSettings.cfg
 /.minecraft/config/jei/searchColors.cfg
+/.minecraft/config/JustEnoughCalculation
 
 # Temporary
 /.minecraft/icon.png
