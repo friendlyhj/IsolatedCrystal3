@@ -1,2 +1,20 @@
+# MultiMC instance files
 /instance.cfg
 /mmc-pack.json
+/.packignore
+
+# Modepack files (whitelist)
+/.minecraft/*
+!/.minecraft/config
+!/.minecraft/scripts
+!/.minecraft/resources
+!/.minecraft/patchouli_books
+
+# Extra
+*.jar
+*.zsrc
+/.minecraft/config/jei/worldSettings.cfg
+/.minecraft/config/jei/searchColors.cfg
+
+# Temporary
+/.minecraft/icon.png
