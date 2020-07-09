@@ -3,7 +3,7 @@
 /mmc-pack.json
 /.packignore
 
-# Modepack files (whitelist)
+# Modpack files (whitelist)
 /.minecraft/*
 !/.minecraft/config
 !/.minecraft/scripts
