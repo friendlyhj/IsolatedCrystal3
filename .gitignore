@@ -2,6 +2,7 @@
 /instance.cfg
 /mmc-pack.json
 /.packignore
+/natives/*
 
 # Modpack files (whitelist)
 /.minecraft/*
@@ -17,6 +18,8 @@
 /.minecraft/config/jei/searchColors.cfg
 /.minecraft/config/JustEnoughCalculation
 /.minecraft/config/splash.properties
+/.minecraft/config/probe.cfg
+/.minecraft/config/AppliedEnergistics2/items.csv
 
 # Temporary
 /.minecraft/icon.png

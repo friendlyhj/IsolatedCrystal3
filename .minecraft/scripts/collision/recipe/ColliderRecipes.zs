@@ -92,11 +92,11 @@ static colliderRecipesTwo as byte[][][IItemStack] = {
         [1,0,0],
         [2,0,0]
     ],
-    <item:minecraft:soul_sand> * 4 : [
+    /* <item:minecraft:soul_sand> * 4 : [
         [1,1,0],
         [0,0,0],
         [0,2,2]
-    ],
+    ], */
     <item:contenttweaker:lava_drop> : [
         [0,1,0],
         [1,0,2],
@@ -155,11 +155,11 @@ static colliderRecipesThree as byte[][][IItemStack] = {
         [1,0,2],
         [0,2,0]
     ],
-    <item:contenttweaker:wither_skull_piece> : [
+    /* <item:contenttweaker:wither_skull_piece> : [
         [2,0,0],
         [2,0,1],
         [0,0,1]
-    ],
+    ], */
     <item:contenttweaker:little_ghast_drop> : [
         [2,2,0],
         [0,0,0],

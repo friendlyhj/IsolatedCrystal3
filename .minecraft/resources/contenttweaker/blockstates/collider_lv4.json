@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "up": "contenttweaker:blocks/collider_lv4",
+      "down" : "contenttweaker:blocks/collider_lv4",
+      "west" : "contenttweaker:blocks/collider_blue_side_lv4",
+      "east" : "contenttweaker:blocks/collider_purple_side_lv4",
+      "north" : "contenttweaker:blocks/collider_orange_side_lv4",
+      "south" : "contenttweaker:blocks/collider_green_side_lv4",
+      "particle": "contenttweaker:blocks/collider_lv4"
+    },
+    "model": "minecraft:cube",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

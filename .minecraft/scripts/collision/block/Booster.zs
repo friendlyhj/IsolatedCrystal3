@@ -83,7 +83,8 @@ val boosterType as PartType = MaterialSystem.createPartType("booster", function(
                 val item as IItemStack = oreDict.get("ore" ~ StringHelper.toUpperCamelCase(type)).firstItem;
                 if (!isNull(item)) {
                     val id as string = item.definition.id;
-                    if (item.definition.owner == "minecraft") {
+                    val owner as string = item.definition.owner;
+                    if (owner == "minecraft" || owner == "bigreactors") {
                         worldCrt.setBlockState(IBlockState.getBlockState(id, []), pos);
                     } else {
                         worldCrt.setBlockState(IBlockState.getBlockState(id, ["type=" ~ type]), pos);

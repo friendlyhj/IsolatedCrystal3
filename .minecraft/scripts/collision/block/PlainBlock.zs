@@ -1,6 +1,7 @@
 // by: youyihj
 #loader contenttweaker
 #priority 250
+#ignoreBracketErrors
 import scripts.grassUtils.CotUtils;
 
 CotUtils.addBlock("wither_altar", <blockmaterial:iron>, 3.0f, 120, <soundtype:metal>, 0, false, "pickaxe", 2);

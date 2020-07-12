@@ -51,8 +51,7 @@ events.onPlayerAttackEntity(function(event as PlayerAttackEntityEvent) {
     val world as IWorld = player.world;
     val entity as IEntity = event.target;
     val main as IEntityEquipmentSlot = IEntityEquipmentSlot.mainHand();
-    if (!world.remote && player.hasItemInSlot(main) 
-    && player.getItemInSlot(main).definition.id == "contenttweaker:wither_altar_wand" && entity instanceof IEntityLivingBase) {
+    if (!world.remote && player.hasItemInSlot(main) && player.getItemInSlot(main).definition.id == "contenttweaker:wither_altar_wand" && entity instanceof IEntityLivingBase && !entity instanceof IPlayer) {
         val mob as IEntityLivingBase = entity;
         if (mob.alive && mob.health < 4.0f) {
             mob.health = 0.0f;

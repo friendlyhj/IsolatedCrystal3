@@ -14,7 +14,9 @@ static gemLib as int[IItemStack] = {
     <item:minecraft:dye:4> : 400,
     <item:minecraft:quartz> : 400,
     <item:minecraft:diamond> : 50,
-    <item:minecraft:emerald> : 50
+    <item:minecraft:emerald> : 50,
+    <item:appliedenergistics2:material> : 400,
+    <actuallyadditions:item_misc:5> : 200 
 };
 
 static gemList as IItemStack[] = [];
@@ -53,7 +55,7 @@ spawner.onBlockBreak = function(world, pos, state) {
             }
             var posOffset as BlockPos = EventUtilsCot.getOffset(pos, vector[0] - 2, vector[1] - 2, vector[2] - 2);
             if (world.getBlockState(posOffset) == <block:minecraft:air>) {
-                EventUtilsCot.spawnItem(world, item, posOffset);
+                EventUtilsCot.spawnItem(world, item.withAmount(1), posOffset);
             }
         }
     }

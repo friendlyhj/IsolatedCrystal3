@@ -23,12 +23,11 @@ import mods.contenttweaker.Facing;
 import mods.ctutils.world.IExplosion;
 import mods.contenttweaker.Player;
 import crafttweaker.world.IFacing;
-import crafttweaker.item.IItemStack;
 import scripts.grassUtils.CotUtils;
 import scripts.grassUtils.EventUtilsCot;
 
 function wandFunction(world as World, pos as BlockPos, lib as byte[][][IItemStack], player as Player, pnArray as BlockState[], pnEmptyArray as BlockState[]) as ActionResult {
-    for x in 0 .. 3 {
+    /* for x in 0 .. 3 {
         for z in 0 .. 3 {
             var posOffset as BlockPos = EventUtilsCot.getOffset(pos, x - 1, 0, z - 1);
             var stateOffset as BlockState = world.getBlockState(posOffset);
@@ -37,7 +36,7 @@ function wandFunction(world as World, pos as BlockPos, lib as byte[][][IItemStac
                 print("Clear!");
             }
         }
-    }
+    } */
     if (!world.remote) {
         world.newExplosion(player, pos.x, pos.y, pos.z, 0.1f, false, false);
         val air as BlockState = <block:minecraft:air>;

@@ -1,3 +1,28 @@
 {
-  "materialMappings": {}
+  "materialMappings": {
+    "nickel_booster": 19,
+    "silver_booster": 13,
+    "iron_nucleus": 5,
+    "lead_booster": 16,
+    "yellorium_nucleus": 10,
+    "nickel_nucleus": 7,
+    "platinum_nucleus": 2,
+    "osmium_booster": 23,
+    "yellorium_booster": 22,
+    "platinum_booster": 14,
+    "aluminium_booster": 18,
+    "copper_nucleus": 9,
+    "lead_nucleus": 4,
+    "copper_booster": 21,
+    "aluminium_nucleus": 6,
+    "gold_nucleus": 0,
+    "osmium_nucleus": 11,
+    "gold_booster": 12,
+    "silver_nucleus": 1,
+    "iridium_booster": 20,
+    "iron_booster": 17,
+    "tin_booster": 15,
+    "tin_nucleus": 3,
+    "iridium_nucleus": 8
+  }
 }
