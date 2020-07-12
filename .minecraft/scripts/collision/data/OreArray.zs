@@ -13,7 +13,6 @@ static oreList as int[][string] = {
     "Silver" : [0xF2F2F2,125,0],
     "Nickel" : [0xFFFFCC,140,0],
     "Osmium" : [0xBBDDFF,130,0],
-    "Yellorium" : [0xDCF400,10,0],
     "Platinum" : [0x69DAF0,8,0],
     "Iridium" : [0xC8C6DD,5,0]
 };
