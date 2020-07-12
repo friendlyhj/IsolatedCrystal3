@@ -5,7 +5,7 @@ import crafttweaker.item.IIngredient;
 import mods.compatskills.Requirement;
 import mods.compatskills.ModLock;
 import mods.compatskills.GameStageLocks;
-import mods.ItemStages;
+// import mods.ItemStages;
 import mods.recipestages.Recipes;
 import scripts.compatSkills.Utils.toAllSkill;
 import scripts.compatSkills.Utils.toAllSkillM;
@@ -44,14 +44,14 @@ function lockStage(stage as string, skills as SkillStack[]) as int {
     return 0;
 }
 
-function lockItemWithStage(item as IItemStack, skills as SkillStack[]) as string {
+/* function lockItemWithStage(item as IItemStack, skills as SkillStack[]) as string {
     val stage as string = getStage(skills);
     lockStage(stage, skills);
     ItemStages.addItemStage(stage, item);
     lockItem(item, skills);
     Recipes.setRecipeStage(stage, item);
     return stage;
-}
+} */
 
 function lockRecipeWithStage(recipeName as string, skills as SkillStack[]) as string {
     val stage as string = getStage(skills);
