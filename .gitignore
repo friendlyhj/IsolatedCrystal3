@@ -20,6 +20,7 @@
 /.minecraft/config/splash.properties
 /.minecraft/config/probe.cfg
 /.minecraft/config/AppliedEnergistics2/items.csv
+/.minecraft/config/InvTweaks.cfg
 
 # Temporary
 /.minecraft/icon.png

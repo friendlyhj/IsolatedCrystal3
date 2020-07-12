@@ -38,6 +38,7 @@ metallurgy.setEnabled(true);
 metallurgy.setLevelCap(12);
 
 val astronomy = SkillCreator.createSkill("astronomy", "astralsorcery:textures/blocks/marble_chiseled.png");
+astronomy.name = game.localize("isc.skill.astronomy");
 for i in 0 .. 9 {
     astronomy.setRankIcon(i, "astralsorcery:textures/items/crystal_rock.png");
 }
@@ -45,6 +46,7 @@ astronomy.setEnabled(true);
 astronomy.setLevelCap(12);
 
 val energistics = SKillCreator.createSkill("energistics", "immersiveengineering:textures/blocks/metal_decoration0_generator.png");
+energistics.name = game.localize("isc.skill.energistics");
 for i in 0 .. 9 {
     energistics.setRankIcon(i, "thermalexpansion:textures/items/capacitor/capacitor_1.png");
 }
@@ -52,6 +54,7 @@ energistics.setEnabled(true);
 energistics.setLevelCap(12);
 
 val informatics = SkillCreator.createSkill("informatics", "appliedenergistics2:textures/blocks/energy_cell3.png");
+informatics.name = game.localize("isc.skill.informatics");
 for i in 0 .. 9 {
     informatics.setRankIcon(i, "appliedenergistics2:textures/items/material_logic_processor.png");
 }
