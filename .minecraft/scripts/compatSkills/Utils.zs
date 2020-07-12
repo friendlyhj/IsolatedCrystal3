@@ -37,6 +37,7 @@ function levelUp(player as IPlayer, skill as Skill, newLevel as int) {
     if (info.level == newLevel - 1) {
         server.commandManager.executeCommand(ser, "/reskillable incrementskill " ~ player.name ~ " " ~ skill.key ~ " 1");
     }
+    player.update(player.data + {freshstage: true});
 }
 
 function getSkillArray(code as string) as SkillStack[] {
