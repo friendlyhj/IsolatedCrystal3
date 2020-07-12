@@ -24,7 +24,7 @@ botany.setLevelCap(12);
 val endery = SkillCreator.createSkill("endery", "actuallyadditions:textures/blocks/block_misc_enderpearl.png");
 endery.name = game.localize("isc.skill.endery");
 for i in 0 .. 9 {
-    endery.setRankIcon(i, "minecraft:textures/items/ender_eye");
+    endery.setRankIcon(i, "minecraft:textures/items/ender_eye.png");
 }
 endery.setEnabled(true);
 endery.setLevelCap(12);
@@ -60,3 +60,11 @@ for i in 0 .. 9 {
 }
 informatics.setEnabled(true);
 informatics.setLevelCap(12);
+
+val transportics = SkillCreator.createSkill("transportics", "enderio:textures/blocks/block_tank_bottom_advanced.png");
+transportics.name = game.localize("isc.skill.transportics");
+for i in 0 .. 9 {
+    transportics.setRankIcon(i, "thermaldynamics:textures/items/servo_1.png");
+}
+transportics.setEnabled(true);
+transportics.setLevelCap(12);

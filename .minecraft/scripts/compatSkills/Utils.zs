@@ -5,6 +5,7 @@ import mods.compatskills.Skill;
 import mods.compatskills.PlayerSkillInfo;
 import mods.ctutils.commands.Commands;
 import crafttweaker.command.ICommandSender;
+import scripts.compatSkills.EnumSkill;
 
 function toAllSkill(skills as SkillStack[]) as string[] {
     val skillsString as string[string] = {};
@@ -36,6 +37,27 @@ function levelUp(player as IPlayer, skill as Skill, originLevel as int, newLevel
     if (info.level == originLevel) {
         for i in originLevel .. newLevel {
             server.commandManager.executeCommand(ser, "/reskillable incrementskill " ~ player.name ~ " " ~ skill.key ~ " 1");
+        }
+    }
+}
+
+function getSkillArray(code as string) as SkillStack[] {
+    var temp as SkillStack[] = [];
+    for i in 0 .. code.length {
+        if (i % 2 == 0) {
+            val s as string = code[i];
+            val l as string = code[i + 1];
+            var n as int = 0;
+            if (l == "a") {
+                n = 10;
+            } else if (l == "b") {
+                n = 11;
+            } else if (l == "c") {
+                n = 12;
+            } else {
+                n = l;
+            }
+            temp += SkillStack(EnumSkill.getSkillByAlias(s), n);
         }
     }
 }
