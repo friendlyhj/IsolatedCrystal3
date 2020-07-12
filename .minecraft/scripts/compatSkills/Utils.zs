@@ -31,13 +31,11 @@ function toAllSkillM(skills as SkillStack[int]) as string[] {
     return skillsString.values;
 }
 
-function levelUp(player as IPlayer, skill as Skill, originLevel as int, newLevel as int) {
+function levelUp(player as IPlayer, skill as Skill, newLevel as int) {
     val info as PlayerSkillInfo = player.skillData.getSkillInfo(skill);
     val ser as ICommandSender = Commands.getServerCommandSender();
-    if (info.level == originLevel) {
-        for i in originLevel .. newLevel {
-            server.commandManager.executeCommand(ser, "/reskillable incrementskill " ~ player.name ~ " " ~ skill.key ~ " 1");
-        }
+    if (info.level == newLevel - 1) {
+        server.commandManager.executeCommand(ser, "/reskillable incrementskill " ~ player.name ~ " " ~ skill.key ~ " 1");
     }
 }
 
