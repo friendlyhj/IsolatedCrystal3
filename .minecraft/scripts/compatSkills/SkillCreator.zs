@@ -45,7 +45,7 @@ for i in 0 .. 9 {
 astronomy.setEnabled(true);
 astronomy.setLevelCap(12);
 
-val energistics = SKillCreator.createSkill("energistics", "immersiveengineering:textures/blocks/metal_decoration0_generator.png");
+val energistics = SkillCreator.createSkill("energistics", "immersiveengineering:textures/blocks/metal_decoration0_generator.png");
 energistics.name = game.localize("isc.skill.energistics");
 for i in 0 .. 9 {
     energistics.setRankIcon(i, "thermalexpansion:textures/items/capacitor/capacitor_1.png");
