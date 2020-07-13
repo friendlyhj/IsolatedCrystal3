@@ -27,14 +27,14 @@ function getSkill(name as string) as Skill {
 }
 
 function getSkillByAlias(alias as string) as Skill {
-    if (alias.equals("m")) return MACHINERY;
-    if (alias.equals("b")) return BOTANY;   
-    if (alias.equals("e")) return ENDERY;
-    if (alias.equals("l")) return METALLURGY;
-    if (alias.equals("a")) return ASTRONOMY;
-    if (alias.equals("n")) return ENERGISTICS;
-    if (alias.equals("i")) return INFORMATICS;
-    if (alias.equals("t")) return TRANSPORTICS;
+    if (alias == "m") return MACHINERY;
+    if (alias == "b") return BOTANY;   
+    if (alias == "e") return ENDERY;
+    if (alias == "l") return METALLURGY;
+    if (alias == "a") return ASTRONOMY;
+    if (alias == "n") return ENERGISTICS;
+    if (alias == "i") return INFORMATICS;
+    if (alias == "t") return TRANSPORTICS;
 
     Logger.sendError("Not found skill: " ~ code ~ " !");
     return null;

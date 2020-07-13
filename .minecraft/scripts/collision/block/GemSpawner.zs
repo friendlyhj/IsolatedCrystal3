@@ -16,7 +16,7 @@ static gemLib as int[IItemStack] = {
     <item:minecraft:diamond> : 50,
     <item:minecraft:emerald> : 50,
     <item:appliedenergistics2:material> : 400,
-    <actuallyadditions:item_misc:5> : 200 
+    <item:actuallyadditions:item_misc:5> : 200 
 };
 
 static gemList as IItemStack[] = [];
