@@ -100,7 +100,7 @@ val nuggets as IIngredient = <ore:nuggetIron> | <ore:nuggetCopper> | <ore:nugget
 for entry in oreDict.entries {
     val type as string = getMetalNameNew(entry, "booster");
     if (!isNull(type)) {
-        val nugget as IItemStack = type.contanins("alum") ? <item:thermalfoundation:material:196> : oreDict.get("nugget" ~ type).firstItem;
+        val nugget as IItemStack = type.contains("alum") ? <item:thermalfoundation:material:196> : oreDict.get("nugget" ~ type).firstItem;
         val nucleus as IOreDictEntry = oreDict.get("nucleus" ~ type);
         furnace.addRecipe(nugget * 3, nucleus);
         recipes.addShaped("booster_" ~ type, entry.firstItem, [
