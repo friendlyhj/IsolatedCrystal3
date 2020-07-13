@@ -96,6 +96,7 @@ recipes.addShaped("starter", <contenttweaker:collider_starter>, [
     [<ore:stickWood>, null, null]
 ]);
 
+<ore:nuggetAluminium>.add(<item:thermalfoundation:material:196>);
 val nuggets as IIngredient = <ore:nuggetIron> | <ore:nuggetCopper> | <ore:nuggetAluminium> | <ore:nuggetLead> | <ore:nuggetNickel> | <ore:nuggetTin>;
 for entry in oreDict.entries {
     val type as string = getMetalNameNew(entry, "booster");

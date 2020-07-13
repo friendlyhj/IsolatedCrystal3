@@ -8,7 +8,7 @@ import mods.compatskills.playerData;
 
 events.onPlayerTick(function(event as PlayerTickEvent) {
     val player as IPlayer = event.player;
-    if (player.world.remote || !(player.data has "freshstage") || !player.data.freshstage.asBool()) return;
+    if (player.world.remote || !(player.data has "freshstage") || player.data.freshstage.asInt() == 0) return;
     val skillData as playerData = player.skillData;
 
     for stage, skills in stageSkillMap {

@@ -54,9 +54,21 @@ function getSkillArray(code as string) as SkillStack[] {
             } else if (l == "c") {
                 n = 12;
             } else {
-                n = l;
+                // 为什么不能直接 string 转 int 啊！！！
+                n = (
+                    (l == "1") ? 1 :
+                    (l == "2") ? 2 :
+                    (l == "3") ? 3 :
+                    (l == "4") ? 4 :
+                    (l == "5") ? 5 :
+                    (l == "6") ? 6 :
+                    (l == "7") ? 7 :
+                    (l == "8") ? 8 :
+                    (l == "9") ? 9 : 0
+                );
             }
             temp += SkillStack(EnumSkill.getSkillByAlias(s), n);
         }
     }
+    return temp;
 }

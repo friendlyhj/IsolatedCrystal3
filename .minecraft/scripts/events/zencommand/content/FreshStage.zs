@@ -11,3 +11,4 @@ freshStage.onExecute = function(sender as ICommandSender, paras as string[]) as 
         player.update(player.data + {freshstage : true});
     }
 };
+ZenCommandRegistrar.register(freshStage);
