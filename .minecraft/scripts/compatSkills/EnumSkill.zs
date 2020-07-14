@@ -36,7 +36,7 @@ function getSkillByAlias(alias as string) as Skill {
     if (alias == "i") return INFORMATICS;
     if (alias == "t") return TRANSPORTICS;
 
-    Logger.sendError("Not found skill: " ~ code ~ " !");
+    Logger.sendError("Not found skill: " ~ alias ~ " !");
     return null;
 }
 

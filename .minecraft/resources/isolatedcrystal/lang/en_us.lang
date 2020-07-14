@@ -6,3 +6,9 @@ isc.skill.astronomy=Astronomy
 isc.skill.energistics=Energistics
 isc.skill.informatics=Informatics
 isc.skill.transportics=Transportics
+
+tile.chlorinizer.name=Chlorinizer
+
+fluid.raw_sicl4=Raw Silicon Tetrachloride
+
+requious.jei.recipe.chlorinizer=Chlorinizer

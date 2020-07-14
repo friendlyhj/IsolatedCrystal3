@@ -6,3 +6,9 @@ isc.skill.astronomy=天文学
 isc.skill.energistics=能源学
 isc.skill.informatics=信息学
 isc.skill.transportics=物流学
+
+tile.chlorinizer.name=氯化机
+
+fluid.raw_sicl4=粗四氯化硅
+
+requious.jei.recipe.chlorinizer=氯化机
