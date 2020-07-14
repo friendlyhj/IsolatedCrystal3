@@ -21,6 +21,8 @@
 /.minecraft/config/probe.cfg
 /.minecraft/config/AppliedEnergistics2/items.csv
 /.minecraft/config/InvTweaks.cfg
+/.minecraft/config/AppliedEnergistics2/VersionChecker.cfg
+/.minecraft/config/astralsorcery/amulet_enchantments.cfg
 
 # Temporary
 /.minecraft/icon.png
