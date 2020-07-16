@@ -1,4 +1,3 @@
-import scripts.compatSkills.Utils.levelUp;
 import scripts.events.zencommand.ZenCommand.ZenCommand;
 import scripts.events.zencommand.ZenCommandRegistrar;
 import crafttweaker.command.ICommandSender;
@@ -10,5 +9,6 @@ freshStage.onExecute = function(sender as ICommandSender, paras as string[]) as 
         val player as IPlayer = sender;
         player.update(player.data + {freshstage : true});
     }
+    sender.sendMessage("isc.command.freshstage");
 };
 ZenCommandRegistrar.register(freshStage);
