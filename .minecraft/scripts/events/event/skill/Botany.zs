@@ -1,6 +1,5 @@
 #priority 210
 import scripts.events.event.PlayerEventSnippet.PlayerEventSnippet;
-import scripts.events.Runner.registerPlayerTickEvent;
 import crafttweaker.event.PlayerTickEvent;
 import scripts.compatSkills.Utils.levelUp;
 import crafttweaker.player.IPlayer;
