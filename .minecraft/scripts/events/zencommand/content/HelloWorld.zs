@@ -1,3 +1,5 @@
+#norun
+
 import scripts.events.zencommand.ZenCommand.ZenCommand;
 import scripts.events.zencommand.ZenCommandRegistrar;
 import crafttweaker.command.ICommandSender;

@@ -12,3 +12,7 @@ tile.chlorinizer.name=氯化机
 fluid.raw_sicl4=粗四氯化硅
 
 requious.jei.recipe.chlorinizer=氯化机
+
+commands.freshstage.usage=/isolatedcrystal freshstage <玩家>
+commands.removeallstages.usage=/isolatedcrystal removeallstages <玩家>
+commands.freshstage.success=成功刷新阶段！
