@@ -1,4 +1,5 @@
 #priority 200
+#norun
 import mods.requious.ComponentFace;
 import mods.requious.SlotVisual;
 import mods.requious.Assembly;

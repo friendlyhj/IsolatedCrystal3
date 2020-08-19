@@ -1,4 +1,5 @@
 #priority 199
+#norun
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.requious.AssemblyRecipe;
