@@ -29,7 +29,8 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
     val offItem as IItemStack = player.getItemInSlot(IEntityEquipmentSlot.offhand());
     val redFlower as IItemStack = <item:minecraft:red_flower>;
     val yellowFlower as IItemStack = <item:minecraft:yellow_flower>;
-    if (!isNull(mainItem) && !isNull(offItem) && (mainItem has redFlower && offItem has yellowFlower) || (mainItem has yellowFlower && offItem has redFlower)) {
+    if (isNull(mainItem) || isNull(offItem)) return;
+    if ((mainItem has redFlower && offItem has yellowFlower) || (mainItem has yellowFlower && offItem has redFlower)) {
         levelUp(player, BOTANY, 2);
     }
 });

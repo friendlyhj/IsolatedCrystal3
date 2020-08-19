@@ -41,7 +41,7 @@ freshStage.execute = function(command, server, sender, args) {
         CommandUtils.notifyWrongUsage(command, sender);
     }
     player.update(player.data + {freshstage : true});
-    sender.sendMessage("commands.freshstage.success");
+    sender.sendMessage(game.localize("commands.freshstage.success"));
 };
 
 ZenCommandTree.create("isolatedcrystal", freshStage, removeAllStages).register();
