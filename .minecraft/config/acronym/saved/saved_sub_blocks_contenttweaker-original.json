@@ -1,3 +1,8 @@
 {
-  "savedSubBlockNames": {}
+  "savedSubBlockNames": {
+    "0": {
+      "0": "soldering_block",
+      "1": "titanium_block"
+    }
+  }
 }

@@ -3,5 +3,5 @@
 
 import scripts.grassUtils.CotUtils.addNormalItem;
 
-addNormalItem("row_si");
+addNormalItem("raw_si");
 addNormalItem("crystal_si");
