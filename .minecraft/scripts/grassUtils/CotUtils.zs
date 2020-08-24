@@ -82,6 +82,6 @@ function addCreativeTabAndNormalItem(creativeTabID as string, itemID as string) 
     tab = creativetab;
 }
 
-function getMaterialSystemHelper() as MaterialSystemHelper {
-    return MaterialSystemHelper();
+function getMaterialSystemHelper(id as int) as MaterialSystemHelper {
+    return MaterialSystemHelper(id);
 }
