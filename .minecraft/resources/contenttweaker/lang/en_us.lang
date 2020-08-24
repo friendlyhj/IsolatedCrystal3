@@ -1,8 +1,10 @@
 item.contenttweaker.advanced_infinite_fruit.name=The Fruit of Gula
 item.contenttweaker.raw_si.name=Raw Silicon
 item.contenttweaker.crystal_si.name=Single-Crytal Silicon
+item.contenttweaker.soldering_manasteel.name=Soldering ManaSteel
 
 fluid.raw_sicl4=Raw Silicon Tetrachloride
+fluid.soldering=Molten Soldering
 
 base.material.iron=Iron
 base.material.gold=Gold
@@ -19,3 +21,4 @@ base.material.yellorium=Yellorium
 base.material.platinum=Platinum
 base.material.iridium=Iridium
 base.material.soldering=Soldering
+base.material.ferramic=Ferramic

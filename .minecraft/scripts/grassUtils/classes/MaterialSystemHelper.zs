@@ -29,11 +29,18 @@ zenClass MaterialSystemHelper {
     }
 
     function getMaterial(key as string) as Material {
-        return MaterialSystem.getMaterial(key);
+        val material as Material = MaterialSystem.getMaterial(key);
+        if (isNull(material)) Logger.sendError("cannot find material: " ~ key);
+        return material;
     }
 
     function getAllMaterials() as Material[string] {
         return MaterialSystem.getMaterials();
+    }
+    
+    function addMaterial(key as string) as Material {
+        this.materialList[key] = this.getMaterial(key);
+        return this.getMaterial(key);
     }
 
     function addPart(partID as string) as string {

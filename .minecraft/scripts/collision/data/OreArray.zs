@@ -4,7 +4,7 @@
 
 static oreList as int[][string] = {
     //"name" : [color,chance,isNetherOre] (1 = 1‰) (isNetherOre = 0 means Overworld, 1 means Nether)
-    "Iron" : [0xBF8040,200,0],
+    "Iron" : [0x545454,200,0],
     "Gold" : [0xFFFF00,120,0],
     "Copper" : [0xFF9933,175,0],
     "Tin" : [0xE6FFF2,145,0],

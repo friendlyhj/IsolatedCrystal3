@@ -4,8 +4,10 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import scripts.grassUtils.RecipeUtils.getMetalNameNew;
+import scripts.grassUtils.StringHelper.toSnakeCase;
 import scripts.recipe.Mortar.allMortarTypes;
 import mods.advancedmortars.Mortar;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 for entry in oreDict.entries {
     // dust
@@ -13,7 +15,29 @@ for entry in oreDict.entries {
     if (!isNull(dustName)) {
         val ingot as IOreDictEntry = oreDict.get("ingot" ~ dustName);
         if (!ingot.empty) {
-            Mortar.addRecipe(allMortarTypes, entry.firstItem, 6, [ingot]);
+            Mortar.addRecipe(allMortarTypes, entry.firstItem, 8, [ingot]);
+        }
+        continue;
+    }
+    // gear
+    val gearName as string = getMetalNameNew(entry, "gear");
+    if (!isNull(gearName)) {
+        val plate as IOreDictEntry = oreDict.get("plate" ~ gearName);
+        val rod as IOreDictEntry = oreDict.get("rod" ~ gearName);
+        if (!plate.empty && !rod.empty) {
+            recipes.remove(entry.firstItem);
+            RecipeBuilder.get("blacksmith")
+                .setName("gear_" ~ toSnakeCase(gearName))
+                .setShaped([[rod, plate, rod],
+                            [plate, <ore:gearStone>, plate],
+                            [rod, plate, rod]])
+                .addOutput(entry.firstItem)
+                .addTool(<item:contenttweaker:soldering_manasteel>.marked("s"), 1)
+                .setFluid(<liquid:soldering> * 72)
+                .setRecipeFunction(function(out, ins, info) {
+                    return (ins.s.damage == 127) ? null : out;
+                })
+                .create();
         }
         continue;
     }

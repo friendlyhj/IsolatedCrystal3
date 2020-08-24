@@ -13,6 +13,6 @@ for key, value in scripts.collision.data.OreArray.oreList {
 
 sys.registerNormalPart("nucleus", "item", false);
 
-sys.registerAllMaterialParts();
+sys.registerMaterialPartsByPart("nucleus");
 
 static materialList as Material[string] = sys.materialList;
