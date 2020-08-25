@@ -2,9 +2,14 @@ item.contenttweaker.advanced_infinite_fruit.name=饕餮之果
 item.contenttweaker.row_si.name=粗硅
 item.contenttweaker.crystal_si.name=单晶硅
 item.contenttweaker.soldering_manasteel.name=魔力电烙铁
+item.contenttweaker.rutile.name=金红石
+item.contenttweaker.rutile_dust.name=金红石粉
 
 fluid.raw_sicl4=粗四氯化硅
 fluid.soldering=熔融焊锡
+fluid.sicl4=四氯化硅
+fluid.raw_ticl4=粗四氯化钛
+fluid.ticl4=四氯化钛
 
 base.material.iron=铁
 base.material.gold=金

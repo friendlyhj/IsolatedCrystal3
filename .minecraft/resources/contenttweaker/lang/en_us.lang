@@ -2,9 +2,14 @@ item.contenttweaker.advanced_infinite_fruit.name=The Fruit of Gula
 item.contenttweaker.raw_si.name=Raw Silicon
 item.contenttweaker.crystal_si.name=Single-Crytal Silicon
 item.contenttweaker.soldering_manasteel.name=Soldering ManaSteel
+item.contenttweaker.rutile.name=Rutile
+item.contenttweaker.rutile_dust.name=Rutile Dust
 
 fluid.raw_sicl4=Raw Silicon Tetrachloride
 fluid.soldering=Molten Soldering
+fluid.sicl4=Silicon Tetrachloride
+fluid.raw_ticl4=Raw Titanium tetrachloride
+fluid.ticl4=Titanium Tetrachloride
 
 base.material.iron=Iron
 base.material.gold=Gold

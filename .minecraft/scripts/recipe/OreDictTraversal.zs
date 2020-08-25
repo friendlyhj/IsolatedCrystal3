@@ -5,7 +5,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import scripts.grassUtils.RecipeUtils.getMetalNameNew;
 import scripts.grassUtils.StringHelper.toSnakeCase;
-import scripts.recipe.Mortar.allMortarTypes;
+import scripts.recipe.Util.allMortarTypes;
 import mods.advancedmortars.Mortar;
 import mods.artisanworktables.builder.RecipeBuilder;
 

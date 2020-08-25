@@ -11,6 +11,8 @@ tile.chlorinizer.name=Chlorinizer
 
 requious.jei.recipe.chlorinizer=Chlorinizer
 
+machine.crafttweaker:chlorinizer=Chlorinizer
+
 commands.freshstage.usage=/isolatedcrystal freshstage <Player>
 commands.removeallstages.usage=/isolatedcrystal removeallstages <Player>
 commands.freshstage.success=Freshing stage successfully.
