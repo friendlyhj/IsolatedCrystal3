@@ -25,6 +25,7 @@ recipes.remove(<ore:dustLumium>.firstItem);
 
 // ti
 addCrushRecipe(<item:contenttweaker:rutile>, <item:contenttweaker:rutile_dust>);
-addChlorinizerRecipe(250, [<item:contenttweaker:rutile_dust>, <ore:dustCoal> * 2 | <ore:dustCharcoal> * 2], <liquid:raw_ticl4> * 250, 8000, 80);
+addChlorinizerRecipe(250, [<item:contenttweaker:rutile_dust>, <ore:dustCoal> | <ore:dustCharcoal>], <liquid:raw_ticl4> * 250, 12000, 300);
+// addChlorinizerRecipe(250, [<item:contenttweaker:rutile_dust>, <ore:dustCharcoal>], <liquid:raw_ticl4> * 250, 12000, 300);
 Refinery.addRecipe(<liquid:ticl4> * 200, <ore:dustCoal>.firstItem % 20, <liquid:raw_ticl4> * 250, 5000);
-reaction.addRecipe(<ore:plateCopper>, <liquid:ticl4> * 400, <gas:hydrogen> * 800, <ore:dustTitanium>.firstItem.withAmount(2), <gas:hydrogen> * 80, 6000, 150);
+reaction.addRecipe(<ore:plateCopper>, <liquid:ticl4> * 400, <gas:hydrogen> * 800, <ore:dustTitanium>.firstItem.withAmount(2), <gas:hydrogen> * 80, 6000, 400);
