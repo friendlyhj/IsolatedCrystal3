@@ -27,3 +27,5 @@ base.material.platinum=Platinum
 base.material.iridium=Iridium
 base.material.soldering=Soldering
 base.material.ferramic=Ferramic
+
+contenttweaker.part.casing=%s Machine Casing

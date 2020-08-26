@@ -2,7 +2,19 @@
   "savedSubBlockNames": {
     "0": {
       "0": "soldering_block",
-      "1": "titanium_block"
+      "1": "titanium_block",
+      "2": "aluminium_casing",
+      "3": "platinum_casing",
+      "4": "ferramic_casing",
+      "5": "copper_casing",
+      "6": "gold_casing",
+      "7": "tin_casing",
+      "8": "lead_casing",
+      "9": "iridium_casing",
+      "10": "nickel_casing",
+      "11": "osmium_casing",
+      "12": "silver_casing",
+      "13": "iron_casing"
     }
   }
 }

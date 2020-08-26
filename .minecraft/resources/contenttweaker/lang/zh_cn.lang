@@ -27,3 +27,5 @@ base.material.platinum=铂
 base.material.iridium=铱
 base.material.soldering=焊锡
 base.material.ferramic=瓷铁
+
+contenttweaker.part.casing=%s机械外壳
