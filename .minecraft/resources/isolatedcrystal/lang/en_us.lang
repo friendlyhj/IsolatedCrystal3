@@ -16,3 +16,5 @@ machine.crafttweaker:chlorinizer=Chlorinizer
 commands.freshstage.usage=/isolatedcrystal freshstage <Player>
 commands.removeallstages.usage=/isolatedcrystal removeallstages <Player>
 commands.freshstage.success=Freshing stage successfully.
+
+isc.message.mana_hatch_displayer=Mana reserves: %s / 100,000

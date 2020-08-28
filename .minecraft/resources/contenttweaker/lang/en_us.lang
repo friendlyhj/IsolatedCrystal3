@@ -24,6 +24,7 @@ base.material.cobalt=Cobalt
 base.material.osmium=Osmium
 base.material.yellorium=Yellorium
 base.material.platinum=Platinum
+base.material.titanium=Titanium
 base.material.iridium=Iridium
 base.material.soldering=Soldering
 base.material.ferramic=Ferramic

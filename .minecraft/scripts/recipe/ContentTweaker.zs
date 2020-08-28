@@ -14,3 +14,10 @@ for item in <item:contenttweaker:material_part>.definition.subItems {
         continue;
     }
 }
+
+/* for i in 0 .. 1 {
+    val item as IItemStack = itemUtils.getItem("contenttweaker:sub_block_holder_" ~ i);
+    for subItem in item.definition.subItems {
+        
+    }
+} */

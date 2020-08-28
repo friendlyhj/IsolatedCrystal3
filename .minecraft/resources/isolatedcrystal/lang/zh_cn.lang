@@ -16,3 +16,5 @@ machine.crafttweaker:chlorinizer=氯化机
 commands.freshstage.usage=/isolatedcrystal freshstage <玩家>
 commands.removeallstages.usage=/isolatedcrystal removeallstages <玩家>
 commands.freshstage.success=成功刷新阶段！
+
+isc.message.mana_hatch_displayer=魔力储量： %s / 100,000
