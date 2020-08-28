@@ -13,11 +13,14 @@ for item in <item:contenttweaker:material_part>.definition.subItems {
         furnace.addRecipe(item, oreDict.get("dust" ~ ingotName));
         recipes.addShaped(item, createFull3(oreDict.get("nugget" ~ ingotName)));
         recipes.addShaped(oreDict.get("nugget" ~ ingotName).firstItem.withAmount(9), [[item]]);
+        val block as IOreDictEntry = oreDict.get("block" ~ ingotName);
+        recipes.addShaped(item * 9, [[block]]);
+        recipes.addShaped(block.firstItem, createFull3(ore));
         continue;
     }
 }
 
-for i in 0 .. 1 {
+/* for i in 0 .. 1 {
     val item as IItemStack = itemUtils.getItem("contenttweaker:sub_block_holder_" ~ i);
     for subItem in item.definition.subItems {
         val blockName as string = getMetalNameNew(subItem.ores[0], "block");
@@ -29,7 +32,7 @@ for i in 0 .. 1 {
             }
         }
     }
-}
+} */
 
 // 漆包线
 Cauldron.addFluidRecipe(<item:contenttweaker:varnished_copper_wire>, <ore:wireCopper>, <fluid:resin>);
