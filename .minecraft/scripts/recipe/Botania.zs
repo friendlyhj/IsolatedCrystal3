@@ -23,7 +23,7 @@ SkillLocker.lockItem(<item:botania:spreader>, getSkillArray("b3t2"));
 SkillLocker.lockItem(<item:botania:terraplate>, getSkillArray("b4n3"));
 
 // 火花
-SkillLocker.tweakLockedRecipe(true, <item:botania:spark> * 2, [
+SkillLocker.tweakLockedRecipe(true, <item:botania:spark> * 4, [
     [null, <ore:dustEnder>, null],
     [<ore:dustBlaze>, <ore:dustGold>, <ore:dustBlaze>],
     [null, <ore:dustEnder>, null]

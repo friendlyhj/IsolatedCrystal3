@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import scripts.compatSkills.Utils.getSkillArray;
 import scripts.compatSkills.SkillLocker;
+import mods.jei.JEI;
 
 // 铁匠工作台
 SkillLocker.tweakLockedRecipe(true, <item:artisanworktables:worktable:3>, [
@@ -13,3 +14,5 @@ SkillLocker.tweakLockedRecipe(true, <item:artisanworktables:worktable:3>, [
 SkillLocker.tweakLockedRecipe(false, <item:artisanworktables:workstation:3>, [
     [<item:artisanworktables:worktable:3>, <item:minecraft:chest>, <item:minecraft:anvil>]
 ], getSkillArray("m2"));
+
+JEI.removeAndHide(<artisanworktables:artisans_hammer_iron>);

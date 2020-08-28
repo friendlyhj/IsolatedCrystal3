@@ -4,6 +4,8 @@ item.contenttweaker.crystal_si.name=单晶硅
 item.contenttweaker.soldering_manasteel.name=魔力电烙铁
 item.contenttweaker.rutile.name=金红石
 item.contenttweaker.rutile_dust.name=金红石粉
+item.contenttweaker.varnished_copper_wire.name=漆包铜线
+item.contenttweaker.varnished_electrum_wire.name=漆包琥珀金线
 
 fluid.raw_sicl4=粗四氯化硅
 fluid.soldering=熔融焊锡

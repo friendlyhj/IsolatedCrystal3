@@ -10,6 +10,8 @@ fluid.soldering=Molten Soldering
 fluid.sicl4=Silicon Tetrachloride
 fluid.raw_ticl4=Raw Titanium tetrachloride
 fluid.ticl4=Titanium Tetrachloride
+item.contenttweaker.varnished_copper_wire.name=Varnished Copper Wire
+item.contenttweaker.varnished_electrum_wire.name=Varnished Electrum Wire
 
 base.material.iron=Iron
 base.material.gold=Gold

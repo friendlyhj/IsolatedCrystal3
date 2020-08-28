@@ -7,3 +7,5 @@ addNormalItem("raw_si");
 addNormalItem("crystal_si");
 addNormalItem("rutile");
 addNormalItem("rutile_dust");
+addNormalItem("varnished_copper_wire");
+addNormalItem("varnished_electrum_wire");

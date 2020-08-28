@@ -80,7 +80,7 @@ for entry in oreDict.entries {
             .setShaped([[plate, ingot, plate],
                         [ingot, null, ingot],
                         [plate, ingot, plate]])
-            .addOutput(entry.firstItem * 2)
+            .addOutput(entry.firstItem * 4)
             .addTool(<ore:artisansHammer>, 10)
             .addTool(<item:contenttweaker:soldering_manasteel>.marked("s"), 2)
             .setFluid(<liquid:soldering> * 144)
