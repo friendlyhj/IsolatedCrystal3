@@ -5,6 +5,8 @@ import crafttweaker.oredict.IOreDictEntry;
 
 static allMortarTypes as string[] = ["wood", "stone", "iron", "diamond", "emerald", "obsidian"];
 
+static maxInt as int = 2147483647;
+
 function addCrushRecipe(input as IIngredient, output as IIngredient) {
     mods.thermalexpansion.Pulverizer.addRecipe(output.items[0], input.items[0], 2400);
     mods.advancedmortars.Mortar.addRecipe(allMortarTypes, output.items[0], 8, [input]);

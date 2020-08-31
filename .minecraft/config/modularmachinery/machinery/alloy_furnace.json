@@ -1,6 +1,5 @@
 {
     "registryname": "alloy_furnace",
-    "localizedname": "Alloy Smelter",
     "modifiers": [
         {
             "elements": "modularmachinery:blockcasing@1",
