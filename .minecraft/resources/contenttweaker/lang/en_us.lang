@@ -12,6 +12,7 @@ fluid.soldering=Molten Soldering
 fluid.sicl4=Silicon Tetrachloride
 fluid.raw_ticl4=Raw Titanium tetrachloride
 fluid.ticl4=Titanium Tetrachloride
+fluid.vinegar=Vinegar
 
 base.material.iron=Iron
 base.material.gold=Gold
@@ -30,5 +31,8 @@ base.material.titanium=Titanium
 base.material.iridium=Iridium
 base.material.soldering=Soldering
 base.material.ferramic=Ferramic
+base.material.copper_refined=Refined Copper
+base.material.steel=Steel
 
 contenttweaker.part.casing=%s Machine Casing
+contenttweaker.part.dust_small=Small %s Dust

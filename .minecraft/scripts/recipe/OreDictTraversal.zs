@@ -78,12 +78,12 @@ for entry in oreDict.entries {
             RecipeBuilder.get("blacksmith")
             .setName("casing_" ~ toSnakeCase(casingName))
             .setShaped([[plate, ingot, plate],
-                        [ingot, null, ingot],
+                        [ingot, ingot, ingot],
                         [plate, ingot, plate]])
-            .addOutput(entry.firstItem * 4)
+            .addOutput(entry.firstItem * 8)
             .addTool(<ore:artisansHammer>, 10)
             .addTool(<item:contenttweaker:soldering_manasteel>.marked("s"), 2)
-            .setFluid(<liquid:soldering> * 144)
+            .setFluid(<liquid:soldering> * 288)
             .setRecipeFunction(function(out, ins, info) {
                 return (ins.s.damage >= 126) ? null : out;
             })

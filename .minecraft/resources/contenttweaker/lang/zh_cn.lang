@@ -12,6 +12,7 @@ fluid.soldering=熔融焊锡
 fluid.sicl4=四氯化硅
 fluid.raw_ticl4=粗四氯化钛
 fluid.ticl4=四氯化钛
+fluid.vinegar=醋
 
 base.material.iron=铁
 base.material.gold=金
@@ -30,5 +31,8 @@ base.material.titanium=钛
 base.material.iridium=铱
 base.material.soldering=焊锡
 base.material.ferramic=瓷铁
+base.material.copper_refined=精铜
+base.material.steel=钢
 
 contenttweaker.part.casing=%s机械外壳
+contenttweaker.part.dust_small=小堆%s粉

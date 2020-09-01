@@ -15,6 +15,7 @@ sys0.addPart("nugget");
 // sys0.addPart("armor");
 sys0.registerMaterial("Titanium", 0xDED3F8);
 sys0.registerMaterial("Soldering", 0x2F4517);
+sys0.registerMaterial("CopperRefined", 0xF04208);
 sys0.registerAllMaterialParts();
 
 val sys1 as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(1);
@@ -29,8 +30,10 @@ sys1.addMaterial("Nickel");
 sys1.addMaterial("Osmium");
 sys1.addMaterial("Platinum");
 sys1.addMaterial("Iridium");
+sys1.registerMaterial("Steel", 0x858585);
 sys1.registerMaterial("Ferramic", 0xAF9089);
 sys1.registerNormalPart("casing", "block", false);
+sys1.registerNormalPart("dustSmall", "item", false);
 sys1.addPart("plate");
 sys1.addPart("rod");
 sys1.registerAllMaterialParts();

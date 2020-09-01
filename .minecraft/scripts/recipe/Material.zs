@@ -1,13 +1,16 @@
 #priority 50
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
 import mods.advancedmortars.Mortar;
 import mods.thermalexpansion.Refinery;
 import mods.mekanism.reaction;
+import mods.rustic.Condenser;
 import scripts.recipe.Util.allMortarTypes;
 import scripts.recipe.Util.addCrushRecipe;
 import scripts.recipe.extraUtilities.MachineRecipe.addChlorinizerRecipe;
 import scripts.recipe.modularMachinery.AeroCokeOven;
+import scripts.recipe.modularMachinery.ElectrolyticRefiner;
 
 // alloy dust
 recipes.remove(<ore:dustElectrum>.firstItem);
@@ -36,3 +39,19 @@ reaction.addRecipe(<ore:plateCopper>, <liquid:ticl4> * 400, <gas:hydrogen> * 800
 // coke
 AeroCokeOven.addRecipe("coke", <item:minecraft:coal>, <item:immersiveengineering:material:6>, <fluid:creosote> * 250, 150, 400);
 AeroCokeOven.addRecipeWithOre("methanol", <ore:logWood>, 1, <item:minecraft:coal:1>, <fluid:methanol> * 125, 150, 400);
+
+// 醋
+Condenser.addRecipe(<forge:bucketfilled>.withTag({FluidName: "vinegar", Amount: 1000}), [<item:rustic:chamomile>], null, <item:minecraft:bucket>, <liquid:hootch> * 1000, 4800);
+
+// 精铜
+ElectrolyticRefiner.addRecipe("copper_basic", <ore:ingotCopper>, 1, <liquid:vinegar> * 50, 
+[<ore:ingotCopperRefined>.firstItem, <ore:dustSmallNickel>.firstItem, <ore:dustSmallSilver>.firstItem, <ore:dustSmallGold>.firstItem], 
+[1.0, 0.4, 0.2, 0.1], 5, 200);
+
+ElectrolyticRefiner.addRecipe("copper_advanced", <ore:ingotCopper>, 1, <liquid:sulfuric_acid> * 10, 
+[<ore:ingotCopperRefined>.firstItem, <ore:dustSmallNickel>.firstItem, <ore:dustSmallSilver>.firstItem, <ore:dustSmallGold>.firstItem], 
+[1.0, 0.4, 0.2, 0.1], 20, 10);
+
+ElectrolyticRefiner.addRecipe("copper_advanced", <ore:ingotCopper>, 1, <liquid:sulfuricacid> * 10, 
+[<ore:ingotCopperRefined>.firstItem, <ore:dustSmallNickel>.firstItem, <ore:dustSmallSilver>.firstItem, <ore:dustSmallGold>.firstItem], 
+[1.0, 0.4, 0.2, 0.1], 20, 10);

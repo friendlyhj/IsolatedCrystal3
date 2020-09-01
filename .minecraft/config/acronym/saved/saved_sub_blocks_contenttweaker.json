@@ -14,7 +14,9 @@
       "10": "nickel_casing",
       "11": "osmium_casing",
       "12": "silver_casing",
-      "13": "iron_casing"
+      "13": "iron_casing",
+      "14": "copper_refined_block",
+      "15": "steel_casing"
     }
   }
 }
