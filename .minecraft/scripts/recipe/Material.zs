@@ -11,6 +11,7 @@ import scripts.recipe.Util.addCrushRecipe;
 import scripts.recipe.extraUtilities.MachineRecipe.addChlorinizerRecipe;
 import scripts.recipe.modularMachinery.AeroCokeOven;
 import scripts.recipe.modularMachinery.ElectrolyticRefiner;
+import scripts.recipe.modularMachinery.AeroBlast;
 
 // alloy dust
 recipes.remove(<ore:dustElectrum>.firstItem);
@@ -31,7 +32,7 @@ recipes.remove(<ore:dustLumium>.firstItem);
 recipes.removeByRegex("^immersiveengineering:material/plate_.*");
 
 // ti
-addCrushRecipe(<item:contenttweaker:rutile>, <item:contenttweaker:rutile_dust>);
+addCrushRecipe(<item:contenttweaker:rutile>, <item:contenttweaker:rutile_dust>, 1);
 addChlorinizerRecipe(250, [<item:contenttweaker:rutile_dust>, <ore:dustCoal> | <ore:dustCharcoal>], <liquid:raw_ticl4> * 250, 12000, 300);
 Refinery.addRecipe(<liquid:ticl4> * 200, <ore:dustCoal>.firstItem % 20, <liquid:raw_ticl4> * 250, 5000);
 reaction.addRecipe(<ore:plateCopper>, <liquid:ticl4> * 400, <gas:hydrogen> * 800, <ore:dustTitanium>.firstItem.withAmount(2), <gas:hydrogenchloride> * 1600, 6000, 400);
@@ -41,7 +42,7 @@ AeroCokeOven.addRecipe("coke", <item:minecraft:coal>, <item:immersiveengineering
 AeroCokeOven.addRecipeWithOre("methanol", <ore:logWood>, 1, <item:minecraft:coal:1>, <fluid:methanol> * 125, 150, 400);
 
 // 醋
-Condenser.addRecipe(<forge:bucketfilled>.withTag({FluidName: "vinegar", Amount: 1000}), [<item:rustic:chamomile>], null, <item:minecraft:bucket>, <liquid:hootch> * 1000, 4800);
+Condenser.addRecipe(<forge:bucketfilled>.withTag({FluidName: "vinegar", Amount: 1000}), [<item:rustic:chamomile>], null, <item:minecraft:bucket>, <liquid:ethanol> * 1000, 4800);
 
 // 精铜
 ElectrolyticRefiner.addRecipe("copper_basic", <ore:ingotCopper>, 1, <liquid:vinegar> * 50, 
@@ -55,3 +56,11 @@ ElectrolyticRefiner.addRecipe("copper_advanced", <ore:ingotCopper>, 1, <liquid:s
 ElectrolyticRefiner.addRecipe("copper_advanced", <ore:ingotCopper>, 1, <liquid:sulfuricacid> * 10, 
 [<ore:ingotCopperRefined>.firstItem, <ore:dustSmallNickel>.firstItem, <ore:dustSmallSilver>.firstItem, <ore:dustSmallGold>.firstItem], 
 [1.0, 0.4, 0.2, 0.1], 20, 10);
+
+// 乙醇
+Condenser.addRecipe(<forge:bucketfilled>.withTag({FluidName: "ethanol", Amount: 1000}), [<item:minecraft:sugar>, <item:minecraft:potato>], null, <item:minecraft:bucket>, <liquid:water> * 1000, 4800);
+
+// 钢
+AeroBlast.addRecipe("steel_charcoal", [<item:minecraft:iron_ore>, <item:minecraft:coal:1> * 4, <ore:dustMarble>.firstItem * 3], [<ore:ingotSteel>.firstItem * 2], 150, 1000);
+
+AeroBlast.addRecipe("steel", [<item:minecraft:iron_ore>, <item:immersiveengineering:material:6>, <ore:dustMarble>.firstItem * 3], [<ore:ingotSteel>.firstItem * 2], 150, 1000);

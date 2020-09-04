@@ -6,10 +6,11 @@ import mods.inspirations.Cauldron;
 import scripts.grassUtils.RecipeUtils.getMetalNameNew;
 import scripts.grassUtils.RecipeUtils.createFull3;
 import scripts.grassUtils.RecipeUtils.createFull2;
+import scripts.recipe.Util.addCrushRecipe;
 
 for item in <item:contenttweaker:material_part>.definition.subItems {
-    var ore as IOreDictEntry = item.ores[0];
-    if (ore.name == "ingotCopper") ore = <ore:ingotCopperRefined>;
+    val ore as IOreDictEntry = item.ores[0];
+    // if (ore.name == "ingotCopper") ore = <ore:ingotCopperRefined>;
     val ingotName as string = getMetalNameNew(ore, "ingot");
     if (!isNull(ingotName)) {
         furnace.addRecipe(item, oreDict.get("dust" ~ ingotName));
@@ -52,3 +53,6 @@ recipes.addShaped("soldering_manasteel", <item:contenttweaker:soldering_manastee
     [<ore:ingotManasteel>, null, <ore:ingotManasteel>],
     [null, <forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}), <ore:livingwood>]
 ]);
+
+// 大理石粉
+addCrushRecipe(<ore:blockMarble>, <ore:dustMarble>, 9);

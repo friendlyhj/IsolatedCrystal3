@@ -18,3 +18,6 @@ commands.removeallstages.usage=/isolatedcrystal removeallstages <玩家>
 commands.freshstage.success=成功刷新阶段！
 
 isc.message.mana_hatch_displayer=魔力储量： %s / 100,000
+
+isc.research.energistics.3=3 级能源学
+isc.research.energistics.3.description=你发现不仅除了魔力，红石也有隐藏的更大力量...

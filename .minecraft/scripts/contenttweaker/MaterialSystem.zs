@@ -42,3 +42,8 @@ val sys2 as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(2);
 sys2.addMaterial("Osmium");
 sys2.addPart("gear");
 sys2.registerAllMaterialParts();
+
+val sys3 as MaterialSystemHelper = CotUtils.getMaterialSystemHelper(3);
+sys3.registerMaterial("Marble", 0xe7e7e7);
+sys3.addPart("dust");
+sys3.registerAllMaterialParts();

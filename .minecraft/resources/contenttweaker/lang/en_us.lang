@@ -33,6 +33,7 @@ base.material.soldering=Soldering
 base.material.ferramic=Ferramic
 base.material.copper_refined=Refined Copper
 base.material.steel=Steel
+base.material.marble=Marble
 
 contenttweaker.part.casing=%s Machine Casing
 contenttweaker.part.dust_small=Small %s Dust
