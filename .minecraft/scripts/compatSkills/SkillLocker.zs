@@ -11,6 +11,8 @@ import scripts.compatSkills.Utils.toAllSkill;
 import scripts.compatSkills.Utils.toAllSkillM;
 import scripts.compatSkills.Utils.getStage;
 import scripts.grassUtils.StringHelper;
+import crafttweaker.recipes.IRecipeFunction;
+import crafttweaker.player.IPlayer;
 
 static stageSkillMap as SkillStack[][string] = {};
 static stagesHaveRegistered as string[] = [];

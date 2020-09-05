@@ -4,6 +4,8 @@ import crafttweaker.player.IPlayer;
 import mods.compatskills.Skill;
 import mods.compatskills.PlayerSkillInfo;
 import mods.ctutils.commands.Commands;
+import mods.artisanintegrations.requirement.Reskillable;
+import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.command.ICommandSender;
 import scripts.compatSkills.EnumSkill;
 import mods.zenutils.HexHelper;
