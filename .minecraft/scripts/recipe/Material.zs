@@ -64,3 +64,6 @@ Condenser.addRecipe(<forge:bucketfilled>.withTag({FluidName: "ethanol", Amount: 
 AeroBlast.addRecipe("steel_charcoal", [<item:minecraft:iron_ore>, <item:minecraft:coal:1> * 4, <ore:dustMarble>.firstItem * 3], [<ore:ingotSteel>.firstItem * 2], 150, 1000);
 
 AeroBlast.addRecipe("steel", [<item:minecraft:iron_ore>, <item:immersiveengineering:material:6>, <ore:dustMarble>.firstItem * 3], [<ore:ingotSteel>.firstItem * 2], 150, 1000);
+
+// 末影粉
+addCrushRecipe(<ore:enderpearl>, <ore:dustEnder>, 1);

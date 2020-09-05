@@ -16,3 +16,10 @@ SkillLocker.tweakLockedRecipe(false, <item:artisanworktables:workstation:3>, [
 ], getSkillArray("m2"));
 
 JEI.removeAndHide(<artisanworktables:artisans_hammer_iron>);
+
+// 木匠工作台
+recipes.addShaped(<item:artisanworktables:workstation:1>, [
+    [<ore:plankWood>, <ore:logWood>, <ore:plankWood>],
+    [null, <ore:plankTreatedWood>, null],
+    [<ore:plankTreatedWood>, <item:minecraft:chest>, <ore:plankTreatedWood>]
+]);

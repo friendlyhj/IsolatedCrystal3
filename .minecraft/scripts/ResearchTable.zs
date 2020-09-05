@@ -19,4 +19,13 @@ ResearchTable.builder("energistics_3", cat)
     .addCondition(<item:minecraft:redstone> * 16)
     .setRequiredSkill(getSkillByAlias("n").key, 2)
     .setRewardSkill(getSkillByAlias("n").key, 3)
-    .build();
+.build();
+
+ResearchTable.builder("endery_3", cat)
+    .setIcons(<ore:dustEnder>.firstItem)
+    .setTitle("isc.research.endery.3")
+    .setDescription("isc.research.endery.3.description")
+    .addCondition(<ore:dustEnder> * 2, <ore:enderpearl> * 2)
+    .setRequiredSkill(getSkillByAlias("e").key, 2)
+    .setRewardSkill(getSkillByAlias("e").key, 3)
+.build();
