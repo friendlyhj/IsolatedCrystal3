@@ -20,11 +20,11 @@ RecipeBuilder.get("blacksmith")
     [<ore:plateFerramic>, <ore:plateFerramic>, <ore:plateFerramic>]])
   .addTool(<contenttweaker:soldering_manasteel>, 1)
   .setFluid(<liquid:soldering> * 144)
-  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m3e4"))))
+  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m3n4"))))
   .addOutput(<prodigytech:rotary_grinder>)
 .create();
 recipes.remove(<prodigytech:rotary_grinder>);
-SkillLocker.lockItem(<prodigytech:rotary_grinder>, getSkillArray("m3e4"));
+SkillLocker.lockItem(<prodigytech:rotary_grinder>, getSkillArray("m3n4"));
 
 // 烘烤炉
 RecipeBuilder.get("blacksmith")
@@ -34,8 +34,8 @@ RecipeBuilder.get("blacksmith")
     [<ore:plateFerramic>, <minecraft:iron_bars>, <ore:plateFerramic>]])
   .addTool(<contenttweaker:soldering_manasteel>, 1)
   .setFluid(<liquid:soldering> * 144)
-  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m3e4"))))
+  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m3n4"))))
   .addOutput(<prodigytech:blower_furnace>)
 .create();
 recipes.remove(<item:prodigytech:blower_furnace>);
-SkillLocker.lockItem(<item:prodigytech:blower_furnace>, getSkillArray("m3e4"));
+SkillLocker.lockItem(<item:prodigytech:blower_furnace>, getSkillArray("m3n4"));

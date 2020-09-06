@@ -65,5 +65,7 @@ AeroBlast.addRecipe("steel_charcoal", [<item:minecraft:iron_ore>, <item:minecraf
 
 AeroBlast.addRecipe("steel", [<item:minecraft:iron_ore>, <item:immersiveengineering:material:6>, <ore:dustMarble>.firstItem * 3], [<ore:ingotSteel>.firstItem * 2], 150, 1000);
 
-// 末影粉
+// Dust Patch
 addCrushRecipe(<ore:enderpearl>, <ore:dustEnder>, 1);
+addCrushRecipe(<ore:coal>, <ore:dustCoal>, 1);
+addCrushRecipe(<ore:charcoal>, <ore:dustCharcoal>, 1);

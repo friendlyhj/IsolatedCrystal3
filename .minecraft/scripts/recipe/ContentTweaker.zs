@@ -1,4 +1,5 @@
 #priority 40
+#ignoreBracketErrors
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -7,6 +8,7 @@ import scripts.grassUtils.RecipeUtils.getMetalNameNew;
 import scripts.grassUtils.RecipeUtils.createFull3;
 import scripts.grassUtils.RecipeUtils.createFull2;
 import scripts.recipe.Util.addCrushRecipe;
+import mods.botania.ManaInfusion;
 
 for item in <item:contenttweaker:material_part>.definition.subItems {
     val ore as IOreDictEntry = item.ores[0];
@@ -48,11 +50,13 @@ Cauldron.addFluidRecipe(<item:contenttweaker:varnished_copper_wire>, <ore:wireCo
 Cauldron.addFluidRecipe(<item:contenttweaker:varnished_electrum_wire>, <ore:wireElectrum>, <fluid:resin>);
 
 // 魔力电烙铁
-recipes.addShaped("soldering_manasteel", <item:contenttweaker:soldering_manasteel>, [
+recipes.addShaped("soldering_manasteel", <item:contenttweaker:soldering_manasteel:127>, [
     [null, <ore:ingotManasteel>, null],
     [<ore:ingotManasteel>, null, <ore:ingotManasteel>],
     [null, <forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}), <ore:livingwood>]
 ]);
+
+ManaInfusion.addInfusion(<item:contenttweaker:soldering_manasteel>, <item:contenttweaker:soldering_manasteel:127>, 127 * 1000);
 
 // 大理石粉
 addCrushRecipe(<ore:blockMarble>, <ore:dustMarble>, 9);

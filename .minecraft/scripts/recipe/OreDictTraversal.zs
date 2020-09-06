@@ -34,9 +34,9 @@ for entry in oreDict.entries {
             .addOutput(entry.firstItem)
             .addTool(<item:contenttweaker:soldering_manasteel>.marked("s"), 1)
             .setFluid(<liquid:soldering> * 72)
-            .setRecipeFunction(function(out, ins, info) {
+            /* .setRecipeFunction(function(out, ins, info) {
                 return (ins.s.damage == 127) ? null : out;
-            })
+            }) */
             .create();
         }
         continue;
@@ -84,9 +84,9 @@ for entry in oreDict.entries {
             .addTool(<ore:artisansHammer>, 10)
             .addTool(<item:contenttweaker:soldering_manasteel>.marked("s"), 2)
             .setFluid(<liquid:soldering> * 288)
-            .setRecipeFunction(function(out, ins, info) {
+            /* .setRecipeFunction(function(out, ins, info) {
                 return (ins.s.damage >= 126) ? null : out;
-            })
+            }) */
             .create();
         }
         continue;

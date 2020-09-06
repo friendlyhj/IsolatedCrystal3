@@ -2,6 +2,7 @@
     "registryname": "mana_aeroheater",
     "localizedname": "魔力气热炉",
     "color": "AF9089",
+    "requires-blueprint": true,
     "parts": [
         {
             "x": -1,

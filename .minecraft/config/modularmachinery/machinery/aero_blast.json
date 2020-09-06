@@ -2,6 +2,7 @@
     "registryname": "aero_blast",
     "localizedname": "热空气高炉",
     "color": "AF9089",
+    "requires-blueprint": true,
     "parts": [
         {
             "x": -1,

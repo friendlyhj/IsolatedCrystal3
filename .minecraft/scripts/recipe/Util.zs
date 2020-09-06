@@ -2,6 +2,11 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.artisanworktables.builder.RecipeBuilder;
+import mods.artisanintegrations.requirement.Reskillable;
+import scripts.compatSkills.Utils.toAllSkill;
+import scripts.compatSkills.Utils.getSkillArray;
+import scripts.compatSkills.SkillLocker;
 
 static allMortarTypes as string[] = ["wood", "stone", "iron", "diamond", "emerald", "obsidian"];
 
@@ -19,4 +24,16 @@ function addCrushRecipe(input as IIngredient, output as IIngredient, outputAmoun
         mods.prodigytech.rotarygrinder.addRecipe(ore, output.items[0] * outputAmount);
     }
     mods.actuallyadditions.Crusher.addRecipe(output.items[0] * outputAmount, input.items[0]);
+}
+
+function setBluePrintRecipe(inputs as IIngredient[], out as IItemStack, skillArray as string) {
+    RecipeBuilder.get("designer")
+    .setShapeless(inputs)
+    .addTool(<ore:artisansPencil>, 20)
+    .addTool(<ore:artisansTSquare>, 20)
+    .addOutput(out)
+    .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray(skillArray))))
+    .create();
+
+    SkillLocker.lockItem(out, getSkillArray(skillArray));
 }
