@@ -29,3 +29,12 @@ ResearchTable.builder("endery_3", cat)
     .setRequiredSkill(getSkillByAlias("e").key, 2)
     .setRewardSkill(getSkillByAlias("e").key, 3)
 .build();
+
+ResearchTable.builder("endery_4", cat)
+    .setIcons(<ore:obsidian>.firstItem)
+    .setTitle("isc.research.endery.4")
+    .setDescription("isc.research.endery.4.description")
+    .addCondition(<ore:obsidian> * 10)
+    .setRequiredSkill(getSkillByAlias("e").key, 3)
+    .setRewardSkill(getSkillByAlias("e").key, 4)
+.build();

@@ -9,6 +9,7 @@ import scripts.grassUtils.RecipeUtils.createFull3;
 import scripts.grassUtils.RecipeUtils.createFull2;
 import scripts.recipe.Util.addCrushRecipe;
 import mods.botania.ManaInfusion;
+import mods.jei.JEI;
 
 for item in <item:contenttweaker:material_part>.definition.subItems {
     val ore as IOreDictEntry = item.ores[0];
@@ -57,6 +58,8 @@ recipes.addShaped("soldering_manasteel", <item:contenttweaker:soldering_manastee
 ]);
 
 ManaInfusion.addInfusion(<item:contenttweaker:soldering_manasteel>, <item:contenttweaker:soldering_manasteel:127>, 127 * 1000);
+
+JEI.addItem(<item:contenttweaker:soldering_manasteel:127>);
 
 // 大理石粉
 addCrushRecipe(<ore:blockMarble>, <ore:dustMarble>, 9);

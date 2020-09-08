@@ -29,4 +29,9 @@ SkillLocker.tweakLockedRecipe(true, <item:botania:spark> * 4, [
     [null, <ore:dustEnder>, null]
 ], getSkillArray("b4n3"));
 
-// 
+// 精灵传送门
+SkillLocker.tweakLockedRecipe(true, <item:botania:alfheimportal>, [
+    [<ore:livingwood>, <ore:nuggetTerrasteel>, <ore:livingwood>],
+    [<ore:obsidian>, <ore:nuggetTerrasteel>, <ore:obsidian>],
+    [<ore:livingwood>, <ore:nuggetTerrasteel>, <ore:livingwood>]
+], getSkillArray("b5e4"));
