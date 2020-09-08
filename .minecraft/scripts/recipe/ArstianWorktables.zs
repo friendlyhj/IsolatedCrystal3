@@ -34,5 +34,12 @@ recipes.addShaped(<item:artisanworktables:workstation:12>, [
    [<ore:livingwood>, <item:minecraft:chest>, <ore:livingwood>] 
 ]);
 
+// 工程师工作台
+recipes.addShaped(<item:artisanworktables:workstation:6>, [
+    [<ore:plateIron>, <ore:plateBronze>, <ore:plateIron>],
+    [null, <ore:blockSteel>, null],
+    [<ore:ingotSteel>, <item:minecraft:chest>, <ore:ingotSteel>]
+]);
+
 // 空白设计图纸
 recipes.addShaped("aw_design_pattern", design * 8, createSurround(<ore:dyeBlue>, <ore:paper>));

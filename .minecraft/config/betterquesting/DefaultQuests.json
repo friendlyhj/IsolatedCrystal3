@@ -558,8 +558,11 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "botania:specialflower",
             "Count:3": 1,
+            "tag:10": {
+              "type:8": "puredaisy"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -599,8 +602,15 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "botania:twigwand",
             "Count:3": 1,
+            "tag:10": {
+              "color1:3": 0,
+              "color2:3": 0
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -640,9 +650,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "botania:manaresource",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 23,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -1378,9 +1388,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "appliedenergistics2:material",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 46,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -1419,7 +1429,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "minecraft:obsidian",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -1799,8 +1809,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i3",
-          "desc:8": "isc.quest.skill.i3.description"
+          "name:8": "isc.quest.skill.l3",
+          "desc:8": "isc.quest.skill.l3.description"
         }
       },
       "tasks:9": {
@@ -1840,8 +1850,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i4",
-          "desc:8": "isc.quest.skill.i4.description"
+          "name:8": "isc.quest.skill.l4",
+          "desc:8": "isc.quest.skill.l4.description"
         }
       },
       "tasks:9": {
@@ -1881,8 +1891,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i5",
-          "desc:8": "isc.quest.skill.i5.description"
+          "name:8": "isc.quest.skill.l5",
+          "desc:8": "isc.quest.skill.l5.description"
         }
       },
       "tasks:9": {
@@ -1922,8 +1932,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i6",
-          "desc:8": "isc.quest.skill.i6.description"
+          "name:8": "isc.quest.skill.l6",
+          "desc:8": "isc.quest.skill.l6.description"
         }
       },
       "tasks:9": {
@@ -1963,8 +1973,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i7",
-          "desc:8": "isc.quest.skill.i7.description"
+          "name:8": "isc.quest.skill.l7",
+          "desc:8": "isc.quest.skill.l7.description"
         }
       },
       "tasks:9": {
@@ -2004,8 +2014,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i8",
-          "desc:8": "isc.quest.skill.i8.description"
+          "name:8": "isc.quest.skill.l8",
+          "desc:8": "isc.quest.skill.l8.description"
         }
       },
       "tasks:9": {
@@ -2045,8 +2055,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i9",
-          "desc:8": "isc.quest.skill.i9.description"
+          "name:8": "isc.quest.skill.l9",
+          "desc:8": "isc.quest.skill.l9.description"
         }
       },
       "tasks:9": {
@@ -2086,8 +2096,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i10",
-          "desc:8": "isc.quest.skill.i10.description"
+          "name:8": "isc.quest.skill.l10",
+          "desc:8": "isc.quest.skill.l10.description"
         }
       },
       "tasks:9": {
@@ -2127,8 +2137,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i11",
-          "desc:8": "isc.quest.skill.i11.description"
+          "name:8": "isc.quest.skill.l11",
+          "desc:8": "isc.quest.skill.l11.description"
         }
       },
       "tasks:9": {
@@ -2168,8 +2178,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "isc.quest.skill.i12",
-          "desc:8": "isc.quest.skill.i12.description"
+          "name:8": "isc.quest.skill.l12",
+          "desc:8": "isc.quest.skill.l12.description"
         }
       },
       "tasks:9": {
@@ -2198,7 +2208,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "id:8": "minecraft:redstone",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2239,9 +2249,12 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:nether_star",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "prodigytech:heat_capacitor_0",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 12000,
             "OreDict:8": ""
           },
           "globalshare:1": 0,

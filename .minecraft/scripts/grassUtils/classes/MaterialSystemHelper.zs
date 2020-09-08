@@ -52,7 +52,7 @@ zenClass MaterialSystemHelper {
 
     function addPart(partID as string) as string {
         Logger.sendInfo(this.getLogID() ~ "Add registered part " ~ partID);
-        this.partList += partID;
+        this.partList += StringHelper.toSnakeCase(partID);
         return partID;
     }
 
@@ -96,8 +96,10 @@ zenClass MaterialSystemHelper {
     }
 
     function registerAllMaterialParts() {
-        for key in materialList {
-            this.registerMaterialPartsByMaterial(key);
+        for material in materialList {
+            for part in partList {
+                this.registerMaterialPart(material, part);
+            }
         }
     }
 }

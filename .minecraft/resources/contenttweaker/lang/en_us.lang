@@ -32,8 +32,11 @@ base.material.iridium=Iridium
 base.material.soldering=Soldering
 base.material.ferramic=Ferramic
 base.material.copper_refined=Refined Copper
+base.material.elven_copper=Elven Copper
 base.material.steel=Steel
 base.material.marble=Marble
 
 contenttweaker.part.casing=%s Machine Casing
 contenttweaker.part.dust_small=Small %s Dust
+contenttweaker.part.wire=%s Wire
+contenttweaker.part.wirecoil=%s Wirecoil

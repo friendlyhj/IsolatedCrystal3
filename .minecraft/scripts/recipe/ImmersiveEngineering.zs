@@ -59,3 +59,30 @@ RecipeBuilder.get("carpenter")
 
 SkillLocker.lockItem(<immersiveengineering:wooden_device1>, getSkillArray("m5n3"));
 recipes.remove(<immersiveengineering:wooden_device1>);
+
+// 动能发电机
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermalfoundation:material:160>, <enderio:item_alloy_ingot:4>, <thermalfoundation:material:160>],
+    [<minecraft:piston>, <immersiveengineering:metal_decoration0>, <thermalfoundation:material:24>],
+    [<thermalfoundation:material:160>, <enderio:item_alloy_ingot:4>, <thermalfoundation:material:160>]])
+  .addTool(<ore:artisansDriver>, 10)
+  .addTool(<ore:artisansSpanner>, 5)
+  .addOutput(<immersiveengineering:metal_device1:2>)
+  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m5n5"))))
+.create();
+
+SkillLocker.lockItem(<immersiveengineering:metal_device1:2>, getSkillArray("m5n5"));
+recipes.remove(<immersiveengineering:metal_device1:2>);
+
+// 发电机模块
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:ingotSteel>, <thermalfoundation:material:514>, <ore:ingotSteel>],
+    [<prodigytech:circuit_refined>, <immersiveengineering:metal_device1:2>, <prodigytech:circuit_refined>],
+    [<ore:ingotSteel>, <prodigytech:circuit_refined>, <ore:ingotSteel>]])
+  .addOutput(<immersiveengineering:metal_decoration0:6>)
+.create();
+
+SkillLocker.lockItem(<immersiveengineering:metal_decoration0:6>, getSkillArray("m6n6"));
+recipes.remove(<immersiveengineering:metal_decoration0:6>);

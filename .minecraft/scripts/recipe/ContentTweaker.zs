@@ -9,6 +9,7 @@ import scripts.grassUtils.RecipeUtils.createFull3;
 import scripts.grassUtils.RecipeUtils.createFull2;
 import scripts.recipe.Util.addCrushRecipe;
 import mods.botania.ManaInfusion;
+import mods.botaniatweaks.Agglomeration;
 import mods.jei.JEI;
 
 for item in <item:contenttweaker:material_part>.definition.subItems {
@@ -29,6 +30,12 @@ for item in <item:contenttweaker:material_part>.definition.subItems {
         val dust as IOreDictEntry = oreDict.get("dust" ~ smallDustName);
         recipes.addShaped(dust.firstItem, createFull2(item));
         recipes.addShaped(item * 4, [[dust]]);
+        continue;
+    }
+    val wireName as string = getMetalNameNew(ore, "wire");
+    if (!isNull(wireName)) {
+        val plate as IOreDictEntry = oreDict.get("plate" ~ smallDustName);
+        recipes.addShapeless(item, [plate, <item:immersiveengineering:tool:1>]);
     }
 }
 
@@ -63,3 +70,7 @@ JEI.addItem(<item:contenttweaker:soldering_manasteel:127>);
 
 // 大理石粉
 addCrushRecipe(<ore:blockMarble>, <ore:dustMarble>, 9);
+
+// 精灵铜锭
+Agglomeration.addRecipe(<ore:ingotElvenCopper>.firstItem, [<ore:ingotCopperRefined>, <ore:elvenDragonstone>, <ore:dustRedstone>, <item:botanicadds:elven_lapis>],
+200000, 0xFF0000, 0xCC6699, <ore:blockRedstone>, <ore:blockCopper>, <ore:blockRedstone>);

@@ -35,3 +35,5 @@ SkillLocker.tweakLockedRecipe(true, <item:botania:alfheimportal>, [
     [<ore:obsidian>, <ore:nuggetTerrasteel>, <ore:obsidian>],
     [<ore:livingwood>, <ore:nuggetTerrasteel>, <ore:livingwood>]
 ], getSkillArray("b5e4"));
+
+// 

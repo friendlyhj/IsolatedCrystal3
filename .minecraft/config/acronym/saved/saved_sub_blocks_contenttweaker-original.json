@@ -1,22 +1,29 @@
 {
   "savedSubBlockNames": {
     "0": {
-      "0": "soldering_block",
-      "1": "titanium_block",
-      "2": "aluminium_casing",
-      "3": "platinum_casing",
-      "4": "ferramic_casing",
-      "5": "copper_casing",
-      "6": "gold_casing",
-      "7": "tin_casing",
-      "8": "lead_casing",
-      "9": "iridium_casing",
-      "10": "nickel_casing",
-      "11": "osmium_casing",
-      "12": "silver_casing",
-      "13": "iron_casing",
-      "14": "copper_refined_block",
-      "15": "steel_casing"
+      "0": "aluminium_casing",
+      "1": "platinum_casing",
+      "2": "copper_refined_block",
+      "3": "ferramic_casing",
+      "4": "copper_casing",
+      "5": "soldering_casing",
+      "6": "copper_refined_casing",
+      "7": "elven_copper_casing",
+      "8": "titanium_block",
+      "9": "gold_casing",
+      "10": "soldering_block",
+      "11": "steel_casing",
+      "12": "tin_casing",
+      "13": "lead_casing",
+      "14": "iridium_casing",
+      "15": "nickel_casing"
+    },
+    "1": {
+      "0": "osmium_casing",
+      "1": "titanium_casing",
+      "2": "elven_copper_block",
+      "3": "iron_casing",
+      "4": "silver_casing"
     }
   }
 }

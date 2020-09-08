@@ -32,8 +32,11 @@ base.material.iridium=铱
 base.material.soldering=焊锡
 base.material.ferramic=瓷铁
 base.material.copper_refined=精铜
+base.material.elven_copper=精灵铜
 base.material.steel=钢
 base.material.marble=大理石
 
 contenttweaker.part.casing=%s机械外壳
 contenttweaker.part.dust_small=小堆%s粉
+contenttweaker.part.wire=%s线
+contenttweaker.part.wirecoil=%s线圈
