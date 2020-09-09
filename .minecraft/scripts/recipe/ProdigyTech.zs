@@ -112,4 +112,18 @@ RecipeBuilder.get("engineer")
 recipes.remove(<prodigytech:ore_refinery>);
 SkillLocker.lockItem(<prodigytech:ore_refinery>, getSkillArray("m3n4l4"));
 
-//
+// 虫洞管道
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<minecraft:obsidian>, <item:prodigytech:circuit_refined>, <minecraft:obsidian>],
+    [<ore:obsidian>, <ore:enderpearl>, <ore:obsidian>],
+    [<ore:obsidian>, <prodigytech:air_funnel>, <ore:obsidian>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addOutput(<prodigytech:wormhole_funnel> * 2)
+  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m3n4t2e4"))))
+.create();
+recipes.remove(<prodigytech:wormhole_funnel>);
+SkillLocker.lockItem(<prodigytech:wormhole_funnel>, getSkillArray("m3n4t2e4"));
+
+SkillLocker.lockItem(<item:prodigytech:wormhole_linker>, getSkillArray("m3n4t2e4"));
+

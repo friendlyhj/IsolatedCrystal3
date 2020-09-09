@@ -74,3 +74,11 @@ addCrushRecipe(<ore:blockMarble>, <ore:dustMarble>, 9);
 // 精灵铜锭
 Agglomeration.addRecipe(<ore:ingotElvenCopper>.firstItem, [<ore:ingotCopperRefined>, <ore:elvenDragonstone>, <ore:dustRedstone>, <item:botanicadds:elven_lapis>],
 200000, 0xFF0000, 0xCC6699, <ore:blockRedstone>, <ore:blockCopper>, <ore:blockRedstone>);
+
+// 能量锡锭
+Agglomeration.addRecipe(<ore:ingotEnergeticTin>.firstItem, [<ore:ingotTin>, <ore:ingotSilver>, <ore:dustEnergion>],
+50000, 0xFFFFFF, 0x1BE8FF, <ore:blockTin>, <item:botania:storage>, <ore:blockTin>);
+
+// 扭曲黑曜石
+Agglomeration.addRecipe(<ore:ingotManasteel>.firstItem, [<ore:ingotTerrasteel>, <ore:ingotEnergeticTin>, <ore:ingotElvenCopper>],
+400000, 0xFFFFFF, 0x4bcd5d, <ore:obsidian>, <item:actuallyadditions:block_misc:6>, <ore:livingrock>, <item:isolatedcrystalutils:warp_obsidian>, <ore:cobblestone>, <ore:stone>);

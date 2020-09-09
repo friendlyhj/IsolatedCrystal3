@@ -9,6 +9,7 @@ sys0.registerMaterial("Titanium", 0xDED3F8);
 sys0.registerMaterial("Soldering", 0x2F4517);
 sys0.registerMaterial("CopperRefined", 0xF04208);
 sys0.registerMaterial("ElvenCopper", 0xCC6699);
+sys0.registerMaterial("EnergeticTin", 0x1BE8FF);
 sys0.registerNormalPart("dustSmall", "item", false);
 sys0.registerNormalPart("casing", "block", false);
 sys0.addPart("ingot");

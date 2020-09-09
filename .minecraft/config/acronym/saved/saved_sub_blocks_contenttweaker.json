@@ -23,7 +23,9 @@
       "1": "titanium_casing",
       "2": "elven_copper_block",
       "3": "iron_casing",
-      "4": "silver_casing"
+      "4": "silver_casing",
+      "5": "energetic_tin_casing",
+      "6": "energetic_tin_block"
     }
   }
 }
