@@ -69,3 +69,5 @@ AeroBlast.addRecipe("steel", [<item:minecraft:iron_ore>, <item:immersiveengineer
 addCrushRecipe(<ore:enderpearl>, <ore:dustEnder>, 1);
 addCrushRecipe(<ore:coal>, <ore:dustCoal>, 1);
 addCrushRecipe(<ore:charcoal>, <ore:dustCharcoal>, 1);
+addCrushRecipe(<ore:itemPrecientCrystal>, <ore:itemPrecientPowder>, 1);
+addCrushRecipe(<ore:itemVibrantCrystal>, <ore:itemVibrantPowder>, 1);

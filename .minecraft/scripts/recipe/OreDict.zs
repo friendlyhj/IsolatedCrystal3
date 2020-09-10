@@ -7,3 +7,6 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:dustAluminium>.add(<item:thermalfoundation:material:68>);
 <ore:rodSteel>.add(<item:immersiveengineering:material:2>);
 // <ore:ingotCopper>.addAll(<ore:ingotCopperRefined>);
+<ore:circuitCrude>.add(<item:prodigytech:circuit_crude>);
+<ore:circuitRefined>.add(<item:prodigytech:circuit_refined>);
+<ore:circuitPerfect>.add(<item:prodigytech:circuit_perfected>);

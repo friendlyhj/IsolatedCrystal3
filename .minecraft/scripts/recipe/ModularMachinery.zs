@@ -4,6 +4,11 @@ import crafttweaker.item.IIngredient;
 import scripts.grassUtils.RecipeUtils.recipeTweak;
 import scripts.grassUtils.RecipeUtils.createCrossWithCore;
 import scripts.recipe.Util.setBluePrintRecipe;
+import scripts.compatSkills.Utils.getSkillArray;
+import scripts.compatSkills.Utils.toAllSkill;
+import scripts.compatSkills.SkillLocker;
+import mods.artisanintegrations.requirement.Reskillable;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 recipeTweak(true, <item:modularmachinery:blockcontroller>, [
     [<ore:plateInvar>, <ore:blockRedstone>, <ore:plateInvar>],
@@ -14,6 +19,18 @@ recipeTweak(true, <item:modularmachinery:blockcontroller>, [
 recipeTweak(true, <item:modulardiversity:blockmanainputhatch>, createCrossWithCore(<ore:casingFerramic>, <ore:livingrock>, <ore:ingotManasteel>));
 recipeTweak(true, <item:modulardiversity:blockmanaoutputhatch>, [[<item:modulardiversity:blockmanainputhatch>]]);
 recipes.addShaped("manahatch_transform", <item:modulardiversity:blockmanainputhatch>, [[<item:modulardiversity:blockmanaoutputhatch>]]);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:nuggetElvenElementium>, <ore:nuggetElvenElementium>, <ore:nuggetElvenElementium>],
+    [<prodigytech:circuit_refined>, <ore:casingTin>, <prodigytech:circuit_refined>],
+    [<ore:nuggetElvenElementium>, <ore:nuggetElvenElementium>, <ore:nuggetElvenElementium>]])
+  .addTool(<ore:artisansDriver>, 20)
+  .addTool(<ore:artisansSpanner>, 10)
+  .addOutput(<modularmachinery:blockcasing:5>)
+  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m7n5"))))
+.create();
+SkillLocker.lockItem(<item:modularmachinery:blockcasing:5>, getSkillArray("m7n5"));
 
 ######################
 #     blueprints     #
@@ -66,3 +83,14 @@ setBluePrintRecipe([
     <ore:charcoal>,
     <ore:charcoal>
 ], <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:aero_blast"}), "m4n4l2");
+
+// 装配机
+setBluePrintRecipe([
+    design,
+    <item:contenttweaker:soldering_manasteel>,
+    <item:prodigytech:circuit_perfected>,
+    <item:prodigytech:circuit_refined>,
+    <ore:blockGlass>,
+    <ore:blockGlass>,
+    <ore:ingotElvenCopper>
+], <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembler"}), "m7n5");
