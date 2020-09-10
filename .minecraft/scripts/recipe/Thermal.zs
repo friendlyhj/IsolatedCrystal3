@@ -59,6 +59,5 @@ for i in 0 .. 13 {
         recipeName ~= ("_" + i);
     }
     SkillLocker.lockItem(def1.makeStack(i), getSkillArray("m7n6"));
-    SkillLocker.lockItem(def1.makeStack(i), getSkillArray("m7n6"));
     SkillLocker.lockRecipeWithStage(recipeName, getSkillArray("m7n6"));
 }
