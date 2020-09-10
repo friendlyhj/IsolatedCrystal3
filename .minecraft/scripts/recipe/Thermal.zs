@@ -63,3 +63,16 @@ for i in 0 .. 13 {
     SkillLocker.lockItem(def1.makeStack(i), getSkillArray("m7n6"));
     SkillLocker.lockRecipeWithStage(recipeName, getSkillArray("m7n6"));
 }
+
+// 升级套件
+val def2 as IItemDefinition = <item:thermalfoundation:upgrade>.definition;
+val meta as int[] = [0, 1, 2, 3, 33, 34, 35];
+for i in meta {
+    val item as IItemStack = def2.makeStack(i);
+    if (i < 16) {
+        recipes.remove(item);
+    }
+    SkillLocker.lockItem(item, getSkillArray("m8n7"));
+}
+
+Assembler.addRecipe("upgrate_1", [<ore:plateBronze>, <ore:gearInvar>, <ore:dustRedstone>, <ore:dustEnergion>, <ore:circuitPerfect>], [4, 1, 4, 2, 1], [<item:thermalfoundation:upgrade>], 100000, 500, 144);
