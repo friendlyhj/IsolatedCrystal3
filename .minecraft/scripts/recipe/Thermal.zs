@@ -43,12 +43,14 @@ for i in 0 .. 16 {
     if (i != 0) {
         recipeName ~= ("_" + i);
     }
+    // 感应炉
     if (i == 3) {
         SkillLocker.lockItem(def.makeStack(i), getSkillArray("m7n6l5"));
         SkillLocker.lockRecipeWithStage(recipeName, getSkillArray("m7n6l5"));
+    } else {
+        SkillLocker.lockItem(def.makeStack(i), getSkillArray("m7n6"));
+        SkillLocker.lockRecipeWithStage(recipeName, getSkillArray("m7n6"));
     }
-    SkillLocker.lockItem(def.makeStack(i), getSkillArray("m7n6"));
-    SkillLocker.lockRecipeWithStage(recipeName, getSkillArray("m7n6"));
 }
 
 // 设备锁技能
