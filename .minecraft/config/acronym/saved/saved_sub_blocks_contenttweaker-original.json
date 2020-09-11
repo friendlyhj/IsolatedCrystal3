@@ -25,7 +25,13 @@
       "3": "iron_casing",
       "4": "silver_casing",
       "5": "energetic_tin_casing",
-      "6": "energetic_tin_block"
+      "6": "energetic_tin_block",
+      "7": "chromium_casing",
+      "8": "indium_casing",
+      "9": "indium_block",
+      "10": "nichrome_casing",
+      "11": "chromium_block",
+      "12": "nichrome_block"
     }
   }
 }

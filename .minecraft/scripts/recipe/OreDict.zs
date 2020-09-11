@@ -10,3 +10,7 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:circuitCrude>.add(<item:prodigytech:circuit_crude>);
 <ore:circuitRefined>.add(<item:prodigytech:circuit_refined>);
 <ore:circuitPerfect>.add(<item:prodigytech:circuit_perfected>);
+
+<ore:processorEngineering>.add(<item:appliedenergistics2:material:24>);
+<ore:processorCalculate>.add(<item:appliedenergistics2:material:23>);
+<ore:processorLogic>.add(<item:appliedenergistics2:material:22>);

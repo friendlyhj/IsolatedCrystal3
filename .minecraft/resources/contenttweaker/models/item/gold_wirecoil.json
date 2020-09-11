@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "contenttweaker:items/wirecoil",
+        "layer1": "contenttweaker:items/wirecoil_overlay"
+    }
+}

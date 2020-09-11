@@ -36,6 +36,9 @@ base.material.elven_copper=精灵铜
 base.material.energetic_tin=能量锡
 base.material.steel=钢
 base.material.marble=大理石
+base.material.chromium=铬
+base.material.indium=铟
+base.material.nichrome=镍铬合金
 
 contenttweaker.part.casing=%s机械外壳
 contenttweaker.part.dust_small=小堆%s粉

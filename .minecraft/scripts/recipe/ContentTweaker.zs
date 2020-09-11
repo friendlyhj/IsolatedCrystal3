@@ -33,8 +33,8 @@ for item in <item:contenttweaker:material_part>.definition.subItems {
         continue;
     }
     val wireName as string = getMetalNameNew(ore, "wire");
-    if (!isNull(wireName)) {
-        val plate as IOreDictEntry = oreDict.get("plate" ~ smallDustName);
+    if (!isNull(wireName) && !wireName.contains("coil")) {
+        val plate as IOreDictEntry = oreDict.get("plate" ~ wireName);
         recipes.addShapeless(item, [plate, <item:immersiveengineering:tool:1>]);
     }
 }
