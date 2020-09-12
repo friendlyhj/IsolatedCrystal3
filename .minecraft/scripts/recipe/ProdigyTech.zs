@@ -126,4 +126,3 @@ recipes.remove(<prodigytech:wormhole_funnel>);
 SkillLocker.lockItem(<prodigytech:wormhole_funnel>, getSkillArray("m3n4t2e4"));
 
 SkillLocker.lockItem(<item:prodigytech:wormhole_linker>, getSkillArray("m3n4t2e4"));
-

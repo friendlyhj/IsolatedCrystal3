@@ -6,6 +6,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import scripts.grassUtils.RecipeUtils.getMetalNameNew;
 import scripts.grassUtils.StringHelper.toSnakeCase;
 import scripts.recipe.Util.allMortarTypes;
+import scripts.recipe.modularMachinery.Assembler;
 import mods.advancedmortars.Mortar;
 import mods.artisanworktables.builder.RecipeBuilder;
 
@@ -75,8 +76,9 @@ for entry in oreDict.entries {
         val ingot as IOreDictEntry = oreDict.get("ingot" ~ casingName);
         val plate as IOreDictEntry = oreDict.get("plate" ~ casingName);
         if (!ingot.empty && !plate.empty) {
+            val recipeName = "casing_" ~ toSnakeCase(casingName);
             RecipeBuilder.get("blacksmith")
-            .setName("casing_" ~ toSnakeCase(casingName))
+            .setName(recipeName)
             .setShaped([[plate, ingot, plate],
                         [ingot, ingot, ingot],
                         [plate, ingot, plate]])
@@ -88,6 +90,7 @@ for entry in oreDict.entries {
                 return (ins.s.damage >= 126) ? null : out;
             }) */
             .create();
+            Assembler.addRecipe(recipeName, [ingot, plate], [5, 4], [entry.firstItem * 8], 200, 30, 288);
         }
         continue;
     }

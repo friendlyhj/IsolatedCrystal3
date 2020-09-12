@@ -12,12 +12,15 @@ tile.chlorinizer.name=氯化机
 requious.jei.recipe.chlorinizer=氯化机
 
 machine.crafttweaker:chlorinizer=氯化机
+machine.crafttweaker:electrolytic_ore_dresser=电解选矿机
 
 commands.freshstage.usage=/isolatedcrystal freshstage <玩家>
 commands.removeallstages.usage=/isolatedcrystal removeallstages <玩家>
 commands.freshstage.success=成功刷新阶段！
 
 isc.message.mana_hatch_displayer=魔力储量： %s / 100,000
+
+isc.jeidesc.hot_air_checker=热空气检测器会在接受的热空气温度高于设定值时发出红石信号，空手右键其增加设定值，潜行右键降低设定值。
 
 isc.research.energistics.3=3 级能源学
 isc.research.energistics.3.description=你发现不仅除了魔力，红石也有隐藏的更大力量...

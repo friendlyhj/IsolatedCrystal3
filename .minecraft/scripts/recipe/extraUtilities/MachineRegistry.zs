@@ -19,3 +19,18 @@ IMachineRegistry.createNewMachine(
     "isolatedcrystal:blocks/chlorinizer",
     "isolatedcrystal:blocks/chlorinizer_working"
 );
+
+IMachineRegistry.createNewMachine(
+    "electrolytic_ore_dresser",
+    40000,
+    2000,
+    [
+        IMachineSlot.newItemStackSlot("item"),
+    ],
+    [
+        IMachineSlot.newItemStackSlot("dust"),
+        IMachineSlot.newItemStackSlot("output")
+    ],
+    "isolatedcrystal:blocks/ore_dresser",
+    "isolatedcrystal:blocks/ore_dresser_working"
+);

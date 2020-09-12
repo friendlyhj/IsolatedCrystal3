@@ -11,6 +11,11 @@ import scripts.recipe.Util.addCrushRecipe;
 import mods.botania.ManaInfusion;
 import mods.botaniatweaks.Agglomeration;
 import mods.jei.JEI;
+import scripts.compatSkills.SkillLocker;
+import scripts.compatSkills.Utils.getSkillArray;
+import scripts.compatSkills.Utils.toAllSkill;
+import mods.artisanintegrations.requirement.Reskillable;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 for item in <item:contenttweaker:material_part>.definition.subItems {
     val ore as IOreDictEntry = item.ores[0];
@@ -32,10 +37,21 @@ for item in <item:contenttweaker:material_part>.definition.subItems {
         recipes.addShaped(item * 4, [[dust]]);
         continue;
     }
+    val wirecoilName as string = getMetalNameNew(ore, "wirecoil");
+    if (!isNull(wirecoilName)) {
+        val wire as IOreDictEntry = oreDict.get("wire" ~ wirecoilName);
+        recipes.addShaped(item * 2, [
+            [null, wire, null],
+            [wire, <ore:stickTreatedWood>, wire],
+            [null, wire, null]
+        ]);
+        continue;
+    }
     val wireName as string = getMetalNameNew(ore, "wire");
-    if (!isNull(wireName) && !wireName.contains("coil")) {
+    if (!isNull(wireName)) {
         val plate as IOreDictEntry = oreDict.get("plate" ~ wireName);
         recipes.addShapeless(item, [plate, <item:immersiveengineering:tool:1>]);
+        continue;
     }
 }
 
@@ -82,3 +98,18 @@ Agglomeration.addRecipe(<ore:ingotEnergeticTin>.firstItem, [<ore:ingotTin>, <ore
 // 扭曲黑曜石
 Agglomeration.addRecipe(<ore:ingotManasteel>.firstItem, [<ore:ingotTerrasteel>, <ore:ingotEnergeticTin>, <ore:ingotElvenCopper>],
 400000, 0xFFFFFF, 0x4bcd5d, <ore:obsidian>, <item:actuallyadditions:block_misc:6>, <ore:livingrock>, <item:isolatedcrystalutils:warp_obsidian>, <ore:cobblestone>, <ore:stone>);
+
+// 热空气检测器
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateFerramic>, <minecraft:comparator>, <ore:plateFerramic>],
+    [<ore:plateFerramic>, <prodigytech:air_funnel>, <ore:plateFerramic>],
+    [<ore:plateFerramic>, <ore:barsIron>, <ore:plateFerramic>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .addTool(<contenttweaker:soldering_manasteel>, 2)
+  .addOutput(<isolatedcrystalutils:hot_air_checker>)
+  .addRequirement(Reskillable.addAll(toAllSkill(getSkillArray("m3n4i3"))))
+.create();
+SkillLocker.lockItem(<isolatedcrystalutils:hot_air_checker>, getSkillArray("m3n4i3"));
+
+JEI.addDescription(<item:isolatedcrystalutils:hot_air_checker>, game.localize("isc.jeidesc.hot_air_checker"));

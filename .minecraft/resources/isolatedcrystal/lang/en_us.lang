@@ -12,12 +12,15 @@ tile.chlorinizer.name=Chlorinizer
 requious.jei.recipe.chlorinizer=Chlorinizer
 
 machine.crafttweaker:chlorinizer=Chlorinizer
+machine.crafttweaker:electrolytic_ore_dresser=Electrolytic Ore Dresser
 
 commands.freshstage.usage=/isolatedcrystal freshstage <Player>
 commands.removeallstages.usage=/isolatedcrystal removeallstages <Player>
 commands.freshstage.success=Freshing stage successfully.
 
 isc.message.mana_hatch_displayer=Mana reserves: %s / 100,000
+
+isc.jeidesc.hot_air_checker=热空气检测器会在接受的热空气温度高于设定值时发出红石信号，空手右键其增加设定值，潜行右键降低设定值。
 
 isc.quest.skill=Skill
 isc.quest.skill.description=Your Skill Line

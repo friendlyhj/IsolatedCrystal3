@@ -9,6 +9,7 @@ import mods.rustic.Condenser;
 import scripts.recipe.Util.allMortarTypes;
 import scripts.recipe.Util.addCrushRecipe;
 import scripts.recipe.extraUtilities.MachineRecipe.addChlorinizerRecipe;
+import scripts.recipe.extraUtilities.MachineRecipe.addOreDresserRecipe;
 import scripts.recipe.modularMachinery.AeroCokeOven;
 import scripts.recipe.modularMachinery.ElectrolyticRefiner;
 import scripts.recipe.modularMachinery.AeroBlast;
@@ -23,6 +24,7 @@ Mortar.addRecipe(allMortarTypes, <ore:dustConstantan>.firstItem * 2, 4, [<ore:du
 recipes.remove(<ore:dustBronze>.firstItem);
 Mortar.addRecipe(allMortarTypes, <ore:dustBronze>.firstItem * 4, 4, [<ore:dustCopper> * 3, <ore:dustTin>]);
 Mortar.addRecipe(allMortarTypes, <ore:dustSoldering>.firstItem * 5, 4, [<ore:dustTin> * 3, <ore:dustLead> * 2]);
+Mortar.addRecipe(allMortarTypes, <ore:dustNichrome>.firstItem * 2, 4, [<ore:dustNickel>, <ore:dustChromium>]);
 
 recipes.remove(<ore:dustSignalum>.firstItem);
 recipes.remove(<ore:dustEnderium>.firstItem);
@@ -33,7 +35,7 @@ recipes.removeByRegex("^immersiveengineering:material/plate_.*");
 
 // ti
 addCrushRecipe(<item:contenttweaker:rutile>, <item:contenttweaker:rutile_dust>, 1);
-addChlorinizerRecipe(250, [<item:contenttweaker:rutile_dust>, <ore:dustCoal> | <ore:dustCharcoal>], <liquid:raw_ticl4> * 250, 12000, 300);
+addChlorinizerRecipe(250, [<item:contenttweaker:rutile_dust>, <ore:dustCoal>.firstItem * 2 | <ore:dustCharcoal>.firstItem * 2], <liquid:raw_ticl4> * 250, 12000, 300);
 Refinery.addRecipe(<liquid:ticl4> * 200, <ore:dustCoal>.firstItem % 20, <liquid:raw_ticl4> * 250, 5000);
 reaction.addRecipe(<ore:plateCopper>, <liquid:ticl4> * 400, <gas:hydrogen> * 800, <ore:dustTitanium>.firstItem.withAmount(2), <gas:hydrogenchloride> * 1600, 6000, 400);
 
@@ -71,3 +73,6 @@ addCrushRecipe(<ore:coal>, <ore:dustCoal>, 1);
 addCrushRecipe(<ore:charcoal>, <ore:dustCharcoal>, 1);
 addCrushRecipe(<ore:itemPrecientCrystal>, <ore:itemPrecientPowder>, 1);
 addCrushRecipe(<ore:itemVibrantCrystal>, <ore:itemVibrantPowder>, 1);
+
+// 铬
+addOreDresserRecipe(<ore:dustRedstone>, null, <ore:dustSmallChromium>.firstItem % 40, 5000, 180);

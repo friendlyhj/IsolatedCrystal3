@@ -7,6 +7,8 @@ item.contenttweaker.rutile_dust.name=Rutile Dust
 item.contenttweaker.varnished_copper_wire.name=Varnished Copper Wire
 item.contenttweaker.varnished_electrum_wire.name=Varnished Electrum Wire
 
+tile.contenttweaker.optical_glass.name=Optical Glass
+
 fluid.raw_sicl4=Raw Silicon Tetrachloride
 fluid.soldering=Molten Soldering
 fluid.sicl4=Silicon Tetrachloride
