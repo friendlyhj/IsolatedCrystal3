@@ -94,3 +94,13 @@ setBluePrintRecipe([
     <ore:blockGlass>,
     <ore:ingotElvenCopper>
 ], <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:assembler"}), "m7n5");
+
+// 催化裂解机
+setBluePrintRecipe([
+    design,
+    <ore:dustNickel>,
+    <ore:dustPlatinum>,
+    <ore:runeFireB>,
+    <ore:runeFireB>,
+    <forge:bucketfilled>.withTag({FluidName: "gasoline", Amount: 1000})
+], <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:catalytic_cracker"}), "m7n7l6");

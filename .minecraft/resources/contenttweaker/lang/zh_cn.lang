@@ -8,6 +8,9 @@ item.contenttweaker.varnished_copper_wire.name=漆包铜线
 item.contenttweaker.varnished_electrum_wire.name=漆包琥珀金线
 
 tile.contenttweaker.optical_glass.name=光学玻璃
+tile.contenttweaker.infinite_rock.name=无限之石
+tile.contenttweaker.nichrome_wirecoil_block.name=镍铬合金加热线圈
+tile.contenttweaker.xu_frame.name=机器方块
 
 fluid.raw_sicl4=粗四氯化硅
 fluid.soldering=熔融焊锡

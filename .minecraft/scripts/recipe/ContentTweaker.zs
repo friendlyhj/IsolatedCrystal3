@@ -7,8 +7,10 @@ import mods.inspirations.Cauldron;
 import scripts.grassUtils.RecipeUtils.getMetalNameNew;
 import scripts.grassUtils.RecipeUtils.createFull3;
 import scripts.grassUtils.RecipeUtils.createFull2;
+import scripts.grassUtils.RecipeUtils.createCross;
 import scripts.recipe.Util.addCrushRecipe;
 import mods.botania.ManaInfusion;
+import mods.botania.ElvenTrade;
 import mods.botaniatweaks.Agglomeration;
 import mods.jei.JEI;
 import scripts.compatSkills.SkillLocker;
@@ -113,3 +115,9 @@ RecipeBuilder.get("blacksmith")
 SkillLocker.lockItem(<isolatedcrystalutils:hot_air_checker>, getSkillArray("m3n4i3"));
 
 JEI.addDescription(<item:isolatedcrystalutils:hot_air_checker>, game.localize("isc.jeidesc.hot_air_checker"));
+
+// 无限之石
+ElvenTrade.addRecipe([<item:contenttweaker:infinite_rock>], [<ore:obsidian>, <ore:obsidian>, <ore:dustEnergion>]);
+
+// 光学玻璃
+recipes.addShaped("op_glass", <item:contenttweaker:optical_glass> * 4, createCross(<ore:dustIndium>, <item:appliedenergistics2:quartz_vibrant_glass>));

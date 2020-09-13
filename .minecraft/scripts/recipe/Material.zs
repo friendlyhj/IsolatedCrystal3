@@ -75,4 +75,7 @@ addCrushRecipe(<ore:itemPrecientCrystal>, <ore:itemPrecientPowder>, 1);
 addCrushRecipe(<ore:itemVibrantCrystal>, <ore:itemVibrantPowder>, 1);
 
 // 铬
-addOreDresserRecipe(<ore:dustRedstone>, null, <ore:dustSmallChromium>.firstItem % 40, 5000, 180);
+addOreDresserRecipe(<ore:dustRedstone>, null, <ore:dustSmallChromium>.firstItem % 40, 4000, 180);
+
+// 铟
+addOreDresserRecipe(<ore:oreTin>, <ore:dustTin>.firstItem, <ore:dustIndium>.firstItem % 14, 4000, 180);

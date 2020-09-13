@@ -8,6 +8,9 @@ item.contenttweaker.varnished_copper_wire.name=Varnished Copper Wire
 item.contenttweaker.varnished_electrum_wire.name=Varnished Electrum Wire
 
 tile.contenttweaker.optical_glass.name=Optical Glass
+tile.contenttweaker.infinite_rock.name=infinite Rock
+tile.contenttweaker.nichrome_wirecoil_block.name=Nichrome Heating Wirecoil
+tile.contenttweaker.xu_frame.name=Machine Block
 
 fluid.raw_sicl4=Raw Silicon Tetrachloride
 fluid.soldering=Molten Soldering
