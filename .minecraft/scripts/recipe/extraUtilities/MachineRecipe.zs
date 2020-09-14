@@ -8,6 +8,7 @@ import crafttweaker.item.WeightedItemStack;
 
 static chlorinizer as IMachine = IMachineRegistry.getMachine("crafttweaker:chlorinizer");
 static oreDresser as IMachine = IMachineRegistry.getMachine("electrolytic_ore_dresser");
+static polymerizer as IMachine = IMachineRegistry.getMachine("polymerizer");
 
 function addChlorinizerRecipe(clAmount as int, items as IIngredient[], liquid as IIngredient, energy as int, time as int) {
     chlorinizer.addRecipe(
@@ -34,4 +35,13 @@ function addOreDresserRecipe(input as IIngredient, dust as IItemStack, output as
             time
         );
     }
+}
+
+function addPolyRecipe(fluid as ILiquidStack, output as IItemStack, energy as int, time as int) {
+    polymerizer.addRecipe(
+        {fluid: fluid},
+        {output: output},
+        energy,
+        time
+    );
 }

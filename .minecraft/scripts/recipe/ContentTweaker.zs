@@ -120,4 +120,4 @@ JEI.addDescription(<item:isolatedcrystalutils:hot_air_checker>, game.localize("i
 ElvenTrade.addRecipe([<item:contenttweaker:infinite_rock>], [<ore:obsidian>, <ore:obsidian>, <ore:dustEnergion>]);
 
 // 光学玻璃
-recipes.addShaped("op_glass", <item:contenttweaker:optical_glass> * 4, createCross(<ore:dustIndium>, <item:appliedenergistics2:quartz_vibrant_glass>));
+recipes.addShaped("optical_glass", <item:contenttweaker:optical_glass> * 4, createCross(<ore:dustIndium>, <item:appliedenergistics2:quartz_vibrant_glass>));

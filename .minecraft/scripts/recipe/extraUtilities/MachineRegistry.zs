@@ -34,3 +34,17 @@ IMachineRegistry.createNewMachine(
     "isolatedcrystal:blocks/ore_dresser",
     "isolatedcrystal:blocks/ore_dresser_working"
 );
+
+IMachineRegistry.createNewMachine(
+    "polymerizer",
+    40000,
+    2000,
+    [
+        IMachineSlot.newFluidSlot("fluid", 3000),
+    ],
+    [
+        IMachineSlot.newItemStackSlot("output")
+    ],
+    "isolatedcrystal:blocks/polymerizer",
+    "isolatedcrystal:blocks/polymerizer_working"
+);

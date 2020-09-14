@@ -13,6 +13,7 @@ requious.jei.recipe.chlorinizer=Chlorinizer
 
 machine.crafttweaker:chlorinizer=Chlorinizer
 machine.crafttweaker:electrolytic_ore_dresser=Electrolytic Ore Dresser
+machine.crafttweaker:polymerizer=Polymerizer
 
 commands.freshstage.usage=/isolatedcrystal freshstage <Player>
 commands.removeallstages.usage=/isolatedcrystal removeallstages <Player>

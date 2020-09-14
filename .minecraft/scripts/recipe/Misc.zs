@@ -29,18 +29,18 @@ val allSeeds as IItemStack[] = [
     <item:rustic:grape_stem>,
     <item:rustic:tomato_seeds>,
     <item:rustic:chili_pepper_seeds>,
-    <rustic:aloe_vera>,
-    <rustic:blood_orchid>,
-    <rustic:chamomile>,
-    <rustic:cohosh>,
-    <rustic:deathstalk_mushroom>,
-    <rustic:horsetail>,
-    <rustic:mooncap_mushroom>,
-    <rustic:wind_thistle>,
-    <rustic:cloudsbluff>,
-    <rustic:core_root>,
-    <rustic:ginseng>,
-    <rustic:marsh_mallow>,
+    <item:rustic:aloe_vera>,
+    <item:rustic:blood_orchid>,
+    <item:rustic:chamomile>,
+    <item:rustic:cohosh>,
+    <item:rustic:deathstalk_mushroom>,
+    <item:rustic:horsetail>,
+    <item:rustic:mooncap_mushroom>,
+    <item:rustic:wind_thistle>,
+    <item:rustic:cloudsbluff>,
+    <item:rustic:core_root>,
+    <item:rustic:ginseng>,
+    <item:rustic:marsh_mallow>,
     <item:minecraft:dye:3>,
     <item:immersiveengineering:seed>,
     <item:actuallyadditions:item_canola_seed>,
@@ -50,9 +50,9 @@ val allSeeds as IItemStack[] = [
 
 for i, seed in allSeeds {
     if (i == 0) {
-        ManaInfusion.addAlchemy(seed, allSeeds[allSeeds.length - 1], 750);
+        ManaInfusion.addAlchemy(seed, allSeeds[allSeeds.length - 1], 800);
     } else {
-        ManaInfusion.addAlchemy(seed, allSeeds[i - 1], 750);
+        ManaInfusion.addAlchemy(seed, allSeeds[i - 1], 800);
     }
 }
 

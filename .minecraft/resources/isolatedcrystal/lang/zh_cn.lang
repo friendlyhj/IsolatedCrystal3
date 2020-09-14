@@ -13,6 +13,7 @@ requious.jei.recipe.chlorinizer=氯化机
 
 machine.crafttweaker:chlorinizer=氯化机
 machine.crafttweaker:electrolytic_ore_dresser=电解选矿机
+machine.crafttweaker:polymerizer=聚合仪
 
 commands.freshstage.usage=/isolatedcrystal freshstage <玩家>
 commands.removeallstages.usage=/isolatedcrystal removeallstages <玩家>

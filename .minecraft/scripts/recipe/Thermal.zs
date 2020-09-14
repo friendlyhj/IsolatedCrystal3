@@ -75,6 +75,5 @@ for i in meta {
     SkillLocker.lockItem(item, getSkillArray("m8n7"));
 }
 
-Assembler.addRecipe("upgrate_1", [<ore:plateBronze>, <ore:gearInvar>, <ore:dustRedstone>, <ore:dustEnergion>, <ore:circuitPerfect>], [4, 1, 4, 8, 1], [<item:thermalfoundation:upgrade>], 10000, 500, 144);
-Assembler.addRecipe("upgrate_2", [<ore:plateTitanium>, <ore:gearElectrum>, <ore:dustGlowstone>, <ore:dustEnergion>, <ore:processorEngineering>], [4, 1, 4, 12, 2], [<item:thermalfoundation:upgrade:1>], 10000, 800, 288);
-
+Assembler.addRecipe("upgrate_1", [<ore:plateBronze>, <ore:gearInvar>, <ore:dustRedstone>, <ore:dustEnergion>, <ore:circuitPerfect>], [4, 1, 4, 8, 1], [<item:thermalfoundation:upgrade>], 1000, 500, 144);
+Assembler.addRecipe("upgrate_2", [<ore:plateTitanium>, <ore:gearElectrum>, <ore:dustGlowstone>, <ore:dustEnergion>, <ore:processorEngineering>], [4, 1, 4, 12, 2], [<item:thermalfoundation:upgrade:1>], 1000, 800, 288);

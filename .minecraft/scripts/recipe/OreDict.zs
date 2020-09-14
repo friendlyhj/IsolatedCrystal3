@@ -14,3 +14,6 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:processorEngineering>.add(<item:appliedenergistics2:material:24>);
 <ore:processorCalculate>.add(<item:appliedenergistics2:material:23>);
 <ore:processorLogic>.add(<item:appliedenergistics2:material:22>);
+
+<ore:componentIron>.add(<immersiveengineering:material:8>);
+<ore:componentSteel>.add(<immersiveengineering:material:9>);
