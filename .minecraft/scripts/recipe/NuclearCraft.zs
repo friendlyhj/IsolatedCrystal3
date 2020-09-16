@@ -1,3 +1,3 @@
 import mods.nuclearcraft.manufactory;
 
-mamufactory.removeRecipeWithOutput([<item:nuclearcraft:part:6>]);
+manufactory.removeRecipeWithOutput([<item:nuclearcraft:part:6>]);

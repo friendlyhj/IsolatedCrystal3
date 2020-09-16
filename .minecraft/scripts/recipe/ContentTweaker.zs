@@ -7,6 +7,7 @@ import mods.inspirations.Cauldron;
 import scripts.grassUtils.RecipeUtils.getMetalNameNew;
 import scripts.grassUtils.RecipeUtils.createFull3;
 import scripts.grassUtils.RecipeUtils.createFull2;
+import scripts.grassUtils.RecipeUtils.createSurround;
 import scripts.grassUtils.RecipeUtils.createCross;
 import scripts.recipe.Util.addCrushRecipe;
 import mods.botania.ManaInfusion;
@@ -121,3 +122,9 @@ ElvenTrade.addRecipe([<item:contenttweaker:infinite_rock>], [<ore:obsidian>, <or
 
 // 光学玻璃
 recipes.addShaped("optical_glass", <item:contenttweaker:optical_glass> * 4, createCross(<ore:dustIndium>, <item:appliedenergistics2:quartz_vibrant_glass>));
+
+// 镍铬加热线圈
+recipes.addShaped("nichrome_heating_wirecoil", <item:contenttweaker:nichrome_wirecoil_block>, createSurround(<ore:wirecoilNichrome>, <ore:ingotElectricalSteel>));
+
+// 石英砂
+recipes.addShapeless("crystal_sand", <item:contenttweaker:crystal_sand> * 3, [<ore:sand>, <ore:sand>, <ore:sand>, <ore:dustCertusQuartz> | <ore:dustNetherQuartz>]);

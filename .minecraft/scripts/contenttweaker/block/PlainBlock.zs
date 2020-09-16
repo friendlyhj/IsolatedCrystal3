@@ -17,3 +17,4 @@ glass.register();
 addBlock("infinite_rock", <blockmaterial:rock>, 50.0f, 8000.0f, <soundtype:stone>, 0, false, "pickaxe", 3);
 addBlock("nichrome_wirecoil_block", <blockmaterial:iron>, 5.0f, 20.0f, <soundtype:metal>, 0, false, "pickaxe", 0);
 addBlock("xu_frame", <blockmaterial:iron>, 3.0f, 50.0f, <soundtype:metal>, 0, false, "pickaxe", 0);
+addBlock("crystal_sand", <blockmaterial:sand>, 1.0f, 20.0f, <soundtype:sand>, 0, true, "shovel", 0);

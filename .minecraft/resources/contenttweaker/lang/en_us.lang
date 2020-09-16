@@ -1,16 +1,26 @@
 item.contenttweaker.advanced_infinite_fruit.name=The Fruit of Gula
-item.contenttweaker.raw_si.name=Raw Silicon
+item.contenttweaker.pure_si.name=Pure Silicon
 item.contenttweaker.crystal_si.name=Single-Crytal Silicon
 item.contenttweaker.soldering_manasteel.name=Soldering ManaSteel
 item.contenttweaker.rutile.name=Rutile
 item.contenttweaker.rutile_dust.name=Rutile Dust
 item.contenttweaker.varnished_copper_wire.name=Varnished Copper Wire
 item.contenttweaker.varnished_electrum_wire.name=Varnished Electrum Wire
+item.contenttweaker.ender_circuit.name=Ender Circuit
+item.contenttweaker.ender_processor.name=Ender Processor
+item.contenttweaker.redstone_module.name=Redstone Interaction Module
+item.contenttweaker.item_module.name=Item Interaction Module
+item.contenttweaker.network_module.name=Network Interaction Module
+item.contenttweaker.advanced_network_module.name=Advanced Network Interaction Module
+item.contenttweaker.crafting_module.name=Crafting Interaction Module
+item.contenttweaker.write_module.name=Write Module
+item.contenttweaker.usb_module.name=USB Module
 
 tile.contenttweaker.optical_glass.name=Optical Glass
 tile.contenttweaker.infinite_rock.name=infinite Rock
 tile.contenttweaker.nichrome_wirecoil_block.name=Nichrome Heating Wirecoil
 tile.contenttweaker.xu_frame.name=Machine Block
+tile.contenttweaker.crystal_sand.name=Quartz Sand
 
 fluid.raw_sicl4=Raw Silicon Tetrachloride
 fluid.soldering=Molten Soldering

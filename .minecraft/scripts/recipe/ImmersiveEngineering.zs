@@ -153,4 +153,4 @@ RecipeBuilder.get("blacksmith")
 
 SkillLocker.lockItem(<immersiveengineering:metal_decoration0:5>, getSkillArray("m6n5"));
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
-Assembler.addRecipe("ie_redstone", [<ore:plateSteel>, <ore:componentSteel>, <ore:plateBronze>, <ore:plateFerramic>], [4, 2, 2, 1], [<item:immersiveengineering:metal_decoration0:5>], 2000, 100, 144);
+Assembler.addRecipe("ie_hard", [<ore:plateSteel>, <ore:componentSteel>, <ore:plateBronze>, <ore:plateFerramic>], [4, 2, 2, 1], [<item:immersiveengineering:metal_decoration0:5>], 2000, 100, 144);

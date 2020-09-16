@@ -21,4 +21,15 @@ function addRecipe(name as string, input as IItemStack[], output as IItemStack[]
         a.addItemOutput(i);
     }
     a.build();
+
+    val b as RecipePrimer = RecipeBuilder.newBuilder(machineName ~ "_" ~ name ~ "_b", machineName , max(0.6 * time, 1))
+    .addHotAirInput(1.6 * air, maxInt, 1.6 * air)
+    .addHotAirOutput(1.28 * air, maxInt, 1.28 * air);
+    for i in input {
+        b.addItemInput(i);
+    }
+    for i in output {
+        b.addItemOutput(i);
+    }
+    b.build();
 }

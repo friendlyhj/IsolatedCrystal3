@@ -1,16 +1,26 @@
 item.contenttweaker.advanced_infinite_fruit.name=饕餮之果
-item.contenttweaker.row_si.name=粗硅
+item.contenttweaker.pure_si.name=高纯硅
 item.contenttweaker.crystal_si.name=单晶硅
 item.contenttweaker.soldering_manasteel.name=魔力电烙铁
 item.contenttweaker.rutile.name=金红石
 item.contenttweaker.rutile_dust.name=金红石粉
 item.contenttweaker.varnished_copper_wire.name=漆包铜线
 item.contenttweaker.varnished_electrum_wire.name=漆包琥珀金线
+item.contenttweaker.ender_circuit.name=末影电路板
+item.contenttweaker.ender_processor.name=末影处理器
+item.contenttweaker.redstone_module.name=红石交互模块
+item.contenttweaker.item_module.name=物品交互模块
+item.contenttweaker.network_module.name=网络交互模块
+item.contenttweaker.advanced_network_module.name=高级网络交互模块
+item.contenttweaker.crafting_module.name=合成交互模块
+item.contenttweaker.write_module.name=写入模块
+item.contenttweaker.usb_module.name=USB模块
 
 tile.contenttweaker.optical_glass.name=光学玻璃
 tile.contenttweaker.infinite_rock.name=无限之石
 tile.contenttweaker.nichrome_wirecoil_block.name=镍铬合金加热线圈
 tile.contenttweaker.xu_frame.name=机器方块
+tile.contenttweaker.crystal_sand.name=石英砂
 
 fluid.raw_sicl4=粗四氯化硅
 fluid.soldering=熔融焊锡
