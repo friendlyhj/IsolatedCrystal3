@@ -1,7 +1,7 @@
 {
     "registryname": "aero_coke_oven",
     "localizedname": "热空气焦炉",
-    "color": "AF9089",
+    "color": "FFD9D1",
     "requires-blueprint": true,
     "parts": [
         {

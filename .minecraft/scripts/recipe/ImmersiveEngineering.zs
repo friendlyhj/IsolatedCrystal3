@@ -136,7 +136,7 @@ RecipeBuilder.get("blacksmith")
 
 SkillLocker.lockItem(<immersiveengineering:metal_decoration0:4>, getSkillArray("m5n5"));
 recipes.remove(<immersiveengineering:metal_decoration0:4>);
-Assembler.addRecipe("ie_light", [<ore:plateSteel>, <ore:componentIron>, <ore:plateCopper>, <ore:plateFerramic>], [4, 2, 2, 1], [<item:immersiveengineering:metal_decoration0:4>], 2000, 100, 144);
+Assembler.addRecipe("ie_light", [<ore:plateSteel>, <ore:componentIron>, <ore:plateCopper>, <ore:plateFerramic>], [4, 2, 2, 1], [<item:immersiveengineering:metal_decoration0:4> * 2], 2000, 100, 144);
 
 // 重型工程块
 RecipeBuilder.get("blacksmith")
@@ -153,4 +153,4 @@ RecipeBuilder.get("blacksmith")
 
 SkillLocker.lockItem(<immersiveengineering:metal_decoration0:5>, getSkillArray("m6n5"));
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
-Assembler.addRecipe("ie_hard", [<ore:plateSteel>, <ore:componentSteel>, <ore:plateBronze>, <ore:plateFerramic>], [4, 2, 2, 1], [<item:immersiveengineering:metal_decoration0:5>], 2000, 100, 144);
+Assembler.addRecipe("ie_hard", [<ore:plateSteel>, <ore:componentSteel>, <ore:plateBronze>, <ore:plateFerramic>], [4, 2, 2, 1], [<item:immersiveengineering:metal_decoration0:5> * 2], 2000, 100, 144);

@@ -38,7 +38,7 @@ sys1.addMaterial("Osmium");
 sys1.addMaterial("Platinum");
 sys1.addMaterial("Iridium");
 sys1.registerMaterial("Steel", 0x858585);
-sys1.registerMaterial("Ferramic", 0xAF9089);
+sys1.registerMaterial("Ferramic", 0xFFD9D1);
 sys1.addPart("casing");
 sys1.addPart("dustSmall");
 sys1.addPart("plate");
