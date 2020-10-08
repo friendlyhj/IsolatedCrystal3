@@ -10,6 +10,7 @@ import scripts.grassUtils.RecipeUtils.createFull2;
 import scripts.grassUtils.RecipeUtils.createSurround;
 import scripts.grassUtils.RecipeUtils.createCross;
 import scripts.recipe.Util.addCrushRecipe;
+import scripts.recipe.modularMachinery.Programmer;
 import mods.botania.ManaInfusion;
 import mods.botania.ElvenTrade;
 import mods.botaniatweaks.Agglomeration;
@@ -124,7 +125,12 @@ ElvenTrade.addRecipe([<item:contenttweaker:infinite_rock>], [<ore:obsidian>, <or
 recipes.addShaped("optical_glass", <item:contenttweaker:optical_glass> * 4, createCross(<ore:dustIndium>, <item:appliedenergistics2:quartz_vibrant_glass>));
 
 // 镍铬加热线圈
-recipes.addShaped("nichrome_heating_wirecoil", <item:contenttweaker:nichrome_wirecoil_block>, createSurround(<ore:wirecoilNichrome>, <ore:ingotElectricalSteel>));
+recipes.addShaped("nichrome_heating_wirecoil", <item:contenttweaker:nichrome_wirecoil_block>, createSurround(<ore:ingotElectricalSteel>, <ore:wirecoilNichrome>));
 
 // 石英砂
 recipes.addShapeless("crystal_sand", <item:contenttweaker:crystal_sand> * 3, [<ore:sand>, <ore:sand>, <ore:sand>, <ore:dustCertusQuartz> | <ore:dustNetherQuartz>]);
+
+// 模块
+val card as IOreDictEntry = <ore:cardBasic>;
+Programmer.addRecipeWithOre("craft", [card, <ore:workbench>, <ore:ingotEnchantedMetal>, <ore:processorCalculate>], [1, 1, 1, 1], [<item:contenttweaker:craft_module>], 400, 80, 250);
+Programmer.addRecipeWithOre("network", [card, <ore:crystalPureFluix>, <ore:ingotManasteel>, <ore:processorEnder>], [1, 2, 1, 1], [<item:contenttweaker:network_module>], 400, 80, 250);

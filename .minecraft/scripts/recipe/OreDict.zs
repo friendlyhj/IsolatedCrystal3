@@ -18,3 +18,6 @@ import crafttweaker.oredict.IOreDictEntry;
 
 <ore:componentIron>.add(<immersiveengineering:material:8>);
 <ore:componentSteel>.add(<immersiveengineering:material:9>);
+
+<ore:cardBasic>.add(<item:appliedenergistics2:material:25>);
+<ore:cardAdvanced>.add(<item:appliedenergistics2:material:28>);

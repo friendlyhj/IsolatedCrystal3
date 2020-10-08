@@ -44,4 +44,23 @@ freshStage.execute = function(command, server, sender, args) {
     sender.sendMessage(game.localize("commands.freshstage.success"));
 };
 
-ZenCommandTree.create("isolatedcrystal", freshStage, removeAllStages).register();
+val unlockAllStages as ZenCommand = ZenCommand.create("unlockallstages");
+unlockAllStages.getCommandUsage = function(sender) {
+    return "commands.unlockallstages.usage";
+};
+unlockAllStages.requiredPermissionLevel = 3;
+unlockAllStages.execute = function(command, server, sender, args) {
+    var player as IPlayer = null;
+    if (args.length == 0) {
+        player = CommandUtils.getCommandSenderAsPlayer(sender);
+    } else if (args.length == 1) {
+        player = CommandUtils.getPlayer(server, sender, args[0]);
+    } else {
+        CommandUtils.notifyWrongUsage(command, sender);
+    }
+    for stage in stagesHaveRegistered {
+        player.addGameStage(stage);
+    }
+};
+
+ZenCommandTree.create("isolatedcrystal", freshStage, removeAllStages, unlockAllStages).register();

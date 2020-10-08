@@ -15,6 +15,7 @@ item.contenttweaker.advanced_network_module.name=Advanced Network Interaction Mo
 item.contenttweaker.crafting_module.name=Crafting Interaction Module
 item.contenttweaker.write_module.name=Write Module
 item.contenttweaker.usb_module.name=USB Module
+item.contenttweaker.mana_master.name=The Pride of Mana Master
 
 tile.contenttweaker.optical_glass.name=Optical Glass
 tile.contenttweaker.infinite_rock.name=infinite Rock
