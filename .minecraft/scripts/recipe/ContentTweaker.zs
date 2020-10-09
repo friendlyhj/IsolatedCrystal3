@@ -132,5 +132,10 @@ recipes.addShapeless("crystal_sand", <item:contenttweaker:crystal_sand> * 3, [<o
 
 // 模块
 val card as IOreDictEntry = <ore:cardBasic>;
-Programmer.addRecipeWithOre("craft", [card, <ore:workbench>, <ore:ingotEnchantedMetal>, <ore:processorCalculate>], [1, 1, 1, 1], [<item:contenttweaker:craft_module>], 400, 80, 250);
+Programmer.addRecipeWithOre("craft", [card, <ore:workbench>, <ore:ingotEnchantedMetal>, <ore:processorCalculate>], [1, 1, 2, 1], [<item:contenttweaker:crafting_module>], 400, 80, 250);
 Programmer.addRecipeWithOre("network", [card, <ore:crystalPureFluix>, <ore:ingotManasteel>, <ore:processorEnder>], [1, 2, 1, 1], [<item:contenttweaker:network_module>], 400, 80, 250);
+Programmer.addRecipeWithOre("item", [card, <ore:crystalPureCertusQuartz>, <ore:ingotConductiveIron>, <ore:processorLogic>], [1, 2, 4, 1], [<item:contenttweaker:item_module>], 400, 80, 250);
+Programmer.addRecipeWithOre("redstone", [card, <ore:crystalPureNetherQuartz>, <ore:dustRedstone>, <ore:processorCalculate>], [1, 2, 4, 1], [<item:contenttweaker:redstone_module>], 400, 80, 250);
+Programmer.addRecipe("advanced_network", [<ore:cardAdvanced>.firstItem, <item:contenttweaker:network_module> * 4, <ore:processorEngineering>.firstItem * 2, <ore:circuitPerfect>.firstItem * 2], [<item:contenttweaker:advanced_network_module>], 800, 160, 1000);
+Programmer.addRecipeWithOre("usb", [card, <ore:nuggetInvar>, <ore:nuggetTitanium>, <ore:plateSteel>, <ore:processorEnder>], [1, 3, 3, 1, 1], [<item:contenttweaker:usb_module> * 2], 400, 80, 250);
+Programmer.addRecipeWithOre("write", [card, <ore:ingotVibrantAlloy>, <ore:ingotConductiveIron>, <ore:dustHOPGraphite>, <ore:processorEngineering>], [1, 1, 4, 1, 1], [<item:contenttweaker:write_module>], 400, 80, 500);
