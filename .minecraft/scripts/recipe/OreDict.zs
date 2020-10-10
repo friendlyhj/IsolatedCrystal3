@@ -21,3 +21,6 @@ import crafttweaker.oredict.IOreDictEntry;
 
 <ore:cardBasic>.add(<item:appliedenergistics2:material:25>);
 <ore:cardAdvanced>.add(<item:appliedenergistics2:material:28>);
+
+<ore:coreBuild>.add(<item:appliedenergistics2:material:43>);
+<ore:coreDestroy>.add(<item:appliedenergistics2:material:44>);

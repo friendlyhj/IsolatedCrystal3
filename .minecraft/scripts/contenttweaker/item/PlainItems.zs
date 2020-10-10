@@ -18,3 +18,4 @@ addNormalItem("advanced_network_module");
 addNormalItem("crafting_module");
 addNormalItem("write_module");
 addNormalItem("usb_module");
+addNormalItem("liquid_module");
