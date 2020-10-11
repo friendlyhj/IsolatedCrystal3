@@ -16,6 +16,7 @@ item.contenttweaker.crafting_module.name=合成交互模块
 item.contenttweaker.write_module.name=写入模块
 item.contenttweaker.usb_module.name=USB模块
 item.contenttweaker.liquid_module.name=流体交互模块
+item.contenttweaker.world_module.name=世界交互模块
 item.contenttweaker.mana_master.name=魔力大师勋章
 
 tile.contenttweaker.optical_glass.name=光学玻璃

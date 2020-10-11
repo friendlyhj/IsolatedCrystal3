@@ -19,3 +19,4 @@ addNormalItem("crafting_module");
 addNormalItem("write_module");
 addNormalItem("usb_module");
 addNormalItem("liquid_module");
+addNormalItem("world_module");

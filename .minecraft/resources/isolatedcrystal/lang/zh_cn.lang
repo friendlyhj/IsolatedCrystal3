@@ -23,6 +23,8 @@ isc.message.mana_hatch_displayer=魔力储量： %s / 100,000
 
 isc.jeidesc.hot_air_checker=热空气检测器会在接受的热空气温度高于设定值时发出红石信号，空手右键其增加设定值，潜行右键降低设定值。
 
+isc.research.botany.6=6 级植物学
+isc.research.botany.6.description=通过交易你获取到了精灵的资源，这些资源的性质与你现有的资源截然不同。
 isc.research.energistics.3=3 级能源学
 isc.research.energistics.3.description=你发现不仅除了魔力，红石也有隐藏的更大力量...
 isc.research.endery.3=3 级末影学

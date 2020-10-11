@@ -12,6 +12,15 @@ recipes.addShaped("research_table", <item:researchtable:table>, [
 
 var cat = ResearchTable.addCategory(<item:appliedenergistics2:material:1>);
 
+ResearchTable.builder("botany_6", cat)
+    .setIcons(<item:botania:manaresource:8>)
+    .setTitle("isc.research.botany.6")
+    .setDescription("isc.research.bontany.6.description")
+    .addCondition(<item:botania:manaresource:7> * 8, <item:botania:manaresource:8> * 8, <item:botania:manaresource:9> * 2)
+    .setRequiredSkill(getSkillByAlias("b").key, 5)
+    .setRewardSkill(getSkillByAlias("b").key, 6)
+.build();
+
 ResearchTable.builder("energistics_3", cat)
     .setIcons(<item:minecraft:redstone>)
     .setTitle("isc.research.energistics.3")

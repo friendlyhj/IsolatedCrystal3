@@ -8,6 +8,7 @@ import scripts.compatSkills.EnumSkill.BOTANY;
 import crafttweaker.item.IItemStack;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import mods.ctutils.utils.Math;
+import mods.manatweaks.ManaHandler;
 
 events.onPlayerTick(function(event as PlayerTickEvent) {
     val player as IPlayer = event.player;
@@ -28,6 +29,12 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
     // lv3
     if (mainItem.definition.id == "botania:specialflower" && mainItem.tag has "type" && mainItem.tag.type == "puredaisy") {
         levelUp(player, BOTANY, 3);
+        return;
+    }
+
+    // lv5
+    if (ManaHandler.requestManaExact(null, player, 500000, false)) {
+        levelUp(player, BOTANY, 5);
         return;
     }
 });

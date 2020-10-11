@@ -24,3 +24,5 @@ import crafttweaker.oredict.IOreDictEntry;
 
 <ore:coreBuild>.add(<item:appliedenergistics2:material:43>);
 <ore:coreDestroy>.add(<item:appliedenergistics2:material:44>);
+
+<ore:blockManasteel>.add(<item:botania:storage>);

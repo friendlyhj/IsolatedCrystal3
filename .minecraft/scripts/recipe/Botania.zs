@@ -1,6 +1,7 @@
 import scripts.compatSkills.SkillLocker;
 import scripts.compatSkills.Utils.getSkillArray;
 import crafttweaker.item.IItemDefinition;
+import mods.botania.RuneAltar;
 
 // 花肥 植物学1级
 SkillLocker.lockItem(<item:botania:fertilizer>, getSkillArray("b1"));
@@ -36,4 +37,19 @@ SkillLocker.tweakLockedRecipe(true, <item:botania:alfheimportal>, [
     [<ore:livingwood>, <ore:nuggetTerrasteel>, <ore:livingwood>]
 ], getSkillArray("b5e4"));
 
-// 
+// 盖亚水晶
+SkillLocker.tweakLockedRecipe(true, <item:botania:pylon:2>, [
+    [null, <ore:elvenPixieDust>, null],
+    [<ore:ingotElvenElementium>, <item:botania:pylon:1>, <ore:ingotElvenElementium>],
+    [null, <ore:elvenPixieDust>, null]
+], getSkillArray("b6"));
+
+// 多媒体
+recipes.remove(<item:botania:corporeaspark>);
+recipes.remove(<item:botania:corporeaspark:1>);
+RuneAltar.addRecipe(<item:botania:corporeaspark>, [<item:botania:spark>, <item:botania:manaresource:8>, <item:botania:manaresource:8>, <item:botania:manaresource:15>, <item:botania:manaresource:15>, <item:botania:manaresource:15>, <item:botania:rune:8>], 50000);
+RuneAltar.addRecipe(<item:botania:corporeaspark:1>, [<item:botania:corporeaspark>, <ore:eternalLifeEssence>, <ore:eternalLifeEssence>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>], 200000);
+
+for item in itemUtils.getItemsByRegexRegistryName("^botania:corporea.*") {
+    SkillLocker.lockItem(item, getSkillArray("b7e5"));
+}

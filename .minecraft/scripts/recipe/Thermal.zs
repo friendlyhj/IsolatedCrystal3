@@ -32,9 +32,9 @@ recipeTweak(true, <item:thermalfoundation:material:515> * 2, [
 
 // 框架
 recipes.remove(<item:thermalexpansion:frame:32767>);
-Assembler.addRecipe("te_machine_frame", [<ore:plateSteel>, <ore:plateEnergeticTin>, <ore:blockGlass>, <ore:gearTin>, <ore:circuitRefined>], [4, 2, 4, 1, 4], [<item:thermalexpansion:frame>], 4000, 100, 288);
-Assembler.addRecipe("te_device_frame", [<ore:plateSteel>, <ore:plateEnergeticTin>, <ore:blockGlass>, <ore:gearCopper>, <ore:circuitRefined>], [4, 2, 4, 1, 2], [<item:thermalexpansion:frame:64>], 4000, 100, 288);
-Assembler.addRecipe("te_energy_frame", [<ore:plateSteel>, <ore:plateEnergeticTin>, <ore:blockGlass>, <ore:gearLead>, <ore:circuitRefined>], [4, 2, 4, 1, 4], [<item:thermalexpansion:frame:128>], 4000, 100, 288);
+Assembler.addRecipe("te_machine_frame", [<ore:plateSteel>, <ore:plateEnergeticTin>, <ore:blockGlass>, <ore:gearTin>, <ore:circuitRefined>], [4, 2, 4, 1, 4], [<item:thermalexpansion:frame>], 400, 1000, 288);
+Assembler.addRecipe("te_device_frame", [<ore:plateSteel>, <ore:plateEnergeticTin>, <ore:blockGlass>, <ore:gearCopper>, <ore:circuitRefined>], [4, 2, 4, 1, 2], [<item:thermalexpansion:frame:64>], 400, 1000, 288);
+Assembler.addRecipe("te_energy_frame", [<ore:plateSteel>, <ore:plateEnergeticTin>, <ore:blockGlass>, <ore:gearLead>, <ore:circuitRefined>], [4, 2, 4, 1, 4], [<item:thermalexpansion:frame:128>], 400, 1000, 288);
 
 // 机器锁技能
 val def as IItemDefinition = <item:thermalexpansion:machine>.definition;

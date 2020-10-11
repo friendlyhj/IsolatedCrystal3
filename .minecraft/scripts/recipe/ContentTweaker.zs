@@ -140,3 +140,4 @@ Programmer.addRecipeWithOre("redstone", [card, <ore:crystalPureNetherQuartz>, <o
 Programmer.addRecipe("advanced_network", [<ore:cardAdvanced>.firstItem, <item:contenttweaker:network_module> * 4, <ore:processorEngineering>.firstItem * 2, <ore:circuitPerfect>.firstItem * 2], [<item:contenttweaker:advanced_network_module>], 800, 160, 1000);
 Programmer.addRecipeWithOre("usb", [card, <ore:nuggetInvar>, <ore:nuggetTitanium>, <ore:plateSteel>, <ore:processorEnder>], [1, 3, 3, 1, 1], [<item:contenttweaker:usb_module> * 2], 400, 80, 250);
 Programmer.addRecipeWithOre("write", [card, <ore:ingotVibrantAlloy>, <ore:ingotConductiveIron>, <ore:dustHOPGraphite>, <ore:processorEngineering>], [1, 1, 4, 1, 1], [<item:contenttweaker:write_module>], 400, 80, 500);
+Programmer.addRecipeWithOre("world", [card, <ore:crystalPureFluix>, <ore:elvenPixieDust>, <ore:processorEnder>], [1, 2, 2, 1], [<item:contenttweaker:world_module>], 400, 80, 250);
