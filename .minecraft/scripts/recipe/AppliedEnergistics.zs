@@ -47,8 +47,8 @@ Precision.tweakRecipe("fluid_annihilation", [wire, l, d, o], <item:appliedenergi
 Precision.tweakRecipe("me_chest", [f, <item:appliedenergistics2:part:380>, u], <item:appliedenergistics2:chest>, 16000, 400, 100);
 
 // 奸商精灵
-ElvenTrade.addRecipe([<item:appliedenergistics2:part:360>], [<item:botania:corporeaspark:1>, <ore:blockZorrasteel>, <ore:blockEnergeticTin>, <ore:circuitPerfect>, <ore:circuitPerfect>, <ore:circuitPerfect>]);
-ElvenTrade.addRecipe([<item:appliedenergistics2:interface>], [<item:botania:corporeaspark>, <ore:blockManasteel>, <ore:blockManasteel>, <ore:ingotTerrasteel>, <ore:blockOsmium>, <ore:blockOsmium>, <ore:eternalLifeEssence>, <ore:eternalLifeEssence>]);
+ElvenTrade.addRecipe([<item:appliedenergistics2:part:360>], [<item:botania:corporeaspark:1>, <ore:blockZorrasteel>, <ore:blockTerrasteel>, <ore:blockEnergeticTin>, <ore:circuitPerfect>, <ore:circuitPerfect>]);
+ElvenTrade.addRecipe([<item:appliedenergistics2:interface>], [<item:botania:corporeaspark>, <ore:blockManasteel>, <ore:blockElvenCopper>, <ore:gaiaIngot>, <ore:blockOsmium>, <ore:blockOsmium>, <ore:eternalLifeEssence>, <ore:eternalLifeEssence>]);
 ElvenTrade.addRecipe([<item:appliedenergistics2:part:220>], [<item:botania:corporeaspark>, <ore:blockManasteel>, <ore:runeManaB>, <ore:runeEarthB>, <item:botania:manaresource:15>, <ore:eternalLifeEssence>]);
-ElvenTrade.addRecipe([<item:appliedenergistics2:part:2> * 16], [<item:botania:corporeaspark>, <ore:blockGlass>, <ore:blockGlass>, <ore:blockQuartzBlack>, <ore:blockQuartzBlack>, <ore:blockQuartzBlack>, <ore:runeGreedB>]);
+ElvenTrade.addRecipe([<item:appliedenergistics2:part:2> * 16], [<item:botania:corporeaspark>, <ore:ingotEnergeticTin>, <ore:ingotEnergeticTin>, <ore:blockQuartzBlack>, <ore:blockQuartzBlack>, <ore:runeGreedB>]);
 ElvenTrade.addRecipe([<item:appliedenergistics2:energy_acceptor>], [<item:botania:auraringgreater>, <ore:blockRedstone>, <item:immersiveengineering:metal_decoration0:6>]);
