@@ -47,7 +47,7 @@ SkillLocker.tweakLockedRecipe(true, <item:botania:pylon:2>, [
 // 多媒体
 recipes.remove(<item:botania:corporeaspark>);
 recipes.remove(<item:botania:corporeaspark:1>);
-RuneAltar.addRecipe(<item:botania:corporeaspark>, [<item:botania:spark>, <item:botania:manaresource:8>, <item:botania:manaresource:8>, <item:botania:manaresource:15>, <item:botania:manaresource:15>, <item:botania:manaresource:15>, <item:botania:rune:8>], 50000);
+RuneAltar.addRecipe(<item:botania:corporeaspark>, [<item:botania:spark>, <item:botania:manaresource:8>, <item:botania:manaresource:8>, <item:botania:manaresource:15>, <item:botania:manaresource:15>, <item:botania:manaresource:15>, <item:botania:rune:8>, <item:botania:rune:12>], 50000);
 RuneAltar.addRecipe(<item:botania:corporeaspark:1>, [<item:botania:corporeaspark>, <ore:eternalLifeEssence>, <ore:eternalLifeEssence>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>, <ore:nuggetTerrasteel>], 200000);
 
 for item in itemUtils.getItemsByRegexRegistryName("^botania:corporea.*") {
