@@ -83,8 +83,9 @@ addOreDresserRecipe(<ore:oreTin>, <ore:dustTin>.firstItem, <ore:dustIndium>.firs
 // 硅
 furnace.remove(<item:appliedenergistics2:material:5>);
 mods.mekanism.crusher.removeRecipe(<item:nuclearcraft:gem:6>);
-mods.nuclearcraft.manufactory.removeRecipeWithOutput([<item:nuclearcraft:part:6>]);
+mods.nuclearcraft.manufactory.removeRecipeWithOutput([<item:nuclearcraft:gem:6>]);
 AeroBlast.addRecipe("raw_si_charcoal", [<item:contenttweaker:crystal_sand>, <item:minecraft:coal:1>], [<item:enderio:item_material:5>], 150, 80);
 AeroBlast.addRecipe("raw_si", [<item:contenttweaker:crystal_sand> * 4, <item:immersiveengineering:material:6>], [<item:enderio:item_material:5> * 4], 150, 150);
 addChlorinizerRecipe(250, [<ore:itemSilicon>, <ore:dustCoal>.firstItem * 2 | <ore:dustCharcoal>.firstItem * 2], <liquid:raw_sicl4> * 250, 12000, 300);
-Refinery.addRecipe(<liquid:ticl4> * 200, <ore:dustCoal>.firstItem % 20, <liquid:raw_ticl4> * 250, 5000);
+Refinery.addRecipe(<liquid:sicl4> * 200, <ore:dustCoal>.firstItem % 20, <liquid:raw_sicl4> * 250, 5000);
+reaction.addRecipe(<ore:blockGlassHardened>, <liquid:sicl4> * 400, <gas:hydrogen> * 800, <item:contenttweaker:pure_si> * 2, <gas:hydrogenchloride> * 1600, 6000, 400);
