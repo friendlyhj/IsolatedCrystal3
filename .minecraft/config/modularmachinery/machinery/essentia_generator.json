@@ -1,0 +1,614 @@
+{
+    "registryname": "essentia_generator",
+    "localizedname": "Essentia Generator",
+    "color": "a49b87",
+    "parts": [
+        {
+            "x": 2,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "botania:storage@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockmanaproviderinput"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockaspectprovideroutput"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": -1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thermalfoundation:storage@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "botania:livingrock@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "thaumcraft:plank_greatwood@0"
+            ]
+        }
+    ]}

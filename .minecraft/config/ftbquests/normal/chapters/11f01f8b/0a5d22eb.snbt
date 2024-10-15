@@ -1,0 +1,17 @@
+{
+	x: 1.4d,
+	y: 1.4d,
+	dependencies: [
+		"f35d64fc"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "01b43868",
+		type: "item",
+		items: [{
+			item: "botania:dirtrod"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

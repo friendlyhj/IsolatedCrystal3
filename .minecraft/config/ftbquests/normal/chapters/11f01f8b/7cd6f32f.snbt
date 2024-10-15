@@ -1,0 +1,25 @@
+{
+	x: 7.0d,
+	y: 0.5d,
+	dependencies: [
+		"f35d64fc",
+		"04f38be0"
+	],
+	tasks: [{
+		uid: "24c80e82",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_crusher"
+		}]
+	},
+	{
+		uid: "48497cd9",
+		type: "item",
+		items: [{
+			id: "botania:lens",
+			Damage: 13s,
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}]
+}

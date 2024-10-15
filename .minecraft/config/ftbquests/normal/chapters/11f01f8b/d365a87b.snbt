@@ -1,0 +1,17 @@
+{
+	x: 1.05d,
+	y: 0.7d,
+	dependencies: [
+		"f35d64fc"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "a5d9c684",
+		type: "item",
+		items: [{
+			item: "botania:waterrod"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

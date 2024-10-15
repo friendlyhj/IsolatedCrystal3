@@ -1,0 +1,16 @@
+{
+	x: 7.0d,
+	y: 2.5d,
+	dependencies: [
+		"7cd6f32f",
+		"9d361e11"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "e8f8c42a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:nature_crystal"
+		}]
+	}]
+}

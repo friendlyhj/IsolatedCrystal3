@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "contenttweaker:items/wirecoil_gold",
-        "layer1": "contenttweaker:items/wirecoil_overlay"
-    }
-}

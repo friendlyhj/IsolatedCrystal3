@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: -2.5d,
+	dependencies: [
+		"6c16b45b"
+	],
+	tasks: [{
+		uid: "fb22e750",
+		type: "item",
+		items: [{
+			item: "botania:cocoon"
+		}]
+	}]
+}

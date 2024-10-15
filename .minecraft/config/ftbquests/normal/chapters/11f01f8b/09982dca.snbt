@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -1.5d,
+	dependencies: [
+		"c221207e"
+	],
+	tasks: [{
+		uid: "d02a6c16",
+		type: "item",
+		items: [{
+			item: "naturesaura:gold_fiber"
+		}]
+	}]
+}

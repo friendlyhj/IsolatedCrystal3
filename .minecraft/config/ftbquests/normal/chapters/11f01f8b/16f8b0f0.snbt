@@ -1,0 +1,14 @@
+{
+	x: -6.0d,
+	y: 1.5d,
+	dependencies: [
+		"c13e127c"
+	],
+	tasks: [{
+		uid: "a5c08c14",
+		type: "item",
+		items: [{
+			item: "contenttweaker:yellow_fruit"
+		}]
+	}]
+}

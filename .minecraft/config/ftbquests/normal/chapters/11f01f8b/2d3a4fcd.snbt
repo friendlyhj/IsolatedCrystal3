@@ -1,0 +1,31 @@
+{
+	icon: "botania:altar",
+	x: -2.0d,
+	y: -0.5d,
+	dependencies: [
+		"51eaa066",
+		"195a1cbe"
+	],
+	tasks: [{
+		uid: "e22e0237",
+		type: "item",
+		items: [{
+			item: "botania:altar"
+		}]
+	},
+	{
+		uid: "3f31a012",
+		type: "item",
+		items: [{
+			id: "botania:waterbowl",
+			tag: {
+				Fluid: {
+					FluidName: "water",
+					Amount: 1000
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
