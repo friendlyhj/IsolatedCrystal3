@@ -31,7 +31,7 @@ zenClass ArtisanRecipeBuilder {
         mm.addCatalystInput(<artisanworktables:worktable>.withDamage(worktable.meta), [], []);
         mm.addPostCheckHandler(function(event as RecipeCheckEvent) {
             val controller = event.controller;
-            val worktablePos = controller.pos.offset(this.rotateYNorthUntil(IBlockPos.create(0, 1, 1), controller.facing));
+            val worktablePos = controller.pos.offset(IBlockPos.create(0, 1, 1).rotateYNorthUntil(controller.facing));
             if (controller.world.getBlockState(worktablePos) != worktable) {
                 event.setFailed("Mismatched worktable");
             }
@@ -59,7 +59,7 @@ zenClass ArtisanRecipeBuilder {
         mm.addCatalystInput(tool, ["-" ~ damage], []);
         mm.addPostCheckHandler(function(event as RecipeCheckEvent) {
             val controller = event.controller;
-            val toolboxPos = controller.pos.offset(this.rotateYNorthUntil(IBlockPos.create(-2, -1, 0), controller.facing));
+            val toolboxPos = controller.pos.offset(IBlockPos.create(-2, -1, 0).rotateYNorthUntil(controller.facing));
             for item in controller.world.getItemHandler(toolboxPos, up) {
                 if (tool.matches(item)) {
                     return;
@@ -69,7 +69,7 @@ zenClass ArtisanRecipeBuilder {
         });
         mm.addStartHandler(function(event as RecipeStartEvent) {
             val controller = event.controller;
-            val toolboxPos = controller.pos.offset(this.rotateYNorthUntil(IBlockPos.create(-2, -1, 0), controller.facing));
+            val toolboxPos = controller.pos.offset(IBlockPos.create(-2, -1, 0).rotateYNorthUntil(controller.facing));
             var toolSlotIndex = -1;
             var toolItem as IItemStack = null;
             val itemHandler = controller.world.getItemHandler(toolboxPos, up);
@@ -180,16 +180,6 @@ zenClass ArtisanRecipeBuilder {
             }
         }
         return result;
-    }
-
-    function rotateYNorthUntil(at as IBlockPos, facing as IFacing) as IBlockPos {
-        var current as IFacing = north;
-        var rot = at;
-        while (current != facing) {
-            current = facing.rotateY();
-            rot = IBlockPos.create(-rot.getZ(), rot.getY(), rot.getX());
-        }
-        return rot;
     }
 }
 

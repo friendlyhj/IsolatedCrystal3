@@ -37,7 +37,7 @@ val itemNames as string[] = [
     "aura_crystal",
     "logic_crystal",
     "astral_crystal",
-    "taint_crystal",
+    "warp_crystal",
 
     // lv3 rainbow crystals
     "life_crystal",
@@ -100,6 +100,11 @@ val moltenFluids as int[string] = {
     "compressed_iron": 0x34302d
 };
 
+val plainFluids as int[string] = {
+    "undead_water": 0x550000,
+    "vinyl_chloride": 0x46745d
+};
+
 for name, color in moltenFluids {
     val molten = VanillaFactory.createFluid(name, color);
     molten.material = <blockmaterial:lava>;
@@ -111,4 +116,7 @@ for name, color in moltenFluids {
     molten.register();
 }
 
-
+for name, color in plainFluids {
+    val fluid = VanillaFactory.createFluid(name, color);
+    fluid.register();
+}

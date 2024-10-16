@@ -2,9 +2,20 @@
 #priority 2147483647
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
 
 function getArtisanRecipeBuilder(type as string) as RecipeBuilder {
     return RecipeBuilder.get(type);
+}
+
+$expand IBlockPos$rotateYNorthUntil(facing as IFacing) as IBlockPos {
+    var current as IFacing = north;
+    var rot = this;
+    while (current != facing) {
+        current = facing.rotateY();
+        rot = IBlockPos.create(-rot.getZ(), rot.getY(), rot.getX());
+    }
+    return rot;
 }
 
 $expand IBlockPos$offset(pos as IBlockPos) as IBlockPos {

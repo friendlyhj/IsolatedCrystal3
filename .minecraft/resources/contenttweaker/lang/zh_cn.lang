@@ -20,7 +20,7 @@ item.contenttweaker.metal_crystal.name=金属水晶
 item.contenttweaker.aura_crystal.name=灵气水晶
 item.contenttweaker.logic_crystal.name=逻辑水晶
 item.contenttweaker.astral_crystal.name=星辰水晶
-item.contenttweaker.taint_crystal.name=腐化水晶
+item.contenttweaker.warp_crystal.name=扭曲水晶
 
 item.contenttweaker.life_crystal.name=生命水晶
 item.contenttweaker.energy_crystal.name=能源水晶
@@ -58,6 +58,11 @@ tile.contenttweaker.destruction_matrix.name=破坏矩阵
 
 fluid.soldering=焊锡
 fluid.compressed_iron=熔融压缩铁
+fluid.undead_water=亡灵之水
+fluid.vinyl_chloride=液态氯乙烯
+
+gas.vinyl_chloride=氯乙烯
+gas.lpg=石油气
 
 material.iron_compressed.name=压缩铁
 material.tin.name=锡
@@ -70,3 +75,4 @@ modpack.tooltip.afflatus_of_crafting.completed=该物品已完成制作，可以
 
 modularmachinery.essentia_generator=源质生成器
 modularmachinery.mechanical_artisan=机械工匠台
+modularmachinery.oil_fabricator=原油制造机

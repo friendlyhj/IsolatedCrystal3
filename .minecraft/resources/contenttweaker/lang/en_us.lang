@@ -12,7 +12,7 @@ item.contenttweaker.earth_crystal.name=Earth Crystal
 item.contenttweaker.vibrant_crystal.name=Vibrant Crystal
 item.contenttweaker.crafting_crystal.name=Crafting Crystal
 item.contenttweaker.ocean_crystal.name=Ocean Crystal
-item.contenttweaker.destruction_crystal.name=Destruction Crystal
+item.contenttweaker.warp_crystal.name=Warp Crystal
 
 item.contenttweaker.blood_crystal.name=Blood Crystal
 item.contenttweaker.electric_crystal.name=Electric Crystal
@@ -58,6 +58,11 @@ tile.contenttweaker.destruction_matrix.name=Destruction Matrix
 
 fluid.soldering=Soldering
 fluid.iron_compressed=Molten Compressed Iron
+fluid.undead_water=Undead Water
+fluid.vinyl_chloride=Liquid Vinyl Chloride
+
+gas.vinyl_chloride=Vinyl Chloride
+gas.lpg=LPG
 
 material.iron_compressed.name=Compressed Iron
 material.tin.name=Tin
