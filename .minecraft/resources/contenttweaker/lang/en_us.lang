@@ -28,7 +28,7 @@ item.contenttweaker.mine_crystal.name=Mine Crystal
 item.contenttweaker.nature_crystal.name=Nature Crystal
 item.contenttweaker.calculation_crystal.name=Calculation Crystal
 item.contenttweaker.space_time_crystal.name=Space-Time Crystal
-item.contenttweaker.taint_crystal.name=Taint Crystal
+item.contenttweaker.destruction_crystal.name=Destruction Crystal
 item.contenttweaker.iris_crystal.name=Iris Crystal
 
 item.contenttweaker.blood_clot.name=Blood Clot
@@ -49,6 +49,7 @@ tile.contenttweaker.blue_fruit_block.name=Blue Crystal Fruit
 tile.contenttweaker.purple_fruit_block.name=Purple Crystal Fruit
 
 item.contenttweaker.bearing.name=Bearing
+item.contenttweaker.brass_gear.name=Alchemical Brass Gear
 
 tile.contenttweaker.crystal_log.name=Crystal Log
 tile.contenttweaker.crystal_leaves.name=Crystal Leaves
@@ -58,8 +59,10 @@ tile.contenttweaker.destruction_matrix.name=Destruction Matrix
 
 fluid.soldering=Soldering
 fluid.iron_compressed=Molten Compressed Iron
+fluid.mithril=Molten Mithril
 fluid.undead_water=Undead Water
 fluid.vinyl_chloride=Liquid Vinyl Chloride
+fluid.mercury=Mercury
 
 gas.vinyl_chloride=Vinyl Chloride
 gas.lpg=LPG

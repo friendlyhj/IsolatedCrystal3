@@ -50,7 +50,8 @@ val itemNames as string[] = [
 
     "iris_crystal",
 
-    "bearing"
+    "bearing",
+    "brass_gear"
 ];
 
 val fruit_blocks as string[] = [
@@ -97,12 +98,14 @@ for name in fruit_blocks {
 
 val moltenFluids as int[string] = {
     "soldering": 0x246755,
-    "compressed_iron": 0x34302d
+    "compressed_iron": 0x34302d,
+    "mithril": 0x8adaff
 };
 
 val plainFluids as int[string] = {
     "undead_water": 0x550000,
-    "vinyl_chloride": 0x46745d
+    "vinyl_chloride": 0x46745d,
+    "mercury": 0xdddddd,
 };
 
 for name, color in moltenFluids {

@@ -9,11 +9,12 @@
 !/.minecraft/config
 !/.minecraft/scripts
 !/.minecraft/resources
+!/.minecraft/oresources
 !/.minecraft/patchouli_books
+
 
 # Extra
 *.jar
-*.zsrc
 /.minecraft/config/jei/worldSettings.cfg
 /.minecraft/config/jei/searchColors.cfg
 /.minecraft/config/JustEnoughCalculation

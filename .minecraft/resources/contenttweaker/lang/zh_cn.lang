@@ -49,6 +49,7 @@ tile.contenttweaker.blue_fruit_block.name=蓝色水晶果实
 tile.contenttweaker.purple_fruit_block.name=紫色水晶果实
 
 item.contenttweaker.bearing.name=轴承
+item.contenttweaker.brass_gear.name=炼金黄铜齿轮
 
 tile.contenttweaker.crystal_log.name=水晶树原木
 tile.contenttweaker.crystal_leaves.name=水晶树树叶
@@ -58,8 +59,11 @@ tile.contenttweaker.destruction_matrix.name=破坏矩阵
 
 fluid.soldering=焊锡
 fluid.compressed_iron=熔融压缩铁
+fluid.mithril=熔融秘银
 fluid.undead_water=亡灵之水
 fluid.vinyl_chloride=液态氯乙烯
+fluid.mercury=水银
+fluid.mithril=熔融秘银
 
 gas.vinyl_chloride=氯乙烯
 gas.lpg=石油气
