@@ -29,7 +29,7 @@ RecipeBuilder.newBuilder("perditio_crystal", "emptiness_energizer", 120)
         val controller = event.controller;
         val pos = controller.pos;
         val world = controller.world;
-        if (event.activeRecipe.tick % 10 == 0) {
+        if (event.activeRecipe.tick % 10 == 1) {
             val posA as IBlockPos = pos.offset(controller.rotateWithControllerFacing(IBlockPos.create(-5, 0, 0)));
             val posB as IBlockPos = pos.offset(controller.rotateWithControllerFacing(IBlockPos.create(5, 10, 10)));
             var success as bool = false;
@@ -38,12 +38,13 @@ RecipeBuilder.newBuilder("perditio_crystal", "emptiness_energizer", 120)
                     val rift = entity.native as EntityFluxRift;
                     if (rift.riftSize >= 100) {
                         success = true;
-                        return;
+                        break;
                     }
                 }
             }
             if (!success) {
                 event.preventProgressing("no 100 size rift");
+                return;
             }
         }
         if (event.activeRecipe.tick % 20 == 1) {
