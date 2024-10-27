@@ -76,7 +76,11 @@ modpack.tooltip.afflatus_of_crafting.next=未进行的合成样例：
 modpack.tooltip.afflatus_of_crafting.shift=按下shift查看未完成的合成编号
 modpack.tooltip.afflatus_of_crafting.shifted=未完成的合成编号列表:
 modpack.tooltip.afflatus_of_crafting.completed=该物品已完成制作，可以进行参与其它物品的合成了。
+modpack.tooltip.oil_fabricator.0=可以同时处理不同的有机物品输入
+modpack.tooltip.oil_fabricator.1=且单位产出也会略微提高
 
 modularmachinery.essentia_generator=源质生成器
 modularmachinery.mechanical_artisan=机械工匠台
 modularmachinery.oil_fabricator=原油制造机
+modularmachinery.blood_resonator=气血共振仪
+modularmachinery.emptiness_energizer=虚空激发器

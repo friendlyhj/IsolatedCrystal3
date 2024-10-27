@@ -1,5 +1,6 @@
 #reloadable
 import mods.botania.ElvenTrade;
+import mods.botania.PureDaisy;
 
 ElvenTrade.addRecipe([<thaumcraft:sapling_silverwood>], [
     <contenttweaker:vibrant_crystal>, 
@@ -25,4 +26,8 @@ ElvenTrade.addRecipe([<thaumcraft:ingot:2>], [
     <ore:ingotAlubrass>,
     <ore:ingotAlubrass>
 ]);
-
+PureDaisy.addRecipe(<naturesaura:infused_stone>, <sonarcore:reinforcedstoneblock>);
+PureDaisy.addRecipe(<sonarcore:reinforcedstoneblock>, <bloodmagic:blood_rune>);
+PureDaisy.addRecipe(<bloodmagic:blood_rune>, <chisel:limestone2:7>);
+PureDaisy.addRecipe(<chisel:limestone2:7>, <astralsorcery:blockmarble>);
+PureDaisy.addRecipe(<astralsorcery:blockmarble>, <naturesaura:infused_stone>);

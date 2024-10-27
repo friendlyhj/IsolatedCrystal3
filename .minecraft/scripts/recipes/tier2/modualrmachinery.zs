@@ -120,4 +120,12 @@ RecipeBuilder.newBuilder("oil", "oil_fabricator", 800)
             outputBus.fill(<liquid:oil> * preTickOutput, true);
         }
     })
+    .addRecipeTooltip(game.localize("modpack.tooltip.oil_fabricator.0"), game.localize("modpack.tooltip.oil_fabricator.1"))
+    .build();
+
+RecipeBuilder.newBuilder("blood_crystal", "blood_resonator", 200)
+    .addItemInputs(<contenttweaker:flesh_crystal>, <bloodmagic:slate:2>, <bloodtinker:blood_bronze_ingot>, <bloodmagic:item_demon_crystal>)
+    .addFluidPerTickInput(<liquid:lifeessence> * 10)
+    .addWillInput("DEFAULT", 10)
+    .addItemOutput(<contenttweaker:blood_crystal>)
     .build();

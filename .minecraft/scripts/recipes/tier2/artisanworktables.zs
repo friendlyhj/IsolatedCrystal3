@@ -135,7 +135,7 @@ RecipeBuilder.get("mage")
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
     [<thaumcraft:plank_silverwood>, <thaumcraft:plank_silverwood>, <thaumcraft:plank_silverwood>],
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]])
-  .addTool(<ore:artisansGrimoire>, 1)
+  .addTool(<ore:artisansGrimoire>, 5)
   .setFluid(<liquid:mercury> * 144)
   .addOutput(<thaumcraft:tube> * 16)
   .create();
@@ -182,6 +182,44 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansGrimoire>, 5)
   .setFluid(<liquid:mercury> * 72)
   .addOutput(<thaumcraft:filter>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<ore:plateInvar>, <thaumcraft:tube_filter>, <ore:plateInvar>],
+    [<thaumcraft:tube>, <thaumcraft:plank_greatwood>, <thaumcraft:tube>],
+    [<ore:plateInvar>, <thaumcraft:tube_valve>, <ore:plateInvar>]])
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<thaumcraft:metal_alchemical> * 2)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<contenttweaker:flesh_crystal>, <botania:manaresource:9>, <contenttweaker:flesh_crystal>],
+    [<bloodmagic:blood_rune>, <contenttweaker:flesh_crystal>, <bloodmagic:blood_rune>],
+    [<bloodmagic:blood_rune>, <bloodmagic:monster_soul>, <bloodmagic:blood_rune>]])
+  .addTool(<ore:artisansGrimoire>, 40)
+  .addOutput(<bloodmagic:altar>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <bloodmagic:blood_rune>, null],
+    [<bloodmagic:blood_rune>, <contenttweaker:flesh_crystal>, <bloodmagic:blood_rune>],
+    [null, <bloodmagic:blood_rune>, null]])
+  .addTool(<ore:artisansGrimoire>, 10)
+  .setFluid(<liquid:mercury> * 72)
+  .addOutput(<bloodmagic:slate>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<bloodmagic:monster_soul>, null, <bloodmagic:monster_soul>],
+    [<minecraft:nether_brick>, <thaumcraft:mechanism_simple>, <minecraft:nether_brick>],
+    [<minecraft:nether_brick>, <ore:blockBloodBronze>, <minecraft:nether_brick>]])
+  .addTool(<ore:artisansGrimoire>, 20)
+  .setFluid(<liquid:mercury> * 288)
+  .addOutput(<bloodmagic:soul_forge>)
   .create();
 
 <ore:gearBrass>.add(<contenttweaker:brass_gear>);

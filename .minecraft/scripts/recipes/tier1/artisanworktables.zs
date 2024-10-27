@@ -2,6 +2,15 @@
 
 import scripts.recipes.lib.ArtisanRecipeBuilder as RecipeBuilder;
 
+<ore:meatRaw>.add(
+    <minecraft:fish>,
+    <minecraft:fish:1>,
+    <minecraft:beef>,
+    <minecraft:chicken>,
+    <minecraft:rabbit>,
+    <minecraft:mutton>
+);
+
 RecipeBuilder.get("chef")
     .setShapeless([<ore:meatRaw>])
     .addTool(<ore:artisansRazor>, 2)

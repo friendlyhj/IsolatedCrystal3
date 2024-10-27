@@ -75,3 +75,5 @@ modpack.tooltip.afflatus_of_crafting.next=An example of uncompleted craft:
 modpack.tooltip.afflatus_of_crafting.shift=Press shift to see which crafts haven't been done. 
 modpack.tooltip.afflatus_of_crafting.shifted=The indexes for uncompleted crafts:
 modpack.tooltip.afflatus_of_crafting.completed=The afflatus is completed, can be used for further crafting.
+modpack.tooltip.oil_fabricator.0=Can process different organic inputs at the same time
+modpack.tooltip.oil_fabricator.1=and the output per item will be slightly higher

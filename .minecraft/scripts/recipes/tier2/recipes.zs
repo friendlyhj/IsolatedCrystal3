@@ -77,3 +77,9 @@ recipes.addShaped(<artisanworktables:mechanical_toolbox>, [
     [<ore:gearInvar>, <artisanworktables:toolbox>, <ore:gearInvar>],
     [<ore:plateIron>, <ore:gearTin>, <ore:plateIron>],
 ]);
+
+recipes.remove(<bloodmagic:blood_rune>);
+recipes.remove(<bloodmagic:sacrificial_dagger>);
+recipes.remove(<bloodmagic:altar>);
+recipes.remove(<bloodmagic:soul_snare>);
+recipes.remove(<bloodmagic:soul_forge>);

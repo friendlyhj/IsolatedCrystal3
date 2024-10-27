@@ -4,6 +4,15 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
 
+static basicAspects as string[] = [
+    "aer",
+    "terra",
+    'ignis',
+    "aqua",
+    "ordo",
+    "perditio"
+];
+
 function getArtisanRecipeBuilder(type as string) as RecipeBuilder {
     return RecipeBuilder.get(type);
 }
