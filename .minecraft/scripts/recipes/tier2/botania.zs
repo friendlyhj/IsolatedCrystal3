@@ -1,6 +1,7 @@
 #reloadable
 import mods.botania.ElvenTrade;
 import mods.botania.PureDaisy;
+import mods.botania.RuneAltar;
 
 ElvenTrade.addRecipe([<thaumcraft:sapling_silverwood>], [
     <contenttweaker:vibrant_crystal>, 
@@ -31,3 +32,21 @@ PureDaisy.addRecipe(<sonarcore:reinforcedstoneblock>, <bloodmagic:blood_rune>);
 PureDaisy.addRecipe(<bloodmagic:blood_rune>, <chisel:limestone2:7>);
 PureDaisy.addRecipe(<chisel:limestone2:7>, <astralsorcery:blockmarble>);
 PureDaisy.addRecipe(<astralsorcery:blockmarble>, <naturesaura:infused_stone>);
+RuneAltar.addRecipe(<naturesaura:offering_table>, [
+    <botaniverse:morewood:4>,
+    <botaniverse:morewood:4>,
+    <botaniverse:morewood:4>,
+    <botaniverse:morewood:4>,
+    <naturesaura:infused_stone>,
+    <naturesaura:infused_stone>,
+    <naturesaura:infused_stone>,
+    <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:overworld"}),
+    <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}),
+    <naturesaura:infused_iron>,
+    <naturesaura:infused_iron>,
+    <minecraft:chicken>,
+    <minecraft:rabbit>,
+    <minecraft:mutton>,
+    <minecraft:porkchop>,
+    <minecraft:beef>
+], 500000);

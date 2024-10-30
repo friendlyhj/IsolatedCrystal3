@@ -30,3 +30,5 @@ Infusion.registerRecipe("wrap_crystal", "", <contenttweaker:warp_crystal>, 5.0, 
     <thaumcraft:fabric>,
     <botania:manaresource:23>
 ]);
+
+Infusion.removeRecipe(<thaumadditions:aura_charger>);

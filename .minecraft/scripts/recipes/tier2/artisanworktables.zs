@@ -186,6 +186,16 @@ RecipeBuilder.get("mage")
 
 RecipeBuilder.get("mage")
   .setShaped([
+    [<minecraft:lapis_block>, <naturesaura:infused_iron_block>, <minecraft:lapis_block>],
+    [<botania:manaresource:7>, <thaumadditions:aspect_combiner>, <botania:manaresource:7>],
+    [<botania:rune:3>, <ore:gearElectrum>, <botania:rune:3>]])
+  .addTool(<ore:artisansGrimoire>, 20)
+  .setFluid(<liquid:mercury> * 288)
+  .addOutput(<thaumadditions:aura_charger>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
     [<ore:plateInvar>, <thaumcraft:tube_filter>, <ore:plateInvar>],
     [<thaumcraft:tube>, <thaumcraft:plank_greatwood>, <thaumcraft:tube>],
     [<ore:plateInvar>, <thaumcraft:tube_valve>, <ore:plateInvar>]])
