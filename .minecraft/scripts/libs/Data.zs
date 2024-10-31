@@ -165,6 +165,10 @@ function getBlockPos(data as IData)as IBlockPos{
     return IBlockPos.create(0,0,0);
 }
 
+$expand IBlockPos$asData() as IData {
+    return fromBlockPos(this);
+}
+
 $expand IData$asBlockPos()as IBlockPos{
     return getBlockPos(this);
 }

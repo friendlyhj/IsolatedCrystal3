@@ -90,7 +90,7 @@ recipes.remove(<bloodmagic:soul_forge>);
 recipes.remove(<naturesaura:calling_spirit>);
 recipes.addShaped(<naturesaura:calling_spirit> * 3, [
     [null, <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:overworld"}), null],
-    [<naturesaura:infused_iron>, <ore:manaDiamond>, <naturesaura:infused_iron>],
+    [<naturesaura:infused_iron>, <botania:manaresource:9>, <naturesaura:infused_iron>],
     [null, <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}), null]
 ]);
 recipes.remove(<naturesaura:mover_cart>);
