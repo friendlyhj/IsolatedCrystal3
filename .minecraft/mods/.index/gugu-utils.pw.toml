@@ -1,0 +1,13 @@
+filename = 'gugu-utils-0.8.3.2.jar'
+name = 'GuGu Utils'
+side = 'both'
+
+[download]
+hash = '56b43f837f324edfdc41537aaad7677b5a3d0cd6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3652765
+project-id = 530919

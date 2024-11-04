@@ -1,0 +1,13 @@
+filename = 'BotanicBonsai-1.0.0.5.jar'
+name = 'Botanic Bonsai'
+side = 'both'
+
+[download]
+hash = 'f96ffcec18ee9a5f7e59543a2ae85eb48a1dc6f8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2688799
+project-id = 312778

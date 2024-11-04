@@ -1,0 +1,13 @@
+filename = 'factorytech-1.7.2.jar'
+name = 'Factory Tech'
+side = 'both'
+
+[download]
+hash = '52d6e2f21299834bac451dfe9463c1cd790ecc9f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3845293
+project-id = 278822

@@ -1,0 +1,13 @@
+filename = 'EmergingTechnology-1.12.2-1.3.26-alpha.jar'
+name = 'Emerging Technology'
+side = 'both'
+
+[download]
+hash = '938029063e73d4ab3b564aa37f6bf1a9230a42fa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2997589
+project-id = 353447

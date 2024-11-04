@@ -1,0 +1,13 @@
+filename = 'calculator-1.12.2-5.0.12-15.jar'
+name = 'Calculator'
+side = 'both'
+
+[download]
+hash = 'd68f70c4922095d9a1edc9b30add4244ea2e43ec'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2847174
+project-id = 225104

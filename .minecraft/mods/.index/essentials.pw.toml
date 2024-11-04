@@ -1,0 +1,13 @@
+filename = 'essentials-1.12.2-1.2.1.jar'
+name = 'Essentials'
+side = 'both'
+
+[download]
+hash = '5f85596568c14293c3406b3641d32a90a7262fd5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2709104
+project-id = 293752

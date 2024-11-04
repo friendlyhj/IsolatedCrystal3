@@ -1,0 +1,13 @@
+filename = 'AquaAcrobatics-1.15.4.jar'
+name = 'Aqua Acrobatics [Forge]'
+side = 'both'
+
+[download]
+hash = '098882484be6966b47af3615d43efb9a0f0adef5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5225456
+project-id = 321792

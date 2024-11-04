@@ -1,0 +1,13 @@
+filename = 'Botaniverse 1.1-1.jar'
+name = 'Botaniverse'
+side = 'both'
+
+[download]
+hash = '8e0fbb84c974c452ad412fb654d74dd1a313e0e5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4945200
+project-id = 944656

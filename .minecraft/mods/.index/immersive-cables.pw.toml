@@ -1,0 +1,13 @@
+filename = 'ImmersiveCables-1.12.2-1.3.2.jar'
+name = 'Immersive Cables'
+side = 'both'
+
+[download]
+hash = '6014479ece04c24cef12a312ceaf300a9af448e7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2595013
+project-id = 283992

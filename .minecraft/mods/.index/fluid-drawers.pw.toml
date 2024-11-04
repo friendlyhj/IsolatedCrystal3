@@ -1,0 +1,13 @@
+filename = 'fluiddrawers-1.12.2-1.0.7.jar'
+name = 'Fluid Drawers'
+side = 'both'
+
+[download]
+hash = '1e61697c5be117ece6e2abb9ee73ab6692758ba5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3373954
+project-id = 402338

@@ -1,0 +1,13 @@
+filename = 'RandomTweaker-1.4.7.jar'
+name = 'RandomTweaker'
+side = 'both'
+
+[download]
+hash = 'acae8e8f95d1d1215205cb049c7c3cddfe9ba1d6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5528753
+project-id = 514170

@@ -1,0 +1,13 @@
+filename = 'ForgivingVoid_1.12.2-1.1.0.jar'
+name = 'Forgiving Void'
+side = 'both'
+
+[download]
+hash = '1745ca1164b14f6d72e25777770d2675b3a4cbf0'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2863246
+project-id = 271009

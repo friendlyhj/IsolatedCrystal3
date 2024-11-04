@@ -1,0 +1,13 @@
+filename = 'Alfheim-1.4.jar'
+name = 'Alfheim Lighting Engine'
+side = 'both'
+
+[download]
+hash = '3f0db29f174b28ae23e3f72c12adb3a7cb716b8b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5650399
+project-id = 910715

@@ -1,0 +1,13 @@
+filename = 'voidislandcontrol-1.5.3.jar'
+name = 'Void Island Control'
+side = 'both'
+
+[download]
+hash = 'ed445474d12245f55cac7f94b5a986b3154b1ba7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2666967
+project-id = 257655

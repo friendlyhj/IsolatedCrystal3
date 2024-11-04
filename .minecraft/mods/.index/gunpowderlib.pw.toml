@@ -1,0 +1,13 @@
+filename = 'GunpowderLib-1.12.2-1.1.jar'
+name = 'GunpowderLib'
+side = 'both'
+
+[download]
+hash = '712d7a0bc1b9caba40e303b7252e6995f9b03b62'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 3168863
+project-id = 356646

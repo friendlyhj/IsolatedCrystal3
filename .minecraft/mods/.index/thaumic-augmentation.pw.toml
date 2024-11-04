@@ -1,0 +1,13 @@
+filename = 'ThaumicAugmentation-1.12.2-2.1.13.jar'
+name = 'Thaumic Augmentation'
+side = 'both'
+
+[download]
+hash = 'c1fc5803ba619ab36edf7420d764b91b7d72d7f9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5129455
+project-id = 319441

@@ -11,6 +11,9 @@
 !/.minecraft/resources
 !/.minecraft/oresources
 !/.minecraft/patchouli_books
+!/.minecraft/mods/
+/.minecraft/mods/*
+!/.minecraft/mods/.index/
 
 
 # Extra

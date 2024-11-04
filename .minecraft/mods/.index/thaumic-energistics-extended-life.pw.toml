@@ -1,0 +1,13 @@
+filename = 'thaumic-energistics-extended-life-1.12.2-2.3.3.jar'
+name = 'Thaumic Energistics Extended Life'
+side = 'both'
+
+[download]
+hash = '90cef7d7584193d2351440459ed86a0c371050f9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5512421
+project-id = 849094
