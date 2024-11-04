@@ -203,10 +203,3 @@ recipes.addShaped(<contenttweaker:mana_crusher>, [
 ]);
 recipes.remove(<botania:lens:13>);
 recipes.addShapeless(<botania:lens:13>, [<botania:lens>, <botania:rune>, <contenttweaker:ocean_crystal>]);
-
-// furnace.remove(<projectred-core:resource_item:103>);
-// recipes.remove(<naturesaura:offering_table>);
-
-
-
-

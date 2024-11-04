@@ -40,6 +40,17 @@ item.contenttweaker.completed_afflatus_of_crafting.name=Completed Afflatus of Cr
 item.contenttweaker.mana_essence.name=Mana Essence
 item.contenttweaker.crushed_crushed.name=Crushed²
 
+item.contenttweaker.item_module.name=Item Interaction Module
+item.contenttweaker.network_module.name=Network Interaction Module
+item.contenttweaker.advanced_network_module.name=Advanced Network Interaction Module
+item.contenttweaker.crafting_module.name=Crafting Network Module
+item.contenttweaker.write_module.name=Write Module
+item.contenttweaker.usb_module.name=USB Module
+item.contenttweaker.liquid_module.name=Liquid Interaction Module
+item.contenttweaker.world_module.name=World Interaction Module
+item.contenttweaker.gas_module.name=Gas Interaction Module
+item.contenttweaker.essentia_module.name=Essentia Interaction Module
+
 tile.contenttweaker.red_fruit_block.name=Red Crystal Fruit
 tile.contenttweaker.orange_fruit_block.name=Orange Crystal Fruit
 tile.contenttweaker.yellow_fruit_block.name=Yellow Crystal Fruit

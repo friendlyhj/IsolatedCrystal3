@@ -51,7 +51,19 @@ val itemNames as string[] = [
     "iris_crystal",
 
     "bearing",
-    "brass_gear"
+    "brass_gear",
+
+    // ae2 modules
+    "item_module",
+    "network_module",
+    "advanced_network_module",
+    "crafting_module",
+    "write_module",
+    "usb_module",
+    "liquid_module",
+    "world_module",
+    "gas_module",
+    "essentia_module"
 ];
 
 val fruit_blocks as string[] = [

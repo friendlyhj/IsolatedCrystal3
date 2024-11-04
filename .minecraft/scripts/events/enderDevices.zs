@@ -127,10 +127,8 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     blockName ~= block.meta;
                 }
                 if (name == blockName) {
-                    print("drain " ~ auraConsumption);
                     world.getAuraChunk(pos).drainAura(pos, auraConsumption);
                 } else {
-                    print("invalid");
                     invalidPoses += posData;
                 }
             }
