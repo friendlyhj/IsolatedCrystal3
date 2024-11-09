@@ -304,3 +304,23 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<nuclearcraft:ingot_former>)
   .create();
+
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<astralsorcery:blockmarble>, <minecraft:coal_block>, <astralsorcery:blockmarble>],
+    [<astralsorcery:blockmarble>, <contenttweaker:crafting_crystal>, <astralsorcery:blockmarble>],
+    [<astralsorcery:blockmarble>, <naturesaura:ancient_log>, <astralsorcery:blockmarble>]])
+  .addTool(<ore:artisansGrimoire>, 20)
+  .setFluid(<liquid:mercury> * 288)
+  .addOutput(<astralsorcery:blockaltar>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [null, <astralsorcery:itemcraftingcomponent>, <botania:manaresource:1>],
+    [null, <naturesaura:ancient_stick>, <astralsorcery:itemcraftingcomponent>],
+    [<astralsorcery:blockmarble>, null, null]])
+  .addTool(<ore:artisansGrimoire>, 20)
+  .addOutput(<astralsorcery:itemwand>)
+  .create();

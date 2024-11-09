@@ -134,7 +134,7 @@ recipes.addShapeless(<appliedenergistics2:interface>, [f, i, c, n, u]);
 recipes.remove(<appliedenergistics2:part:280>);
 recipes.addShapeless(<appliedenergistics2:part:280>, [wire, i, n, r]);
 recipes.remove(<appliedenergistics2:part:281>);
-recipes.addShapeless(<appliedenergistics2:part:281>, [wire, f, n, r]);
+recipes.addShapeless(<appliedenergistics2:part:281>, [wire, l, n, r]);
 recipes.remove(<appliedenergistics2:part:80>);
 recipes.addShapeless(<appliedenergistics2:part:80>, [wire, r]);
 recipes.remove(<appliedenergistics2:part:460>);
@@ -202,3 +202,65 @@ recipes.remove(<mekeng:gas_storage_monitor>);
 recipes.addShapeless(<mekeng:gas_storage_monitor>, [p, g, n]);
 recipes.remove(<mekeng:gas_conversion_monitor>);
 recipes.addShapeless(<mekeng:gas_conversion_monitor>, [p, g, n, b, d]);
+recipes.remove(<appliedenergistics2:material:25>);
+recipes.addShaped(<appliedenergistics2:material:25> * 2, [
+    [null, <pneumaticcraft:plastic:7>, <ore:ingotGold>],
+    [<pneumaticcraft:plastic:7>, <appliedenergistics2:material:23>, <ore:dustRedstone>],
+    [null, <pneumaticcraft:plastic:7>, <ore:ingotGold>]
+]);
+recipes.remove(<appliedenergistics2:material:28>);
+recipes.addShaped(<appliedenergistics2:material:28> * 2, [
+    [null, <pneumaticcraft:plastic:7>, <minecraft:diamond>],
+    [<pneumaticcraft:plastic:7>, <appliedenergistics2:material:23>, <ore:dustRedstone>],
+    [null, <pneumaticcraft:plastic:7>, <minecraft:diamond>]
+]);
+recipes.remove(<appliedenergistics2:material:26>);
+recipes.remove(<appliedenergistics2:material:52>);
+recipes.addShaped(<appliedenergistics2:material:52>, [
+    [<appliedenergistics2:quartz_glass>, <ore:glowstone>, <appliedenergistics2:quartz_glass>],
+    [<ore:glowstone>, <factorytech:machinepart:130>, <ore:glowstone>],
+    [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
+]);
+recipes.remove(<appliedenergistics2:material:52>);
+recipes.addShaped(<appliedenergistics2:material:52>, [
+    [<appliedenergistics2:quartz_glass>, <ore:dustGlowstone>, <appliedenergistics2:quartz_glass>],
+    [<ore:dustGlowstone>, <factorytech:machinepart:130>, <ore:dustGlowstone>],
+    [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
+]);
+recipes.remove(<appliedenergistics2:material:39>);
+recipes.addShaped(<appliedenergistics2:material:39>, [
+    [<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
+    [<ore:dustRedstone>, <ore:dustGlowstone>, <ore:dustRedstone>],
+    [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
+]);
+recipes.remove(f);
+recipes.addShaped(f, [
+    [<pneumaticcraft:plastic:7>, <ore:plateAluminum>, <pneumaticcraft:plastic:7>],
+    [<ore:plateAluminum>, <contenttweaker:crafting_crystal>, <ore:plateAluminum>],
+    [<pneumaticcraft:plastic:7>, <ore:plateAluminum>, <pneumaticcraft:plastic:7>]
+]);
+
+recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_1k");
+recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_4k");
+recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_16k");
+recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_64k");
+recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_1k");
+recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_4k");
+recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_16k");
+recipes.removeByRecipeName("appliedenergistics2:network/cells/fluid_storage_cell_64k");
+recipes.removeByRecipeName("mekeng:cell/1k_cell");
+recipes.removeByRecipeName("mekeng:cell/4k_cell");
+recipes.removeByRecipeName("mekeng:cell/16k_cell");
+recipes.removeByRecipeName("mekeng:cell/64k_cell");
+recipes.removeByRecipeName("thaumicenergistics:cells/essentia_cell_1k");
+recipes.removeByRecipeName("thaumicenergistics:cells/essentia_cell_4k");
+recipes.removeByRecipeName("thaumicenergistics:cells/essentia_cell_16k");
+recipes.removeByRecipeName("thaumicenergistics:cells/essentia_cell_64k");
+
+recipes.remove(<astralsorcery:blockaltar>);
+recipes.remove(<astralsorcery:itemwand>);
+recipes.remove(<pneumaticcraft:safety_tube_module>);
+recipes.addShaped(<pneumaticcraft:safety_tube_module>, [
+    [null, <pneumaticcraft:pressure_gauge>, null],
+    [<contenttweaker:calculation_crystal>, <pneumaticcraft:pressure_tube>, <contenttweaker:calculation_crystal>]
+]);

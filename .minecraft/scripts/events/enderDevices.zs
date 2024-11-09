@@ -55,9 +55,9 @@ static enderDevices as int[][IItemStack] = {
     <draconicevolution:energy_crystal:3>: [10, 0],
     <draconicevolution:energy_crystal:4>: [15, 0],
     <draconicevolution:energy_crystal:5>: [20, 0],
-    <draconicevolution:energy_crystal:6>: [40, 0],
-    <draconicevolution:energy_crystal:7>: [45, 0],
-    <draconicevolution:energy_crystal:8>: [50, 0]
+    <draconicevolution:energy_crystal:6>: [70, 0],
+    <draconicevolution:energy_crystal:7>: [90, 0],
+    <draconicevolution:energy_crystal:8>: [120, 0]
 };
 
 static enderDevicesMatchingMap as int[string] = {};

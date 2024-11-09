@@ -129,3 +129,10 @@ RecipeBuilder.newBuilder("blood_crystal", "blood_resonator", 200)
     .addWillInput("DEFAULT", 10)
     .addItemOutput(<contenttweaker:blood_crystal>)
     .build();
+
+RecipeBuilder.newBuilder("astral_crystal", "tiny_astral_altar", 200)
+    .addItemInputs(<contenttweaker:ocean_crystal>, <astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent:2> * 4, <astralsorcery:itemcelestialcrystal>)
+    .addFluidPerTickInput(<liquid:astralsorcery.liquidstarlight> * 5)
+    .addStarlightInput(2000)
+    .addItemOutput(<contenttweaker:astral_crystal>)
+    .build();

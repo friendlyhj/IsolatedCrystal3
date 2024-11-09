@@ -50,3 +50,9 @@ RuneAltar.addRecipe(<naturesaura:offering_table>, [
     <minecraft:porkchop>,
     <minecraft:beef>
 ], 500000);
+ElvenTrade.addRecipe([<astralsorcery:itemcraftingcomponent>], [
+    <contenttweaker:ocean_crystal>,
+    <contenttweaker:ocean_crystal>,
+    <contenttweaker:ocean_crystal>,
+    <contenttweaker:ocean_crystal>
+]);

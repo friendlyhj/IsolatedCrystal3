@@ -65,3 +65,10 @@ Blueprint.addRecipe("modules", <contenttweaker:world_module>, [
     <contenttweaker:destruction_crystal>,
     <contenttweaker:destruction_crystal>
 ]);
+
+Blueprint.addRecipe("modules", <appliedenergistics2:material:26>, [
+    <appliedenergistics2:material:25>,
+    <ore:plateSignalum>,
+    <ore:ingotRedAlloy>,
+    <ore:ingotRedAlloy>,
+]);
