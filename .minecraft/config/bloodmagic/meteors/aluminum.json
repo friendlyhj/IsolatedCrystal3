@@ -1,0 +1,28 @@
+{
+    "catalystStack": {
+      "registryName": {
+        "domain": "contenttweaker",
+        "path": "aluminum_ore_sacrifice"
+      },
+      "meta": 0
+    },
+    "components": [
+      {
+        "weight": 350,
+        "oreName": "minecraft:stone"
+      },
+      {
+        "weight": 200,
+        "oreName": "thermalfoundation:ore:4"
+      },
+      {
+        "weight": 50,
+        "oreName": "thermalfoundation:storage:4"
+      }
+    ],
+    "explosionStrength": 15.0,
+    "radius": 4,
+    "maxWeight": 600,
+    "version": 3,
+    "cost": 1000000
+  }

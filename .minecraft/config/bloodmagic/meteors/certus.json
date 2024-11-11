@@ -1,0 +1,28 @@
+{
+    "catalystStack": {
+      "registryName": {
+        "domain": "contenttweaker",
+        "path": "certus_ore_sacrifice"
+      },
+      "meta": 0
+    },
+    "components": [
+      {
+        "weight": 350,
+        "oreName": "minecraft:stone"
+      },
+      {
+        "weight": 200,
+        "oreName": "appliedenergistics2:quartz_ore"
+      },
+      {
+        "weight": 50,
+        "oreName": "appliedenergistics2:quartz_block"
+      }
+    ],
+    "explosionStrength": 15.0,
+    "radius": 4,
+    "maxWeight": 600,
+    "version": 3,
+    "cost": 1000000
+  }

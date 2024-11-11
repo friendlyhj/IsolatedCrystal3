@@ -217,8 +217,8 @@ recipes.addShaped(<appliedenergistics2:material:28> * 2, [
 recipes.remove(<appliedenergistics2:material:26>);
 recipes.remove(<appliedenergistics2:material:52>);
 recipes.addShaped(<appliedenergistics2:material:52>, [
-    [<appliedenergistics2:quartz_glass>, <ore:glowstone>, <appliedenergistics2:quartz_glass>],
-    [<ore:glowstone>, <factorytech:machinepart:130>, <ore:glowstone>],
+    [<appliedenergistics2:quartz_glass>, <ore:dustGlowstone>, <appliedenergistics2:quartz_glass>],
+    [<ore:dustGlowstone>, <factorytech:machinepart:130>, <ore:dustGlowstone>],
     [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
 ]);
 recipes.remove(<appliedenergistics2:material:52>);

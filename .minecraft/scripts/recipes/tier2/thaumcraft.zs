@@ -2,6 +2,8 @@
 import mods.thaumcraft.Crucible;
 import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Infusion;
+import mods.contenttweaker.MaterialSystem;
+import mods.zenutils.StaticString;
 
 Crucible.removeRecipe(<thaumcraft:ingot:2>);
 Crucible.registerRecipe("brass", "", <thaumcraft:ingot:2>, <ore:ingotBronze>, [<aspect:instrumentum> * 5]);
@@ -45,3 +47,16 @@ Infusion.registerRecipe("essentia_module", "", <contenttweaker:essentia_module>,
     <thaumcraft:salis_mundus>,
     <thaumcraft:quicksilver>
 ]);
+
+for name, part in MaterialSystem.getMaterialPartsByRegex(".*ore_sacrifice.*") {
+    val materialName = part.getMaterial().getName();
+    val block = oreDict.get("block" ~ StaticString.capitalize(materialName));
+    Infusion.registerRecipe(name, "", part.getItemStack(), 7.5, [
+        <aspect:desiderium> * 50, <aspect:terra> * 40, <aspect:alienis> * 20, <aspect:vacuos> * 20
+    ], block, [
+        <contenttweaker:metal_crystal>,
+        <contenttweaker:metal_crystal>,
+        <contenttweaker:astral_crystal>,
+        <contenttweaker:astral_crystal>
+    ]);
+}

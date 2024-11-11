@@ -1,3 +1,22 @@
 {
-  "materialMappings": {}
+  "materialMappings": {
+    "emerald_ore_sacrifice": 16,
+    "uranium_ore_sacrifice": 15,
+    "platinum_ore_sacrifice": 17,
+    "copper_ore_sacrifice": 11,
+    "lead_ore_sacrifice": 3,
+    "diamond_ore_sacrifice": 6,
+    "iridium_ore_sacrifice": 5,
+    "osmium_ore_sacrifice": 1,
+    "tin_ore_sacrifice": 8,
+    "gold_ore_sacrifice": 4,
+    "lapis_ore_sacrifice": 13,
+    "certus_ore_sacrifice": 7,
+    "iron_ore_sacrifice": 9,
+    "aluminum_ore_sacrifice": 2,
+    "coal_ore_sacrifice": 10,
+    "redstone_ore_sacrifice": 14,
+    "silver_ore_sacrifice": 12,
+    "nickel_ore_sacrifice": 0
+  }
 }

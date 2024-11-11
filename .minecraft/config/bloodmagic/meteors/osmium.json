@@ -1,0 +1,28 @@
+{
+    "catalystStack": {
+      "registryName": {
+        "domain": "contenttweaker",
+        "path": "osmium_ore_sacrifice"
+      },
+      "meta": 0
+    },
+    "components": [
+      {
+        "weight": 350,
+        "oreName": "minecraft:stone"
+      },
+      {
+        "weight": 200,
+        "oreName": "mekanism:oreblock"
+      },
+      {
+        "weight": 50,
+        "oreName": "mekanism:basicblock"
+      }
+    ],
+    "explosionStrength": 15.0,
+    "radius": 4,
+    "maxWeight": 600,
+    "version": 3,
+    "cost": 1000000
+  }

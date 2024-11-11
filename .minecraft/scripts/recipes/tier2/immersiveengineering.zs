@@ -18,9 +18,9 @@ Blueprint.addRecipe("modules", <contenttweaker:network_module>, [
 
 Blueprint.addRecipe("modules", <contenttweaker:advanced_network_module>, [
     <appliedenergistics2:material:28>,
+    <fluxnetworks:fluxcore>,
     <contenttweaker:logic_crystal>,
-    <contenttweaker:logic_crystal>,
-    <fluxnetworks:fluxcore>
+    <contenttweaker:logic_crystal>
 ]);
 
 Blueprint.addRecipe("modules", <contenttweaker:crafting_module>, [
@@ -48,15 +48,15 @@ Blueprint.addRecipe("modules", <contenttweaker:usb_module>, [
 Blueprint.addRecipe("modules", <contenttweaker:liquid_module>, [
     <appliedenergistics2:material:28>,
     <astralsorcery:itemcraftingcomponent>,
-    <ore:plateConstantan>,
-    <ore:plateConstantan>,
+    <contenttweaker:ocean_crystal>,
+    <contenttweaker:ocean_crystal>,
 ]);
 
 Blueprint.addRecipe("modules", <contenttweaker:gas_module>, [
     <appliedenergistics2:material:28>,
+    <ore:plateGold>,
     <ore:ingotOsmium>,
     <ore:ingotOsmium>,
-    <ore:plateGold>
 ]);
 
 Blueprint.addRecipe("modules", <contenttweaker:world_module>, [

@@ -1,5 +1,8 @@
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.MaterialSystem;
+import mods.contenttweaker.MaterialBuilder;
+import mods.contenttweaker.PartBuilder;
 
 val itemNames as string[] = [
     // basic crystal fruits
@@ -134,4 +137,38 @@ for name, color in moltenFluids {
 for name, color in plainFluids {
     val fluid = VanillaFactory.createFluid(name, color);
     fluid.register();
+}
+
+val materials as int[string] = {
+    "iron" : 0xd8af93,
+    "coal" : 0x0f0f0f,
+    "copper" : 0xff4100,
+    "lead" : 0x818ebe,
+    "tin" : 0xdbdbdb,
+    "nickel" : 0xd2d2ac,
+    "silver" : 0xf7f7f7,
+    "lapis" : 0x1010cb,
+    "aluminum": 0xe8e8e8,
+    "gold" : 0xffff00,
+    "iridium" : 0xeaeaea,
+    "osmium" : 0x1ea2f6,
+    "redstone" : 0x720000,
+    "certus": 0xa9cdd1,
+    "diamond": 0x8cf4e2,
+    "emerald": 0x41f384,
+    "platinum": 0x67d5f7,
+    "uranium": 0x4b694a
+};
+
+val sacrifice = MaterialSystem.getPartBuilder()
+    .setName("ore_sacrifice")
+    .setPartType(MaterialSystem.getPartType("item"))
+    .build();
+
+for name, color in materials {
+    val material = MaterialSystem.getMaterialBuilder()
+        .setName(name)
+        .setColor(color)
+        .build();
+    material.registerPart(sacrifice);
 }
