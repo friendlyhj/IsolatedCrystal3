@@ -19,7 +19,6 @@ ArcaneWorkbench.removeRecipe(<thaumicenergistics:arcane_inscriber>);
 Crucible.registerRecipe("undead_water", "", <forge:bucketfilled>.withTag({FluidName: "undead_water", Amount: 1000}), <minecraft:water_bucket>, [<aspect:exanimis> * 80]);
 Crucible.registerRecipe("blood_magic_dagger", "", <bloodmagic:sacrificial_dagger>, <thaumcraft:thaumium_sword>, [<aspect:victus> * 48, <aspect:mortuus> * 12]);
 Crucible.registerRecipe("soul_snare", "", <bloodmagic:soul_snare>, <botania:manaresource:16>, [<aspect:vinculum> * 4]);
-
 Infusion.registerRecipe("wrap_crystal", "", <contenttweaker:warp_crystal>, 5.0, [
     <aspect:vitium> * 40, <aspect:vitreus> * 20, <aspect:tenebrae> * 10, <aspect:potentia> * 10
 ],
@@ -60,3 +59,17 @@ for name, part in MaterialSystem.getMaterialPartsByRegex(".*ore_sacrifice.*") {
         <contenttweaker:astral_crystal>
     ]);
 }
+
+Infusion.registerRecipe("awakened_activation_crystal", "", <bloodmagic:activation_crystal:1>, 6.0, [
+    <aspect:infernum> * 60, <aspect:praecantatio> * 60, <aspect:caeles> * 40
+], <bloodmagic:activation_crystal>, [
+    <contenttweaker:blood_crystal>,
+    <contenttweaker:blood_crystal>,
+    <contenttweaker:blood_crystal>,
+    <contenttweaker:blood_crystal>,
+    <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}),
+    <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}),
+    <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}),
+    <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:nether"}),
+    <bloodmagic:ritual_stone>
+]);

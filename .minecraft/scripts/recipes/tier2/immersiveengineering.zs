@@ -1,6 +1,7 @@
 #reloadable
 
 import mods.immersiveengineering.Blueprint;
+import mods.immersiveengineering.BlastFurnace;
 
 Blueprint.addRecipe("modules", <contenttweaker:item_module>, [
     <appliedenergistics2:material:25>,
@@ -72,3 +73,5 @@ Blueprint.addRecipe("modules", <appliedenergistics2:material:26>, [
     <ore:ingotRedAlloy>,
     <ore:ingotRedAlloy>,
 ]);
+
+BlastFurnace.addRecipe(<appliedenergistics2:material:5>, <contenttweaker:sand_dust>, 80);

@@ -221,12 +221,6 @@ recipes.addShaped(<appliedenergistics2:material:52>, [
     [<ore:dustGlowstone>, <factorytech:machinepart:130>, <ore:dustGlowstone>],
     [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
 ]);
-recipes.remove(<appliedenergistics2:material:52>);
-recipes.addShaped(<appliedenergistics2:material:52>, [
-    [<appliedenergistics2:quartz_glass>, <ore:dustGlowstone>, <appliedenergistics2:quartz_glass>],
-    [<ore:dustGlowstone>, <factorytech:machinepart:130>, <ore:dustGlowstone>],
-    [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
-]);
 recipes.remove(<appliedenergistics2:material:39>);
 recipes.addShaped(<appliedenergistics2:material:39>, [
     [<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
@@ -239,6 +233,7 @@ recipes.addShaped(f, [
     [<ore:plateAluminum>, <contenttweaker:crafting_crystal>, <ore:plateAluminum>],
     [<pneumaticcraft:plastic:7>, <ore:plateAluminum>, <pneumaticcraft:plastic:7>]
 ]);
+recipes.remove(<bloodmagic:activation_crystal:1>);
 
 recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_1k");
 recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_4k");
@@ -264,3 +259,5 @@ recipes.addShaped(<pneumaticcraft:safety_tube_module>, [
     [null, <pneumaticcraft:pressure_gauge>, null],
     [<contenttweaker:calculation_crystal>, <pneumaticcraft:pressure_tube>, <contenttweaker:calculation_crystal>]
 ]);
+
+furnace.remove(<appliedenergistics2:material:5>);
