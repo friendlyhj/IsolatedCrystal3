@@ -1,0 +1,15 @@
+{
+	x: 6.75d,
+	y: -1.0d,
+	dependencies: [
+		"a8cefe4a",
+		"a2422fdb"
+	],
+	tasks: [{
+		uid: "df8e8b0a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:completed_afflatus_of_crafting"
+		}]
+	}]
+}

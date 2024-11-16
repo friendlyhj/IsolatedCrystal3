@@ -1,0 +1,38 @@
+{
+	x: 9.0d,
+	y: -1.0d,
+	dependencies: [
+		"3d1a5091",
+		"801e839d",
+		"89f496b7",
+		"5afff572"
+	],
+	tasks: [{
+		uid: "40deb5d9",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter"
+		}]
+	},
+	{
+		uid: "925d2da1",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter 1 8"
+		}]
+	},
+	{
+		uid: "68f977b8",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting 1 1"
+		}]
+	},
+	{
+		uid: "7e93112c",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	}]
+}

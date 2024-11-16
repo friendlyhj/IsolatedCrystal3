@@ -114,7 +114,9 @@ for name in fruit_blocks {
 val moltenFluids as int[string] = {
     "soldering": 0x246755,
     "compressed_iron": 0x34302d,
-    "mithril": 0x8adaff
+    "mithril": 0x8adaff,
+    "temped_iron": 0xadc5c8,
+    "metal_crystal_liquid": 0xefb207
 };
 
 val plainFluids as int[string] = {

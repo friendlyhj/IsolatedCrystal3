@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: 1.5d,
+	dependencies: [
+		"d4716fd5"
+	],
+	tasks: [{
+		uid: "37f94f7d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crushed_crushed"
+		}]
+	}]
+}

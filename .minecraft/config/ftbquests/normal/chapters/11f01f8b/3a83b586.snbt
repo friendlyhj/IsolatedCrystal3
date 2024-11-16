@@ -1,0 +1,14 @@
+{
+	x: 3.5d,
+	y: -2.0d,
+	dependencies: [
+		"a2422fdb"
+	],
+	tasks: [{
+		uid: "562bf6d7",
+		type: "item",
+		items: [{
+			item: "minecraft:fire_charge"
+		}]
+	}]
+}

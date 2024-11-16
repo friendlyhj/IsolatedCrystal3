@@ -1,0 +1,30 @@
+{
+	x: 7.5d,
+	y: 0.0d,
+	dependencies: [
+		"d4716fd5"
+	],
+	tasks: [{
+		uid: "d5cf4d3f",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball"
+		}]
+	}],
+	rewards: [{
+		uid: "4878edc8",
+		type: "item",
+		item: {
+			id: "tconstruct:rack",
+			Damage: 1s,
+			tag: {
+				textureBlock: {
+					id: "minecraft:wooden_slab",
+					Count: 1,
+					Damage: 0s
+				}
+			}
+		},
+		count: 4
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: 7.5d,
+	y: -3.75d,
+	shape: "hexagon",
+	hide_dependency_lines: true,
+	dependencies: [
+		"d8c7e712"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "5ce9e5c0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crafting_crystal"
+		}]
+	}]
+}

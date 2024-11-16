@@ -1,0 +1,18 @@
+{
+	x: 9.0d,
+	y: -3.75d,
+	shape: "hexagon",
+	hide_dependency_lines: true,
+	dependencies: [
+		"0e9b7995",
+		"3e77fdb0"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "99b70e66",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ocean_crystal"
+		}]
+	}]
+}

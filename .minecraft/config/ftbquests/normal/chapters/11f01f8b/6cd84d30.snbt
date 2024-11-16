@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 6.0d,
+	dependencies: [
+		"7b8c51e4"
+	],
+	tasks: [{
+		uid: "2b980656",
+		type: "item",
+		items: [{
+			item: "botania:felpumpkin"
+		}]
+	}]
+}

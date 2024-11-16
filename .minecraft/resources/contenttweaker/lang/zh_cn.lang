@@ -75,6 +75,8 @@ fluid.undead_water=亡灵之水
 fluid.vinyl_chloride=液态氯乙烯
 fluid.mercury=水银
 fluid.mithril=熔融秘银
+fluid.temped_iron=熔融钢化铁
+fluid.metal_crystal_liquid=金属水晶液
 
 gas.vinyl_chloride=氯乙烯
 gas.lpg=石油气

@@ -1,0 +1,15 @@
+{
+	x: 3.85d,
+	y: 2.1d,
+	dependencies: [
+		"b1d7f72b"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "114d0b09",
+		type: "item",
+		items: [{
+			item: "botania:grassseeds"
+		}]
+	}]
+}

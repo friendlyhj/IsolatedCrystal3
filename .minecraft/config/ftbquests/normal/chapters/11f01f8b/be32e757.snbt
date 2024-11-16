@@ -1,0 +1,17 @@
+{
+	x: 1.5d,
+	y: -3.75d,
+	shape: "hexagon",
+	hide_dependency_lines: true,
+	dependencies: [
+		"0af13b3c"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "789cd3e2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flesh_crystal"
+		}]
+	}]
+}

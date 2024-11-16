@@ -1,0 +1,43 @@
+{
+	x: 13.5d,
+	y: 3.0d,
+	dependencies: [
+		"cd047ba4"
+	],
+	tasks: [{
+		uid: "6b4f3ad3",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}]
+	},
+	{
+		uid: "2268ff48",
+		type: "item",
+		items: [{
+			id: "botania:twigwand",
+			tag: {
+				color1: 0,
+				color2: 0
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a6e39cd2",
+		type: "item",
+		items: [{
+			item: "botania:spreader"
+		}]
+	},
+	{
+		uid: "6946b921",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "endoflame"
+			}
+		}]
+	}]
+}

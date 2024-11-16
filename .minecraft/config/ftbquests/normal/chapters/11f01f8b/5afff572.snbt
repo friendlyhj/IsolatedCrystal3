@@ -1,0 +1,14 @@
+{
+	x: 6.75d,
+	y: -2.0d,
+	dependencies: [
+		"3a83b586"
+	],
+	tasks: [{
+		uid: "9ba6901f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:blazing_spark"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 1.5d,
+	y: 0.5d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"2c157821",
+		"0bedcc9b"
+	],
+	tasks: [{
+		uid: "5bac7228",
+		type: "item",
+		items: [{
+			item: "minecraft:log"
+		}]
+	}]
+}

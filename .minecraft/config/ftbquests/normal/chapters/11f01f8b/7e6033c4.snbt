@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: 3.0d,
+	dependencies: [
+		"7b8c51e4"
+	],
+	tasks: [{
+		uid: "a1cffff7",
+		type: "item",
+		items: [{
+			item: "botania:fertilizer"
+		}]
+	}]
+}

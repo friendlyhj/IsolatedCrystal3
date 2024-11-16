@@ -1,0 +1,16 @@
+{
+	x: 1.5d,
+	y: -1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"adf3c0fb",
+		"00f479b1"
+	],
+	tasks: [{
+		uid: "3d2969c8",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}]
+}

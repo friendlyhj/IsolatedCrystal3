@@ -2,6 +2,7 @@
 
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.BlastFurnace;
+import mods.immersiveengineering.ArcFurnace;
 
 Blueprint.addRecipe("modules", <contenttweaker:item_module>, [
     <appliedenergistics2:material:25>,
@@ -75,3 +76,5 @@ Blueprint.addRecipe("modules", <appliedenergistics2:material:26>, [
 ]);
 
 BlastFurnace.addRecipe(<appliedenergistics2:material:5>, <contenttweaker:sand_dust>, 80);
+ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:4>);
+

@@ -74,6 +74,8 @@ fluid.mithril=Molten Mithril
 fluid.undead_water=Undead Water
 fluid.vinyl_chloride=Liquid Vinyl Chloride
 fluid.mercury=Mercury
+fluid.temped_iron=Molten Temped Iron
+fluid.metal_crystal_liquid=Metal Crystal Liquid
 
 gas.vinyl_chloride=Vinyl Chloride
 gas.lpg=LPG

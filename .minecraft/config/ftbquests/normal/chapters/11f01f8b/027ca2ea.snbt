@@ -1,0 +1,15 @@
+{
+	x: 1.5d,
+	y: 3.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"b36142be"
+	],
+	tasks: [{
+		uid: "057b8df2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:blood_clot"
+		}]
+	}]
+}

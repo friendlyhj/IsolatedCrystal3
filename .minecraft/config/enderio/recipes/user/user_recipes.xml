@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
-
+    <recipe name="Alloy: Conductive Iron" disabled= "true"/>
+    <recipe name="Alloy: Conductive Iron Tweak" required="true">
+		<alloying energy="10000" exp="0.7" >
+		 <input name="factorytech:machinepart:130" />
+		 <input name="minecraft:redstone" />
+		 <output name="ingotConductiveIron" />
+		</alloying>
+	</recipe>
 </enderio:recipes>

@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: 1.5d,
+	dependencies: [
+		"711d709c"
+	],
+	tasks: [{
+		uid: "1609f32a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:jade_leaf"
+		}]
+	}]
+}
