@@ -261,3 +261,5 @@ recipes.addShaped(<pneumaticcraft:safety_tube_module>, [
 ]);
 
 furnace.remove(<appliedenergistics2:material:5>);
+
+recipes.replaceAllOccurrences(<ore:ingotCupronickel>, <ore:ingotConstantan>);

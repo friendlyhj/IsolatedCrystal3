@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -20.0d,
+	dependencies: [
+		"5377bba3"
+	],
+	tasks: [{
+		uid: "acae3041",
+		type: "item",
+		items: [{
+			item: "minecraft:prismarine_crystals"
+		}]
+	}]
+}

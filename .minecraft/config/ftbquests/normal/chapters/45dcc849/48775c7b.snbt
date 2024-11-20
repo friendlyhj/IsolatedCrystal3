@@ -1,14 +1,14 @@
 {
 	x: 10.5d,
-	y: 1.0d,
+	y: -2.0d,
 	dependencies: [
-		"bc8cb8ee"
+		"036b60c6"
 	],
 	tasks: [{
-		uid: "038624ef",
+		uid: "6f03cf12",
 		type: "item",
 		items: [{
-			item: "minecraft:furnace"
+			item: "enderio:item_alloy_ingot 1 4"
 		}]
 	}]
 }

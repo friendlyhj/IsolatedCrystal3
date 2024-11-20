@@ -1,14 +1,14 @@
 {
 	x: 10.5d,
-	y: 1.0d,
+	y: -0.5d,
 	dependencies: [
-		"bc8cb8ee"
+		"fe6e65e1"
 	],
 	tasks: [{
-		uid: "038624ef",
+		uid: "750cf169",
 		type: "item",
 		items: [{
-			item: "minecraft:furnace"
+			item: "extrautils2:ingredients 1 12"
 		}]
 	}]
 }

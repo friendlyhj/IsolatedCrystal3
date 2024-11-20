@@ -1,0 +1,14 @@
+{
+	x: 1.5d,
+	y: -14.0d,
+	dependencies: [
+		"43715b64"
+	],
+	tasks: [{
+		uid: "8b84b076",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_snare"
+		}]
+	}]
+}

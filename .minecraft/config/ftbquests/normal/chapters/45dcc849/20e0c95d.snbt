@@ -1,0 +1,21 @@
+{
+	x: 1.5d,
+	y: -18.5d,
+	dependencies: [
+		"4c7347ed"
+	],
+	tasks: [{
+		uid: "a0a35fe4",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crystallizer"
+		}]
+	},
+	{
+		uid: "dd3f597c",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crucible"
+		}]
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 18.0d,
+	y: -5.0d,
+	shape: "hexagon",
+	dependencies: [
+		"d763c366"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "817b3196",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electric_crystal"
+		}]
+	}]
+}

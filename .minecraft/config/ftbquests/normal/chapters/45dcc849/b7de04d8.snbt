@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: -23.25d,
+	shape: "hexagon",
+	dependencies: [
+		"18ff8a47"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "5a8ba544",
+		type: "item",
+		items: [{
+			item: "contenttweaker:warp_crystal"
+		}]
+	}]
+}

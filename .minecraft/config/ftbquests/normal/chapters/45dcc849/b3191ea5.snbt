@@ -1,14 +1,14 @@
 {
 	x: 10.5d,
-	y: 1.0d,
+	y: -3.5d,
 	dependencies: [
-		"bc8cb8ee"
+		"14ba2c02"
 	],
 	tasks: [{
-		uid: "038624ef",
+		uid: "1c48a267",
 		type: "item",
 		items: [{
-			item: "minecraft:furnace"
+			item: "factorytech:ingot 1 4"
 		}]
 	}]
 }

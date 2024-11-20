@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: -11.0d,
+	dependencies: [
+		"58184d87"
+	],
+	tasks: [{
+		uid: "0809f060",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crucible"
+		}]
+	},
+	{
+		uid: "3dabd12d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:metal_alchemical"
+		}],
+		count: 2L
+	}]
+}

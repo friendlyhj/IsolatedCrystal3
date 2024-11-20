@@ -1,0 +1,7 @@
+{
+	title: "孤零零工业革命",
+	icon: "embers:winding_gears",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

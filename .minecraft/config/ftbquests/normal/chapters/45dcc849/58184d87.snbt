@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: -9.5d,
+	dependencies: [
+		"8610840e",
+		"73079b58"
+	],
+	tasks: [{
+		uid: "3230607c",
+		type: "item",
+		items: [{
+			item: "thaumadditions:aspect_combiner"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: -11.0d,
+	dependencies: [
+		"a23d79b3"
+	],
+	tasks: [{
+		uid: "db13946e",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockwell"
+		}]
+	}]
+}

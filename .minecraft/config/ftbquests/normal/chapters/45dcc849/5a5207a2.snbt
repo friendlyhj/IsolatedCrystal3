@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: -5.0d,
+	dependencies: [
+		"83e88ba9"
+	],
+	tasks: [{
+		uid: "fc033005",
+		type: "item",
+		items: [{
+			item: "factorytech:fluiddrill"
+		}]
+	}]
+}

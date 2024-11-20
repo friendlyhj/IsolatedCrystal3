@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -0.5d,
+	dependencies: [
+		"24077571"
+	],
+	tasks: [{
+		uid: "be800629",
+		type: "item",
+		items: [{
+			item: "botania:rfgenerator"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 9.0d,
+	y: -5.0d,
+	dependencies: [
+		"5a5207a2"
+	],
+	tasks: [{
+		uid: "53e8d8d6",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock2"
+		}]
+	},
+	{
+		uid: "1945b5c8",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock2 1 2"
+		}]
+	}]
+}

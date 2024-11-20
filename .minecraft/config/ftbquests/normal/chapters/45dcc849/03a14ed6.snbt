@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: -5.0d,
+	dependencies: [
+		"34e01e8f"
+	],
+	tasks: [{
+		uid: "41df0116",
+		type: "item",
+		items: [{
+			item: "factorytech:circuitscribe"
+		}]
+	}]
+}

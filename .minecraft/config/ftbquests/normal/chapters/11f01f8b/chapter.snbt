@@ -1,7 +1,7 @@
 {
-	title: "自然",
-	icon: "contenttweaker:nature_crystal",
+	title: "炉心融解",
+	icon: "minecraft:furnace",
 	always_invisible: false,
 	group: 0,
-	default_quest_shape: ""
+	default_quest_shape: "circle"
 }

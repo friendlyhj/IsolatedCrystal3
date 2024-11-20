@@ -1,0 +1,16 @@
+{
+	x: 1.5d,
+	y: -23.25d,
+	shape: "hexagon",
+	dependencies: [
+		"0066323f"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "df98c84d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:blood_crystal"
+		}]
+	}]
+}

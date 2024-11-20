@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: -6.5d,
+	dependencies: [
+		"2bc30a40"
+	],
+	tasks: [{
+		uid: "cec0ae78",
+		type: "item",
+		items: [{
+			item: "pneumaticcraft:refinery"
+		}]
+	}]
+}

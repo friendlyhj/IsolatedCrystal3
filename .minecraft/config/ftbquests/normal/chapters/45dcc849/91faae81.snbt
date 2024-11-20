@@ -1,0 +1,14 @@
+{
+	x: 1.5d,
+	y: -8.0d,
+	dependencies: [
+		"085d8aac"
+	],
+	tasks: [{
+		uid: "31687fa4",
+		type: "item",
+		items: [{
+			item: "mekanism:salt"
+		}]
+	}]
+}

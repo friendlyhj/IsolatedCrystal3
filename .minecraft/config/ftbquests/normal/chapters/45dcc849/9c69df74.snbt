@@ -1,0 +1,21 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	dependencies: [
+		"24077571"
+	],
+	tasks: [{
+		uid: "2975a156",
+		type: "item",
+		items: [{
+			item: "thaumcraft:sapling_silverwood"
+		}]
+	},
+	{
+		uid: "8972c3f7",
+		type: "item",
+		items: [{
+			item: "thaumcraft:sapling_greatwood"
+		}]
+	}]
+}

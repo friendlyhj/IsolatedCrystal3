@@ -1,0 +1,16 @@
+{
+	x: 18.0d,
+	y: -8.0d,
+	shape: "hexagon",
+	dependencies: [
+		"ba7df738"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "c1cffc88",
+		type: "item",
+		items: [{
+			item: "contenttweaker:logic_crystal"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -17.0d,
+	dependencies: [
+		"3da7b970"
+	],
+	tasks: [{
+		uid: "b7953dd5",
+		type: "item",
+		items: [{
+			item: "naturesaura:sky_ingot"
+		}]
+	}]
+}

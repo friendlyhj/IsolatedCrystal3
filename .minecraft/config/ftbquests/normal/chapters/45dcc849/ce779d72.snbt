@@ -1,0 +1,16 @@
+{
+	x: 3.0d,
+	y: -23.25d,
+	shape: "hexagon",
+	dependencies: [
+		"9ab654c1"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "afd0e2d0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:aura_crystal"
+		}]
+	}]
+}

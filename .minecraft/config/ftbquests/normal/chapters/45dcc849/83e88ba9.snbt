@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -5.0d,
+	dependencies: [
+		"03a14ed6"
+	],
+	tasks: [{
+		uid: "40685959",
+		type: "item",
+		items: [{
+			item: "factorytech:agitator"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: -5.0d,
+	dependencies: [
+		"9c69df74"
+	],
+	tasks: [{
+		uid: "15f45ece",
+		type: "item",
+		items: [{
+			item: "modularmachinery:essentia_generator_controller"
+		}]
+	}]
+}

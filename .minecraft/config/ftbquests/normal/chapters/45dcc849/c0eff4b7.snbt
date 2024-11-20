@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: -6.5d,
+	dependencies: [
+		"6627182d"
+	],
+	tasks: [{
+		uid: "d8d1cb90",
+		type: "item",
+		items: [{
+			item: "pneumaticcraft:plastic_mixer"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: -3.5d,
+	dependencies: [
+		"7ff98f5a"
+	],
+	tasks: [{
+		uid: "ea99307a",
+		type: "item",
+		items: [{
+			item: "factorytech:temperer"
+		}]
+	}]
+}

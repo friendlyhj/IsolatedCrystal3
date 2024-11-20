@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -6.5d,
+	dependencies: [
+		"2b28a9d2"
+	],
+	tasks: [{
+		uid: "441559f5",
+		type: "item",
+		items: [{
+			item: "modularmachinery:oil_fabricator_controller"
+		}]
+	}]
+}
