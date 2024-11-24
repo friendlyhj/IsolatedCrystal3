@@ -324,3 +324,83 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansGrimoire>, 20)
   .addOutput(<astralsorcery:itemwand>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <factorytech:machinepart:51>, null],
+    [<ore:plateTin>, <minecraft:redstone>, <ore:plateTin>],
+    [<ore:plateTin>, <minecraft:dye:4>, <ore:plateTin>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .setFluid(<liquid:soldering> * 72)
+  .addOutput(<factorytech:intermediate:4>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <tconstruct:tool_rod>.withTag({Material: "invar"}), null],
+    [<ore:plateTin>, <ore:gearInvar>, <ore:plateTin>],
+    [<ore:plateTin>, <factorytech:machinepart:21>, <ore:plateTin>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .setFluid(<liquid:soldering> * 72)
+  .addOutput(<factorytech:machinepart:60>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <tconstruct:tool_rod>.withTag({Material: "lumium_plustic"}), null],
+    [<ore:plateTin>, <ore:gearInvar>, <ore:plateTin>],
+    [<ore:plateTin>, <factorytech:machinepart:22>, <ore:plateTin>]])
+  .addTool(<ore:artisansSolderer>, 5)
+  .setFluid(<liquid:soldering> * 72)
+  .addOutput(<factorytech:machinepart:61>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <factorytech:machinepart:111>, <ore:plateSteel>],
+    [<mekanism:gastank>.withTag({tier: 0}), <contenttweaker:ocean_crystal>, <factorytech:tankblock>],
+    [<ore:plateSteel>, <factorytech:machinepart:111>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSolderer>, 20)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<mekanism:machineblock2>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <factorytech:machinepart:101>, <ore:plateSteel>],
+    [<mekanism:gastank>.withTag({tier: 0}), <contenttweaker:crafting_crystal>, <mekanism:gastank>.withTag({tier: 0})],
+    [<ore:plateSteel>, <factorytech:machinepart:101>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSolderer>, 20)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<mekanism:machineblock2:2>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<pneumaticcraft:ingot_iron_compressed>, <pneumaticcraft:compressed_iron_gear>, <pneumaticcraft:ingot_iron_compressed>],
+    [<contenttweaker:earth_crystal>, <contenttweaker:earth_crystal>, <contenttweaker:earth_crystal>],
+    [<pneumaticcraft:ingot_iron_compressed>, <naturesaura:infused_iron_block>, <pneumaticcraft:ingot_iron_compressed>]])
+  .addTool(<ore:artisansSolderer>, 20)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<modularmachinery:oil_fabricator_controller>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<minecraft:nether_brick>, <bloodmagic:slate:3>, <minecraft:nether_brick>],
+    [<bloodmagic:monster_soul>, <bloodmagic:monster_soul>, <bloodmagic:monster_soul>],
+    [<minecraft:nether_brick>, <botaniverse:morerune:1>, <minecraft:nether_brick>]])
+  .addTool(<ore:artisansGrimoire>, 50)
+  .setFluid(<liquid:mercury> * 576)
+  .addOutput(<modularmachinery:blood_resonator_controller>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:plateIron>, null],
+    [<ore:plateIron>, <contenttweaker:bearing>, <ore:plateIron>],
+    [null, <ore:plateIron>, null]])
+  .addTool(<ore:artisansHammer>, 5)
+  .setFluid(<liquid:soldering> * 72)
+  .addOutput(<factorytech:machinepart:40>)
+  .create();

@@ -2,6 +2,7 @@
 import mods.botania.ElvenTrade;
 import mods.botania.PureDaisy;
 import mods.botania.RuneAltar;
+import mods.botania.ManaInfusion;
 
 ElvenTrade.addRecipe([<thaumcraft:sapling_silverwood>], [
     <contenttweaker:vibrant_crystal>, 
@@ -56,3 +57,4 @@ ElvenTrade.addRecipe([<astralsorcery:itemcraftingcomponent>], [
     <contenttweaker:ocean_crystal>,
     <contenttweaker:ocean_crystal>
 ]);
+ManaInfusion.addAlchemy(<minecraft:netherrack>, <minecraft:cobblestone>, 800);

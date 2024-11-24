@@ -36,6 +36,7 @@ Infusion.registerRecipe("wrap_crystal", "", <contenttweaker:warp_crystal>, 5.0, 
 ]);
 
 Infusion.removeRecipe(<thaumadditions:aura_charger>);
+Infusion.removeRecipe(<thaumadditions:aspect_combiner>);
 
 Infusion.registerRecipe("essentia_module", "", <contenttweaker:essentia_module>, 3.0, [
     <aspect:machina> * 20, <aspect:auram> * 20, <aspect:permutatio> * 20

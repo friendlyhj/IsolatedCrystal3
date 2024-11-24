@@ -86,6 +86,19 @@ recipes.remove(<bloodmagic:sacrificial_dagger>);
 recipes.remove(<bloodmagic:altar>);
 recipes.remove(<bloodmagic:soul_snare>);
 recipes.remove(<bloodmagic:soul_forge>);
+recipes.remove(<factorytech:intermediate:4>);
+recipes.remove(<factorytech:machinepart:40>);
+recipes.removeByRecipeName("factorytech:parts/motor");
+recipes.removeByRecipeName("factorytech:parts/motorgold");
+
+recipes.remove(<factorytech:fluiddrill>);
+recipes.addShaped(<factorytech:fluiddrill>, [
+    [null, <factorytech:machinepart:60>, null],
+    [<ore:plateInvar>, <factorytech:pipe>, <ore:plateInvar>],
+    [<ore:plateInvar>, <factorytech:machinepart:72>, <ore:plateInvar>],
+]);
+recipes.remove(<mekanism:machineblock2>);
+recipes.remove(<mekanism:machineblock2:2>);
 
 recipes.remove(<naturesaura:calling_spirit>);
 recipes.addShaped(<naturesaura:calling_spirit> * 3, [
@@ -259,7 +272,8 @@ recipes.addShaped(<pneumaticcraft:safety_tube_module>, [
     [null, <pneumaticcraft:pressure_gauge>, null],
     [<contenttweaker:calculation_crystal>, <pneumaticcraft:pressure_tube>, <contenttweaker:calculation_crystal>]
 ]);
-
+recipes.remove(<extrautils2:scanner>);
+recipes.addShapeless(<extrautils2:scanner>, [<minecraft:dropper>, <minecraft:redstone>, <contenttweaker:calculation_crystal>]);
 furnace.remove(<appliedenergistics2:material:5>);
 
 recipes.replaceAllOccurrences(<ore:ingotCupronickel>, <ore:ingotConstantan>);

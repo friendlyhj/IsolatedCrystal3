@@ -100,7 +100,6 @@ events.onBlockNeighborNotify(function(event as BlockNeighborNotifyEvent) {
                 ]
             }
         }, DataUpdateOperation.MERGE));
-        logger.logWarning(world.getCustomWorldData().asString());
     }
 });
 
@@ -137,11 +136,7 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     EnderDevices: {
                         `${name}`: IData.createDataList(invalidPoses)
                     }
-                }, {
-                    EnderDevices: {
-                        `${name}`: DataUpdateOperation.REMOVE
-                    }
-                }));
+                }, DataUpdateOperation.REMOVE));
             }
         }
     }
