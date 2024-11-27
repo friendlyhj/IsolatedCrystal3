@@ -404,3 +404,13 @@ RecipeBuilder.get("blacksmith")
   .setFluid(<liquid:soldering> * 72)
   .addOutput(<factorytech:machinepart:40>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateIron>, <ore:gearTin>, <ore:plateIron>],
+    [<minecraft:glass>, <contenttweaker:crafting_crystal>, <minecraft:glass>],
+    [<ore:plateIron>, <minecraft:glass>, <ore:plateIron>]])
+  .addTool(<ore:artisansSolderer>, 10)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<thermalexpansion:frame>)
+  .create();

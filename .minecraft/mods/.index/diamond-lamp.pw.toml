@@ -1,0 +1,13 @@
+filename = 'DiamondLamps 1.1.0 [1.12.2].jar'
+name = 'Diamond Lamp'
+side = 'both'
+
+[download]
+hash = 'fc2752a456201fdeef89f1c1b52f12a6d1183e8b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2557267
+project-id = 293047

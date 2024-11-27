@@ -22,5 +22,13 @@
     "casings_item": [
         "modularmachinery:blockinputbus",
         "modularmachinery:blockoutputbus"
+    ],
+    "lamp": [
+        "diamondlamps:gemlamp",
+        "diamondlamps:purplelamp",
+        "diamondlamps:redlamp",
+        "diamondlamps:greenlamp",
+        "diamondlamps:blacklamp",
+        "diamondlamps:pinklamp"
     ]
 }

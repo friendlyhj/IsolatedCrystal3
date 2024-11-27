@@ -1,13 +1,13 @@
-filename = 'zenutils-1.20.10.jar'
+filename = 'zenutils-1.21.3.jar'
 name = 'ZenUtils'
 side = 'both'
 
 [download]
-hash = '8fbb737ed5912774c24edb334b22fdd07886cdd1'
+hash = '0c926741ffa4f03747c9821c70425aceb3f5ae85'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5807386
+file-id = 5935733
 project-id = 401178

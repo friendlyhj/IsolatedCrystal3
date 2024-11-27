@@ -1,0 +1,1174 @@
+{
+    "registryname": "digital_calculator",
+    "localizedname": "Digital Calculator",
+    "color": "7fffd4",
+    "parts": [
+        {
+            "x": 3,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_display_stand@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "forgemultipartcbe:multipart_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_display_stand@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "forgemultipartcbe:multipart_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": -3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -2,
+            "elements": [
+                "modularmachinery:blockoutputbus"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": -1,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": -3,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": -4,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "sonarcore:stablestonerimmed_cyan@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -2,
+            "elements": [
+                "sonarcore:stablestoneblackrimmed_cyan@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "calculator:calculatorplug@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "lamp"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "lamp"
+            ]
+        }
+    ]}

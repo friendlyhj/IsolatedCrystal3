@@ -275,5 +275,6 @@ recipes.addShaped(<pneumaticcraft:safety_tube_module>, [
 recipes.remove(<extrautils2:scanner>);
 recipes.addShapeless(<extrautils2:scanner>, [<minecraft:dropper>, <minecraft:redstone>, <contenttweaker:calculation_crystal>]);
 furnace.remove(<appliedenergistics2:material:5>);
+recipes.remove(<thermalexpansion:frame>);
 
 recipes.replaceAllOccurrences(<ore:ingotCupronickel>, <ore:ingotConstantan>);

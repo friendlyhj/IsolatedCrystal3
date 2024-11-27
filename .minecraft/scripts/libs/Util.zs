@@ -3,6 +3,7 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
+import mods.modularmachinery.IMachineController;
 
 static basicAspects as string[] = [
     "aer",
@@ -29,6 +30,10 @@ $expand IBlockPos$rotateYNorthUntil(facing as IFacing) as IBlockPos {
 
 $expand IBlockPos$offset(pos as IBlockPos) as IBlockPos {
     return this.add(pos.x, pos.y, pos.z);
+}
+
+$expand IMachineController$relativePos(x as int, y as int, z as int) as IBlockPos {
+    return this.pos.offset(this.rotateWithControllerFacing(IBlockPos.create(x, y, z)));
 }
 
 function toLowerCamelCase(arg as string) as string {
