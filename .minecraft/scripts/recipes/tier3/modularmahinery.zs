@@ -82,10 +82,7 @@ RecipeBuilder.newBuilder("perditio_crystal", "emptiness_energizer", 120)
     .build();
 
 function checkCircuit(controller as IMachineController, high as bool, required as int) as bool {
-    var offset as int = 2;
-    if (high) {
-        offset = -2;
-    }
+    val offset as int = high ? -2 : 2;
     val itemHandler = controller.world.getItemHandler(controller.relativePos(offset, 0, 2), up);
     val item = itemHandler.getStackInSlot(0);
     val lampOffset = controller.relativePos(offset, 0, 0);
