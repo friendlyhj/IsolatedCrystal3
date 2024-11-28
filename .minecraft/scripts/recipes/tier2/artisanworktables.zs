@@ -414,3 +414,13 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<thermalexpansion:frame>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<botania:rune:12>, <factorytech:machinepart:111>, <botania:rune:12>],
+    [<thaumcraft:mechanism_complex>, <thermalexpansion:frame>, <thaumcraft:mechanism_complex>],
+    [<bloodmagic:slate:2>, <thermalfoundation:material:293>, <bloodmagic:slate:2>]])
+  .addTool(<ore:artisansSolderer>, 10)
+  .setFluid(<liquid:soldering> * 576)
+  .addOutput(<modularmachinery:mechanical_artisan_controller>)
+  .create();

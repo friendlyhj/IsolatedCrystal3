@@ -39,3 +39,13 @@ RecipeBuilder.get("engineer")
     [<appliedenergistics2:material:8>, <appliedenergistics2:material:8>, <appliedenergistics2:material:8>]])
   .addOutput(<calculator:calculatorscreen>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<appliedenergistics2:material:38>, <calculator:flawlessglass>, <appliedenergistics2:material:38>],
+    [<calculator:flawlessglass>, <calculator:calculatorlocator>, <calculator:flawlessglass>],
+    [<appliedenergistics2:controller>, <calculator:flawlessglass>, <appliedenergistics2:controller>]])
+  .addTool(<artisanworktables:artisans_solderer_invar>, 50)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<modularmachinery:digital_calculator_controller>)
+  .create();

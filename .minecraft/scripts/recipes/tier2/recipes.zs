@@ -278,3 +278,10 @@ furnace.remove(<appliedenergistics2:material:5>);
 recipes.remove(<thermalexpansion:frame>);
 
 recipes.replaceAllOccurrences(<ore:ingotCupronickel>, <ore:ingotConstantan>);
+
+recipes.remove(<appliedenergistics2:controller>);
+recipes.addShaped(<appliedenergistics2:controller>, [
+    [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:12>, <sonarcore:reinforcedstoneblock>],
+    [<appliedenergistics2:material:12>, <contenttweaker:advanced_network_module>, <appliedenergistics2:material:12>],
+    [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:12>, <sonarcore:reinforcedstoneblock>],
+]);

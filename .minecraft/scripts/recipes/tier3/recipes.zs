@@ -4,6 +4,15 @@ recipes.remove(<mekanism:basicblock:8>);
 recipes.remove(<enderio:item_basic_capacitor>);
 recipes.remove(<mekanism:machineblock:8>);
 recipes.remove(<mekanism:machineblock2:4>);
+recipes.remove(<calculator:calculatorscreen>);
+recipes.remove(<calculator:powercube>);
+recipes.removeByRecipeName("sonarcore:tile.stablestone_normal1");
+
+recipes.addShaped(<calculator:powercube>, [
+    [<sonarcore:reinforcedstoneblock>, <sonarcore:reinforcedstoneblock>, <sonarcore:reinforcedstoneblock>],
+    [<sonarcore:reinforcedstoneblock>, <enderio:item_basic_capacitor>, <sonarcore:reinforcedstoneblock>],
+    [<sonarcore:reinforcedstoneblock>, <sonarcore:reinforcedstoneblock>, <sonarcore:reinforcedstoneblock>]
+]);
 
 recipes.remove(<calculator:calculatorassembly>);
 recipes.addShaped(<calculator:calculatorassembly> * 2, [
