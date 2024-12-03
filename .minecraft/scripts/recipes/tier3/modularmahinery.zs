@@ -1,12 +1,17 @@
 #reloadable
+#debug
 
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipeStartEvent;
+import mods.modularmachinery.RecipeCheckEvent;
 import mods.modularmachinery.RecipeTickEvent;
 import mods.modularmachinery.RecipeFinishEvent;
 import mods.modularmachinery.RecipeEvent;
 import mods.modularmachinery.IMachineController;
+import mods.modularmachinery.MMEvents;
+import mods.modularmachinery.MachineTickEvent;
 import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IVector3d;
 import crafttweaker.data.IData;
 import mods.zenutils.StringList;
 import scripts.libs.Util.basicAspects;
@@ -127,5 +132,50 @@ RecipeBuilder.newBuilder("calculation_crystal", "digital_calculator", 120)
         for x in ([-2, 2] as int[]) {
             controller.world.setBlockState(<blockstate:diamondlamps:gemlamp>, controller.relativePos(x, 0, 0));
         }
+    })
+    .build();
+
+MMEvents.onMachinePreTick("natural_grace", function(event as MachineTickEvent) {
+    val controller = event.controller;
+    val world = controller.world;
+    val pos = controller.pos;
+    var stormBurstCount as int = 0;
+    for burst in world.nearbyEntities(IVector3d.create(0.5 + pos.x, 0.5 + pos.y, 0.5 + pos.z), 2.0).filterType(<entity:botania:mana_burst>).entities {
+        if (burst.tags has "storm") {
+            burst.setDead();
+            stormBurstCount += 1;
+        }
+    }
+    if (isNull(controller.customData)) {
+        controller.customData = {Bursts: 0};
+    }
+    val prev = controller.customData.Bursts.asInt();
+    controller.customData = {Bursts : (prev + stormBurstCount)};
+});
+
+RecipeBuilder.newBuilder("nature_crystal", "natural_grace", 120)
+    .addItemInputs(
+        <botania:manaresource:4>,
+        <naturesaura:token_euphoria>,
+        <naturesaura:token_terror>,
+        <naturesaura:token_rage>,
+        <naturesaura:token_grief>,
+        <botania:rune:4>,
+        <botania:rune:5>,
+        <botania:rune:6>,
+        <botania:rune:7>
+    )
+    .addFluidInput(<liquid:ender> * 500)
+    .addAuraInput(1250)
+    .addItemOutput(<contenttweaker:nature_crystal>)
+    .addPostCheckHandler(function(event as RecipeCheckEvent) {
+        val bursts = event.controller.customData.Bursts.asInt();
+        if (bursts < 100) {
+            event.setFailed("Not enough mana storm bursts");
+        }
+    })
+    .addStartHandler(function(event as RecipeStartEvent) {
+        val bursts = event.controller.customData.Bursts.asInt();
+        event.controller.customData = {Bursts: bursts - 100};
     })
     .build();
