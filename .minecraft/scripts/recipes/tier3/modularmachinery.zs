@@ -108,7 +108,7 @@ function checkCircuit(controller as IMachineController, high as bool, required a
 }
 
 RecipeBuilder.newBuilder("calculation_crystal", "digital_calculator", 120)
-    .addItemInputs(<contenttweaker:logic_crystal>, <appliedenergistics2:material:38>, <calculator:flawlessassembly>, <contenttweaker:advanced_network_module>)
+    .addItemInputs(<contenttweaker:logic_crystal>, <appliedenergistics2:material:37>, <calculator:flawlessassembly>, <contenttweaker:advanced_network_module>)
     .addItemOutput(<contenttweaker:calculation_crystal>)
     .addEnergyPerTickInput(2400)
     .addStartHandler(function(event as RecipeStartEvent) {

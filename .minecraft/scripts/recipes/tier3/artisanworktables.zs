@@ -49,3 +49,34 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<modularmachinery:digital_calculator_controller>)
   .create();
+
+RecipeBuilder.get("chef")
+  .setShapeless([<minecraft:mycelium>, <minecraft:mycelium>, <minecraft:glass>, <minecraft:mycelium>, <contenttweaker:blood_crystal>])
+  .setFluid(<liquid:water> * 1000)
+  .addTool(<ore:artisansBeaker>, 20)
+  .addOutput(<minecraft:dirt> * 2)
+  .setExtraOutputOne(<contenttweaker:lactic_acid_bacteria>, 0.05)
+  .create();
+
+RecipeBuilder.get("chef")
+  .setShapeless([<contenttweaker:lactic_acid_bacteria>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>])
+  .addTool(<ore:artisansBeaker>, 2)
+  .setFluid(<liquid:water> * 1000)
+  .addOutput(<contenttweaker:lactic_acid_mixture>)
+  .create();
+
+RecipeBuilder.get("chef")
+  .setShapeless([<minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>])
+  .addTool(<ore:artisansBeaker>, 2)
+  .setFluid(<liquid:lactic_acid> * 20)
+  .addOutput(<contenttweaker:lactic_acid_mixture>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<nuclearcraft:part:6>, <nuclearcraft:part:6>, <nuclearcraft:part:6>],
+    [<contenttweaker:logic_crystal>, <enderio:item_basic_capacitor:1>, <contenttweaker:logic_crystal>],
+    [<nuclearcraft:part:6>, <ore:gearAluminum>, <nuclearcraft:part:6>]])
+  .addTool(<ore:artisansSpanner>, 16)
+  .addOutput(<extrautils2:machine>)
+  .create();

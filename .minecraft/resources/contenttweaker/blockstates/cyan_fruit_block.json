@@ -2,8 +2,8 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/cyan_fruit_block",
-      "particle": "contenttweaker:blocks/cyan_fruit_block"
+      "texture": "contenttweaker:blocks/crystal_fruit_block",
+      "particle": "contenttweaker:blocks/crystal_fruit_block"
     },
     "model": "base:storage",
     "uvlock": true,

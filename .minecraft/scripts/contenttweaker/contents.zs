@@ -1,19 +1,13 @@
 #loader contenttweaker
+
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.MaterialBuilder;
 import mods.contenttweaker.PartBuilder;
+import mods.contenttweaker.ResourceLocation;
+import mods.contenttweaker.Color;
 
 val itemNames as string[] = [
-    // basic crystal fruits
-    "red_fruit",
-    "orange_fruit",
-    "yellow_fruit",
-    "green_fruit",
-    "cyan_fruit",
-    "blue_fruit",
-    "purple_fruit",
-
     // basic rainbow materials
     "blood_clot",
     "blazing_spark",
@@ -55,6 +49,8 @@ val itemNames as string[] = [
 
     "bearing",
     "brass_gear",
+    "lactic_acid_mixture",
+    "lactic_acid_bacteria",
 
     // ae2 modules
     "item_module",
@@ -69,28 +65,23 @@ val itemNames as string[] = [
     "essentia_module"
 ];
 
-val fruit_blocks as string[] = [
-    "red_fruit_block",
-    "orange_fruit_block",
-    "yellow_fruit_block",
-    "green_fruit_block",
-    "cyan_fruit_block",
-    "blue_fruit_block",
-    "purple_fruit_block"
-];
-
 for name in itemNames {
     VanillaFactory.createItem(name).register();
 }
 
-val log = VanillaFactory.createBlock("crystal_log", <blockmaterial:wood>);
+val log = VanillaFactory.createDirectionalBlock("crystal_log", <blockmaterial:wood>, "ALL");
 log.blockResistance = 1800000.0f;
+log.blockLayer = "TRANSLUCENT";
+log.fullBlock = false;
+log.translucent = true;
 log.blockHardness = -1;
 log.register();
 
 val leaves = VanillaFactory.createBlock("crystal_leaves", <blockmaterial:leaves>);
 leaves.blockResistance = 1800000.0f;
-leaves.blockLayer = "CUTOUT";
+leaves.blockLayer = "TRANSLUCENT";
+leaves.translucent = true;
+leaves.fullBlock = false;
 leaves.blockHardness = -1;
 leaves.register();
 
@@ -101,14 +92,40 @@ crusher.register();
 val destructionMatrix = VanillaFactory.createBlock("destruction_matrix", <blockmaterial:rock>);
 destructionMatrix.register();
 
-for name in fruit_blocks {
-    val block = VanillaFactory.createBlock(name, <blockmaterial:plants>);
+val colors as int[string] = {
+    "red": 0xb92837,
+    "orange": 0xf19149,
+    "yellow": 0xfff45c,
+    "green": 0x32b16c,
+    "cyan": 0x13b5b1,
+    "blue": 0x0068b7,
+    "purple": 0x66188b
+};
+
+for name, color in colors {
+    val block = VanillaFactory.createBlock(name ~ "_fruit_block", <blockmaterial:plants>);
     block.blockHardness = 1.0f;
-    block.setDropHandler(function(drops, world, pos, state, fortune) {
+    block.textureLocation = ResourceLocation.create("contenttweaker:blocks/crystal_fruit_block");
+    block.blockLayer = "TRANSLUCENT";
+    block.fullBlock = false;
+    block.dropHandler = function(drops, world, pos, state, fortune) {
         drops.clear();
         drops.add(<item:contenttweaker:${name.substring(0, name.length - 6)}>);
-    });
+    };
+    block.blockColorSupplier = function(state, world, pos, tintIndex) {
+        return Color.fromInt(color);
+    };
+    block.itemColorSupplier = function(item, tintIndex) {
+        return Color.fromInt(color);
+    };
     block.register();
+
+    val item = VanillaFactory.createItem(name ~ "_fruit");
+    item.itemColorSupplier = function(item, tintIndex) {
+        return tintIndex == 0 ? Color.fromInt(color) : Color.fromInt(0xffffff);
+    };
+    item.textureLocation = ResourceLocation.create("contenttweaker:items/crystal_fruit");
+    item.register();
 }
 
 val moltenFluids as int[string] = {
@@ -123,6 +140,8 @@ val plainFluids as int[string] = {
     "undead_water": 0x550000,
     "vinyl_chloride": 0x46745d,
     "mercury": 0xdddddd,
+    "lactic_acid": 0xeeeeb9,
+    "poly_lactic_acid": 0xccccb9
 };
 
 for name, color in moltenFluids {

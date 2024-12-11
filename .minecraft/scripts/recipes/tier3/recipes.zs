@@ -34,3 +34,11 @@ recipes.addShaped(<calculator:atomicmodule> * 2, [
     [<calculator:advancedassembly>, <mekanism:controlcircuit:3>, <calculator:advancedassembly>],
     [<calculator:smalltanzanite>, <calculator:advancedassembly>, <calculator:smalltanzanite>]
 ]);
+
+recipes.removeByRecipeName("extrautils2:machine_base");
+recipes.removeByRegex("industrialforegoing:.*_thermal");
+recipes.removeByRegex("industrialforegoing:.*_enderio");
+recipes.replaceAllOccurrences(<teslacorelib:machine_case>, <extrautils2:machine>, <*>.only(function(item) {
+    return item.definition.owner == "industrialforegoing";
+}));
+recipes.replaceAllOccurrences(<industrialforegoing:plastic>, <nuclearcraft:part:6>);

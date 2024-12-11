@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "contenttweaker:items/blue_fruit"
+    "layer0": "contenttweaker:items/crystal_fruit",
+    "layer1": "contenttweaker:items/crystal_fruit_leaves"
   }
 }
