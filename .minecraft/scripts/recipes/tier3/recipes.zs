@@ -42,3 +42,4 @@ recipes.replaceAllOccurrences(<teslacorelib:machine_case>, <extrautils2:machine>
     return item.definition.owner == "industrialforegoing";
 }));
 recipes.replaceAllOccurrences(<industrialforegoing:plastic>, <nuclearcraft:part:6>);
+recipes.remove(<emergingtechnology:machinecase>);

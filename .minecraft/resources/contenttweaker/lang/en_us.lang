@@ -67,6 +67,9 @@ item.contenttweaker.lactic_acid_bacteria.name=Lactic Acid Bacteria Growth Medium
 tile.contenttweaker.crystal_log.name=Crystal Log
 tile.contenttweaker.crystal_leaves.name=Crystal Leaves
 
+item.contenttweaker.crystal_alga.name=Crystal Alga
+item.contenttweaker.crystal_alga_seeds.name=Crystal Alga Seeds
+
 tile.contenttweaker.mana_crusher.name=Mana Crusher
 tile.contenttweaker.destruction_matrix.name=Destruction Matrix
 

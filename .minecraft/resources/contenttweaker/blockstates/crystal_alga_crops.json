@@ -1,0 +1,67 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "crop": "contenttweaker:blocks/crystal_alga_crop_1",
+            "particle": "contenttweaker:blocks/crystal_alga_crop_1"
+        },
+        "model": "minecraft:crop",
+        "transform": "forge:default-block"
+    },
+    "variants": {
+        "normal": [
+            {}
+        ],
+        "inventory": [
+            {}
+        ],
+        "age=0": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_1",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_1"
+            }
+        }],
+        "age=1": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_2",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_2"
+            }
+        }],
+        "age=2": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_3",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_3"
+            }
+        }],
+        "age=3": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_4",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_4"
+            }
+        }],
+        "age=4": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_5",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_5"
+            }
+        }],
+        "age=5": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_6",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_6"
+            }
+        }],
+        "age=6": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_7",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_7"
+            }
+        }],
+        "age=7": [{
+            "textures": {
+                "crop": "contenttweaker:blocks/crystal_alga_crop_8",
+                "particle": "contenttweaker:blocks/crystal_alga_crop_8"
+            }
+        }]
+    }
+}

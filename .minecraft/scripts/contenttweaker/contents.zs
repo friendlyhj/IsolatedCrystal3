@@ -62,7 +62,9 @@ val itemNames as string[] = [
     "liquid_module",
     "world_module",
     "gas_module",
-    "essentia_module"
+    "essentia_module",
+
+    "crystal_alga"
 ];
 
 for name in itemNames {

@@ -77,7 +77,7 @@ events.onBlockNeighborNotify(function(event as BlockNeighborNotifyEvent) {
     val block = event.block;
     if (world.remote) return;
     if (event.blockState.material.matches(air)) return;
-    val item = itemUtils.getItem(block.definition.id, block.meta);
+    val item = block.getItem(world, event.position, event.blockState);
     var isEnderDevice = false;
     var matchingMeta = false;
     for device, info in enderDevices {
