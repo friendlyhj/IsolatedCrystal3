@@ -179,3 +179,30 @@ RecipeBuilder.newBuilder("nature_crystal", "natural_grace", 120)
         event.controller.customData = {Bursts: bursts - 100};
     })
     .build();
+
+RecipeBuilder.newBuilder("life_crystal", "life_constructor", 120)
+    .addItemInputs(
+        <contenttweaker:blood_crystal>,
+        <bloodmagic:slate:4>,
+        <bloodmagic:item_demon_crystal:1> * 2,
+        <bloodmagic:item_demon_crystal:2> * 2,
+        <bloodmagic:item_demon_crystal:3> * 2,
+        <bloodmagic:item_demon_crystal:4> * 2,
+        <emergingtechnology:syntheticpigraw> * 3,
+        <emergingtechnology:syntheticchickenraw> * 3,
+        <emergingtechnology:syntheticcowraw> * 3,
+        <emergingtechnology:syntheticleather> * 3,
+        <minecraft:rotten_flesh> * 3,
+        <thaumcraft:brain> * 3,
+        <calculator:firediamond> * 4,
+        <contenttweaker:crystal_alga> * 8,
+        <calculator:fiddledewfruit> * 8,
+        <calculator:broccoli> * 8
+    )
+    .addItemOutput(<contenttweaker:life_crystal>)
+    .addPostCheckHandler(function(event as RecipeCheckEvent) {
+        if (event.controller.world.dimension != -1) {
+            event.setFailed("Only works on nether");
+        }
+    })
+    .build();
