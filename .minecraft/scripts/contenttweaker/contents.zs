@@ -51,6 +51,9 @@ val itemNames as string[] = [
     "brass_gear",
     "lactic_acid_mixture",
     "lactic_acid_bacteria",
+    "crystal_alga",
+    "space_grid",
+    "space_matrix",
 
     // ae2 modules
     "item_module",
@@ -62,9 +65,7 @@ val itemNames as string[] = [
     "liquid_module",
     "world_module",
     "gas_module",
-    "essentia_module",
-
-    "crystal_alga"
+    "essentia_module"
 ];
 
 for name in itemNames {

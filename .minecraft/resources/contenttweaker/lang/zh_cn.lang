@@ -63,6 +63,8 @@ item.contenttweaker.bearing.name=轴承
 item.contenttweaker.brass_gear.name=炼金黄铜齿轮
 item.contenttweaker.lactic_acid_mixture.name=乳酸发酵物
 item.contenttweaker.lactic_acid_bacteria.name=乳酸菌培养基
+item.contenttweaker.space_grid.name=空间网格
+item.contenttweaker.space_matrix.name=空间矩阵
 
 tile.contenttweaker.crystal_log.name=水晶树原木
 tile.contenttweaker.crystal_leaves.name=水晶树树叶

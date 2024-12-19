@@ -13,6 +13,7 @@ import mods.modularmachinery.MachineTickEvent;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IVector3d;
 import crafttweaker.data.IData;
+import crafttweaker.item.IIngredient;
 import mods.zenutils.StringList;
 import scripts.libs.Util.basicAspects;
 import native.thaumcraft.common.entities.EntityFluxRift;
@@ -206,3 +207,41 @@ RecipeBuilder.newBuilder("life_crystal", "life_constructor", 120)
         }
     })
     .build();
+
+val timeSpaceCrystalInputs as IIngredient[] = [
+    <contenttweaker:astral_crystal>,
+    <appliedenergistics2:material:48> * 2,
+    <contenttweaker:space_matrix>,
+    <enderio:item_material:35>
+];
+
+val otherCombinations as int[][] = [
+    [0, 1, 2],
+    [0, 1, 3],
+    [0, 2, 3],
+    [1, 2, 3],
+    [0, 1],
+    [0, 2],
+    [0, 3],
+    [1, 2],
+    [1, 3],
+    [2, 3],
+    [0],
+    [1],
+    [2],
+    [3]
+];
+
+RecipeBuilder.newBuilder("space_time_crystal", "time_transmutator", 120, 0)
+    .addItemInputs(timeSpaceCrystalInputs)
+    .addItemOutput(<contenttweaker:space_time_crystal>)
+    .build();
+
+for i, combination in otherCombinations {
+    val builder = RecipeBuilder.newBuilder("space_time_crystal_failed_" ~ i, "time_transmutator", 10, 10 - combination.length);
+    for j in combination {
+        builder.addItemInput(timeSpaceCrystalInputs[j]);
+    }
+    builder.addItemOutput(<appliedenergistics2:material:46>);
+    builder.build();
+}
