@@ -43,3 +43,33 @@ recipes.replaceAllOccurrences(<teslacorelib:machine_case>, <extrautils2:machine>
 }));
 recipes.replaceAllOccurrences(<industrialforegoing:plastic>, <nuclearcraft:part:6>);
 recipes.remove(<emergingtechnology:machinecase>);
+
+recipes.remove(<extrautils2:interactionproxy>);
+recipes.addShaped(<extrautils2:interactionproxy>, [
+    [<thermalfoundation:material:167>, <contenttweaker:aura_crystal>, <thermalfoundation:material:167>],
+    [<contenttweaker:aura_crystal>, <botania:manaresource:8>, <contenttweaker:aura_crystal>],
+    [<thermalfoundation:material:167>, <contenttweaker:aura_crystal>, <thermalfoundation:material:167>]
+]);
+
+recipes.remove(<nae2:upgrade:1>);
+recipes.addShaped(<nae2:upgrade:1>, [
+    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>],
+    [<contenttweaker:calculation_crystal>, <appliedenergistics2:material:53>, <contenttweaker:calculation_crystal>],
+    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>]
+]);
+
+recipes.addShaped(<nae2:part:1>, [
+    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>],
+    [<contenttweaker:calculation_crystal>, <appliedenergistics2:part:460>, <contenttweaker:calculation_crystal>],
+    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>]
+]);
+
+recipes.remove(<appliedenergistics2:material:58>);
+recipes.addShapeless(<appliedenergistics2:material:58>, [<appliedenergistics2:material:28>, <appliedenergistics2:interface>, <contenttweaker:calculation_crystal>]);
+
+recipes.remove(<nae2:part>);
+recipes.addShaped(<nae2:part> * 2, [
+    [<thermalfoundation:storage_alloy:6>, <contenttweaker:space_grid>, <thermalfoundation:storage_alloy:6>],
+    [<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:calculation_crystal>, <appliedenergistics2:quartz_vibrant_glass>],
+    [null, <appliedenergistics2:part:76>, null]
+]);

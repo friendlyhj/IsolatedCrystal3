@@ -285,3 +285,6 @@ recipes.addShaped(<appliedenergistics2:controller>, [
     [<appliedenergistics2:material:12>, <contenttweaker:advanced_network_module>, <appliedenergistics2:material:12>],
     [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:12>, <sonarcore:reinforcedstoneblock>],
 ]);
+
+recipes.remove(<appliedenergistics2:material:53>);
+recipes.addShapeless(<appliedenergistics2:material:53>, [c]);

@@ -57,7 +57,14 @@ static enderDevices as int[][IItemStack] = {
     <draconicevolution:energy_crystal:5>: [20, 0],
     <draconicevolution:energy_crystal:6>: [70, 0],
     <draconicevolution:energy_crystal:7>: [90, 0],
-    <draconicevolution:energy_crystal:8>: [120, 0]
+    <draconicevolution:energy_crystal:8>: [120, 0],
+    <draconicevolution:dislocator_receptacle>: [150, 1],
+    <botania:redstringcomparator>: [40, 1],
+    <botania:redstringcontainer>: [50, 1],
+    <botania:redstringdispenser>: [40, 1],
+    <botania:redstringfertilizer>: [40, 1],
+    <botania:redstringinterceptor>: [40, 1],
+    <botania:redstringrelay>: [40, 1],
 };
 
 static enderDevicesMatchingMap as int[string] = {};
