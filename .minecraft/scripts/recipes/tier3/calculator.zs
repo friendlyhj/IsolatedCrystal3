@@ -6,6 +6,7 @@ import mods.calculator.algorithmSeparator as AlgorithmSeparator;
 import mods.calculator.stoneSeparator as StoneSeparator;
 
 Basic.removeRecipe(<calculator:reinforcedironingot>);
+Basic.removeRecipe(<sonarcore:reinforcedstoneblock>);
 Basic.addRecipe(<factorytech:ingot:4>, <sonarcore:reinforcedstoneblock>, <calculator:reinforcedironingot>);
 Basic.removeRecipe(<calculator:enrichedgold>);
 Basic.addRecipe(<enderio:item_alloy_ingot:1>, <contenttweaker:metal_crystal>, <calculator:enrichedgold> * 4);

@@ -100,6 +100,7 @@ modpack.tooltip.afflatus_of_crafting.shifted=未完成的合成编号列表:
 modpack.tooltip.afflatus_of_crafting.completed=该物品已完成制作，可以进行参与其它物品的合成了。
 modpack.tooltip.oil_fabricator.0=可以同时处理不同的有机物品输入
 modpack.tooltip.oil_fabricator.1=且单位产出也会略微提高
+modpack.tooltip.mechanical_artisan=使配方瞬间完成
 modpack.tooltip.aura_consume=§2末影设备，消耗 %s 灵气/tick
 
 modularmachinery.essentia_generator=源质生成器

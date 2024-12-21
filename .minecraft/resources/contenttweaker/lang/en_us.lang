@@ -99,6 +99,7 @@ modpack.tooltip.afflatus_of_crafting.shifted=The indexes for uncompleted crafts:
 modpack.tooltip.afflatus_of_crafting.completed=The afflatus is completed, can be used for further crafting.
 modpack.tooltip.oil_fabricator.0=Can process different organic inputs at the same time
 modpack.tooltip.oil_fabricator.1=and the output per item will be slightly higher
+modpack.tooltip.mechanical_artisan=Make recipe complete instantly
 modpack.tooltip.aura_consume=§2Ender device，consume %s aura/tick
 
 contenttweaker.part.ore_sacrifice=%s Scarifice

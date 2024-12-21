@@ -17,6 +17,7 @@ import mods.modularmachinery.IngredientArrayPrimer;
 import mods.modularmachinery.RecipeCheckEvent;
 import mods.modularmachinery.RecipeFinishEvent;
 import mods.modularmachinery.RecipeStartEvent;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 zenClass ArtisanRecipeBuilder {
     val artisan as Artisan;
@@ -157,6 +158,22 @@ zenClass ArtisanRecipeBuilder {
         for item, chance in extraOutputs {
             mm.addItemOutput(item).setChance(chance);
         }
+        mm.addCatalystInput(<contenttweaker:space_time_crystal>, [
+            game.localize("modpack.tooltip.mechanical_artisan")
+        ], [
+            RecipeModifierBuilder.newBuilder()
+                .setRequirementType("modularmachinery:duration")
+                .setOperation(0)
+                .setIOType("input")
+                .setValue(-119)
+                .build(),
+            RecipeModifierBuilder.newBuilder()
+                .setRequirementType("modularmachinery:energy")
+                .setOperation(1)
+                .setIOType("input")
+                .setValue(120)
+                .build()
+        ]).setChance(0.005f);
         mm.build();
     }
 

@@ -84,7 +84,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<emergingtechnology:plasticrod>, <contenttweaker:blood_crystal>, <emergingtechnology:plasticrod>],
-    [<emergingtechnology:plasticrod>, <contenttweaker:calculation_crystal>, <emergingtechnology:plasticrod>],
+    [<emergingtechnology:plasticrod>, <contenttweaker:logic_crystal>, <emergingtechnology:plasticrod>],
     [<emergingtechnology:plasticrod>, <enderio:item_basic_capacitor>, <emergingtechnology:plasticrod>]])
   .addTool(<ore:artisansSpanner>, 10)
   .addOutput(<emergingtechnology:machinecase>)
@@ -93,7 +93,7 @@ RecipeBuilder.get("engineer")
 RecipeBuilder.get("engineer")
   .setShaped([
     [<mekanism:polyethene:1>, <contenttweaker:blood_crystal>, <mekanism:polyethene:1>],
-    [<mekanism:polyethene:1>, <contenttweaker:calculation_crystal>, <mekanism:polyethene:1>],
+    [<mekanism:polyethene:1>, <contenttweaker:logic_crystal>, <mekanism:polyethene:1>],
     [<mekanism:polyethene:1>, <enderio:item_basic_capacitor>, <mekanism:polyethene:1>]])
   .addTool(<ore:artisansSpanner>, 10)
   .addOutput(<emergingtechnology:machinecase>)

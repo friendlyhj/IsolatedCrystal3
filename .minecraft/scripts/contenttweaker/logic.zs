@@ -85,3 +85,6 @@ affc.glowing = true;
     }
     return item;
 });
+
+<contenttweaker:space_grid>.maxStackSize = 1;
+<contenttweaker:space_matrix>.maxStackSize = 1;
