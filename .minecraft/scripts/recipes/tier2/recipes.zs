@@ -113,6 +113,8 @@ recipes.addShaped(<naturesaura:mover_cart>, [
     [null, <minecraft:minecart>, null]
 ]);
 
+recipes.addShapeless(<thaumcraft:amber>, [<contenttweaker:flesh_crystal>, <naturesaura:gold_powder>]);
+
 val i = <item:contenttweaker:item_module>;
 val c = <item:contenttweaker:crafting_module>;
 val r = <appliedenergistics2:material:26>;
@@ -282,7 +284,7 @@ recipes.replaceAllOccurrences(<ore:ingotCupronickel>, <ore:ingotConstantan>);
 recipes.remove(<appliedenergistics2:controller>);
 recipes.addShaped(<appliedenergistics2:controller>, [
     [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:12>, <sonarcore:reinforcedstoneblock>],
-    [<appliedenergistics2:material:12>, <contenttweaker:advanced_network_module>, <appliedenergistics2:material:12>],
+    [<appliedenergistics2:material:12>, <appliedenergistics2:material:24>, <appliedenergistics2:material:12>],
     [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:12>, <sonarcore:reinforcedstoneblock>],
 ]);
 

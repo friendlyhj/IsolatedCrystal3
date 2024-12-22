@@ -156,6 +156,7 @@ MMEvents.onMachinePreTick("natural_grace", function(event as MachineTickEvent) {
 
 RecipeBuilder.newBuilder("nature_crystal", "natural_grace", 120)
     .addItemInputs(
+        <contenttweaker:aura_crystal>,
         <botania:manaresource:4>,
         <naturesaura:token_euphoria>,
         <naturesaura:token_terror>,

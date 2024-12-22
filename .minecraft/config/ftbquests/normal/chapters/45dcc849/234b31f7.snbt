@@ -9,7 +9,7 @@
 		uid: "03d2a09a",
 		type: "item",
 		items: [{
-			item: "pneumaticcraft:plastic 1 7"
+			item: "pneumaticcraft:plastic 1 8"
 		}],
 		ignore_damage: true
 	}]

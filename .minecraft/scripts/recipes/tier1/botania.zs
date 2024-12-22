@@ -3,7 +3,7 @@
 import mods.botania.ManaInfusion;
 import mods.botania.Apothecary;
 import mods.botania.RuneAltar;
-
+import mods.botania.Orechid;
 
 ManaInfusion.addInfusion(<minecraft:blaze_rod>, <botania:blazeblock>, 500);
 ManaInfusion.addAlchemy(<minecraft:quartz>, <appliedenergistics2:material>, 5000);
@@ -52,9 +52,26 @@ RuneAltar.addRecipe(<botania:rune:2> * 2, [
     <contenttweaker:earth_crystal>
 ], 5200);
 
-// RuneAltar.addRecipe(<naturesaura:offering_table>, [
-//     <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, 
-//     <naturesaura:infused_iron>, <naturesaura:infused_iron>, 
-//     <minecraft:chicken>, <minecraft:beef>, <minecraft:porkchop>, <minecraft:mutton>, <naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:overworld"}), 
-//     <botania:rune:4>, <botania:rune:5>, <botania:rune:6>, <botania:rune:7>
-// ], 150000);
+for od in native.vazkii.botania.api.BotaniaAPI.oreWeights {
+    Orechid.removeOre(od);
+}
+
+Orechid.addOre("oreIron", 400);
+Orechid.addOre("oreCoal", 500);
+Orechid.addOre("oreCopper", 220);
+Orechid.addOre("oreTin", 180);
+Orechid.addOre("oreSilver", 125);
+Orechid.addOre("oreLead", 125);
+Orechid.addOre("oreGold", 100);
+Orechid.addOre("oreNickel", 100);
+Orechid.addOre("oreAluminum", 120);
+Orechid.addOre("orePlatinum", 5);
+Orechid.addOre("oreRedstone", 100);
+Orechid.addOre("oreLapis", 96);
+Orechid.addOre("oreDiamond", 20);
+Orechid.addOre("oreEmerald", 10);
+Orechid.addOre("oreCertusQuartz", 90);
+Orechid.addOre("oreChargedCertusQuartz", 4);
+Orechid.addOre("oreCinnabar", 75);
+Orechid.addOre("oreOsmium", 90);
+Orechid.addOre("oreUranium", 50);
