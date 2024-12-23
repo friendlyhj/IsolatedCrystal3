@@ -4,6 +4,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
 import mods.modularmachinery.IMachineController;
+import mods.ctintegration.date.IDate;
 
 static basicAspects as string[] = [
     "aer",
@@ -16,6 +17,10 @@ static basicAspects as string[] = [
 
 function getArtisanRecipeBuilder(type as string) as RecipeBuilder {
     return RecipeBuilder.get(type);
+}
+
+function now() as IDate {
+    return IDate.getInstance();
 }
 
 $expand IBlockPos$rotateYNorthUntil(facing as IFacing) as IBlockPos {

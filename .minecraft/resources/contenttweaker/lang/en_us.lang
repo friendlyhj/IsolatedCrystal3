@@ -102,5 +102,8 @@ modpack.tooltip.oil_fabricator.1=and the output per item will be slightly higher
 modpack.tooltip.mechanical_artisan=Make recipe complete instantly
 modpack.tooltip.aura_consume=§2Ender device，consume %s aura/tick
 
+modpack.info.time_real=Real time: %s
+modpack.info.time_game=Played for %s hours, %s minutes
+
 contenttweaker.part.ore_sacrifice=%s Scarifice
 

@@ -103,6 +103,9 @@ modpack.tooltip.oil_fabricator.1=且单位产出也会略微提高
 modpack.tooltip.mechanical_artisan=使配方瞬间完成
 modpack.tooltip.aura_consume=§2末影设备，消耗 %s 灵气/tick
 
+modpack.info.time_real=现实时间 %s
+modpack.info.time_game=已游玩 %s 小时 %s 分钟
+
 modularmachinery.essentia_generator=源质生成器
 modularmachinery.mechanical_artisan=机械工匠台
 modularmachinery.oil_fabricator=原油制造机
