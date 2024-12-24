@@ -8,4 +8,5 @@
 		 <output name="ingotConductiveIron" />
 		</alloying>
 	</recipe>
+	<recipe name="Soul Chassis" disabled= "true"/>
 </enderio:recipes>

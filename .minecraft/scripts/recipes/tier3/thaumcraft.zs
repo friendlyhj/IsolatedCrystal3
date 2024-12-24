@@ -33,3 +33,42 @@ Infusion.registerRecipe("electric_separator", "", <mekanism:machineblock2:4>, 2,
     <factorytech:tankblock>,
     <botania:manaresource:2>
 ]);
+
+Infusion.registerRecipe("emptiness_energizer", "", <modularmachinery:emptiness_energizer_controller>, 10, [
+    <aspect:vitium> * 400,
+    <aspect:praecantatio> * 200,
+    <aspect:alienis> * 200,
+    <aspect:potentia> * 200,
+    <aspect:machina> * 200,
+    <aspect:fluctus> * 100
+], <actuallyadditions:block_misc:9>, [
+    <thaumicaugmentation:material:3>,
+    <thaumicaugmentation:material:3>,
+    <thaumicaugmentation:material:3>,
+    <thaumicaugmentation:material:3>,
+    <thaumadditions:mithminite_ingot>,
+    <thaumadditions:mithminite_ingot>,
+    <thaumadditions:mithminite_ingot>,
+    <thaumcraft:metal_alchemical_advanced>,
+    <thaumcraft:metal_alchemical_advanced>,
+    <enderio:item_material:56>,
+    <enderio:item_material:56>
+]);
+
+Infusion.registerRecipe("broken_spawner", "", <enderio:item_broken_spawner>.withTag({entityId: "minecraft:zombie"}), 8, [
+    <aspect:exanimis> * 128,
+    <aspect:spiritus> * 128,
+    <aspect:praecantatio> * 128,
+    <aspect:infernum> * 128
+], <enderio:item_material:53>, [
+    <thaumcraft:brain>,
+    <thaumcraft:brain>,
+    <thaumcraft:brain>,
+    <thaumcraft:brain>,
+    <bloodmagic:slate:3>,
+    <bloodmagic:slate:3>,
+    <bloodmagic:slate:3>,
+    <contenttweaker:aura_crystal>,
+    <contenttweaker:aura_crystal>,
+    <contenttweaker:astral_crystal>
+]);

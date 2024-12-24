@@ -73,3 +73,28 @@ recipes.addShaped(<nae2:part> * 2, [
     [<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:calculation_crystal>, <appliedenergistics2:quartz_vibrant_glass>],
     [null, <appliedenergistics2:part:76>, null]
 ]);
+
+recipes.remove(<actuallyadditions:block_misc:9>);
+recipes.addShaped(<actuallyadditions:block_misc:9>, [
+    [<actuallyadditions:item_misc:5>, <actuallyadditions:item_misc:5>, <actuallyadditions:item_misc:5>],
+    [<actuallyadditions:item_misc:5>, <mekanism:basicblock:8>, <actuallyadditions:item_misc:5>],
+    [<actuallyadditions:item_misc:5>, <actuallyadditions:item_misc:5>, <actuallyadditions:item_misc:5>]
+]);
+
+recipes.replaceAllOccurrences(<nuclearcraft:part:8>, <factorytech:machinepart:62>);
+recipes.replaceAllOccurrences(<nuclearcraft:part:9>, <factorytech:machinepart:14>);
+recipes.replaceAllOccurrences(<nuclearcraft:part:4>, <immersiveengineering:metal_decoration0>);
+
+recipes.remove(<enderio:item_material>);
+
+recipes.remove(<nuclearcraft:part:10>);
+recipes.remove(<nuclearcraft:rock_crusher>);
+recipes.remove(<nuclearcraft:manufactory>);
+recipes.remove(<nuclearcraft:part>);
+recipes.remove(<nuclearcraft:part:1>);
+recipes.remove(<nuclearcraft:part:2>);
+recipes.remove(<nuclearcraft:part:3>);
+recipes.remove(<nuclearcraft:part:4>);
+recipes.remove(<nuclearcraft:part:7>);
+recipes.remove(<nuclearcraft:part:8>);
+recipes.remove(<nuclearcraft:part:9>);

@@ -98,3 +98,105 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 10)
   .addOutput(<emergingtechnology:machinecase>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<bloodmagic:slate:4>, <minecraft:nether_star>, <bloodmagic:slate:4>],
+    [<emergingtechnology:purplebulb>, <enderio:item_material:53>, <emergingtechnology:purplebulb>],
+    [<bloodmagic:slate:4>, <enderio:item_material:42>, <bloodmagic:slate:4>]])
+  .addTool(<ore:artisansSpanner>, 120)
+  .addOutput(<modularmachinery:life_constructor_controller>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<botania:manaresource:14>, <botania:manaresource:14>, <botania:manaresource:14>],
+    [<botaniverse:morerune:2>, <minecraft:emerald_block>, <botaniverse:morerune:2>],
+    [<botania:manaresource:14>, <botania:manaresource:14>, <botania:manaresource:14>]])
+  .addTool(<ore:artisansGrimoire>, 120)
+  .setFluid(<liquid:mercury> * 2880)
+  .addOutput(<modularmachinery:natural_grace_controller>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<enderio:block_alloy:7>, <contenttweaker:blood_crystal>, <enderio:block_alloy:7>],
+    [<contenttweaker:blood_crystal>, <enderio:item_material:1>, <contenttweaker:blood_crystal>],
+    [<enderio:block_alloy:7>, <contenttweaker:blood_crystal>, <enderio:block_alloy:7>]])
+  .addTool(<ore:artisansGrimoire>, 10)
+  .setFluid(<liquid:mercury> * 512)
+  .addOutput(<enderio:item_material:53>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateLead>, <enderio:item_basic_capacitor:1>, <ore:plateLead>],
+    [<contenttweaker:logic_crystal>, <contenttweaker:metal_crystal>, <contenttweaker:logic_crystal>],
+    [<ore:plateLead>, <thermalfoundation:material:288>, <ore:plateLead>]])
+  .addTool(<ore:artisansSolderer>, 10)
+  .setFluid(<liquid:soldering> * 576)
+  .addOutput(<nuclearcraft:part:10>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<nuclearcraft:part>, <factorytech:oredrill>, <nuclearcraft:part>],
+    [<calculator:material:4>, <nuclearcraft:part:10>, <calculator:material:4>],
+    [<nuclearcraft:part>, <contenttweaker:warp_crystal>, <nuclearcraft:part>]])
+  .addTool(<ore:artisansSolderer>, 10)
+  .addOutput(<nuclearcraft:rock_crusher>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <thermalfoundation:material:288>, null],
+    [<thermalfoundation:material:288>, <nuclearcraft:part:10>, <thermalfoundation:material:288>],
+    [null, <thermalfoundation:material:288>, null]])
+  .addTool(<ore:artisansSolderer>, 10)
+  .addOutput(<nuclearcraft:manufactory>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateLead>, <nuclearcraft:dust:8>],
+    [<nuclearcraft:dust:8>, <ore:plateLead>]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addOutput(<nuclearcraft:part> * 2)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [null, <ore:dustLithium>, null],
+    [<nuclearcraft:alloy:1>, <nuclearcraft:part>, <nuclearcraft:alloy:1>],
+    [null, <ore:dustLithium>, null]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addOutput(<nuclearcraft:part:1>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<nuclearcraft:alloy:6>, null, <nuclearcraft:alloy:6>],
+    [<astralsorcery:itemcraftingcomponent:2>, <immersiveengineering:metal_decoration0:1>, <astralsorcery:itemcraftingcomponent:2>],
+    [<thermalfoundation:material:133>, <thermalfoundation:material:288>, <thermalfoundation:material:133>]])
+  .addTool(<ore:artisansSolderer>, 10)
+  .setFluid(<liquid:soldering> * 144)
+  .addOutput(<nuclearcraft:part:7>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<thermalfoundation:material:1024>, <nuclearcraft:uranium:10>, <thermalfoundation:material:1024>],
+    [<nuclearcraft:uranium:10>, <nuclearcraft:part:1>, <nuclearcraft:uranium:10>],
+    [<thermalfoundation:material:1024>, <nuclearcraft:uranium:10>, <thermalfoundation:material:1024>]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addOutput(<nuclearcraft:part:2>)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<nuclearcraft:compound:1>, <nuclearcraft:ingot:10>, <nuclearcraft:compound:1>],
+    [<nuclearcraft:ingot:10>, <nuclearcraft:part:2>, <nuclearcraft:ingot:10>],
+    [<nuclearcraft:compound:1>, <nuclearcraft:ingot:10>, <nuclearcraft:compound:1>]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addOutput(<nuclearcraft:part:3>)
+  .create();

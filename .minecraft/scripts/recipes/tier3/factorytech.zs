@@ -1,3 +1,3 @@
 import mods.factorytech.Electroplater;
 
-Electroplater.addRecipe(<minecraft:quartz>, <actuallyadditions:item_misc:5>);
+Electroplater.addRecipe(<actuallyadditions:item_misc:5>, <minecraft:quartz>);

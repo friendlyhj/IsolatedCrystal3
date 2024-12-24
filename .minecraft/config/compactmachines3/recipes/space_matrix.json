@@ -4,13 +4,12 @@
     "target-meta": 0,
     "target-count": 1,
   
-    "duration": 600,
+    "duration": 100,
   
     "catalyst": "contenttweaker:space_grid",
   
     "input-types": {
       "w": { "id": "compactmachines3:wallbreakable" },
-      "f": { "id": "appliedenergistics2:fluix_block"},
       "e": { 
             "id": "thermalfoundation:storage_alloy",
             "meta": 7
@@ -20,39 +19,19 @@
     "symmetrical": true,
     "shape": [
       [
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"]
+        ["w","w","w"],
+        ["w","w","w"],
+        ["w","w","w"]
       ],
       [
-        ["w","w","w","w","w"],
-        ["w","_","_","_","w"],
-        ["w","_","f","_","w"],
-        ["w","_","_","_","w"],
-        ["w","w","w","w","w"]
+        ["w","w","w"],
+        ["w","e","w"],
+        ["w","w","w"]
       ],
       [
-        ["w","w","w","w","w"],
-        ["w","_","f","_","w"],
-        ["w","f","e","f","w"],
-        ["w","_","f","_","w"],
-        ["w","w","w","w","w"]
-      ],
-      [
-        ["w","w","w","w","w"],
-        ["w","_","_","_","w"],
-        ["w","_","f","_","w"],
-        ["w","_","_","_","w"],
-        ["w","w","w","w","w"]
-      ],
-      [
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"],
-        ["w","w","w","w","w"]
+        ["w","w","w"],
+        ["w","w","w"],
+        ["w","w","w"]
       ]
     ]
   }

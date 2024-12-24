@@ -13,7 +13,7 @@ events.register(function(event as RenderGameOverlayEvent.Text) {
     val player = client.player;
     texts += I18n.format("modpack.info.time_real", `${twoLength(date.hour)}:${twoLength(date.minute)}:${twoLength(date.second)}`);
     val playTime = Data.getInt(player.data, "PlayTime");
-    texts += I18n.format("modpack.info.time_game", `${playTime / 72000}`, `${playTime / 1200 % 60}`);
+    texts += I18n.format("modpack.info.time_game", [playTime / 72000, playTime / 1200 % 60]);
     texts += StaticString.format("X: %.1f, Y: %.1f, Z: %.1f", [player.x, player.y, player.z]);
 });
 
