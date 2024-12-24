@@ -124,7 +124,7 @@ RecipeBuilder.get("mage")
     [<contenttweaker:blood_crystal>, <enderio:item_material:1>, <contenttweaker:blood_crystal>],
     [<enderio:block_alloy:7>, <contenttweaker:blood_crystal>, <enderio:block_alloy:7>]])
   .addTool(<ore:artisansGrimoire>, 10)
-  .setFluid(<liquid:mercury> * 512)
+  .setFluid(<liquid:mercury> * 576)
   .addOutput(<enderio:item_material:53>)
   .create();
 
