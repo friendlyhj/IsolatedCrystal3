@@ -1,11 +1,13 @@
 #reloadable
-#priority 2147483647
+#priority 2147483646
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
 import crafttweaker.data.IData;
 import mods.modularmachinery.IMachineController;
 import mods.ctintegration.date.IDate;
+import mods.ctintegration.util.DateUtil;
+import scripts.libs.Vector3D;
 
 static basicAspects as string[] = [
     "aer",
@@ -48,14 +50,13 @@ function now() as IDate {
 }
 
 function chineseLunar(date as IDate) as IData {
-    val gYear = date.year;
-    val gMonth = date.month + 1;
-    val gDay = date.day;
-
     // 1900/1/31
-    val baseDateTimeMillis = -2206369593812L;
+    val baseDate = IDate.getInstance();
+    baseDate.year = 1900;
+    baseDate.month = DateUtil.JANUARY();
+    baseDate.day = 31;
 
-    var offset = ((date.timeInMillis - baseDateTimeMillis) / 86400000L) as int;
+    var offset = ((date.timeInMillis - baseDate.timeInMillis) / 86400000L) as int;
     
     var year = 1900;
     var daysOfYear = 0;
@@ -192,9 +193,5 @@ function toSnakeCase(arg as string) as string {
 }
 
 function shr(value as int, shift as int) as int {
-    var result = value;
-    for i in 0 .. shift {
-        result /= 2;
-    }
-    return result;
+    return value / Vector3D.pow2(shift);
 }

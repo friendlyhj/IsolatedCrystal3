@@ -1,5 +1,5 @@
 #reloadable
-#priority 1000000030
+#priority 2147483646
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.world.IBlockPos;
