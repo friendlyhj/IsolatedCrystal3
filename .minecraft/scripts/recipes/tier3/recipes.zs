@@ -81,6 +81,13 @@ recipes.addShaped(<actuallyadditions:block_misc:9>, [
     [<actuallyadditions:item_misc:5>, <actuallyadditions:item_misc:5>, <actuallyadditions:item_misc:5>]
 ]);
 
+recipes.remove(<thermalexpansion:augment:497>);
+recipes.addShaped(<thermalexpansion:augment:497>, [
+    [null, <contenttweaker:logic_crystal>, null],
+    [<ore:plateInvar>, <contenttweaker:nickel_ore_sacrifice>, <ore:plateInvar>],
+    [null, <naturesaura:token_terror>, null]
+]);
+
 recipes.replaceAllOccurrences(<nuclearcraft:part:8>, <factorytech:machinepart:62>);
 recipes.replaceAllOccurrences(<nuclearcraft:part:9>, <factorytech:machinepart:14>);
 recipes.replaceAllOccurrences(<nuclearcraft:part:4>, <immersiveengineering:metal_decoration0>);

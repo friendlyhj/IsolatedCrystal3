@@ -1,5 +1,5 @@
 #reloadable
-#priority 2147483646
+#priority 2147483645
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;

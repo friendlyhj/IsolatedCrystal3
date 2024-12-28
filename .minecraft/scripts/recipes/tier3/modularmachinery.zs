@@ -147,7 +147,7 @@ MMEvents.onMachinePreTick("natural_grace", function(event as MachineTickEvent) {
             stormBurstCount += 1;
         }
     }
-    if (isNull(controller.customData)) {
+    if (isNull(controller.customData.Bursts)) {
         controller.customData = {Bursts: 0};
     }
     val prev = controller.customData.Bursts.asInt();

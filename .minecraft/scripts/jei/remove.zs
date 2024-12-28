@@ -36,7 +36,8 @@ val banList as IItemStack[] = [
     <mekanism:basicblock3>,
     <mekanism:basicblock3:1>,
     <mekanism:basicblock3:2>,
-    <mekanism:basicblock3:3>
+    <mekanism:basicblock3:3>,
+    <embers:ember_bore>
 ];
 
 for ban in banList {

@@ -88,6 +88,8 @@ recipes.remove(<bloodmagic:soul_snare>);
 recipes.remove(<bloodmagic:soul_forge>);
 recipes.remove(<factorytech:intermediate:4>);
 recipes.remove(<factorytech:machinepart:40>);
+recipes.remove(<nuclearcraft:cobblestone_generator>);
+recipes.remove(<thermalexpansion:machine:15>);
 recipes.removeByRecipeName("factorytech:parts/motor");
 recipes.removeByRecipeName("factorytech:parts/motorgold");
 

@@ -234,6 +234,7 @@ RecipeBuilder.get("mage")
 
 <ore:gearBrass>.add(<contenttweaker:brass_gear>);
 
+print("registering recipes of gears");
 for od in oreDict {
   if (!od.empty && od.name.startsWith("gear")) {
     val type = od.name.substring(4);
@@ -423,4 +424,24 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSolderer>, 10)
   .setFluid(<liquid:soldering> * 576)
   .addOutput(<modularmachinery:mechanical_artisan_controller>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateLead>, <contenttweaker:earth_crystal>, <ore:plateLead>],
+    [<contenttweaker:ocean_crystal>, null, <contenttweaker:heated_crystal>],
+    [<ore:plateLead>, <contenttweaker:earth_crystal>, <ore:plateLead>]])
+  .addTool(<ore:artisansSolderer>, 10)
+  .setFluid(<liquid:soldering> * 144)
+  .addOutput(<nuclearcraft:cobblestone_generator>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <minecraft:glass>, null],
+    [<nuclearcraft:cobblestone_generator>, <thermalexpansion:frame>, <nuclearcraft:cobblestone_generator>],
+    [<nuclearcraft:cobblestone_generator>, <thermalfoundation:material:513>, <nuclearcraft:cobblestone_generator>]])
+  .addTool(<artisanworktables:artisans_solderer_wood>, 10)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<thermalexpansion:machine:15>)
   .create();

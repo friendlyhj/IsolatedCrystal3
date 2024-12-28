@@ -1,5 +1,5 @@
 #reloadable
-#priority 2147483647
+#priority 2147483646
 import crafttweaker.util.Math;
 import crafttweaker.data.IData;
 import scripts.libs.Data;

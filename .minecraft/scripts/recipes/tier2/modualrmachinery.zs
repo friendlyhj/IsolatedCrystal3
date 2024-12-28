@@ -33,6 +33,7 @@ static organic as IItemStack[] = [
     <minecraft:potato>,
     <minecraft:poisonous_potato>,
     <minecraft:carrot>,
+    <minecraft:apple>,
     <minecraft:wheat_seeds>,
     <minecraft:pumpkin_seeds>,
     <minecraft:melon_seeds>,

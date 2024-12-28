@@ -131,6 +131,17 @@ for name, color in colors {
     item.register();
 }
 
+val emberOre = VanillaFactory.createBlock("ember_ore", <blockmaterial:rock>);
+emberOre.blockHardness = 2.0f;
+emberOre.toolClass = "pickaxe";
+emberOre.toolLevel = 2;
+emberOre.dropHandler = function(drops, world, pos, state, fortune) {
+    drops.clear();
+    drops.add(<item:embers:crystal_ember>);
+    drops.add(<item:embers:shard_ember> % 50);
+};
+emberOre.register();
+
 val moltenFluids as int[string] = {
     "soldering": 0x246755,
     "compressed_iron": 0x34302d,

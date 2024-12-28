@@ -1,13 +1,13 @@
-filename = 'zenrecipereloading-1.4.4.jar'
-name = 'ZenRecipeReloading'
+filename = 'zenrecipereloading-1.4.5.jar'
+name = 'ZenRecipeReload'
 side = 'both'
 
 [download]
-hash = 'a81d2f4491ee0a4001857cf53b449c3e1eff9a73'
+hash = 'dece84febbf3d97b68421510e5037ba77b93e39b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5833599
+file-id = 6024502
 project-id = 911152
