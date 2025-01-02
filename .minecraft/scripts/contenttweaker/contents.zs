@@ -137,8 +137,10 @@ emberOre.toolClass = "pickaxe";
 emberOre.toolLevel = 2;
 emberOre.dropHandler = function(drops, world, pos, state, fortune) {
     drops.clear();
-    drops.add(<item:embers:crystal_ember>);
-    drops.add(<item:embers:shard_ember> % 50);
+    drops.add(<item:embers:crystal_ember> * 2);
+    drops.add(<item:embers:crystal_ember> % 50);
+    drops.add(<item:embers:crystal_ember> % 20);
+    drops.add(<item:embers:shard_ember> % 10);
 };
 emberOre.register();
 

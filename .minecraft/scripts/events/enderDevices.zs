@@ -65,6 +65,11 @@ static enderDevices as int[][IItemStack] = {
     <botania:redstringfertilizer>: [40, 1],
     <botania:redstringinterceptor>: [40, 1],
     <botania:redstringrelay>: [40, 1],
+    <embers:ember_emitter>: [15, 1],
+    <embers:ember_receiver>: [15, 1],
+    <embers:ember_relay>: [15, 1],
+    <embers:ember_pulser>: [30, 1],
+    <soot:ember_burst>: [50, 1],
 };
 
 static enderDevicesMatchingMap as int[string] = {};

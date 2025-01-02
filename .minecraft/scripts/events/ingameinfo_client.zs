@@ -2,6 +2,7 @@
 #sideonly client
 
 import native.net.minecraftforge.client.event.RenderGameOverlayEvent;
+import mods.zenutils.EventPriority;
 import mods.zenutils.I18n;
 import mods.zenutils.StaticString;
 import scripts.libs.Util;
@@ -15,7 +16,7 @@ events.register(function(event as RenderGameOverlayEvent.Text) {
     val playTime = Data.getInt(player.data, "PlayTime");
     texts += I18n.format("modpack.info.time_game", [playTime / 72000, playTime / 1200 % 60]);
     texts += StaticString.format("X: %.1f, Y: %.1f, Z: %.1f", [player.x, player.y, player.z]);
-});
+}, EventPriority.high());
 
 function twoLength(x as int) as string {
     return x < 10 ? "0" ~ x : x;

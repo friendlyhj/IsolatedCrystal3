@@ -1,6 +1,7 @@
 #reloadable
 
 import mods.thaumcraft.Infusion;
+import mods.thaumcraft.Crucible;
 
 Infusion.registerRecipe("metal_infuser", "", <mekanism:machineblock:8>, 2, [
     <aspect:potentia> * 60,
@@ -71,4 +72,26 @@ Infusion.registerRecipe("broken_spawner", "", <enderio:item_broken_spawner>.with
     <contenttweaker:aura_crystal>,
     <contenttweaker:aura_crystal>,
     <contenttweaker:astral_crystal>
+]);
+
+Infusion.registerRecipe("alchemy_pedestal", "", <embers:alchemy_pedestal>, 6, [
+    <aspect:praecantatio> * 100,
+    <aspect:ignis> * 100,
+    <aspect:metallum> * 100,
+    <aspect:ordo> * 100
+], <embers:block_dawnstone>, [
+    <embers:block_caminite_brick>,
+    <embers:block_caminite_brick>,
+    <embers:block_caminite_brick>,
+    <embers:block_caminite_brick>,
+    <ore:plateCopper>,
+    <ore:plateCopper>,
+    <contenttweaker:metal_crystal>,
+    <contenttweaker:warp_crystal>,
+    <contenttweaker:aura_crystal>
+]);
+
+Crucible.registerRecipe("exchange_tablet", "", <embers:alchemy_tablet>, <embers:alchemy_pedestal>, [
+    <aspect:permutatio> * 50,
+    <aspect:potentia> * 50
 ]);

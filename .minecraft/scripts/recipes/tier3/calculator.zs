@@ -17,6 +17,7 @@ Flawless.removeRecipe(<minecraft:diamond>);
 Flawless.removeRecipe(<minecraft:emerald>);
 Flawless.removeRecipe(<minecraft:obsidian>);
 Flawless.removeRecipe(<minecraft:blaze_rod>);
+Flawless.addRecipe(<minecraft:sea_lantern>, <actuallyadditions:item_misc:24>, <bloodmagic:slate:4>, <minecraft:sea_lantern>, <contenttweaker:crystal_alga_seeds>);
 
 Scientific.addRecipe(<astralsorcery:itemcraftingcomponent>, <contenttweaker:warp_crystal>, <calculator:smalltanzanite>);
 Scientific.addRecipe(<appliedenergistics2:material:7>, <contenttweaker:warp_crystal>, <calculator:smallamethyst>);

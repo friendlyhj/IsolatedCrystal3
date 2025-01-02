@@ -200,3 +200,48 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 4)
   .addOutput(<nuclearcraft:part:3>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, null, <ore:plateSteel>],
+    [<ore:plateSteel>, <contenttweaker:metal_crystal>, <ore:plateSteel>],
+    [<embers:block_caminite_brick>, <contenttweaker:electric_crystal>, <embers:block_caminite_brick>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .addOutput(<embers:ember_activator>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <contenttweaker:aura_crystal>, null],
+    [null, <contenttweaker:electric_crystal>, null],
+    [<ore:plateSteel>, <embers:plate_caminite>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .addOutput(<embers:ember_emitter> * 2)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSignalum>, <contenttweaker:aura_crystal>, <ore:plateSignalum>],
+    [<ore:plateSteel>, <embers:plate_caminite>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .addOutput(<embers:ember_receiver> * 2)
+  .create();
+
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<calculator:reinforcedironingot>, <thermalfoundation:material:256>, <calculator:reinforcedironingot>],
+    [null, <embers:block_caminite_brick>, null],
+    [<calculator:reinforcedironingot>, <thermalfoundation:material:256>, <calculator:reinforcedironingot>]])
+  .addTool(<ore:artisansHammer>, 10)
+  .setFluid(<liquid:soldering> * 144)
+  .addOutput(<embers:mech_core>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <contenttweaker:electric_crystal>, null],
+    [<contenttweaker:electric_crystal>, <contenttweaker:aura_crystal>, <contenttweaker:electric_crystal>],
+    [<ore:plateSteel>, <contenttweaker:electric_crystal>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .addOutput(<embers:ember_relay> * 4)
+  .create();

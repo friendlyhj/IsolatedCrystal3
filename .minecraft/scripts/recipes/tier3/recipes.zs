@@ -105,3 +105,13 @@ recipes.remove(<nuclearcraft:part:4>);
 recipes.remove(<nuclearcraft:part:7>);
 recipes.remove(<nuclearcraft:part:8>);
 recipes.remove(<nuclearcraft:part:9>);
+
+recipes.remove(<embers:blend_caminite>);
+recipes.remove(<embers:ember_activator>);
+recipes.remove(<embers:ember_emitter>);
+recipes.remove(<embers:ember_receiver>);
+recipes.remove(<embers:alchemy_pedestal>);
+recipes.remove(<embers:alchemy_tablet>);
+// recipes.remove(<embers:beam_cannon>);
+recipes.remove(<embers:mech_core>);
+recipes.remove(<embers:ember_relay>);

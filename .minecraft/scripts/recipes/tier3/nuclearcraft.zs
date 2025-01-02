@@ -12,4 +12,4 @@ AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:1> * 2);
 AlloyFurnace.addRecipe(<contenttweaker:metal_crystal>, <nuclearcraft:ingot:5> * 5, <nuclearcraft:alloy:1> * 6);
 SaltMixer.removeRecipeWithOutput(<liquid:tough> * 144);
 SaltMixer.addRecipe(<liquid:metal_crystal_liquid> * 144, <liquid:boron> * 720, <liquid:tough> * 864);
-
+SaltMixer.addRecipe(<liquid:tin> * 3, <liquid:lead> * 2, <liquid:soldering> * 5);
