@@ -144,6 +144,9 @@ emberOre.dropHandler = function(drops, world, pos, state, fortune) {
 };
 emberOre.register();
 
+val superconductor = VanillaFactory.createBlock("superconductor", <blockmaterial:iron>);
+superconductor.register();
+
 val moltenFluids as int[string] = {
     "soldering": 0x246755,
     "compressed_iron": 0x34302d,

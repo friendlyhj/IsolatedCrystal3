@@ -75,6 +75,7 @@ item.contenttweaker.crystal_alga_seeds.name=水晶海藻种子
 tile.contenttweaker.mana_crusher.name=魔力粉碎砧
 tile.contenttweaker.destruction_matrix.name=破坏矩阵
 tile.contenttweaker.ember_ore.name=灰烬矿石
+tile.contenttweaker.superconductor.name=超导体
 
 fluid.soldering=焊锡
 fluid.compressed_iron=熔融压缩铁
@@ -116,5 +117,6 @@ modularmachinery.digital_calculator=数字运算室
 modularmachinery.natural_grace=自然恩惠
 modularmachinery.life_constructor=生命构造仓
 modularmachinery.time_transmutator=时间嬗变室
+modularmachinery.energy_field_emitter=能量场发生器
 
 contenttweaker.part.ore_sacrifice=%s祭品

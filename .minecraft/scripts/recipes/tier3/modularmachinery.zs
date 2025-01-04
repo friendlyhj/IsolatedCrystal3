@@ -246,3 +246,15 @@ for i, combination in otherCombinations {
     builder.addItemOutput(<appliedenergistics2:material:46>);
     builder.build();
 }
+
+RecipeBuilder.newBuilder("energy_crystal", "energy_field_emitter", 120)
+    .addEnergyPerTickInput(512000)
+    .addItemInputs(
+        <contenttweaker:superconductor>,
+        <mekanism:basicblock2:3>.withTag({tier: 1}),
+        <soot:mundane_stone>,
+        <calculator:electricdiamond>
+    )
+    .addItemOutput(<contenttweaker:energy_crystal>)
+    .addEmberInput(2400)
+    .build();

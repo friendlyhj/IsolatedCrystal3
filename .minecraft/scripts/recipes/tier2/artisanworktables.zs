@@ -445,3 +445,12 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<thermalexpansion:machine:15>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<nuclearcraft:ingot_block:14>, <thermaldynamics:duct_0:5>, <ore:blockElectrum>],
+    [<thermaldynamics:duct_0:5>, <factorytech:machinepart:170>, <thermaldynamics:duct_0:5>],
+    [<ore:blockElectrum>, <thermaldynamics:duct_0:5>, <nuclearcraft:ingot_block:14>]])
+  .setFluid(<liquid:emergency_coolant> * 2000)
+  .addOutput(<contenttweaker:superconductor>)
+  .create();
