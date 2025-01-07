@@ -2,13 +2,14 @@
 
 import crafttweaker.event.EntityLivingUpdateEvent;
 import crafttweaker.event.EntityLivingDeathEvent;
+import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.entity.IEntityAnimal;
 import mods.fluidintetweaker.FBTweaker;
 
 events.register(function(event as EntityLivingUpdateEvent) {
     val entity = event.entityLivingBase;
     val world = entity.world;
-    if (entity instanceof IEntityAnimal && !world.remote && world.time % 20 == 0) {
+    if (entity instanceof IEntityAnimal && !world.remote && world.worldInfo.worldTotalTime % 20 == 0) {
         if (<blockstate:contenttweaker:undead_water>.matchBlock().matches(world.getBlockState(entity.position))) {
             event.entityLivingBase.attackEntityFrom(<damageSource:undead_water>, 2.0f);
         }
@@ -27,26 +28,25 @@ events.register(function(event as EntityLivingDeathEvent) {
     }
 });
 
-val animals as string[] = [
-    "minecraft:pig",
-    "minecraft:sheep",
-    "minecraft:cow",
-    "minecraft:rabbit",
-    "minecraft:chicken",
-    "minecraft:mooshroom"
+val animals as IEntityDefinition[] = [
+    <entity:minecraft:pig>,
+    <entity:minecraft:sheep>,
+    <entity:minecraft:cow>,
+    <entity:minecraft:rabbit>,
+    <entity:minecraft:chicken>,
+    <entity:minecraft:mooshroom>
 ];
 
-val undeads as string[] = [
-    "minecraft:zombie",
-    "minecraft:skeleton"
+val undeads as IEntityDefinition[] = [
+    <entity:minecraft:zombie>,
+    <entity:minecraft:skeleton>
 ];
 
 for animal in animals {
     for undead in undeads {
         FBTweaker.addJEIRecipeWrapper(<liquid:undead_water>, 2, 
             FBTweaker.outputBuilder()
-                .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(animal, undead).done())
-                .done()
+                .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(animal, undead))
         );
     }
 }
