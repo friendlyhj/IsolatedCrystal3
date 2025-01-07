@@ -1,13 +1,13 @@
-filename = 'ThaumcraftFix-1.12.2-1.0.7.jar'
+filename = 'ThaumcraftFix-1.12.2-1.1.1.jar'
 name = 'Thaumcraft Fix'
 side = 'both'
 
 [download]
-hash = '85db3fca30c17e185111567b674e725481306bee'
+hash = '27a0b427c9b63a7e26a8ff3396480a9dbe3c8e1f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5741591
+file-id = 6047703
 project-id = 1069346
