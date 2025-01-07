@@ -13,3 +13,4 @@ AlloyFurnace.addRecipe(<contenttweaker:metal_crystal>, <nuclearcraft:ingot:5> * 
 SaltMixer.removeRecipeWithOutput(<liquid:tough> * 144);
 SaltMixer.addRecipe(<liquid:metal_crystal_liquid> * 144, <liquid:boron> * 720, <liquid:tough> * 864);
 SaltMixer.addRecipe(<liquid:tin> * 3, <liquid:lead> * 2, <liquid:soldering> * 5);
+SaltMixer.addRecipe(<liquid:mithril> * 72, <liquid:flibe> * 72, <liquid:mine_medium> * 100);

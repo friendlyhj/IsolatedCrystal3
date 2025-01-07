@@ -87,6 +87,7 @@ fluid.temped_iron=Molten Temped Iron
 fluid.metal_crystal_liquid=Metal Crystal Liquid
 fluid.lactic_acid=Lactic Acid
 fluid.poly_lactic_acid=Poly Lactic Acid
+fluid.mine_medium=Mine Medium Liquid
 
 gas.vinyl_chloride=Vinyl Chloride
 gas.lpg=LPG

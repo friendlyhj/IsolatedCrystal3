@@ -38,6 +38,7 @@ recipes.addShaped(<calculator:atomicmodule> * 2, [
 recipes.removeByRecipeName("extrautils2:machine_base");
 recipes.removeByRegex("industrialforegoing:.*_thermal");
 recipes.removeByRegex("industrialforegoing:.*_enderio");
+recipes.removeByRegex("industrialforegoing:.*_mekainism");
 recipes.replaceAllOccurrences(<teslacorelib:machine_case>, <extrautils2:machine>, <*>.only(function(item) {
     return item.definition.owner == "industrialforegoing";
 }));

@@ -160,7 +160,8 @@ val plainFluids as int[string] = {
     "vinyl_chloride": 0x46745d,
     "mercury": 0xdddddd,
     "lactic_acid": 0xeeeeb9,
-    "poly_lactic_acid": 0xccccb9
+    "poly_lactic_acid": 0xccccb9,
+    "mine_medium": 0x9269ef,
 };
 
 for name, color in moltenFluids {

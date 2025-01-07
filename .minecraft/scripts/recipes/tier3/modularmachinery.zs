@@ -10,10 +10,12 @@ import mods.modularmachinery.RecipeEvent;
 import mods.modularmachinery.IMachineController;
 import mods.modularmachinery.MMEvents;
 import mods.modularmachinery.MachineTickEvent;
+import mods.modularmachinery.Sync;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IVector3d;
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
+import crafttweaker.util.Math;
 import mods.zenutils.StringList;
 import scripts.libs.Util.basicAspects;
 import native.thaumcraft.common.entities.EntityFluxRift;
@@ -258,3 +260,54 @@ RecipeBuilder.newBuilder("energy_crystal", "energy_field_emitter", 120)
     .addItemOutput(<contenttweaker:energy_crystal>)
     .addEmberInput(2400)
     .build();
+
+RecipeBuilder.newBuilder("mine_crystal", "mine_catalyst", 120)
+    .addItemInputs(
+        <contenttweaker:metal_crystal>,
+        <mekanism:scrap> * 12,
+        <extrautils2:compressedcobblestone:2>,
+        <calculator:purifiedobsidian> * 4,
+        <nuclearcraft:gem>* 4,
+        <nuclearcraft:gem:1>* 4,
+        <nuclearcraft:gem:2>* 4,
+        <nuclearcraft:gem:3> * 4,
+        <nuclearcraft:gem:4> * 4,
+        <nuclearcraft:gem:5> * 4
+    )
+    .addFluidInput(<liquid:mithril> * 576)
+    .addItemOutput(<contenttweaker:mine_crystal>)
+    .addPreTickHandler(function(event as RecipeTickEvent) {
+        val controller = event.controller;
+        val world = controller.world;
+        val liquidHandler = world.getLiquidHandler(controller.relativePos(0, 4, 0));
+        val content = liquidHandler.tankProperties[0].contents;
+        if (content.definition.name == "mine_medium" && Math.abs(content.amount - 128000) <= 500) {
+            return;
+        }
+        event.setFailed(false, "mine medium out of 128000±500");
+    })
+    .build();
+
+MMEvents.onMachinePreTick("mine_catalyst", function(event as MachineTickEvent) {
+    val controller = event.controller;
+    val world = controller.world;
+    if (event.controller.world.worldInfo.worldTotalTime % 10 == 7) {
+        val liquidHandler = world.getLiquidHandler(controller.relativePos(0, 4, 0));
+        Sync.addSyncTask(function() {
+            val content = liquidHandler.tankProperties[0].contents;
+            if (!isNull(content) && content.definition.name != "mine_medium") {
+                return;
+            }
+            val fluidAmount = isNull(content) ? 0 : content.amount;
+            val minValue = max(-1500, -fluidAmount);
+            val maxValue = min(1500, 128000 - fluidAmount);
+            val amount = world.random.nextInt(minValue, maxValue);
+            // logger.logWarning(amount);
+            if (amount > 0) {
+                liquidHandler.fill(<liquid:mine_medium>.withAmount(amount), true);
+            } else if (amount < 0) {
+                liquidHandler.drain(-amount, true);
+            }
+        });
+    }
+});
