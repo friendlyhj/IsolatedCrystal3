@@ -245,3 +245,13 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 10)
   .addOutput(<embers:ember_relay> * 4)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateSteel>, <factorytech:magnetblock>, <ore:plateSteel>],
+    [<ore:ingotElectrum>, <immersiveengineering:metal_decoration0>, <ore:ingotElectrum>],
+    [<ore:plateSteel>, <calculator:powercube>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 10)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<immersiveengineering:metal_decoration0:6>)
+  .create();

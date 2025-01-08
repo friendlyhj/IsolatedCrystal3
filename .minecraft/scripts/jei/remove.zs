@@ -37,7 +37,22 @@ val banList as IItemStack[] = [
     <mekanism:basicblock3:1>,
     <mekanism:basicblock3:2>,
     <mekanism:basicblock3:3>,
-    <embers:ember_bore>
+    <embers:ember_bore>,
+    <draconicevolution:generator>,
+    <appliedenergistics2:vibration_chamber>,
+    <actuallyadditions:block_furnace_solar>,
+    <nuclearcraft:solar_panel_basic>,
+    <nuclearcraft:solar_panel_advanced>,
+    <nuclearcraft:solar_panel_du>,
+    <nuclearcraft:solar_panel_elite>,
+    <enderio:block_solar_panel:*>,
+    <enderio:block_simple_alloy_smelter>,
+    <enderio:block_simple_stirling_generator>,
+    <enderio:block_simple_sag_mill>,
+    <enderio:block_simple_wired_charger>,
+    <enderio:block_simple_furnace>,
+    <industrialforegoing:pitiful_fuel_generator>,
+    <emergingtechnology:piezoelectric>
 ];
 
 for ban in banList {

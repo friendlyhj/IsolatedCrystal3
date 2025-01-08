@@ -7,10 +7,11 @@ import mods.calculator.stoneSeparator as StoneSeparator;
 
 Basic.removeRecipe(<calculator:reinforcedironingot>);
 Basic.removeRecipe(<sonarcore:reinforcedstoneblock>);
+Basic.removeRecipe(<sonarcore:reinforcedstoneblock> * 4);
 Basic.addRecipe(<factorytech:ingot:4>, <sonarcore:reinforcedstoneblock>, <calculator:reinforcedironingot>);
 Basic.removeRecipe(<calculator:enrichedgold>);
 Basic.addRecipe(<enderio:item_alloy_ingot:1>, <contenttweaker:metal_crystal>, <calculator:enrichedgold> * 4);
-Basic.removeRecipe(<sonarcore:stablestone_normal>);
+Basic.removeRecipe(<sonarcore:stablestone_normal> * 2);
 Flawless.addRecipe(<sonarcore:reinforcedstonebrick>, <enderio:block_alloy:6>, <thaumicaugmentation:material:1>, <sonarcore:reinforcedstonebrick>, <sonarcore:stablestone_normal>);
 Flawless.removeRecipe(<minecraft:ender_pearl>);
 Flawless.removeRecipe(<minecraft:diamond>);
