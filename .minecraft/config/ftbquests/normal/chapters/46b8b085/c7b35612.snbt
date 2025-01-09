@@ -1,0 +1,15 @@
+{
+	x: 13.0d,
+	y: -14.5d,
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"9a101ae6"
+	],
+	tasks: [{
+		uid: "2f99598f",
+		type: "item",
+		items: [{
+			item: "nae2:part 1 1"
+		}]
+	}]
+}

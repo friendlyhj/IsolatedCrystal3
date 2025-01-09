@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: -15.5d,
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"f91d035a"
+	],
+	tasks: [{
+		uid: "277d71ca",
+		type: "item",
+		items: [{
+			item: "minecraft:ghast_tear"
+		}]
+	}]
+}

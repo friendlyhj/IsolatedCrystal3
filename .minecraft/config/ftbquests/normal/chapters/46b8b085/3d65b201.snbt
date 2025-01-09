@@ -1,0 +1,39 @@
+{
+	x: -2.5d,
+	y: -16.5d,
+	text: [
+		"水培种植，消耗水、灯光、二氧化碳。是种植水晶海藻的必要环境。"
+	],
+	dependencies: [
+		"ce74a728",
+		"1cdb6a80"
+	],
+	tasks: [{
+		uid: "8eeeb7af",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:hydroponic"
+		}]
+	},
+	{
+		uid: "041538da",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:light"
+		}]
+	},
+	{
+		uid: "9bb73fbc",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:diffuser"
+		}]
+	},
+	{
+		uid: "e1e35760",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:scrubber"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 5.25d,
+	y: -7.5d,
+	dependencies: [
+		"9377d4d4"
+	],
+	tasks: [{
+		uid: "575cc26b",
+		type: "item",
+		items: [{
+			item: "factorytech:charger"
+		}]
+	}]
+}

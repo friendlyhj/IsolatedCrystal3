@@ -1,0 +1,21 @@
+{
+	x: 3.75d,
+	y: -14.25d,
+	shape: "hexagon",
+	text: [
+		"需要在物品展示台放置两个稳定电路板，每次运行的稳定电路板所需的种类都不同。",
+		"对应的水晶灯会提示电路板编号是否正确。",
+		"绿色：正确；红色：过大：紫色：过小。"
+	],
+	dependencies: [
+		"aff11070"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "7bd27034",
+		type: "item",
+		items: [{
+			item: "contenttweaker:calculation_crystal"
+		}]
+	}]
+}

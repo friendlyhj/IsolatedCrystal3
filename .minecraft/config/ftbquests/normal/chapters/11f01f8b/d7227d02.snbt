@@ -1,6 +1,9 @@
 {
 	x: 21.0d,
 	y: 4.5d,
+	text: [
+		"附有重力效果的魔力脉冲击中魔力粉碎砧，其掉落时会粉碎其下的方块。"
+	],
 	dependencies: [
 		"d8c7e712"
 	],
@@ -10,5 +13,23 @@
 		items: [{
 			item: "contenttweaker:mana_crusher"
 		}]
+	},
+	{
+		uid: "9a8a25fa",
+		type: "item",
+		items: [{
+			tag: {},
+			Damage: 13s,
+			id: "botania:lens"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fff35df2",
+		type: "item",
+		item: {
+			tag: {},
+			id: "botania:managun"
+		}
 	}]
 }

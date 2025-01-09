@@ -2,6 +2,9 @@
 	x: 18.0d,
 	y: -8.0d,
 	shape: "hexagon",
+	text: [
+		"合成所需的红石灯笼为15信号强度，合成完成后归零。"
+	],
 	dependencies: [
 		"ba7df738"
 	],

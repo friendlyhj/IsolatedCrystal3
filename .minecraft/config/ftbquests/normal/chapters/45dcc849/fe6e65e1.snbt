@@ -8,10 +8,10 @@
 		uid: "43ff7cd5",
 		type: "item",
 		items: [{
-			id: "extrautils2:machine",
 			tag: {
 				Type: "extrautils2:enchanter"
-			}
+			},
+			id: "extrautils2:machine"
 		}]
 	}]
 }

@@ -8,18 +8,18 @@
 		uid: "b4da2fc1",
 		type: "item",
 		items: [{
-			id: "astralsorcery:itemcelestialcrystal",
 			tag: {
 				astralsorcery: {
 					crystalProperties: {
 						size: 900,
+						sizeOverride: -1,
 						purity: 100,
 						collectiveCapability: 100,
-						fract: 0,
-						sizeOverride: -1
+						fract: 0
 					}
 				}
-			}
+			},
+			id: "astralsorcery:itemcelestialcrystal"
 		}],
 		ignore_nbt: 1b
 	}]

@@ -1,0 +1,25 @@
+{
+	x: 0.5d,
+	y: -13.5d,
+	text: [
+		"高浓度的二氧化碳促进作物生长，是种植琴露果的必要环境。"
+	],
+	dependencies: [
+		"aff11070",
+		"d2c154e3"
+	],
+	tasks: [{
+		uid: "5fcda23a",
+		type: "item",
+		items: [{
+			item: "calculator:flawlessgreenhouse"
+		}]
+	},
+	{
+		uid: "ce290f23",
+		type: "item",
+		items: [{
+			item: "calculator:co2generator"
+		}]
+	}]
+}

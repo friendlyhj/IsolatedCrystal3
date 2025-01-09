@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: -12.0d,
+	dependencies: [
+		"5c9f1e1d"
+	],
+	tasks: [{
+		uid: "5f01d066",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:material 1 1"
+		}]
+	}]
+}

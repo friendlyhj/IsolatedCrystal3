@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: -13.5d,
+	dependencies: [
+		"a0fd8587"
+	],
+	tasks: [{
+		uid: "ff69b098",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:fortified_glass"
+		}]
+	}]
+}

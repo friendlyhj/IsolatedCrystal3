@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: -19.5d,
+	dependencies: [
+		"aa4b5342"
+	],
+	tasks: [{
+		uid: "2b34e65f",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:mob_slaughter_factory"
+		}]
+	}]
+}

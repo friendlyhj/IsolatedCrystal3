@@ -1,7 +1,10 @@
 {
 	x: 1.5d,
 	y: 3.0d,
-	hide_dependency_lines: true,
+	text: [
+		"玩家受伤后有几率掉落。"
+	],
+	hide_dependency_lines: 1b,
 	dependencies: [
 		"b36142be"
 	],

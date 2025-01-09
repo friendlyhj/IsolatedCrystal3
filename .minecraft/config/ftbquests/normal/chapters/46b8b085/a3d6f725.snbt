@@ -1,0 +1,20 @@
+{
+	x: 5.25d,
+	y: -16.75d,
+	shape: "hexagon",
+	text: [
+		"制造时空水晶的机器只能占满一个 9*9*9 的压缩空间，且需要材料同时输入，否则配方将失败。"
+	],
+	dependencies: [
+		"24665397",
+		"7fc952bb"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "5a528f3b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:space_time_crystal"
+		}]
+	}]
+}

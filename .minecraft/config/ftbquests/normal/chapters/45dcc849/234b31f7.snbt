@@ -11,6 +11,6 @@
 		items: [{
 			item: "pneumaticcraft:plastic 1 8"
 		}],
-		ignore_damage: true
+		ignore_damage: 1b
 	}]
 }

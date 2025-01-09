@@ -1,0 +1,17 @@
+{
+	x: 13.0d,
+	y: -15.5d,
+	text: [
+		"在下界刷出的骷髅有 20% 几率变成凋灵骷髅。"
+	],
+	dependencies: [
+		"5c9f1e1d"
+	],
+	tasks: [{
+		uid: "8e62ab17",
+		type: "item",
+		items: [{
+			item: "minecraft:skull 1 1"
+		}]
+	}]
+}

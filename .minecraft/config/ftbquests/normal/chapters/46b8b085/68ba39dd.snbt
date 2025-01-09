@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: -18.0d,
+	dependencies: [
+		"fe35a41d"
+	],
+	tasks: [{
+		uid: "82d4e256",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:shredder"
+		}]
+	}]
+}

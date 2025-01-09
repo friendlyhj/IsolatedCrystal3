@@ -1,0 +1,21 @@
+{
+	x: 2.0d,
+	y: -7.5d,
+	dependencies: [
+		"be4b817f"
+	],
+	tasks: [{
+		uid: "1b43db89",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_controller"
+		}]
+	},
+	{
+		uid: "606733a2",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_fission_vessel"
+		}]
+	}]
+}

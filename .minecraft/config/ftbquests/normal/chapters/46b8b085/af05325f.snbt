@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: -15.5d,
+	shape: "hexagon",
+	dependencies: [
+		"26dfa446",
+		"64957f54",
+		"41b75c1a",
+		"5abc18da"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "205c8818",
+		type: "item",
+		items: [{
+			item: "contenttweaker:life_crystal"
+		}]
+	}]
+}

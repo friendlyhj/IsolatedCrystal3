@@ -1,0 +1,14 @@
+{
+	x: -2.5d,
+	y: -15.0d,
+	dependencies: [
+		"f91d035a"
+	],
+	tasks: [{
+		uid: "af53af7b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crystal_alga_seeds"
+		}]
+	}]
+}

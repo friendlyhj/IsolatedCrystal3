@@ -1,0 +1,14 @@
+{
+	x: -2.5d,
+	y: -13.5d,
+	dependencies: [
+		"f91d035a"
+	],
+	tasks: [{
+		uid: "4feabd88",
+		type: "item",
+		items: [{
+			item: "calculator:fiddledewfruit"
+		}]
+	}]
+}

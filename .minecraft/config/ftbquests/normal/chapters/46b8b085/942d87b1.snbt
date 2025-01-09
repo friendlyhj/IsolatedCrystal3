@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: -16.5d,
+	dependencies: [
+		"ce779d72"
+	],
+	tasks: [{
+		uid: "e854dacc",
+		type: "item",
+		items: [{
+			item: "botania:manabomb"
+		}]
+	}]
+}

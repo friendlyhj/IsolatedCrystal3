@@ -1,0 +1,14 @@
+{
+	x: 0.5d,
+	y: -16.5d,
+	dependencies: [
+		"3d65b201"
+	],
+	tasks: [{
+		uid: "9ea0e7ad",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crystal_alga"
+		}]
+	}]
+}

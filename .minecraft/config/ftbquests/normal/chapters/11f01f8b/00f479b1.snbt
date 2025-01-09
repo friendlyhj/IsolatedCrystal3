@@ -1,6 +1,9 @@
 {
 	x: 9.0d,
 	y: -5.5d,
+	text: [
+		"蓝色化为水源"
+	],
 	dependencies: [
 		"f57488ce"
 	],

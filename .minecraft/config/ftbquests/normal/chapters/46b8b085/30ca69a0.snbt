@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: -10.5d,
+	dependencies: [
+		"f32f2632",
+		"85562e60"
+	],
+	tasks: [{
+		uid: "9e224f77",
+		type: "item",
+		items: [{
+			item: "soot:mundane_stone"
+		}]
+	}]
+}

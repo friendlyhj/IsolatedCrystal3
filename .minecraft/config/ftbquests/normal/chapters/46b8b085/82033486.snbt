@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: -15.5d,
+	dependencies: [
+		"8c2171f5"
+	],
+	tasks: [{
+		uid: "51446280",
+		type: "item",
+		items: [{
+			item: "naturesaura:token_grief"
+		}]
+	}]
+}

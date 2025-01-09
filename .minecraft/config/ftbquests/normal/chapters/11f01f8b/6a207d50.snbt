@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: -3.75d,
 	shape: "hexagon",
-	hide_dependency_lines: true,
+	hide_dependency_lines: 1b,
 	dependencies: [
 		"d8c7e712"
 	],

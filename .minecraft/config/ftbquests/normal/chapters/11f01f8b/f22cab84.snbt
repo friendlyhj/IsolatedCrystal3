@@ -15,11 +15,11 @@
 		uid: "2268ff48",
 		type: "item",
 		items: [{
-			id: "botania:twigwand",
 			tag: {
-				color1: 0,
-				color2: 0
-			}
+				color2: 0,
+				color1: 0
+			},
+			id: "botania:twigwand"
 		}],
 		ignore_nbt: 1b
 	},
@@ -34,10 +34,10 @@
 		uid: "6946b921",
 		type: "item",
 		items: [{
-			id: "botania:specialflower",
 			tag: {
 				type: "endoflame"
-			}
+			},
+			id: "botania:specialflower"
 		}]
 	}]
 }

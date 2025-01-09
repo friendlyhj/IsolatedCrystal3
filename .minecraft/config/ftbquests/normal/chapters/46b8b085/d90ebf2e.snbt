@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: -7.5d,
+	dependencies: [
+		"ee67f933",
+		"e6a217d9"
+	],
+	tasks: [{
+		uid: "21561faa",
+		type: "item",
+		items: [{
+			item: "soot:alchemy_globe"
+		}]
+	}]
+}

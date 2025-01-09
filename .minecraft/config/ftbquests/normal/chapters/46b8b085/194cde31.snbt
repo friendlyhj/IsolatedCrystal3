@@ -1,0 +1,23 @@
+{
+	x: 4.5d,
+	y: -15.5d,
+	shape: "hexagon",
+	text: [
+		"需要在机器内部需要收容一个一百尺寸的裂隙。",
+		"合成时需要按顺序输入六基础要素各二十，需要哪种要素会根据红石灯笼的信号强度说明。",
+		"奥术强化玻璃并不会阻止裂隙破坏方块，护手核心：守护可以防止裂隙破坏。"
+	],
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"3f457cdd",
+		"323c6060"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "0d418afe",
+		type: "item",
+		items: [{
+			item: "contenttweaker:perditio_crystal"
+		}]
+	}]
+}

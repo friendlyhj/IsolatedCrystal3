@@ -1,0 +1,28 @@
+{
+	x: 0.5d,
+	y: -18.0d,
+	dependencies: [
+		"bbf23f86"
+	],
+	tasks: [{
+		uid: "638cb839",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:bioreactor"
+		}]
+	},
+	{
+		uid: "5bb6e62b",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:scaffolder"
+		}]
+	},
+	{
+		uid: "4b2ab327",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:emptysyringe"
+		}]
+	}]
+}

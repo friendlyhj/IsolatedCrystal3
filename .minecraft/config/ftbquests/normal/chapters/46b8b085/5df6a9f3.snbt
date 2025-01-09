@@ -1,0 +1,30 @@
+{
+	x: 11.0d,
+	y: -14.5d,
+	text: [
+		"用于血魔法坠星位标仪式，以实现定向大量矿物的获取。",
+		"发射器可以自动使用激活水晶，以实现自动化仪式。"
+	],
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"90164c6a",
+		"d0783c3c",
+		"b7de04d8",
+		"f65794d0"
+	],
+	tasks: [{
+		uid: "2021d296",
+		type: "item",
+		items: [{
+			item: "contenttweaker:diamond_ore_sacrifice"
+		}]
+	},
+	{
+		uid: "dc0c72f5",
+		type: "item",
+		items: [{
+			item: "bloodmagic:activation_crystal 1 1"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -2.5d,
+	y: -18.0d,
+	dependencies: [
+		"68ba39dd"
+	],
+	tasks: [{
+		uid: "2974c3d8",
+		type: "item",
+		items: [{
+			item: "emergingtechnology:processor"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 8.5d,
+	y: -18.0d,
+	dependencies: [
+		"76511d38"
+	],
+	tasks: [{
+		uid: "b27231b3",
+		type: "item",
+		items: [{
+			item: "compactmachines3:tunneltool"
+		}]
+	}]
+}

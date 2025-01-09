@@ -1,0 +1,14 @@
+{
+	x: 11.5d,
+	y: -7.5d,
+	dependencies: [
+		"f67fe555"
+	],
+	tasks: [{
+		uid: "75d5c43b",
+		type: "item",
+		items: [{
+			item: "embers:crystal_ember"
+		}]
+	}]
+}

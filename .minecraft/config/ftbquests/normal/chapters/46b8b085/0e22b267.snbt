@@ -1,0 +1,14 @@
+{
+	x: -2.5d,
+	y: -12.0d,
+	dependencies: [
+		"61184c87"
+	],
+	tasks: [{
+		uid: "756e38de",
+		type: "item",
+		items: [{
+			item: "calculator:precisionchamber"
+		}]
+	}]
+}

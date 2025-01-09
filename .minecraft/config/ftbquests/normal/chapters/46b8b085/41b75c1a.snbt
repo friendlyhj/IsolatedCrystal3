@@ -1,0 +1,36 @@
+{
+	title: "四意志",
+	x: 0.5d,
+	y: -15.0d,
+	dependencies: [
+		"f65794d0"
+	],
+	tasks: [{
+		uid: "4cac1238",
+		type: "item",
+		items: [{
+			item: "bloodmagic:item_demon_crystal 1 1"
+		}]
+	},
+	{
+		uid: "f01a18b8",
+		type: "item",
+		items: [{
+			item: "bloodmagic:item_demon_crystal 1 2"
+		}]
+	},
+	{
+		uid: "eea28d91",
+		type: "item",
+		items: [{
+			item: "bloodmagic:item_demon_crystal 1 3"
+		}]
+	},
+	{
+		uid: "1c9a61e0",
+		type: "item",
+		items: [{
+			item: "bloodmagic:item_demon_crystal 1 4"
+		}]
+	}]
+}

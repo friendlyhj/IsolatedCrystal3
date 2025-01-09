@@ -9,10 +9,7 @@
 		uid: "ba908cfa",
 		type: "item",
 		items: [{
-			id: "thermalexpansion:machine",
-			Damage: 3s,
 			tag: {
-				Facing: 3b,
 				SideCache: [B;
 					3b,
 					1b,
@@ -22,9 +19,12 @@
 					2b
 				],
 				RSControl: 0b,
-				Energy: 0,
-				Level: 0b
-			}
+				Facing: 3b,
+				Level: 0b,
+				Energy: 0
+			},
+			Damage: 3s,
+			id: "thermalexpansion:machine"
 		}]
 	}]
 }

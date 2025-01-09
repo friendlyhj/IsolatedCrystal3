@@ -1,0 +1,28 @@
+{
+	x: 2.0d,
+	y: -10.5d,
+	dependencies: [
+		"a9444766"
+	],
+	tasks: [{
+		uid: "13740f5f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:solid_fission_controller"
+		}]
+	},
+	{
+		uid: "1560e70a",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:solid_fission_cell"
+		}]
+	},
+	{
+		uid: "5ece0697",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fission_source"
+		}]
+	}]
+}

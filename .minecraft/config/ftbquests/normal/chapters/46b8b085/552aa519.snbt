@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: -7.5d,
+	dependencies: [
+		"17af5c47"
+	],
+	tasks: [{
+		uid: "12f9a973",
+		type: "item",
+		items: [{
+			item: "embers:ember_activator"
+		}]
+	}]
+}

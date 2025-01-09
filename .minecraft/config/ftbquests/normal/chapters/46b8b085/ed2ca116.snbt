@@ -1,0 +1,26 @@
+{
+	x: 12.0d,
+	y: -15.5d,
+	dependencies: [
+		"90164c6a",
+		"ce779d72",
+		"5c9f1e1d"
+	],
+	tasks: [{
+		uid: "298bbb76",
+		type: "item",
+		items: [{
+			item: "enderio:block_powered_spawner"
+		}]
+	},
+	{
+		uid: "8f596cc3",
+		type: "item",
+		items: [{
+			tag: {
+				entityId: "minecraft:zombie"
+			},
+			id: "enderio:item_broken_spawner"
+		}]
+	}]
+}

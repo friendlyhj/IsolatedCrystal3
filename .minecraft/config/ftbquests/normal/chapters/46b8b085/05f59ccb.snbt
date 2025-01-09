@@ -1,0 +1,19 @@
+{
+	x: 3.75d,
+	y: -16.75d,
+	shape: "hexagon",
+	text: [
+		"矿藏触媒中间铁桶内的媒介液数量会实时变化，但只有保持在半桶左右才可进行水晶生产。"
+	],
+	dependencies: [
+		"168604d7"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "6d87ce79",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mine_crystal"
+		}]
+	}]
+}

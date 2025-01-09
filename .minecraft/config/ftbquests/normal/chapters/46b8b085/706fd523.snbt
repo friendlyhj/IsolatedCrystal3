@@ -1,0 +1,17 @@
+{
+	x: -10.0d,
+	y: -12.0d,
+	text: [
+		"mek 发电机已全部禁用，no 瓜聚变。"
+	],
+	dependencies: [
+		"5e210560"
+	],
+	tasks: [{
+		uid: "5fdf7962",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock2 1 10"
+		}]
+	}]
+}

@@ -1,0 +1,59 @@
+{
+	x: 3.5d,
+	y: -10.5d,
+	dependencies: [
+		"f08836b5"
+	],
+	tasks: [{
+		uid: "4ef5214d",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_controller"
+		}]
+	},
+	{
+		uid: "aa59cb7e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_rotor_shaft"
+		}],
+		count: 2L
+	},
+	{
+		uid: "130b933d",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_rotor_shaft"
+		}]
+	},
+	{
+		uid: "eee5b476",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_rotor_blade_steel"
+		}],
+		count: 4L
+	},
+	{
+		uid: "2585d1ff",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_inlet"
+		}]
+	},
+	{
+		uid: "cb466656",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_outlet"
+		}]
+	},
+	{
+		uid: "b79417c5",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:turbine_casing"
+		}],
+		count: 47L
+	}]
+}

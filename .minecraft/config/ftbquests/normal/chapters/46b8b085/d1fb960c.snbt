@@ -1,0 +1,17 @@
+{
+	x: 7.0d,
+	y: -21.0d,
+	dependencies: [
+		"388626b2",
+		"918eec99"
+	],
+	tasks: [{
+		uid: "ff21ad76",
+		type: "item",
+		items: [{
+			item: "contenttweaker:space_grid"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

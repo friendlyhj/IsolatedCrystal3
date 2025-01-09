@@ -1,0 +1,14 @@
+{
+	x: 12.0d,
+	y: -14.5d,
+	dependencies: [
+		"ce779d72"
+	],
+	tasks: [{
+		uid: "92bf6db2",
+		type: "item",
+		items: [{
+			item: "extrautils2:interactionproxy"
+		}]
+	}]
+}

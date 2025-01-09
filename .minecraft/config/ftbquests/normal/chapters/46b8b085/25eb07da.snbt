@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -15.5d,
+	shape: "hexagon",
+	text: [
+		"需要事先往机器内部发射一百道魔力风暴产生的魔力脉冲。"
+	],
+	dependencies: [
+		"942d87b1",
+		"82033486"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "94c6150e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:nature_crystal"
+		}]
+	}]
+}

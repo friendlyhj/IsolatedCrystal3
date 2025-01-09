@@ -8,10 +8,10 @@
 		uid: "ed9c2164",
 		type: "item",
 		items: [{
-			id: "botania:specialflower",
 			tag: {
 				type: "orechid"
-			}
+			},
+			id: "botania:specialflower"
 		}]
 	}]
 }

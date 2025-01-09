@@ -10,5 +10,10 @@
 		items: [{
 			item: "naturesaura:nature_altar"
 		}]
+	}],
+	rewards: [{
+		uid: "dd84423a",
+		type: "item",
+		item: "naturesaura:eye_improved"
 	}]
 }

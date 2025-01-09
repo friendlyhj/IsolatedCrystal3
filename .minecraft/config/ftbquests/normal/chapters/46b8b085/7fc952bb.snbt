@@ -1,0 +1,17 @@
+{
+	x: 7.0d,
+	y: -19.5d,
+	dependencies: [
+		"ef52230a",
+		"d1fb960c"
+	],
+	tasks: [{
+		uid: "8808d11e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:space_matrix"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

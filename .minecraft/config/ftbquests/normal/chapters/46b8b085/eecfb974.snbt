@@ -1,0 +1,36 @@
+{
+	x: -4.0d,
+	y: -10.5d,
+	dependencies: [
+		"bff8537e"
+	],
+	tasks: [{
+		uid: "02b66680",
+		type: "item",
+		items: [{
+			tag: {
+				SideCache: [B;
+					1b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				],
+				Facing: 3b,
+				RSControl: 0b,
+				Level: 0b,
+				Energy: 0
+			},
+			Damage: 15s,
+			id: "thermalexpansion:machine"
+		}]
+	},
+	{
+		uid: "e3b08c4c",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 497"
+		}]
+	}]
+}

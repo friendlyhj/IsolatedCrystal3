@@ -1,0 +1,21 @@
+{
+	x: -2.5d,
+	y: -19.5d,
+	dependencies: [
+		"b3b68b1c"
+	],
+	tasks: [{
+		uid: "29cbb97a",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:laser_drill"
+		}]
+	},
+	{
+		uid: "3042dd7f",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:laser_base"
+		}]
+	}]
+}

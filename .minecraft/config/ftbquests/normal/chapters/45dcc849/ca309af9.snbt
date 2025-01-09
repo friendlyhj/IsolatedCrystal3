@@ -1,6 +1,10 @@
 {
 	x: 3.0d,
 	y: -11.0d,
+	text: [
+		"进入下界，但下界空无一物……",
+		"但下界特殊的环境依然是某些特殊配方的必要条件。如将圆石转换为下界岩。"
+	],
 	dependencies: [
 		"73079b58"
 	],
@@ -10,5 +14,17 @@
 		items: [{
 			item: "minecraft:netherrack"
 		}]
+	}],
+	rewards: [{
+		uid: "29890e6a",
+		type: "item",
+		item: "minecraft:brown_mushroom",
+		count: 16
+	},
+	{
+		uid: "2aac37f5",
+		type: "item",
+		item: "minecraft:red_mushroom",
+		count: 16
 	}]
 }

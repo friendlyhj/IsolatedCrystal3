@@ -1,0 +1,14 @@
+{
+	x: 7.5d,
+	y: -12.0d,
+	dependencies: [
+		"a0fd8587"
+	],
+	tasks: [{
+		uid: "ec881e9b",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_drainer"
+		}]
+	}]
+}

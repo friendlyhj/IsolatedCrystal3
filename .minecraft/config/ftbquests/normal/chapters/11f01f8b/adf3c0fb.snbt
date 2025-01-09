@@ -1,6 +1,9 @@
 {
 	x: 3.0d,
 	y: -5.5d,
+	text: [
+		"橙色化为熔岩"
+	],
 	dependencies: [
 		"f57488ce"
 	],
