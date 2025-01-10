@@ -255,3 +255,33 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<immersiveengineering:metal_decoration0:6>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<calculator:flawlessdiamond>, <tconstruct:metal:2>, <calculator:flawlessdiamond>],
+    [<tconstruct:large_plate>.withTag({Material: "tough"}), <extrautils2:compressedcobblestone:3>, <tconstruct:large_plate>.withTag({Material: "tough"})],
+    [<thermalfoundation:material:264>, <actuallyadditions:block_misc:8>, <thermalfoundation:material:264>]])
+  .setFluid(<liquid:mine_medium> * 4000)
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<modularmachinery:mine_catalyst_controller>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<appliedenergistics2:material:47>, <contenttweaker:space_matrix>, <appliedenergistics2:material:47>],
+    [<appliedenergistics2:spatial_pylon>, <ore:blockLead>, <appliedenergistics2:spatial_pylon>],
+    [<appliedenergistics2:material:47>, <contenttweaker:space_matrix>, <appliedenergistics2:material:47>]])
+  .addTool(<artisanworktables:artisans_spanner_invar>, 25)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<modularmachinery:time_transmutator_controller>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<mekanism:controlcircuit:3>, <mekanism:basicblock2:3>.withTag({tier: 2}), <mekanism:controlcircuit:3>],
+    [<nuclearcraft:turbine_dynamo_coil:5>, <enderio:item_material:54>, <nuclearcraft:turbine_dynamo_coil:5>],
+    [<mekanism:controlcircuit:3>, <calculator:material:7>, <mekanism:controlcircuit:3>]])
+  .addTool(<ore:artisansSpanner>, 25)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<modularmachinery:energy_field_emitter_controller>)
+  .create();

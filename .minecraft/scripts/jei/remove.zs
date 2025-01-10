@@ -52,9 +52,19 @@ val banList as IItemStack[] = [
     <enderio:block_simple_wired_charger>,
     <enderio:block_simple_furnace>,
     <industrialforegoing:pitiful_fuel_generator>,
-    <emergingtechnology:piezoelectric>
+    <emergingtechnology:piezoelectric>,
+    <thermalexpansion:augment:337>,
+    <immersiveengineering:mold:1>,
+    <thaumcraft:smelter_basic>,
+    <thaumcraft:smelter_thaumium>,
+    <thaumcraft:smelter_void>,
+    <thaumadditions:mithrillium_smelter>,
+    <thaumadditions:adaminite_smelter>,
+    <thaumadditions:mithminite_smelter>
 ];
 
 for ban in banList {
     JEI.removeAndHide(ban);
 }
+
+JEI.hideCategory("thermalexpansion.compactor_gear");

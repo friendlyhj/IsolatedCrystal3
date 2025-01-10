@@ -31,3 +31,5 @@ StoneSeparator.removeRecipe(<calculator:reinforcedironingot> * 4, <calculator:sm
 StoneSeparator.removeRecipe(<calculator:largeamethyst>, <calculator:shardamethyst>);
 StoneSeparator.removeRecipe(<calculator:smallamethyst>, <calculator:shardamethyst>);
 
+Atomic.addRecipe(<sonarcore:reinforcedstoneblock>, <embers:archaic_circuit>, <sonarcore:reinforcedstoneblock>, <thaumicaugmentation:stone>);
+

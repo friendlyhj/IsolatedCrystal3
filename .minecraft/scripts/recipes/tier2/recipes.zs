@@ -1,6 +1,7 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
+import scripts.recipes.lib.Util.modItems;
 
 recipes.removeByMod("modularmachinery");
 for item in loadedMods["modularmachinery"].items {
@@ -282,6 +283,7 @@ furnace.remove(<appliedenergistics2:material:5>);
 recipes.remove(<thermalexpansion:frame>);
 
 recipes.replaceAllOccurrences(<ore:ingotCupronickel>, <ore:ingotConstantan>);
+recipes.replaceAllOccurrences(<factorytech:ore_dust:12>, <ore:dustLapis>);
 
 recipes.remove(<appliedenergistics2:controller>);
 recipes.addShaped(<appliedenergistics2:controller>, [
@@ -292,3 +294,9 @@ recipes.addShaped(<appliedenergistics2:controller>, [
 
 recipes.remove(<appliedenergistics2:material:53>);
 recipes.addShapeless(<appliedenergistics2:material:53>, [c]);
+
+recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "modules"}), [
+    [null, <pneumaticcraft:printed_circuit_board>, null],
+    [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>],
+    [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
+]);

@@ -2,21 +2,8 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-
-function recipeTweak(shaped as bool, out as IItemStack, inputs as IIngredient[][]) as void {
-    recipes.remove(out, true);
-    if (shaped) {
-        recipes.addShaped(out, inputs);
-    } else {
-        recipes.addShapeless(out, inputs[0]);
-    }
-}
-
-function modItems(modid as string) as IIngredient {
-    return <*>.only(function(item) {
-        return item.definition.owner == modid;
-    });
-}
+import scripts.recipes.lib.Util.modItems;
+import scripts.recipes.lib.Util.recipeTweak;
 
 recipes.remove(<mekanism:basicblock:8>);
 recipes.remove(<enderio:item_basic_capacitor>);
@@ -267,4 +254,31 @@ recipeTweak(true, <factorytech:coregen>, [
     [<factorytech:machinepart:170>, gc, <factorytech:machinepart:170>],
     [<ore:ingotRefinedObsidian>, <factorytech:machinepart:170>, <ore:ingotRefinedObsidian>]
 ]);
-
+recipeTweak(true, <botania:manabomb>, [
+    [<botania:livingwood>, <minecraft:tnt>, <botania:livingwood>],
+    [<minecraft:tnt>, <botania:rune:13>, <minecraft:tnt>],
+    [<botania:livingwood>, <minecraft:tnt>, <botania:livingwood>]
+]);
+recipeTweak(false, <immersiveengineering:metal_device1:2>, [
+    [gc, <ore:gearCopper>]
+]);
+recipeTweak(true, <modularrouters:blank_module> * 2, [
+    [null, <contenttweaker:logic_crystal>, null],
+    [<contenttweaker:logic_crystal>, <ore:plateIron>, <contenttweaker:logic_crystal>],
+    [<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>]
+]);
+recipeTweak(true, <modularrouters:blank_upgrade> * 2, [
+    [<thaumadditions:mithrillium_nugget>, <contenttweaker:logic_crystal>, <contenttweaker:logic_crystal>],
+    [<thaumadditions:mithrillium_nugget>, <ore:plateIron>, <thaumadditions:mithrillium_nugget>],
+    [null, <contenttweaker:metal_crystal>, <thaumadditions:mithrillium_nugget>]
+]);
+recipeTweak(true, <modularrouters:item_router>, [
+    [<contenttweaker:aura_crystal>, <minecraft:ender_eye>, <contenttweaker:aura_crystal>],
+    [<ore:plateIron>, <thermalexpansion:frame>, <ore:plateIron>],
+    [<ore:plateIron>, <modularrouters:blank_module>, <ore:plateIron>]
+]);
+recipeTweak(true, <pneumaticcraft:pneumatic_dynamo>, [
+    [null, <thermalfoundation:material:514>, null],
+    [<ore:gearIronCompressed>, <ore:ingotIronCompressed>, <ore:gearIronCompressed>],
+    [<ore:ingotIronCompressed>, gc, <ore:ingotIronCompressed>]
+]);

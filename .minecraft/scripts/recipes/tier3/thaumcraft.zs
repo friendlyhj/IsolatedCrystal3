@@ -95,3 +95,6 @@ Crucible.registerRecipe("exchange_tablet", "", <embers:alchemy_tablet>, <embers:
     <aspect:permutatio> * 50,
     <aspect:potentia> * 50
 ]);
+Crucible.registerRecipe("ancient_brick", "", <embers:archaic_brick>, <embers:ingot_dawnstone>, [
+    <aspect:humanus> * 5
+]);

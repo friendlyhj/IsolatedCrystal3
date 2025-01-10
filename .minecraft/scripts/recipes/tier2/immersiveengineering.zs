@@ -75,6 +75,7 @@ Blueprint.addRecipe("modules", <appliedenergistics2:material:26>, [
     <ore:ingotRedAlloy>,
 ]);
 
+Blueprint.removeRecipe(<immersiveengineering:mold:1>);
 BlastFurnace.addRecipe(<appliedenergistics2:material:5>, <contenttweaker:sand_dust>, 80);
 ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:4>);
 
