@@ -1,44 +1,28 @@
 {
   "catalystStack": {
     "registryName": {
-      "domain": "minecraft",
-      "path": "diamond_block"
+      "domain": "contenttweaker",
+      "path": "diamond_ore_sacrifice"
     },
     "meta": 0
   },
   "components": [
     {
-      "weight": 50,
-      "oreName": "oreIron"
+      "weight": 350,
+      "oreName": "minecraft:stone"
     },
     {
-      "weight": 100,
-      "oreName": "oreGold"
-    },
-    {
-      "weight": 10,
-      "oreName": "oreLapis"
-    },
-    {
-      "weight": 250,
-      "oreName": "oreDiamond"
-    },
-    {
-      "weight": 180,
-      "oreName": "oreEmerald"
+      "weight": 200,
+      "oreName": "minecraft:diamond_ore"
     },
     {
       "weight": 50,
-      "oreName": "oreRedstone"
-    },
-    {
-      "weight": 400,
-      "oreName": "oreDiamond"
+      "oreName": "minecraft:diamond_block"
     }
   ],
-  "explosionStrength": 10.0,
-  "radius": 3,
-  "maxWeight": 1040,
-  "version": 4,
-  "cost": 5000000
+  "explosionStrength": 15.0,
+  "radius": 4,
+  "maxWeight": 600,
+  "version": 3,
+  "cost": 100000
 }

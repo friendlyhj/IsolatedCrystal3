@@ -1,48 +1,28 @@
 {
   "catalystStack": {
     "registryName": {
-      "domain": "minecraft",
-      "path": "gold_block"
+      "domain": "contenttweaker",
+      "path": "gold_ore_sacrifice"
     },
     "meta": 0
   },
   "components": [
     {
+      "weight": 350,
+      "oreName": "minecraft:stone"
+    },
+    {
       "weight": 200,
-      "oreName": "oreIron"
+      "oreName": "minecraft:gold_ore"
     },
     {
-      "weight": 100,
-      "oreName": "oreCopper"
-    },
-    {
-      "weight": 60,
-      "oreName": "oreTin"
-    },
-    {
-      "weight": 100,
-      "oreName": "oreGold"
-    },
-    {
-      "weight": 120,
-      "oreName": "oreLapis"
-    },
-    {
-      "weight": 30,
-      "oreName": "oreDiamond"
-    },
-    {
-      "weight": 20,
-      "oreName": "oreEmerald"
-    },
-    {
-      "weight": 20,
-      "oreName": "oreCoal"
+      "weight": 50,
+      "oreName": "minecraft:gold_block"
     }
   ],
-  "explosionStrength": 18.0,
-  "radius": 6,
-  "maxWeight": 650,
-  "version": 4,
-  "cost": 2500000
+  "explosionStrength": 15.0,
+  "radius": 4,
+  "maxWeight": 600,
+  "version": 3,
+  "cost": 100000
 }

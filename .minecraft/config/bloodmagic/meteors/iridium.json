@@ -2,7 +2,7 @@
     "catalystStack": {
       "registryName": {
         "domain": "contenttweaker",
-        "path": "aluminum_ore_sacrifice"
+        "path": "iridium_ore_sacrifice"
       },
       "meta": 0
     },
@@ -24,5 +24,5 @@
     "radius": 4,
     "maxWeight": 600,
     "version": 3,
-    "cost": 1000000
+    "cost": 100000
   }
