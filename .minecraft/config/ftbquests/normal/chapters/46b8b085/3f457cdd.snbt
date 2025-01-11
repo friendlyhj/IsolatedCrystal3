@@ -29,5 +29,10 @@
 			id: "thaumicaugmentation:rift_jar"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ec7c60b5",
+		type: "random",
+		table: 1
 	}]
 }

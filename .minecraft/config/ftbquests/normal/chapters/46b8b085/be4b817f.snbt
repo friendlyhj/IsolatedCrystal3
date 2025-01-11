@@ -10,5 +10,10 @@
 		items: [{
 			item: "nuclearcraft:fuel_reprocessor"
 		}]
+	}],
+	rewards: [{
+		uid: "cee24e0d",
+		type: "random",
+		table: 1
 	}]
 }

@@ -13,5 +13,10 @@
 		items: [{
 			item: "thaumadditions:aura_charger"
 		}]
+	}],
+	rewards: [{
+		uid: "1efe1a1d",
+		type: "random",
+		table: 0
 	}]
 }

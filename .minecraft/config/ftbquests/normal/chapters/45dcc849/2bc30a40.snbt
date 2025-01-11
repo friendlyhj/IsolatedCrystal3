@@ -10,5 +10,10 @@
 		items: [{
 			item: "modularmachinery:oil_fabricator_controller"
 		}]
+	}],
+	rewards: [{
+		uid: "a50d45cd",
+		type: "random",
+		table: 0
 	}]
 }

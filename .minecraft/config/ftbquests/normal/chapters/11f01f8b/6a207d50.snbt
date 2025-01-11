@@ -13,5 +13,25 @@
 		items: [{
 			item: "contenttweaker:crafting_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "15a8b7ce",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 40,
+				TrophyColorBlue: 151,
+				TrophyVariant: "classic",
+				TrophyColorGreen: 118,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:crafting_crystal"
+				},
+				TrophyName: ""
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

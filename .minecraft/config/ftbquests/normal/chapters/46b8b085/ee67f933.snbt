@@ -10,5 +10,10 @@
 		items: [{
 			item: "embers:mixer"
 		}]
+	}],
+	rewards: [{
+		uid: "c878ba19",
+		type: "random",
+		table: 1
 	}]
 }

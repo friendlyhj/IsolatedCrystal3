@@ -10,5 +10,10 @@
 		items: [{
 			item: "contenttweaker:crystal_alga"
 		}]
+	}],
+	rewards: [{
+		uid: "719b1dab",
+		type: "random",
+		table: 1
 	}]
 }

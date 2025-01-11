@@ -10,5 +10,10 @@
 		items: [{
 			item: "nuclearcraft:decay_hastener"
 		}]
+	}],
+	rewards: [{
+		uid: "4d32ae77",
+		type: "random",
+		table: 1
 	}]
 }

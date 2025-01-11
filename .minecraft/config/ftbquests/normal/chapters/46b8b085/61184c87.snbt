@@ -10,5 +10,10 @@
 		items: [{
 			item: "calculator:atomiccalculator"
 		}]
+	}],
+	rewards: [{
+		uid: "1dc1cd23",
+		type: "random",
+		table: 1
 	}]
 }

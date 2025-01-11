@@ -24,5 +24,10 @@
 		items: [{
 			item: "pneumaticcraft:pressure_chamber_interface"
 		}]
+	}],
+	rewards: [{
+		uid: "727694c6",
+		type: "random",
+		table: 0
 	}]
 }

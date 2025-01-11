@@ -38,5 +38,10 @@
 		items: [{
 			item: "nuclearcraft:ingot_former"
 		}]
+	}],
+	rewards: [{
+		uid: "26fd8c0a",
+		type: "random",
+		table: 0
 	}]
 }

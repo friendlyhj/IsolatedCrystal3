@@ -10,5 +10,10 @@
 		items: [{
 			item: "bloodmagic:soul_forge"
 		}]
+	}],
+	rewards: [{
+		uid: "78320017",
+		type: "random",
+		table: 0
 	}]
 }

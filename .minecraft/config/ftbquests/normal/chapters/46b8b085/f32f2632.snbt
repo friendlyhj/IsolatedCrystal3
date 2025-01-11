@@ -18,5 +18,10 @@
 			item: "embers:alchemy_tablet"
 		}],
 		count: 4L
+	}],
+	rewards: [{
+		uid: "ca08fafb",
+		type: "random",
+		table: 1
 	}]
 }

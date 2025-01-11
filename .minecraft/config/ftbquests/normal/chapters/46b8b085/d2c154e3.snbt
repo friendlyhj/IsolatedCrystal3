@@ -10,5 +10,10 @@
 		items: [{
 			item: "calculator:fiddledewfruit"
 		}]
+	}],
+	rewards: [{
+		uid: "78495d65",
+		type: "random",
+		table: 1
 	}]
 }

@@ -11,5 +11,10 @@
 		items: [{
 			item: "thaumadditions:aspect_combiner"
 		}]
+	}],
+	rewards: [{
+		uid: "a8a07540",
+		type: "random",
+		table: 0
 	}]
 }

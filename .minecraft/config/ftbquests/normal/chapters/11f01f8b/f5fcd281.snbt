@@ -13,5 +13,25 @@
 		items: [{
 			item: "contenttweaker:earth_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "733c24cf",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 222,
+				TrophyColorBlue: 42,
+				TrophyVariant: "classic",
+				TrophyColorGreen: 207,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:earth_crystal"
+				},
+				TrophyName: ""
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

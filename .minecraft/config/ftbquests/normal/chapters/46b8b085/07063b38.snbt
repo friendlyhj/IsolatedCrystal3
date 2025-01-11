@@ -17,5 +17,10 @@
 		items: [{
 			item: "nuclearcraft:salt_fission_vessel"
 		}]
+	}],
+	rewards: [{
+		uid: "935f390c",
+		type: "random",
+		table: 1
 	}]
 }

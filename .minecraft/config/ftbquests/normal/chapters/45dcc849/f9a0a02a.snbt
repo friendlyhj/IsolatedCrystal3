@@ -10,5 +10,10 @@
 		items: [{
 			item: "thaumcraft:causality_collapser"
 		}]
+	}],
+	rewards: [{
+		uid: "cbc596ca",
+		type: "random",
+		table: 0
 	}]
 }

@@ -2,7 +2,13 @@
 	x: 5.25d,
 	y: -6.0d,
 	dependencies: [
-		"68770103"
+		"5c9f1e1d",
+		"68770103",
+		"d0783c3c",
+		"ce779d72",
+		"b7de04d8",
+		"a57f0854",
+		"90164c6a"
 	],
 	tasks: [{
 		uid: "1d114038",
@@ -10,5 +16,10 @@
 		items: [{
 			item: "factorytech:intermediate 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "ea095f80",
+		type: "random",
+		table: 1
 	}]
 }

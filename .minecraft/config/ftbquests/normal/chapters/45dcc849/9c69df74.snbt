@@ -17,5 +17,10 @@
 		items: [{
 			item: "thaumcraft:sapling_greatwood"
 		}]
+	}],
+	rewards: [{
+		uid: "dedacf77",
+		type: "random",
+		table: 0
 	}]
 }

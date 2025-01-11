@@ -10,5 +10,10 @@
 		items: [{
 			item: "emergingtechnology:shredder"
 		}]
+	}],
+	rewards: [{
+		uid: "30549dfb",
+		type: "random",
+		table: 1
 	}]
 }

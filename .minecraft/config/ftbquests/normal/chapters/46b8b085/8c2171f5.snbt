@@ -3,7 +3,14 @@
 	y: -15.5d,
 	hide_dependency_lines: 1b,
 	dependencies: [
-		"f91d035a"
+		"5c9f1e1d",
+		"68770103",
+		"d0783c3c",
+		"ce779d72",
+		"b7de04d8",
+		"f91d035a",
+		"a57f0854",
+		"90164c6a"
 	],
 	tasks: [{
 		uid: "277d71ca",
@@ -11,5 +18,10 @@
 		items: [{
 			item: "minecraft:ghast_tear"
 		}]
+	}],
+	rewards: [{
+		uid: "ae56a9f5",
+		type: "random",
+		table: 1
 	}]
 }

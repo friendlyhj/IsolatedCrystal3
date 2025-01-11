@@ -10,5 +10,10 @@
 		items: [{
 			item: "embers:crystal_ember"
 		}]
+	}],
+	rewards: [{
+		uid: "d8e4f6e6",
+		type: "random",
+		table: 1
 	}]
 }

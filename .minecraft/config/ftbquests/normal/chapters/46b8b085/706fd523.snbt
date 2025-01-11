@@ -13,5 +13,10 @@
 		items: [{
 			item: "mekanism:machineblock2 1 10"
 		}]
+	}],
+	rewards: [{
+		uid: "35199d88",
+		type: "random",
+		table: 1
 	}]
 }

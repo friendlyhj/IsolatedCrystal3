@@ -12,5 +12,25 @@
 		items: [{
 			item: "contenttweaker:astral_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "2fb6f3fd",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 37,
+				TrophyColorBlue: 146,
+				TrophyName: "",
+				TrophyColorGreen: 49,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:astral_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

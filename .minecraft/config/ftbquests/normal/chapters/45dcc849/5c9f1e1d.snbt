@@ -12,5 +12,25 @@
 		items: [{
 			item: "contenttweaker:blood_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "8d832fd3",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 179,
+				TrophyColorBlue: 44,
+				TrophyVariant: "classic",
+				TrophyColorGreen: 49,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:blood_crystal"
+				},
+				TrophyName: ""
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

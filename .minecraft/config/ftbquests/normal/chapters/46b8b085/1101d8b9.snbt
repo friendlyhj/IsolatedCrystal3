@@ -17,5 +17,10 @@
 		items: [{
 			item: "industrialforegoing:laser_base"
 		}]
+	}],
+	rewards: [{
+		uid: "acb118c2",
+		type: "random",
+		table: 1
 	}]
 }

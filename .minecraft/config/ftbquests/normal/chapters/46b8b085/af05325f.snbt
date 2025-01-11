@@ -2,6 +2,9 @@
 	x: 3.0d,
 	y: -15.5d,
 	shape: "hexagon",
+	text: [
+		"只能在下界工作。"
+	],
 	dependencies: [
 		"26dfa446",
 		"64957f54",
@@ -15,5 +18,25 @@
 		items: [{
 			item: "contenttweaker:life_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "d83bc59a",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 179,
+				TrophyColorBlue: 44,
+				TrophyName: "",
+				TrophyColorGreen: 49,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:life_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

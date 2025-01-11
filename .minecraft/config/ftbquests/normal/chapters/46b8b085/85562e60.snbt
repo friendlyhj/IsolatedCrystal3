@@ -10,5 +10,10 @@
 		items: [{
 			item: "soot:ingot_antimony"
 		}]
+	}],
+	rewards: [{
+		uid: "73e780bd",
+		type: "random",
+		table: 1
 	}]
 }

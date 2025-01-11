@@ -10,5 +10,10 @@
 		items: [{
 			item: "naturesaura:conversion_catalyst"
 		}]
+	}],
+	rewards: [{
+		uid: "4e8acaea",
+		type: "random",
+		table: 0
 	}]
 }

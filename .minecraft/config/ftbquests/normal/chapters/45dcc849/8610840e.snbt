@@ -10,5 +10,10 @@
 		items: [{
 			item: "thaumcraft:centrifuge"
 		}]
+	}],
+	rewards: [{
+		uid: "de45b984",
+		type: "random",
+		table: 0
 	}]
 }

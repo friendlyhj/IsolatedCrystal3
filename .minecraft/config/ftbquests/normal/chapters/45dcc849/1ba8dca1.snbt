@@ -10,5 +10,10 @@
 		items: [{
 			item: "bloodmagic:altar"
 		}]
+	}],
+	rewards: [{
+		uid: "bab5521e",
+		type: "random",
+		table: 0
 	}]
 }

@@ -2,10 +2,13 @@
 	x: -13.0d,
 	y: -12.0d,
 	dependencies: [
-		"a57f0854",
+		"5c9f1e1d",
 		"d0783c3c",
 		"68770103",
-		"b7de04d8"
+		"ce779d72",
+		"b7de04d8",
+		"a57f0854",
+		"90164c6a"
 	],
 	tasks: [{
 		uid: "35d9afe0",
@@ -13,5 +16,10 @@
 		items: [{
 			item: "mekanism:machineblock 1 8"
 		}]
+	}],
+	rewards: [{
+		uid: "b7948a14",
+		type: "random",
+		table: 1
 	}]
 }

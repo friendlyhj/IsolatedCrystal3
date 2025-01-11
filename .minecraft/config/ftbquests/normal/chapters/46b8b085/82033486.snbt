@@ -10,5 +10,10 @@
 		items: [{
 			item: "naturesaura:token_grief"
 		}]
+	}],
+	rewards: [{
+		uid: "da079967",
+		type: "random",
+		table: 1
 	}]
 }

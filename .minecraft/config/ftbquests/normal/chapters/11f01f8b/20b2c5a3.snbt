@@ -14,5 +14,25 @@
 		items: [{
 			item: "contenttweaker:ocean_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "7b42097f",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 37,
+				TrophyColorBlue: 146,
+				TrophyVariant: "classic",
+				TrophyColorGreen: 49,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:ocean_crystal"
+				},
+				TrophyName: ""
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

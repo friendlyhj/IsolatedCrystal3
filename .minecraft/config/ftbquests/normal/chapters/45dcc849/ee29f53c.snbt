@@ -10,5 +10,10 @@
 		items: [{
 			item: "astralsorcery:blockwell"
 		}]
+	}],
+	rewards: [{
+		uid: "6c0506ca",
+		type: "random",
+		table: 0
 	}]
 }

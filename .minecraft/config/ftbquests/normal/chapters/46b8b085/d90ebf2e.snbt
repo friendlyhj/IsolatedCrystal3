@@ -11,5 +11,10 @@
 		items: [{
 			item: "soot:alchemy_globe"
 		}]
+	}],
+	rewards: [{
+		uid: "3db3611a",
+		type: "random",
+		table: 1
 	}]
 }

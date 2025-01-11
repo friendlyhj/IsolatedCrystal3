@@ -10,5 +10,10 @@
 		items: [{
 			item: "nuclearcraft:pellet_uranium 1 4"
 		}]
+	}],
+	rewards: [{
+		uid: "438ac0f7",
+		type: "random",
+		table: 1
 	}]
 }

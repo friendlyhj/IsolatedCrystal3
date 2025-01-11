@@ -23,5 +23,10 @@
 			item: "factorytech:magnetblock"
 		}],
 		count: 4L
+	}],
+	rewards: [{
+		uid: "ab2d0d5a",
+		type: "random",
+		table: 1
 	}]
 }

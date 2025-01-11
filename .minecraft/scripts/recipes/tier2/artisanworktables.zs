@@ -446,11 +446,12 @@ RecipeBuilder.get("engineer")
   .addOutput(<thermalexpansion:machine:15>)
   .create();
 
-RecipeBuilder.get("engineer")
+RecipeBuilder.get("mage")
   .setShaped([
-    [<nuclearcraft:ingot_block:14>, <thermaldynamics:duct_0:5>, <ore:blockElectrum>],
-    [<thermaldynamics:duct_0:5>, <factorytech:machinepart:170>, <thermaldynamics:duct_0:5>],
-    [<ore:blockElectrum>, <thermaldynamics:duct_0:5>, <nuclearcraft:ingot_block:14>]])
-  .setFluid(<liquid:emergency_coolant> * 2000)
-  .addOutput(<contenttweaker:superconductor>)
+    [<botania:manaresource:7>, <bloodmagic:item_demon_crystal>, <botania:manaresource:7>],
+    [<bloodmagic:item_demon_crystal>, <bloodmagic:slate:2>, <bloodmagic:item_demon_crystal>],
+    [<thaumcraft:mechanism_simple>, <bloodmagic:item_demon_crystal>, <thaumcraft:mechanism_simple>]])
+  .setFluid(<liquid:mercury> * 288)
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<modularmachinery:blockwillproviderinput>)
   .create();

@@ -18,5 +18,10 @@
 			item: "thaumcraft:metal_alchemical"
 		}],
 		count: 2L
+	}],
+	rewards: [{
+		uid: "897b3e88",
+		type: "random",
+		table: 0
 	}]
 }

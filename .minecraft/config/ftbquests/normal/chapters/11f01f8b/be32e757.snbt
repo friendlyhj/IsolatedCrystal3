@@ -13,5 +13,25 @@
 		items: [{
 			item: "contenttweaker:flesh_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "6a703d61",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 179,
+				TrophyColorBlue: 44,
+				TrophyVariant: "classic",
+				TrophyColorGreen: 49,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					id: "contenttweaker:flesh_crystal",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: ""
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

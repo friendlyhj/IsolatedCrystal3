@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:disassembler"
 		}]
+	}],
+	rewards: [{
+		uid: "9b0f1bd3",
+		type: "random",
+		table: 0
 	}]
 }

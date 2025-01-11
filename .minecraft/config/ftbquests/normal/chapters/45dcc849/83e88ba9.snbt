@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:agitator"
 		}]
+	}],
+	rewards: [{
+		uid: "571d7111",
+		type: "random",
+		table: 0
 	}]
 }

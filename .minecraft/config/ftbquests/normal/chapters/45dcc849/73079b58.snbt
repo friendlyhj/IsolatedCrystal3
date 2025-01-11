@@ -10,5 +10,10 @@
 		items: [{
 			item: "thaumcraft:salis_mundus"
 		}]
+	}],
+	rewards: [{
+		uid: "08d102e0",
+		type: "random",
+		table: 0
 	}]
 }

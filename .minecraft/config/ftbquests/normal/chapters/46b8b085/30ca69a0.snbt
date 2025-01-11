@@ -11,5 +11,10 @@
 		items: [{
 			item: "soot:mundane_stone"
 		}]
+	}],
+	rewards: [{
+		uid: "ce852aa1",
+		type: "random",
+		table: 1
 	}]
 }

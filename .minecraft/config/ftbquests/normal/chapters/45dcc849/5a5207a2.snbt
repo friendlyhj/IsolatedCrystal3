@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:fluiddrill"
 		}]
+	}],
+	rewards: [{
+		uid: "f25700f8",
+		type: "random",
+		table: 0
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "thaumcraft:infusion_matrix"
 		}]
+	}],
+	rewards: [{
+		uid: "c9208d85",
+		type: "random",
+		table: 0
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "embers:ember_activator"
 		}]
+	}],
+	rewards: [{
+		uid: "9148a44c",
+		type: "random",
+		table: 1
 	}]
 }

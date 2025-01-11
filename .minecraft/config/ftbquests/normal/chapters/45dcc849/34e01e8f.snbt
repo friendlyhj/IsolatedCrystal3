@@ -11,5 +11,10 @@
 		items: [{
 			item: "factorytech:metalcutter"
 		}]
+	}],
+	rewards: [{
+		uid: "20ee05d8",
+		type: "random",
+		table: 0
 	}]
 }

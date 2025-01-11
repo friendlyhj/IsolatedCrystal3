@@ -10,5 +10,10 @@
 		items: [{
 			item: "calculator:processingchamber"
 		}]
+	}],
+	rewards: [{
+		uid: "f7f2e833",
+		type: "random",
+		table: 1
 	}]
 }

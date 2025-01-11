@@ -22,5 +22,10 @@
 			id: "astralsorcery:itemcelestialcrystal"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6a6352ac",
+		type: "random",
+		table: 0
 	}]
 }

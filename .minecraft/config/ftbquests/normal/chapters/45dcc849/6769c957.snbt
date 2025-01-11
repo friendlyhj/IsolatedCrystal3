@@ -11,5 +11,10 @@
 			item: "astralsorcery:blockaltar 1 1"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ffe5e9a6",
+		type: "random",
+		table: 0
 	}]
 }

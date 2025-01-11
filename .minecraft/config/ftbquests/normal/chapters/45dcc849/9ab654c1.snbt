@@ -10,5 +10,10 @@
 		items: [{
 			item: "minecraft:prismarine_crystals"
 		}]
+	}],
+	rewards: [{
+		uid: "861f4409",
+		type: "random",
+		table: 0
 	}]
 }

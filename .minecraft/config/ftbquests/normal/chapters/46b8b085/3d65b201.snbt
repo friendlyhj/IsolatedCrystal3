@@ -35,5 +35,10 @@
 		items: [{
 			item: "emergingtechnology:scrubber"
 		}]
+	}],
+	rewards: [{
+		uid: "11172b00",
+		type: "random",
+		table: 1
 	}]
 }

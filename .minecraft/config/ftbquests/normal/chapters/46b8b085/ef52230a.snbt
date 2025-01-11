@@ -11,5 +11,10 @@
 			item: "compactmachines3:fieldprojector"
 		}],
 		count: 4L
+	}],
+	rewards: [{
+		uid: "b6798faa",
+		type: "random",
+		table: 1
 	}]
 }

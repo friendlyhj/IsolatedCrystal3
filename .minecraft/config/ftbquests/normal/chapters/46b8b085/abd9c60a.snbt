@@ -10,5 +10,10 @@
 		items: [{
 			item: "thaumicaugmentation:fortified_glass"
 		}]
+	}],
+	rewards: [{
+		uid: "e1fc9b03",
+		type: "random",
+		table: 1
 	}]
 }

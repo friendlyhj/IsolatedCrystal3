@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:rfgenerator"
 		}]
+	}],
+	rewards: [{
+		uid: "90b2d5e1",
+		type: "random",
+		table: 0
 	}]
 }

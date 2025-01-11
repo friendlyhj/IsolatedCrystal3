@@ -10,5 +10,10 @@
 		items: [{
 			item: "naturesaura:sky_ingot"
 		}]
+	}],
+	rewards: [{
+		uid: "e7fef722",
+		type: "random",
+		table: 0
 	}]
 }

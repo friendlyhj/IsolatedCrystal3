@@ -2,8 +2,13 @@
 	x: 7.0d,
 	y: -22.5d,
 	dependencies: [
-		"90164c6a",
-		"ce779d72"
+		"5c9f1e1d",
+		"68770103",
+		"d0783c3c",
+		"ce779d72",
+		"b7de04d8",
+		"a57f0854",
+		"90164c6a"
 	],
 	tasks: [{
 		uid: "240a2182",
@@ -18,5 +23,10 @@
 		items: [{
 			item: "appliedenergistics2:spatial_io_port"
 		}]
+	}],
+	rewards: [{
+		uid: "c2456f39",
+		type: "random",
+		table: 1
 	}]
 }

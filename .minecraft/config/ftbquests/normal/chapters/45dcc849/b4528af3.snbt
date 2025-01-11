@@ -10,5 +10,10 @@
 		items: [{
 			item: "pneumaticcraft:air_compressor"
 		}]
+	}],
+	rewards: [{
+		uid: "a509c954",
+		type: "random",
+		table: 0
 	}]
 }

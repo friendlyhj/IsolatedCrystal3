@@ -13,5 +13,10 @@
 			},
 			id: "extrautils2:machine"
 		}]
+	}],
+	rewards: [{
+		uid: "1e8a114b",
+		type: "random",
+		table: 0
 	}]
 }

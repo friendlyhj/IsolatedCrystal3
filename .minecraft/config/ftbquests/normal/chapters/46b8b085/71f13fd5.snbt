@@ -10,5 +10,10 @@
 		items: [{
 			item: "calculator:dockingstation"
 		}]
+	}],
+	rewards: [{
+		uid: "92930179",
+		type: "random",
+		table: 1
 	}]
 }

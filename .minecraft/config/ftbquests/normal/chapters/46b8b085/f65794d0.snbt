@@ -10,5 +10,10 @@
 		items: [{
 			item: "bloodmagic:ritual_controller"
 		}]
+	}],
+	rewards: [{
+		uid: "9e5a4dea",
+		type: "random",
+		table: 1
 	}]
 }

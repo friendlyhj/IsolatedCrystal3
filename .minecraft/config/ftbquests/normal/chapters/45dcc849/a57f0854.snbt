@@ -15,5 +15,25 @@
 		items: [{
 			item: "contenttweaker:logic_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "f77b982b",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 40,
+				TrophyColorBlue: 151,
+				TrophyName: "",
+				TrophyColorGreen: 118,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:logic_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

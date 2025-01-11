@@ -21,5 +21,10 @@
 		items: [{
 			item: "calculator:co2generator"
 		}]
+	}],
+	rewards: [{
+		uid: "aaeb23e3",
+		type: "random",
+		table: 1
 	}]
 }

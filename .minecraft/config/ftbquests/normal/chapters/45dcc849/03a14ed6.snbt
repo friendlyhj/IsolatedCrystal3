@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:circuitscribe"
 		}]
+	}],
+	rewards: [{
+		uid: "70ac7d9e",
+		type: "random",
+		table: 0
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "astralsorcery:blockcustomore"
 		}]
+	}],
+	rewards: [{
+		uid: "08b13221",
+		type: "random",
+		table: 0
 	}]
 }

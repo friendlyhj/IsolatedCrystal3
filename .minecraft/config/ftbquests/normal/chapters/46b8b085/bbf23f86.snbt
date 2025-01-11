@@ -10,5 +10,10 @@
 		items: [{
 			item: "emergingtechnology:fabricator"
 		}]
+	}],
+	rewards: [{
+		uid: "5c75b106",
+		type: "random",
+		table: 1
 	}]
 }

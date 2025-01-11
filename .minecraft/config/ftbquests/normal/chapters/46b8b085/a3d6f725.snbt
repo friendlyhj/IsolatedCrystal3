@@ -16,5 +16,25 @@
 		items: [{
 			item: "contenttweaker:space_time_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "6a5d12b0",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 37,
+				TrophyColorBlue: 146,
+				TrophyName: "",
+				TrophyColorGreen: 49,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:space_time_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

@@ -24,5 +24,10 @@
 		items: [{
 			item: "nuclearcraft:fission_source"
 		}]
+	}],
+	rewards: [{
+		uid: "95daf113",
+		type: "random",
+		table: 1
 	}]
 }

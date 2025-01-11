@@ -13,5 +13,10 @@
 			},
 			id: "naturesaura:aura_bottle"
 		}]
+	}],
+	rewards: [{
+		uid: "29a7ebb2",
+		type: "random",
+		table: 0
 	}]
 }

@@ -26,5 +26,10 @@
 			Damage: 3s,
 			id: "thermalexpansion:machine"
 		}]
+	}],
+	rewards: [{
+		uid: "a44e4f84",
+		type: "random",
+		table: 0
 	}]
 }

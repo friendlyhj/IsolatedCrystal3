@@ -24,6 +24,7 @@ import native.kport.modularmagic.common.tile.TileAspectProvider;
 RecipeBuilder.newBuilder("perditio_crystal", "emptiness_energizer", 120)
     // .addImpetusInput(20)
     .addItemInputs(<contenttweaker:warp_crystal>, <thaumcraft:ingot:1> * 4, <thaumicaugmentation:material:5> * 2, <thaumadditions:mithminite_nugget>)
+    .addImpetusInput(200)
     .addItemOutput(<contenttweaker:perditio_crystal>)
     .addStartHandler(function(event as RecipeStartEvent) {
         val order = intArrayOf(6);
@@ -170,7 +171,7 @@ RecipeBuilder.newBuilder("nature_crystal", "natural_grace", 120)
         <botania:rune:7>
     )
     .addFluidInput(<liquid:ender> * 500)
-    .addAuraInput(1250)
+    .addAuraInput(800)
     .addItemOutput(<contenttweaker:nature_crystal>)
     .addPostCheckHandler(function(event as RecipeCheckEvent) {
         val bursts = event.controller.customData.Bursts.asInt();

@@ -10,5 +10,10 @@
 		items: [{
 			item: "pneumaticcraft:refinery"
 		}]
+	}],
+	rewards: [{
+		uid: "876f92b4",
+		type: "random",
+		table: 0
 	}]
 }

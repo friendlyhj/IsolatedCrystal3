@@ -10,5 +10,10 @@
 		items: [{
 			item: "enderio:item_alloy_ingot 1 4"
 		}]
+	}],
+	rewards: [{
+		uid: "4e8f4368",
+		type: "random",
+		table: 0
 	}]
 }

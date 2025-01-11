@@ -12,5 +12,25 @@
 		items: [{
 			item: "contenttweaker:warp_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "b2393a2c",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 123,
+				TrophyColorBlue: 190,
+				TrophyName: "",
+				TrophyColorGreen: 47,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:warp_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "calculator:precisionchamber"
 		}]
+	}],
+	rewards: [{
+		uid: "1e82b345",
+		type: "random",
+		table: 1
 	}]
 }

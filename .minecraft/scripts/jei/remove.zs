@@ -60,7 +60,8 @@ val banList as IItemStack[] = [
     <thaumcraft:smelter_void>,
     <thaumadditions:mithrillium_smelter>,
     <thaumadditions:adaminite_smelter>,
-    <thaumadditions:mithminite_smelter>
+    <thaumadditions:mithminite_smelter>,
+    <industrialforegoing:material_stonework_factory>
 ];
 
 for ban in banList {

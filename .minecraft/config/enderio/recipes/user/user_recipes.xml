@@ -9,4 +9,6 @@
 		</alloying>
 	</recipe>
 	<recipe name="Soul Chassis" disabled= "true"/>
+	<recipe name="Sagmill: Silicon" disabled="true"/>
+	<recipe name="Sagmill: ClayBlock" disabled="true"/>
 </enderio:recipes>

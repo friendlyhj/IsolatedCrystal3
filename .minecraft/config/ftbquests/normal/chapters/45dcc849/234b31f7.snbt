@@ -12,5 +12,10 @@
 			item: "pneumaticcraft:plastic 1 8"
 		}],
 		ignore_damage: 1b
+	}],
+	rewards: [{
+		uid: "daee672f",
+		type: "random",
+		table: 0
 	}]
 }

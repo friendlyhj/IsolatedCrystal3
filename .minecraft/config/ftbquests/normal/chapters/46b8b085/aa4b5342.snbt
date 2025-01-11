@@ -10,5 +10,10 @@
 		items: [{
 			item: "extrautils2:machine"
 		}]
+	}],
+	rewards: [{
+		uid: "ae5db942",
+		type: "random",
+		table: 1
 	}]
 }

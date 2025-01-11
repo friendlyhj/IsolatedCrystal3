@@ -12,5 +12,25 @@
 		items: [{
 			item: "contenttweaker:aura_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "0dac35d8",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 65,
+				TrophyColorBlue: 52,
+				TrophyName: "",
+				TrophyColorGreen: 205,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:aura_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

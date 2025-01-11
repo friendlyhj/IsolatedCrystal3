@@ -10,5 +10,10 @@
 		items: [{
 			item: "mekanism:cosmicmatter"
 		}]
+	}],
+	rewards: [{
+		uid: "db401d16",
+		type: "random",
+		table: 1
 	}]
 }

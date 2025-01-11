@@ -11,5 +11,10 @@
 		items: [{
 			item: "nuclearcraft:rock_crusher"
 		}]
+	}],
+	rewards: [{
+		uid: "78da1e42",
+		type: "random",
+		table: 1
 	}]
 }

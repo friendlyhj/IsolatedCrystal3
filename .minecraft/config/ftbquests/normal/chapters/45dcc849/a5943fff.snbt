@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:magnetizer"
 		}]
+	}],
+	rewards: [{
+		uid: "6e126049",
+		type: "random",
+		table: 0
 	}]
 }

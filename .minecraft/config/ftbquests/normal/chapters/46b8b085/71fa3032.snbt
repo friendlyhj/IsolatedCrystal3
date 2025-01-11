@@ -11,5 +11,10 @@
 			item: "rf-capability-adapter:aecapabilityadapter"
 		}],
 		count: 2L
+	}],
+	rewards: [{
+		uid: "1244704c",
+		type: "random",
+		table: 1
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "nuclearcraft:part 1 6"
 		}]
+	}],
+	rewards: [{
+		uid: "9110fee5",
+		type: "random",
+		table: 1
 	}]
 }

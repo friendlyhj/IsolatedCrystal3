@@ -10,5 +10,10 @@
 		items: [{
 			item: "mekanism:polyethene 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "5b3197ad",
+		type: "random",
+		table: 1
 	}]
 }

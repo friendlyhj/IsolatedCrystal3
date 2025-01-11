@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:grindstone"
 		}]
+	}],
+	rewards: [{
+		uid: "8259629c",
+		type: "random",
+		table: 0
 	}]
 }

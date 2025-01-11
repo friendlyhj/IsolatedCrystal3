@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:machinepart 1 141"
 		}]
+	}],
+	rewards: [{
+		uid: "5f37f29f",
+		type: "random",
+		table: 0
 	}]
 }

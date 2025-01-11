@@ -10,5 +10,10 @@
 		items: [{
 			item: "bloodmagic:soul_snare"
 		}]
+	}],
+	rewards: [{
+		uid: "511d5182",
+		type: "random",
+		table: 0
 	}]
 }

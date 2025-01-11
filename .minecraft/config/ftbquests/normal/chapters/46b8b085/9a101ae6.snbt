@@ -17,5 +17,25 @@
 		items: [{
 			item: "contenttweaker:calculation_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "93805011",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 40,
+				TrophyColorBlue: 151,
+				TrophyName: "",
+				TrophyColorGreen: 118,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:calculation_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

@@ -1,0 +1,113 @@
+{
+	title: "tier2",
+	icon: "minecraft:chest",
+	loot_size: 1,
+	rewards: [{
+		team_reward: 1b,
+		item: "minecraft:iron_ingot",
+		count: 8,
+		weight: 10
+	},
+	{
+		team_reward: 1b,
+		item: "thermalfoundation:material 1 128",
+		count: 8,
+		weight: 10
+	},
+	{
+		team_reward: 1b,
+		item: "thermalfoundation:material 1 129",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "minecraft:gold_ingot",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:material 1 130",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:material 1 133",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:material 1 131",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "minecraft:redstone",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "minecraft:coal",
+		count: 24,
+		weight: 10
+	},
+	{
+		item: "minecraft:dye 1 4",
+		count: 20,
+		weight: 10
+	},
+	{
+		item: "appliedenergistics2:material",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "minecraft:diamond",
+		count: 4,
+		weight: 5
+	},
+	{
+		item: "thermalfoundation:material 1 134",
+		count: 4,
+		weight: 5
+	},
+	{
+		item: "contenttweaker:flesh_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:heated_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:earth_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:vibrant_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:crafting_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:ocean_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:destruction_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "mekanism:ingot 1 1",
+		count: 8,
+		weight: 10
+	}]
+}

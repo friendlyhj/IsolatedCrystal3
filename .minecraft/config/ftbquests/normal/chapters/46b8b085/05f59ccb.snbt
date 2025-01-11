@@ -15,5 +15,25 @@
 		items: [{
 			item: "contenttweaker:mine_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "c6726dd9",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 222,
+				TrophyColorBlue: 42,
+				TrophyName: "",
+				TrophyColorGreen: 207,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:mine_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

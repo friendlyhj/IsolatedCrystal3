@@ -10,5 +10,10 @@
 		items: [{
 			item: "embers:cinder_plinth"
 		}]
+	}],
+	rewards: [{
+		uid: "ad7faa12",
+		type: "random",
+		table: 1
 	}]
 }

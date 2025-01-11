@@ -13,5 +13,25 @@
 		items: [{
 			item: "contenttweaker:vibrant_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "958f2450",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 65,
+				TrophyColorBlue: 52,
+				TrophyVariant: "classic",
+				TrophyColorGreen: 205,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:vibrant_crystal"
+				},
+				TrophyName: ""
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

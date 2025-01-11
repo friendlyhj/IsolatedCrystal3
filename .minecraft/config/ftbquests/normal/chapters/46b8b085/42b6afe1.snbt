@@ -14,5 +14,25 @@
 		items: [{
 			item: "contenttweaker:energy_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "5953baa5",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 235,
+				TrophyColorBlue: 68,
+				TrophyName: "",
+				TrophyColorGreen: 136,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:energy_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

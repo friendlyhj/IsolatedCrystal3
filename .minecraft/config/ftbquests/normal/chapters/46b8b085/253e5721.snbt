@@ -2,7 +2,13 @@
 	x: -7.0d,
 	y: -18.0d,
 	dependencies: [
-		"5c9f1e1d"
+		"5c9f1e1d",
+		"68770103",
+		"d0783c3c",
+		"ce779d72",
+		"b7de04d8",
+		"a57f0854",
+		"90164c6a"
 	],
 	tasks: [{
 		uid: "88346177",
@@ -10,5 +16,10 @@
 		items: [{
 			item: "contenttweaker:lactic_acid_bacteria"
 		}]
+	}],
+	rewards: [{
+		uid: "7303b636",
+		type: "random",
+		table: 1
 	}]
 }

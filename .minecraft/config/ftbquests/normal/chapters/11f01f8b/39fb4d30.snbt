@@ -13,5 +13,25 @@
 		items: [{
 			item: "contenttweaker:destruction_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "f35fb3e4",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 123,
+				TrophyColorBlue: 190,
+				TrophyVariant: "classic",
+				TrophyColorGreen: 47,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:destruction_crystal"
+				},
+				TrophyName: ""
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:compressor"
 		}]
+	}],
+	rewards: [{
+		uid: "9a566ca8",
+		type: "random",
+		table: 0
 	}]
 }

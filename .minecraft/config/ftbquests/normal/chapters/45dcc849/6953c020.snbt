@@ -10,5 +10,10 @@
 		items: [{
 			item: "modularmachinery:essentia_generator_controller"
 		}]
+	}],
+	rewards: [{
+		uid: "6deb37f3",
+		type: "random",
+		table: 0
 	}]
 }

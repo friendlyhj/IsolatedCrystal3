@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:charger"
 		}]
+	}],
+	rewards: [{
+		uid: "9dfaf915",
+		type: "random",
+		table: 1
 	}]
 }

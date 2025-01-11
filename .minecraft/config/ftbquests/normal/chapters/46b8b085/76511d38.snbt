@@ -10,5 +10,10 @@
 		items: [{
 			item: "compactmachines3:machine 1 3"
 		}]
+	}],
+	rewards: [{
+		uid: "c7fb0164",
+		type: "random",
+		table: 1
 	}]
 }

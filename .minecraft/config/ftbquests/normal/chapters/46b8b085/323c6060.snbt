@@ -10,5 +10,17 @@
 		items: [{
 			item: "thaumicaugmentation:impetus_drainer"
 		}]
+	},
+	{
+		uid: "75713f1a",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_linker"
+		}]
+	}],
+	rewards: [{
+		uid: "3a3a1b1c",
+		type: "random",
+		table: 1
 	}]
 }

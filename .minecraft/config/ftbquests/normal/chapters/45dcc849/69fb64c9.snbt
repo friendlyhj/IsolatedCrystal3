@@ -10,5 +10,10 @@
 		items: [{
 			item: "thaumcraft:tube"
 		}]
+	}],
+	rewards: [{
+		uid: "992e0830",
+		type: "random",
+		table: 0
 	}]
 }

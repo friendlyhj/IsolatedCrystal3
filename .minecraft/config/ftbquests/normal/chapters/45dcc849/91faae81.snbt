@@ -10,5 +10,10 @@
 		items: [{
 			item: "mekanism:salt"
 		}]
+	}],
+	rewards: [{
+		uid: "3d10e0ae",
+		type: "random",
+		table: 0
 	}]
 }

@@ -16,5 +16,10 @@
 		}],
 		ignore_damage: 1b,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "93ae5622",
+		type: "random",
+		table: 1
 	}]
 }

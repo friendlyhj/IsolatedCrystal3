@@ -10,5 +10,10 @@
 		items: [{
 			item: "compactmachines3:tunneltool"
 		}]
+	}],
+	rewards: [{
+		uid: "302d2815",
+		type: "random",
+		table: 1
 	}]
 }

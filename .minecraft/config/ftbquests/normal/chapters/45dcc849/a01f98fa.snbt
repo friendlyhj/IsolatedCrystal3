@@ -10,5 +10,10 @@
 		items: [{
 			item: "nuclearcraft:cobblestone_generator"
 		}]
+	}],
+	rewards: [{
+		uid: "23d364e3",
+		type: "random",
+		table: 0
 	}]
 }

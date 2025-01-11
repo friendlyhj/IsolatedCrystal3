@@ -10,5 +10,10 @@
 		items: [{
 			item: "pneumaticcraft:printed_circuit_board"
 		}]
+	}],
+	rewards: [{
+		uid: "47ffda43",
+		type: "random",
+		table: 0
 	}]
 }

@@ -17,5 +17,10 @@
 		items: [{
 			item: "bloodmagic:demon_crucible"
 		}]
+	}],
+	rewards: [{
+		uid: "bf6bf9e4",
+		type: "random",
+		table: 0
 	}]
 }

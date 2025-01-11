@@ -26,5 +26,10 @@
 		type: "item",
 		item: "minecraft:red_mushroom",
 		count: 16
+	},
+	{
+		uid: "3873c0bc",
+		type: "random",
+		table: 0
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "embers:ingot_dawnstone"
 		}]
+	}],
+	rewards: [{
+		uid: "b7163d28",
+		type: "random",
+		table: 1
 	}]
 }

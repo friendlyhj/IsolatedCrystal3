@@ -14,5 +14,10 @@
 		items: [{
 			item: "factorytech:temperer"
 		}]
+	}],
+	rewards: [{
+		uid: "e6963053",
+		type: "random",
+		table: 0
 	}]
 }

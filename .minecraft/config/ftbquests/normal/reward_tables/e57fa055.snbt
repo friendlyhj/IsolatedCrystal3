@@ -1,0 +1,114 @@
+{
+	title: "tier3",
+	loot_size: 1,
+	rewards: [{
+		item: "botania:manaresource 1 7",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "naturesaura:sky_ingot",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "astralsorcery:itemcraftingcomponent",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "astralsorcery:itemcraftingcomponent 1 1",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "bloodmagic:slate 1 1",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "factorytech:intermediate 1 3",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "enderio:item_material 1 20",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:material 1 165",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:material 1 166",
+		count: 8,
+		weight: 10
+	},
+	{
+		item: "thermalfoundation:material 1 167",
+		count: 8,
+		weight: 5
+	},
+	{
+		item: "pneumaticcraft:printed_circuit_board",
+		count: 6,
+		weight: 5
+	},
+	{
+		item: "pneumaticcraft:plastic 1 8",
+		count: 16,
+		weight: 5
+	},
+	{
+		item: "appliedenergistics2:material 1 5",
+		count: 24,
+		weight: 10
+	},
+	{
+		item: "contenttweaker:blood_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:electric_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:metal_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:aura_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:logic_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:astral_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "contenttweaker:warp_crystal",
+		count: 4,
+		weight: 2
+	},
+	{
+		item: "minecraft:ender_pearl",
+		count: 6,
+		weight: 5
+	},
+	{
+		item: "thaumcraft:void_seed",
+		count: 8,
+		weight: 10
+	}]
+}

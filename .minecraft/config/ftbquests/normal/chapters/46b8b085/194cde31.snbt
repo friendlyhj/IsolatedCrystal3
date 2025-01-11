@@ -19,5 +19,25 @@
 		items: [{
 			item: "contenttweaker:perditio_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "11daba73",
+		type: "item",
+		item: {
+			tag: {
+				TrophyColorRed: 123,
+				TrophyColorBlue: 190,
+				TrophyName: "",
+				TrophyColorGreen: 47,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					Damage: 0s,
+					Count: 1,
+					id: "contenttweaker:perditio_crystal"
+				},
+				TrophyVariant: "classic"
+			},
+			id: "simple_trophies:trophy"
+		}
 	}]
 }

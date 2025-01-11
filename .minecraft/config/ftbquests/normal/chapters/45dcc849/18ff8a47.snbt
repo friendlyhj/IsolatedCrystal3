@@ -10,5 +10,10 @@
 		items: [{
 			item: "thaumcraft:void_seed"
 		}]
+	}],
+	rewards: [{
+		uid: "6bd76f98",
+		type: "random",
+		table: 0
 	}]
 }

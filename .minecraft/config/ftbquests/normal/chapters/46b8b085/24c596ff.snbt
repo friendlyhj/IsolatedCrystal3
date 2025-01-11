@@ -3,7 +3,14 @@
 	y: -22.5d,
 	hide_dependency_lines: 1b,
 	dependencies: [
-		"5e210560"
+		"5e210560",
+		"5c9f1e1d",
+		"68770103",
+		"d0783c3c",
+		"ce779d72",
+		"b7de04d8",
+		"a57f0854",
+		"90164c6a"
 	],
 	tasks: [{
 		uid: "d2b2a7dc",
@@ -11,5 +18,10 @@
 		items: [{
 			item: "mekanism:machineblock3 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "ebe81bf7",
+		type: "random",
+		table: 1
 	}]
 }

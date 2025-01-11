@@ -2,7 +2,13 @@
 	x: 9.0d,
 	y: -12.0d,
 	dependencies: [
-		"5c9f1e1d"
+		"5c9f1e1d",
+		"68770103",
+		"d0783c3c",
+		"ce779d72",
+		"b7de04d8",
+		"a57f0854",
+		"90164c6a"
 	],
 	tasks: [{
 		uid: "5f01d066",
@@ -10,5 +16,10 @@
 		items: [{
 			item: "thaumicaugmentation:material 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "f940387a",
+		type: "random",
+		table: 1
 	}]
 }

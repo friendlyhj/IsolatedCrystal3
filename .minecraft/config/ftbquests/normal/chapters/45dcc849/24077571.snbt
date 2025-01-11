@@ -26,5 +26,10 @@
 			item: "botania:pylon 1 1"
 		}],
 		count: 2L
+	}],
+	rewards: [{
+		uid: "9389a292",
+		type: "random",
+		table: 0
 	}]
 }

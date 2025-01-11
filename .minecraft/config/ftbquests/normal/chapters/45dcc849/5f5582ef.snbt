@@ -17,5 +17,10 @@
 		items: [{
 			item: "mekanism:machineblock2 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "dc7dca2f",
+		type: "random",
+		table: 0
 	}]
 }

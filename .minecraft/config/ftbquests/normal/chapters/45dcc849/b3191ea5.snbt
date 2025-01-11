@@ -10,5 +10,10 @@
 		items: [{
 			item: "factorytech:ingot 1 4"
 		}]
+	}],
+	rewards: [{
+		uid: "fef47e73",
+		type: "random",
+		table: 0
 	}]
 }

@@ -10,5 +10,10 @@
 		items: [{
 			item: "appliedenergistics2:inscriber"
 		}]
+	}],
+	rewards: [{
+		uid: "01f70ef8",
+		type: "random",
+		table: 0
 	}]
 }

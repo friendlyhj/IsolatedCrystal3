@@ -24,5 +24,10 @@
 		items: [{
 			item: "emergingtechnology:emptysyringe"
 		}]
+	}],
+	rewards: [{
+		uid: "96d0271d",
+		type: "random",
+		table: 1
 	}]
 }

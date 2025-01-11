@@ -10,5 +10,10 @@
 		items: [{
 			item: "bloodmagic:item_demon_crystal"
 		}]
+	}],
+	rewards: [{
+		uid: "0ee02d7d",
+		type: "random",
+		table: 0
 	}]
 }

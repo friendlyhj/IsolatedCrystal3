@@ -285,3 +285,40 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<modularmachinery:energy_field_emitter_controller>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<embers:block_caminite_brick>, <embers:archaic_circuit>, <embers:block_caminite_brick>],
+    [<embers:ember_cluster>, <mekanism:basicblock:8>, <embers:ember_cluster>],
+    [<embers:block_caminite_brick>, <embers:ember_cluster>, <embers:block_caminite_brick>]])
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<gugu-utils:emberinputhatch:3>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<naturesaura:sky_ingot>, <minecraft:ender_eye>, <naturesaura:sky_ingot>],
+    [<naturesaura:token_euphoria>, <contenttweaker:aura_crystal>, <naturesaura:token_euphoria>],
+    [<naturesaura:sky_ingot>, <naturesaura:token_euphoria>, <naturesaura:sky_ingot>]])
+  .addTool(<ore:artisansGrimoire>, 25)
+  .addOutput(<gugu-utils:aurainputhatch>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<thaumcraft:plate:3>, <contenttweaker:warp_crystal>, <thaumcraft:plate:3>],
+    [<thaumicaugmentation:fortified_glass>, <thaumicaugmentation:material:5>, <thaumicaugmentation:fortified_glass>],
+    [<thaumcraft:plate:3>, <contenttweaker:warp_crystal>, <thaumcraft:plate:3>]])
+  .addTool(<ore:artisansGrimoire>, 25)
+  .setFluid(<liquid:mercury> * 2880)
+  .addOutput(<modularmachinery:blockimpetusproviderinput>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<nuclearcraft:ingot_block:14>, <thermaldynamics:duct_0:5>, <ore:blockElectrum>],
+    [<thermaldynamics:duct_0:5>, <factorytech:machinepart:170>, <thermaldynamics:duct_0:5>],
+    [<ore:blockElectrum>, <thermaldynamics:duct_0:5>, <nuclearcraft:ingot_block:14>]])
+  .setFluid(<liquid:emergency_coolant> * 2000)
+  .addOutput(<contenttweaker:superconductor>)
+  .create();
