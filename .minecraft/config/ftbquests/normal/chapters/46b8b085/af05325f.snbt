@@ -30,9 +30,9 @@
 				TrophyColorGreen: 49,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:life_crystal",
 					Count: 1,
-					id: "contenttweaker:life_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

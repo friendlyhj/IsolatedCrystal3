@@ -16,8 +16,8 @@
 		type: "item",
 		items: [{
 			tag: {
-				color2: 0,
-				color1: 0
+				color1: 0,
+				color2: 0
 			},
 			id: "botania:twigwand"
 		}],

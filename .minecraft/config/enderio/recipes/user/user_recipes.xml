@@ -11,4 +11,12 @@
 	<recipe name="Soul Chassis" disabled= "true"/>
 	<recipe name="Sagmill: Silicon" disabled="true"/>
 	<recipe name="Sagmill: ClayBlock" disabled="true"/>
+	<recipe name="Alloy: Tough Alloy (Nuclearcraft)" disabled="true"/>
+	<recipe name="Alloy: Tough Alloy (Nuclearcraft) Tweak" required="true">
+		<alloying energy="9000" exp="0.6" >
+		 <input name="contenttweaker:metal_crystal" />
+		 <input name="ingotBoron" amount="5"/>
+		 <output name="ingotTough" amount="6"/>
+		</alloying>
+	</recipe>
 </enderio:recipes>

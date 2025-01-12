@@ -24,9 +24,9 @@
 				TrophyColorGreen: 136,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:electric_crystal",
 					Count: 1,
-					id: "contenttweaker:electric_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

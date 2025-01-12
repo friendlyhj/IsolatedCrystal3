@@ -13,5 +13,10 @@
 		items: [{
 			item: "minecraft:skull 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "7b0e757c",
+		type: "item",
+		item: "extrautils2:angelring"
 	}]
 }

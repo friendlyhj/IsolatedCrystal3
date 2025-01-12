@@ -57,7 +57,7 @@
 		weight: 5
 	},
 	{
-		item: "pneumaticcraft:plastic 1 8",
+		item: "pneumaticcraft:plastic 1 7",
 		count: 16,
 		weight: 5
 	},

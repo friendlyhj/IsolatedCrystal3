@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	dependencies: [
+		"25eb07da",
+		"a3d6f725",
+		"9a101ae6",
+		"42b6afe1",
+		"af05325f",
+		"194cde31",
+		"05f59ccb"
+	],
+	tasks: [{
+		uid: "ad2d9530",
+		type: "custom",
+		title: "达到第 24 天",
+		icon: "minecraft:clock",
+		tags: [
+			"day_24"
+		]
+	}]
+}

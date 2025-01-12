@@ -27,9 +27,9 @@
 				TrophyColorGreen: 207,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:mine_crystal",
 					Count: 1,
-					id: "contenttweaker:mine_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

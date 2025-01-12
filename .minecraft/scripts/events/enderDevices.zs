@@ -138,7 +138,10 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     blockName ~= block.meta;
                 }
                 if (name == blockName) {
-                    world.getAuraChunk(pos).drainAura(pos, auraConsumption);
+                    val drained = world.getAuraChunk(pos).drainAura(pos, auraConsumption);
+                    if (drained != auraConsumption) {
+                        world.destroyBlock(pos, true);
+                    }
                 } else {
                     invalidPoses += posData;
                 }

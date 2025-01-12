@@ -6,7 +6,8 @@ import mods.botania.RuneAltar;
 import mods.botania.Orechid;
 
 ManaInfusion.addInfusion(<minecraft:blaze_rod>, <botania:blazeblock>, 500);
-ManaInfusion.addAlchemy(<minecraft:quartz>, <appliedenergistics2:material>, 5000);
+ManaInfusion.addAlchemy(<minecraft:quartz>, <appliedenergistics2:material>, 2000);
+ManaInfusion.addAlchemy(<appliedenergistics2:material>, <minecraft:quartz>, 2000);
 ManaInfusion.addInfusion(<minecraft:reeds>, <minecraft:hay_block>, 1000);
 ManaInfusion.removeRecipe(<minecraft:sand>);
 ManaInfusion.addInfusion(<contenttweaker:mana_essence>, <botania:petal:*>, 10000);
