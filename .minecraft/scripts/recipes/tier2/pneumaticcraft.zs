@@ -11,4 +11,14 @@ PressureChamber.addRecipe([
     <contenttweaker:earth_crystal>, 
     <contenttweaker:ocean_crystal>
 ], 4.5f, [<astralsorcery:blockcustomore>]);
-
+PressureChamber.removeRecipe([
+    <pneumaticcraft:plastic:2> * 2,
+    <minecraft:rotten_flesh> * 2,
+    <minecraft:gunpowder> * 2,
+    <minecraft:spider_eye> * 2,
+    <minecraft:water_bucket>
+]);
+PressureChamber.addRecipe([
+    <forge:bucketfilled>.withTag({FluidName: "h2so4", Amount: 1000}),
+    <thaumcraft:salis_mundus> * 4
+], 1.5f, [<forge:bucketfilled>.withTag({FluidName: "etchacid", Amount: 1000})]);

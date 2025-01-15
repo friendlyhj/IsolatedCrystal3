@@ -1,0 +1,15 @@
+{
+	x: 11.0d,
+	y: -16.5d,
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"194cde31"
+	],
+	tasks: [{
+		uid: "9e5f0e4c",
+		type: "item",
+		items: [{
+			item: "draconicevolution:grinder"
+		}]
+	}]
+}

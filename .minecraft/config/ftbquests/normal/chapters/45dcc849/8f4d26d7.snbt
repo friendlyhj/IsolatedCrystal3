@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: -9.5d,
+	text: [
+		"自动化工匠合成，需要在最上方放置配方所需的工作台，以及在机械工具箱放置所需的工具。"
+	],
+	dependencies: [
+		"73079b58"
+	],
+	tasks: [{
+		uid: "a9a8092b",
+		type: "item",
+		items: [{
+			item: "modularmachinery:mechanical_artisan_controller"
+		}]
+	}]
+}

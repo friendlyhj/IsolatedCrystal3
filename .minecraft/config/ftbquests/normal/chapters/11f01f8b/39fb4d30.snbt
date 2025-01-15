@@ -25,9 +25,9 @@
 				TrophyColorGreen: 47,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					id: "contenttweaker:destruction_crystal",
+					Damage: 0s,
 					Count: 1,
-					Damage: 0s
+					id: "contenttweaker:destruction_crystal"
 				},
 				TrophyName: ""
 			},

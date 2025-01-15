@@ -322,3 +322,23 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:emergency_coolant> * 2000)
   .addOutput(<contenttweaker:superconductor>)
   .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<naturesaura:token_euphoria>, <contenttweaker:aura_crystal>, <naturesaura:token_euphoria>],
+    [<naturesaura:sky_ingot>, <botania:endereyeblock>, <naturesaura:sky_ingot>],
+    [<botania:rune:4>, <naturesaura:sky_ingot>, <botania:rune:4>]])
+  .addTool(<ore:artisansGrimoire>, 10)
+  .setFluid(<liquid:mercury> * 288)
+  .addOutput(<modularmachinery:blockauraproviderinput>)
+  .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<contenttweaker:logic_crystal>, <contenttweaker:astral_crystal>, <contenttweaker:logic_crystal>],
+    [<thaumcraft:plate:3>, <thaumcraft:metal_thaumium>, <thaumcraft:plate:3>],
+    [<contenttweaker:warp_crystal>, <thaumadditions:flux_concentrator>, <contenttweaker:warp_crystal>]])
+  .addTool(<artisanworktables:artisans_grimoire_wood>, 50)
+  .setFluid(<liquid:mercury> * 288)
+  .addOutput(<modularmachinery:flux_releaser_controller>)
+  .create();

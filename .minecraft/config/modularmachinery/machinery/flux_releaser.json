@@ -1,0 +1,222 @@
+{
+    "registryname": "flux_releaser",
+    "localizedname": "Flux Releaser",
+    "color": "2a2042",
+    "parts": [
+        {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcontroller@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "thaumicaugmentation:rift_feeder"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockaspectproviderinput"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockauraproviderinput"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "mekanism:basicblock@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:metal_void@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "enderio:block_dark_iron_bars@0"
+            ]
+        }
+    ]}

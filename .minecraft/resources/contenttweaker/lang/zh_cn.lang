@@ -103,6 +103,8 @@ modpack.tooltip.afflatus_of_crafting.shifted=未完成的合成编号列表:
 modpack.tooltip.afflatus_of_crafting.completed=该物品已完成制作，可以进行参与其它物品的合成了。
 modpack.tooltip.oil_fabricator.0=可以同时处理不同的有机物品输入
 modpack.tooltip.oil_fabricator.1=且单位产出也会略微提高
+modpack.tooltip.flux_releaser.perditio=释放 10 点咒波
+modpack.tooltip.flux_releaser.vitium=释放 40 点咒波
 modpack.tooltip.mechanical_artisan=使配方瞬间完成
 modpack.tooltip.aura_consume=§2末影设备，消耗 %s 灵气/tick
 
@@ -120,5 +122,6 @@ modularmachinery.life_constructor=生命构造仓
 modularmachinery.time_transmutator=时间嬗变室
 modularmachinery.energy_field_emitter=能量场发生器
 modularmachinery.mine_catalyst=矿藏触媒
+modularmachinery.flux_releaser=咒波释放器
 
 contenttweaker.part.ore_sacrifice=%s祭品

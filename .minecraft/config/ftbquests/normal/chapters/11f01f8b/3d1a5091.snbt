@@ -17,9 +17,9 @@
 		item: {
 			tag: {
 				textureBlock: {
-					id: "minecraft:wooden_slab",
+					Damage: 0s,
 					Count: 1,
-					Damage: 0s
+					id: "minecraft:wooden_slab"
 				}
 			},
 			Damage: 1s,

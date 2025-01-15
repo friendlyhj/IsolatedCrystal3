@@ -132,6 +132,7 @@ recipes.remove(<embers:alchemy_tablet>);
 recipes.remove(<embers:mech_core>);
 recipes.remove(<embers:ember_relay>);
 recipes.remove(<immersiveengineering:metal_decoration0:6>);
+recipes.remove(<draconicevolution:grinder>);
 
 recipeTweak(true, <extrautils2:machine>.withTag({Type:"extrautils2:enchanter"}),[
     [<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood:1>],
@@ -281,4 +282,10 @@ recipeTweak(true, <pneumaticcraft:pneumatic_dynamo>, [
     [null, <thermalfoundation:material:514>, null],
     [<ore:gearIronCompressed>, <ore:ingotIronCompressed>, <ore:gearIronCompressed>],
     [<ore:ingotIronCompressed>, gc, <ore:ingotIronCompressed>]
+]);
+recipes.removeByRecipeName("mekanism:energycube_0");
+recipes.addShaped(<mekanism:energycube>.withTag({tier: 0}), [
+    [<minecraft:redstone>, <ore:battery>, <minecraft:redstone>],
+    [<ore:ingotOsmium>, <ore:blockSteel>, <ore:ingotOsmium>],
+    [<minecraft:redstone>, <ore:battery>, <minecraft:redstone>]
 ]);

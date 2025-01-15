@@ -1,12 +1,8 @@
 {
 	title: "tier3",
+	icon: "calculator:reinforcedchest",
 	loot_size: 1,
 	rewards: [{
-		item: "botania:manaresource 1 7",
-		count: 8,
-		weight: 10
-	},
-	{
 		item: "naturesaura:sky_ingot",
 		count: 8,
 		weight: 10
@@ -17,7 +13,7 @@
 		weight: 10
 	},
 	{
-		item: "astralsorcery:itemcraftingcomponent 1 1",
+		item: "factorytech:ingot 1 4",
 		count: 8,
 		weight: 10
 	},
@@ -109,6 +105,11 @@
 	{
 		item: "thaumcraft:void_seed",
 		count: 8,
+		weight: 10
+	},
+	{
+		item: "botania:manaresource 1 9",
+		count: 5,
 		weight: 10
 	}]
 }

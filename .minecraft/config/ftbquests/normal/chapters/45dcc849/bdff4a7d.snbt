@@ -15,5 +15,25 @@
 		uid: "47ffda43",
 		type: "random",
 		table: 0
+	},
+	{
+		uid: "e876be5e",
+		type: "item",
+		item: "appliedenergistics2:material 1 13"
+	},
+	{
+		uid: "b7bc4fec",
+		type: "item",
+		item: "appliedenergistics2:material 1 14"
+	},
+	{
+		uid: "44d8047c",
+		type: "item",
+		item: "appliedenergistics2:material 1 15"
+	},
+	{
+		uid: "f56963f6",
+		type: "item",
+		item: "appliedenergistics2:material 1 19"
 	}]
 }

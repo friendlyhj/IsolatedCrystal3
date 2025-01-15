@@ -91,6 +91,22 @@ Infusion.registerRecipe("alchemy_pedestal", "", <embers:alchemy_pedestal>, 6, [
     <contenttweaker:aura_crystal>
 ]);
 
+Infusion.registerRecipe("grinder", "", <draconicevolution:grinder>, 6, [
+    <aspect:exitium> * 250,
+    <aspect:sensus> * 200,
+    <aspect:machina> * 200,
+    <aspect:aversio> * 200,
+    <aspect:draco> * 200
+], <enderio:item_material:53>, [
+    <contenttweaker:perditio_crystal>,
+    <contenttweaker:perditio_crystal>,
+    <contenttweaker:perditio_crystal>,
+    <contenttweaker:perditio_crystal>,
+    <botania:manaresource:14>,
+    <botania:manaresource:14>,
+    <calculator:flawlessdiamondsword>
+]);
+
 Crucible.registerRecipe("exchange_tablet", "", <embers:alchemy_tablet>, <embers:alchemy_pedestal>, [
     <aspect:permutatio> * 50,
     <aspect:potentia> * 50

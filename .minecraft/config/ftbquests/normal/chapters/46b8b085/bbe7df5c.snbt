@@ -1,0 +1,17 @@
+{
+	x: 13.0d,
+	y: -16.5d,
+	dependencies: [
+		"a57f0854",
+		"90164c6a",
+		"ce779d72",
+		"b7de04d8"
+	],
+	tasks: [{
+		uid: "8a3f485d",
+		type: "item",
+		items: [{
+			item: "modularmachinery:flux_releaser_controller"
+		}]
+	}]
+}

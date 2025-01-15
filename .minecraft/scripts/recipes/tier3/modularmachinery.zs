@@ -312,3 +312,29 @@ MMEvents.onMachinePreTick("mine_catalyst", function(event as MachineTickEvent) {
         });
     }
 });
+
+RecipeBuilder.newBuilder("flux_release_perditio", "flux_releaser", 10)
+    .addAspcetInput(10, "perditio")
+    .addEnergyPerTickInput(200)
+    .addAuraInput(100)
+    .addFinishHandler(function(event as RecipeFinishEvent) {
+        val controller = event.controller;
+        val world = controller.world;
+        val pos = controller.pos;
+        world.addFlux(pos, 10);
+    })
+    .addRecipeTooltip(game.localize("modpack.tooltip.flux_releaser.perditio"))
+    .build();
+
+RecipeBuilder.newBuilder("flux_release_vitium", "flux_releaser", 10)
+    .addAspcetInput(10, "vitium")
+    .addEnergyPerTickInput(500)
+    .addAuraInput(500)
+    .addFinishHandler(function(event as RecipeFinishEvent) {
+        val controller = event.controller;
+        val world = controller.world;
+        val pos = controller.pos;
+        world.addFlux(pos, 40);
+    })
+    .addRecipeTooltip(game.localize("modpack.tooltip.flux_releaser.vitium"))
+    .build();
