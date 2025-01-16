@@ -1,6 +1,7 @@
 #reloadable
 
 import crafttweaker.event.PlayerLoggedInEvent;
+import crafttweaker.util.Position3f;
 import mods.zenutils.DataUpdateOperation.MERGE;
 
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
@@ -19,5 +20,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
                 }
             })
             .start();
+        server.commandManager.executeCommandSilent(server, `/tp ${player.name} -138 68 -130`);
+        player.executeCommand("/spawnpoint");
     }
 });
