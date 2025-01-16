@@ -104,6 +104,9 @@ events.onWorldTick(function(event as WorldTickEvent) {
             world.getGameRuleHelper().setBoolean("doDaylightCycle", false);
         }
     }
+    if (world.getGameRuleHelper().getBoolean("doMobSpawning")) {
+        world.getGameRuleHelper().setBoolean("doMobSpawning", false);
+    }
 });
 
 for color in colors {
