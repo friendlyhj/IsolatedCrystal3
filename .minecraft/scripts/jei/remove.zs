@@ -62,7 +62,10 @@ val banList as IItemStack[] = [
     <thaumadditions:adaminite_smelter>,
     <thaumadditions:mithminite_smelter>,
     <industrialforegoing:material_stonework_factory>,
-    <industrialforegoing:wither_builder>
+    <industrialforegoing:wither_builder>,
+    <ae2fc:part_fluid_pattern_ex_terminal>,
+    <appliedenergistics2:part:341>,
+    <tconstruct:cast_custom:4>
 ];
 
 for ban in banList {

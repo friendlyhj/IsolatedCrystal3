@@ -1,0 +1,13 @@
+filename = '!mod-director-launchwrapper-1.8.3.jar'
+name = 'File Director'
+side = 'both'
+
+[download]
+hash = 'e00b900dc224c816289fb66716429f57a86c88dd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5272359
+project-id = 650242

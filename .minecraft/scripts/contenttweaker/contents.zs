@@ -113,7 +113,7 @@ for name, color in colors {
     block.fullBlock = false;
     block.dropHandler = function(drops, world, pos, state, fortune) {
         drops.clear();
-        drops.add(<item:contenttweaker:${name.substring(0, name.length - 6)}>);
+        drops.add(<item:contenttweaker:${name}_fruit>);
     };
     block.blockColorSupplier = function(state, world, pos, tintIndex) {
         return Color.fromInt(color);

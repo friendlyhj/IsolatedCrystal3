@@ -3,22 +3,12 @@
     {
         "title":
         {
-            "image" : "custommainmenu:textures/gui/minecraft.png",
-            "posX" : -137,
+            "image" : "isolatedcrystal:textures/title.png",
+            "posX" : 20,
             "posY" : 30,
             "width" : 512,
             "height" : 512,
-            "alignment" : "top_center"
-        },
-        
-        "edition":
-        {
-            "image" : "custommainmenu:textures/gui/edition.png",
-            "posX" : -49,
-            "posY" : 67,
-            "width" : 128,
-            "height" : 16,
-            "alignment" : "top_center"
+            "alignment" : "top_left"
         }
     },
     
@@ -27,8 +17,8 @@
         "singleplayer":
         {
             "text" : "menu.singleplayer",
-            "posX" : -100,
-            "posY" : 48,
+            "posX" : -250,
+            "posY" : 88,
             "width" : 200,
             "height" : 20,
             "action" : 
@@ -41,8 +31,8 @@
         "multiplayer":
         {
             "text" : "menu.multiplayer",
-            "posX" : -100,
-            "posY" : 72,
+            "posX" : -250,
+            "posY" : 112,
             "width" : 200,
             "height" : 20,
             "action" : 
@@ -55,8 +45,8 @@
         "mods":
         {
             "text" : "fml.menu.mods",
-            "posX" : -100,
-            "posY" : 96,
+            "posX" : -250,
+            "posY" : 136,
             "width" : 200,
             "height" : 20,
             "action" : 
@@ -69,8 +59,8 @@
         "options":
         {
             "text" : "menu.options",
-            "posX" : -100,
-            "posY" : 132,
+            "posX" : -250,
+            "posY" : 172,
             "width" : 98,
             "height" : 20,
             "action" : 
@@ -83,8 +73,8 @@
         "quit":
         {
             "text" : "menu.quit",
-            "posX" : 2,
-            "posY" : 132,
+            "posX" : -148,
+            "posY" : 172,
             "width" : 98,
             "height" : 20,
             "action" : 
@@ -96,28 +86,14 @@
         "language":
         {
             "text" : "",
-            "posX" : -124,
-            "posY" : 132,
+            "posX" : -274,
+            "posY" : 172,
             "width" : 20,
             "height" : 20,
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "languages"
-            }
-        },
-        
-        "refresh":
-        {
-            "text" : "",
-            "posX" : -154,
-            "posY" : 132,
-            "width" : 20,
-            "height" : 20,
-            "texture" : "custommainmenu:textures/gui/buttons.png",
-            "action" : 
-            {
-                "type" : "refresh"
             }
         }
     },
@@ -127,7 +103,7 @@
         "mojang":
         {
             "text" : "Copyright Mojang AB. Do not distribute!",
-            "hoverText" : "§nCopyright Mojang AB. Do not distribute!",
+            "hoverText" : "ï¿½nCopyright Mojang AB. Do not distribute!",
             "posX" : -197,
             "posY" : -10,
             "color" : -1,
@@ -150,23 +126,10 @@
     },
     
     "other":
-    {
-        "splash-text":
-        {
-            "posX" : 90,
-            "posY" : 70,
-            "color" : -256,
-            "alignment" : "top_center",
-            "texts" : "file:minecraft:texts/splashes.txt"
-        },
-        
-        "panorama":
-        {
-            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
-            "animate" : true,
-            "animationSpeed" : 1,
-            "blur" : true,
-            "gradient" : true
+    {   
+        "background": {
+            "image": "isolatedcrystal:textures/bg.png",
+            "mode": "stretch"
         }
     }
 }

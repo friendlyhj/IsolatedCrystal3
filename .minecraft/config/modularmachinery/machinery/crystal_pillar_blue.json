@@ -1,0 +1,15 @@
+{
+    "registryname": "crystal_pillar_blue",
+    "localizedname": "Crystal Pillar (Blue)",
+    "color": "0068b7",
+    "parts": [
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockinputbus@0"
+            ]
+        }
+    ]
+}

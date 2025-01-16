@@ -221,13 +221,13 @@ recipes.addShapeless(<mekeng:gas_storage_monitor>, [p, g, n]);
 recipes.remove(<mekeng:gas_conversion_monitor>);
 recipes.addShapeless(<mekeng:gas_conversion_monitor>, [p, g, n, b, d]);
 recipes.remove(<appliedenergistics2:material:25>);
-recipes.addShaped(<appliedenergistics2:material:25> * 2, [
+recipes.addShaped(<appliedenergistics2:material:25>, [
     [null, <pneumaticcraft:plastic:7>, <ore:ingotGold>],
     [<pneumaticcraft:plastic:7>, <appliedenergistics2:material:23>, <ore:dustRedstone>],
     [null, <pneumaticcraft:plastic:7>, <ore:ingotGold>]
 ]);
 recipes.remove(<appliedenergistics2:material:28>);
-recipes.addShaped(<appliedenergistics2:material:28> * 2, [
+recipes.addShaped(<appliedenergistics2:material:28>, [
     [null, <pneumaticcraft:plastic:7>, <minecraft:diamond>],
     [<pneumaticcraft:plastic:7>, <appliedenergistics2:material:23>, <ore:dustRedstone>],
     [null, <pneumaticcraft:plastic:7>, <minecraft:diamond>]
