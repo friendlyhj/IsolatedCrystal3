@@ -2,6 +2,7 @@
 
 import crafttweaker.item.IItemStack;
 import scripts.recipes.lib.Util.modItems;
+import scripts.recipes.lib.Util.recipeTweak;
 
 recipes.removeByMod("modularmachinery");
 for item in loadedMods["modularmachinery"].items {
@@ -299,4 +300,10 @@ recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "modules"
     [null, <pneumaticcraft:printed_circuit_board>, null],
     [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>],
     [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
+]);
+
+recipeTweak(true, <extrautils2:machine>.withTag({Type:"extrautils2:enchanter"}),[
+    [<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood:1>],
+    [<ore:ingotPlatinum>, <thermalexpansion:frame>, <ore:ingotPlatinum>],
+    [<botania:manaresource:2>,<minecraft:enchanting_table>,<botania:manaresource:2>]
 ]);

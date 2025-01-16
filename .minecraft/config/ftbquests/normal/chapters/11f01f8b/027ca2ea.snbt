@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 3.0d,
 	text: [
-		"玩家受伤后有几率掉落。"
+		"玩家受伤后有 20% 几率掉落。"
 	],
 	hide_dependency_lines: 1b,
 	dependencies: [

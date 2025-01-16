@@ -1,0 +1,70 @@
+{
+	x: 8.0d,
+	y: 3.7d,
+	text: [
+		"可以当作剪刀使用，来采集高神秘花。"
+	],
+	dependencies: [
+		"7e6033c4"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "dd27ff36",
+		type: "item",
+		items: [{
+			tag: {
+				Special: {
+					Categories: [
+						"tool",
+						"aoe",
+						"harvest",
+						"weapon"
+					]
+				},
+				Stats: {
+					FreeModifiers: 3,
+					MiningSpeed: 2.0f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 0,
+					Attack: 2.0f,
+					Durability: 75
+				},
+				TinkerData: {
+					Materials: [
+						"wood",
+						"wood",
+						"wood"
+					],
+					Modifiers: [
+						"toolleveling"
+					]
+				},
+				Modifiers: [{
+					color: -7444965,
+					identifier: "ecological",
+					level: 1
+				},
+				{
+					color: 16777215,
+					identifier: "toolleveling",
+					level: 1
+				}],
+				StatsOriginal: {
+					FreeModifiers: 3,
+					MiningSpeed: 2.0f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 0,
+					Attack: 2.0f,
+					Durability: 75
+				},
+				Traits: [
+					"ecological",
+					"toolleveling"
+				]
+			},
+			id: "tconstruct:kama"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

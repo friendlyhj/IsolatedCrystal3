@@ -134,11 +134,6 @@ recipes.remove(<embers:ember_relay>);
 recipes.remove(<immersiveengineering:metal_decoration0:6>);
 recipes.remove(<draconicevolution:grinder>);
 
-recipeTweak(true, <extrautils2:machine>.withTag({Type:"extrautils2:enchanter"}),[
-    [<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolidwood:1>],
-    [<ore:ingotPlatinum>,ex,<ore:ingotPlatinum>],
-    [<actuallyadditions:item_crystal_empowered:2>,<minecraft:enchanting_table>,<actuallyadditions:item_crystal_empowered:2>]
-]);
 recipeTweak(true, <extrautils2:machine>.withTag({Type:"extrautils2:generator_survival"}),[
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
     [<ore:ingotCopper>, <immersiveengineering:metal_decoration0:6>, <ore:ingotCopper>],

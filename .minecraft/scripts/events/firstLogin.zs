@@ -18,9 +18,9 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
                 for i in 0 .. 36 {
                     player.replaceItemInInventory(i, null);
                 }
+                server.commandManager.executeCommandSilent(server, `/tp ${player.name} -138 68 -130`);
+                server.commandManager.executeCommandSilent(server, `/spawnpoint ${player.name} -138 68 -130`);
             })
             .start();
-        server.commandManager.executeCommandSilent(server, `/tp ${player.name} -138 68 -130`);
-        player.executeCommand("/spawnpoint");
     }
 });

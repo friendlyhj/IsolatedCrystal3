@@ -10,5 +10,20 @@
 		items: [{
 			item: "botania:altar"
 		}]
+	},
+	{
+		uid: "507c7203",
+		type: "item",
+		items: [{
+			tag: {
+				Fluid: {
+					Amount: 1000,
+					FluidName: "water"
+				}
+			},
+			id: "botania:waterbowl"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
 	}]
 }

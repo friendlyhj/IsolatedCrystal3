@@ -12,5 +12,11 @@
 		items: [{
 			item: "minecraft:dye 1 15"
 		}]
+	}],
+	rewards: [{
+		uid: "4cccc6e1",
+		type: "item",
+		item: "minecraft:torch",
+		count: 16
 	}]
 }
