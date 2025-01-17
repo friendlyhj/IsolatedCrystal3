@@ -1,0 +1,18 @@
+{
+	x: 7.5d,
+	y: -2.5d,
+	text: [
+		"用发射器投掷卵石，可以防止卵石烧毁，并一次性转变为炽热火花。"
+	],
+	dependencies: [
+		"5afff572"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "f24624cd",
+		type: "item",
+		items: [{
+			item: "minecraft:dispenser"
+		}]
+	}]
+}

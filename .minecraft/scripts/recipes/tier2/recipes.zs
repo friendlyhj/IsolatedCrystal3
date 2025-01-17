@@ -307,3 +307,9 @@ recipeTweak(true, <extrautils2:machine>.withTag({Type:"extrautils2:enchanter"}),
     [<ore:ingotPlatinum>, <thermalexpansion:frame>, <ore:ingotPlatinum>],
     [<botania:manaresource:2>,<minecraft:enchanting_table>,<botania:manaresource:2>]
 ]);
+
+recipeTweak(true, <botania:pylon:1>, [
+    [null, <ore:nuggetTerrasteel>, null],
+    [<ore:nuggetTerrasteel>, <botania:pylon:0>, <ore:nuggetTerrasteel>],
+    [null, <contenttweaker:vibrant_crystal>, null]
+]);

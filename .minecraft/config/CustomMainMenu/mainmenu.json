@@ -1,15 +1,6 @@
 {
     "images":
     {
-        "title":
-        {
-            "image" : "isolatedcrystal:textures/title.png",
-            "posX" : 20,
-            "posY" : 30,
-            "width" : 512,
-            "height" : 512,
-            "alignment" : "top_left"
-        }
     },
     
     "buttons":

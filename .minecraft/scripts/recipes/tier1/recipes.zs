@@ -203,3 +203,4 @@ recipes.addShaped(<contenttweaker:mana_crusher>, [
 ]);
 recipes.remove(<botania:lens:13>);
 recipes.addShapeless(<botania:lens:13>, [<botania:lens>, <botania:rune>, <contenttweaker:ocean_crystal>]);
+furnace.setFuel(<minecraft:reeds>, 0);
