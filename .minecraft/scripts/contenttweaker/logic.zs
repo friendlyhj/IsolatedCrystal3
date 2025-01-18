@@ -71,7 +71,7 @@ affc.glowing = true;
     val now = world.getBlockState(pos);
     if (origin != now && world.random.nextInt(20) == 0) {
         item.mutable().shrink(1);
-    }
+    } 
     return item;
 });
 

@@ -44,8 +44,8 @@ RuneAltar.addRecipe(<botania:rune:1> * 2, [
     <minecraft:gunpowder>
 ], 5200);
 
-RuneAltar.removeRecipe(<botania:rune:2>);
-RuneAltar.addRecipe(<botania:rune:2> * 2, [
+RuneAltar.removeRecipe(<botania:rune:6>);
+RuneAltar.addRecipe(<botania:rune:6> * 2, [
     <botania:rune:1>,
     <botania:rune:3>,
     <ore:treeLeaves>,
@@ -54,8 +54,8 @@ RuneAltar.addRecipe(<botania:rune:2> * 2, [
     <naturesaura:gold_leaf>
 ], 5200);
 
-RuneAltar.removeRecipe(<botania:rune:6>);
-RuneAltar.addRecipe(<botania:rune:6> * 2, [
+RuneAltar.removeRecipe(<botania:rune:2>);
+RuneAltar.addRecipe(<botania:rune:2> * 2, [
     <botania:manaresource:23>,
     <botania:manaresource>,
     <ore:stone>,
