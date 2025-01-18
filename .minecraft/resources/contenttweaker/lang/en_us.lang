@@ -106,6 +106,8 @@ modpack.tooltip.flux_releaser.perditio=Release 10 Flux
 modpack.tooltip.flux_releaser.vitium=Release 40 Flux
 modpack.tooltip.mechanical_artisan=Make recipe complete instantly
 modpack.tooltip.aura_consume=§2Ender device，consume %s aura/tick
+modpack.tooltip.netherrack_fail.0=It's obviously not the product you wanted.
+modpack.tooltip.netherrack_fail.1=It might be worth trying to process within its native environment
 
 
 modpack.info.time_real=Real time: %s

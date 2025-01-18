@@ -17,6 +17,7 @@
 	rewards: [{
 		uid: "7b0e757c",
 		type: "item",
+		team_reward: 0b,
 		item: "extrautils2:angelring"
 	}]
 }

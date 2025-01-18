@@ -33,7 +33,7 @@ RuneAltar.addRecipe(<contenttweaker:crafting_crystal>, [
     <contenttweaker:completed_afflatus_of_crafting>,
     <botania:manaresource:23>,
     <appliedenergistics2:material>
-], 42000);
+], 6000);
 
 RuneAltar.removeRecipe(<botania:rune:1>);
 RuneAltar.addRecipe(<botania:rune:1> * 2, [
@@ -46,12 +46,52 @@ RuneAltar.addRecipe(<botania:rune:1> * 2, [
 
 RuneAltar.removeRecipe(<botania:rune:2>);
 RuneAltar.addRecipe(<botania:rune:2> * 2, [
+    <botania:rune:1>,
+    <botania:rune:3>,
+    <ore:treeLeaves>,
+    <ore:treeLeaves>,
+    <ore:treeLeaves>,
+    <naturesaura:gold_leaf>
+], 5200);
+
+RuneAltar.removeRecipe(<botania:rune:6>);
+RuneAltar.addRecipe(<botania:rune:6> * 2, [
     <botania:manaresource:23>,
     <botania:manaresource>,
     <ore:stone>,
     <minecraft:coal_block>,
     <contenttweaker:earth_crystal>
-], 5200);
+], 8000);
+
+Apothecary.addRecipe(<tconstruct:slime_sapling>, [
+    <ore:petalLightBlue>,
+    <ore:petalLightBlue>,
+    <ore:petalLightBlue>,
+    <ore:petalLightBlue>,
+    <naturesaura:ancient_sapling>,
+    <botania:rune:4>,
+    <botania:rune>
+]);
+
+Apothecary.addRecipe(<tconstruct:slime_sapling:1>, [
+    <ore:petalPurple>,
+    <ore:petalPurple>,
+    <ore:petalPurple>,
+    <ore:petalPurple>,
+    <naturesaura:ancient_sapling>,
+    <botania:rune:4>,
+    <botania:rune>
+]);
+
+Apothecary.addRecipe(<tconstruct:slime_sapling:2>, [
+    <ore:petalOrange>,
+    <ore:petalOrange>,
+    <ore:petalOrange>,
+    <ore:petalOrange>,
+    <naturesaura:ancient_sapling>,
+    <botania:rune:4>,
+    <botania:rune:1>
+]);
 
 for od in native.vazkii.botania.api.BotaniaAPI.oreWeights {
     Orechid.removeOre(od);

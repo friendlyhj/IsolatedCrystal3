@@ -29,6 +29,13 @@
 			id: "thaumicaugmentation:rift_jar"
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "d9604f7d",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_feeder"
+		}]
 	}],
 	rewards: [{
 		uid: "ec7c60b5",

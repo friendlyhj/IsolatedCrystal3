@@ -94,7 +94,6 @@ RecipeBuilder.newBuilder("oil", "oil_fabricator", 800)
             if (isNull(item) || !input.matches(item.withAmount(1))) 
                 continue;
             val itemNameWithMeta = item.definition.id ~ item.metadata;
-            logger.logWarning(itemNameWithMeta);
             if (isNull(mmMatchedItem)) {
                 mmMatchedItem = itemNameWithMeta;
             }

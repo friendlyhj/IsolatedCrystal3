@@ -313,3 +313,15 @@ recipeTweak(true, <botania:pylon:1>, [
     [<ore:nuggetTerrasteel>, <botania:pylon:0>, <ore:nuggetTerrasteel>],
     [null, <contenttweaker:vibrant_crystal>, null]
 ]);
+
+recipeTweak(true, <extrautils2:user>, [
+    [<sonarcore:reinforcedstoneblock>, <ore:ingotNickel>, <sonarcore:reinforcedstoneblock>],
+    [<ore:ingotNickel>, <contenttweaker:crafting_crystal>, <ore:ingotNickel>],
+    [<sonarcore:reinforcedstoneblock>, <minecraft:blaze_rod>, <sonarcore:reinforcedstoneblock>]
+]);
+
+recipes.addShaped(<thaumicaugmentation:glass_tube> * 8, [
+    [<thaumcraft:tube>, <thaumcraft:tube>, <thaumcraft:tube>],
+    [<thaumcraft:tube>, <minecraft:glass>, <thaumcraft:tube>],
+    [<thaumcraft:tube>, <thaumcraft:tube>, <thaumcraft:tube>]
+]);

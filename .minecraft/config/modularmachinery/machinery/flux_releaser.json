@@ -112,7 +112,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "modularmachinery:blockauraproviderinput"
+                "gugu-utils:aurainputhatch"
             ]
         },
         {
@@ -219,4 +219,5 @@
                 "enderio:block_dark_iron_bars@0"
             ]
         }
-    ]}
+    ]
+}

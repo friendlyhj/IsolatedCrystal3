@@ -20,21 +20,21 @@ recipes.addShaped(<calculator:powercube>, [
 ]);
 
 recipes.remove(<calculator:calculatorassembly>);
-recipes.addShaped(<calculator:calculatorassembly> * 2, [
+recipes.addShaped(<calculator:calculatorassembly> * 4, [
     [<sonarcore:reinforcedstoneblock>, <mekanism:polyethene:2>, <sonarcore:reinforcedstoneblock>],
     [<mekanism:polyethene:2>, <contenttweaker:logic_crystal>,<mekanism:polyethene:2>],
     [<sonarcore:reinforcedstoneblock>, <mekanism:polyethene:2>, <sonarcore:reinforcedstoneblock>]
 ]);
 
 recipes.remove(<calculator:advancedassembly>);
-recipes.addShaped(<calculator:advancedassembly> * 2, [
+recipes.addShaped(<calculator:advancedassembly> * 4, [
     [<calculator:enrichedgoldingot>, <calculator:calculatorassembly>, <calculator:enrichedgoldingot>],
     [<calculator:calculatorassembly>, <appliedenergistics2:material:36>, <calculator:calculatorassembly>],
     [<calculator:enrichedgoldingot>, <calculator:calculatorassembly>, <calculator:enrichedgoldingot>]
 ]);
 
 recipes.remove(<calculator:atomicmodule>);
-recipes.addShaped(<calculator:atomicmodule> * 2, [
+recipes.addShaped(<calculator:atomicmodule> * 4, [
     [<calculator:smalltanzanite>, <calculator:advancedassembly>, <calculator:smalltanzanite>],
     [<calculator:advancedassembly>, <mekanism:controlcircuit:3>, <calculator:advancedassembly>],
     [<calculator:smalltanzanite>, <calculator:advancedassembly>, <calculator:smalltanzanite>]

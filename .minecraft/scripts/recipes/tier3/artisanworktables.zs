@@ -301,6 +301,7 @@ RecipeBuilder.get("mage")
     [<naturesaura:token_euphoria>, <contenttweaker:aura_crystal>, <naturesaura:token_euphoria>],
     [<naturesaura:sky_ingot>, <naturesaura:token_euphoria>, <naturesaura:sky_ingot>]])
   .addTool(<ore:artisansGrimoire>, 25)
+  .setFluid(<liquid:mercury> * 576)
   .addOutput(<gugu-utils:aurainputhatch>)
   .create();
 
@@ -321,16 +322,6 @@ RecipeBuilder.get("engineer")
     [<ore:blockElectrum>, <thermaldynamics:duct_0:5>, <nuclearcraft:ingot_block:14>]])
   .setFluid(<liquid:emergency_coolant> * 2000)
   .addOutput(<contenttweaker:superconductor>)
-  .create();
-
-RecipeBuilder.get("mage")
-  .setShaped([
-    [<naturesaura:token_euphoria>, <contenttweaker:aura_crystal>, <naturesaura:token_euphoria>],
-    [<naturesaura:sky_ingot>, <botania:endereyeblock>, <naturesaura:sky_ingot>],
-    [<botania:rune:4>, <naturesaura:sky_ingot>, <botania:rune:4>]])
-  .addTool(<ore:artisansGrimoire>, 10)
-  .setFluid(<liquid:mercury> * 288)
-  .addOutput(<modularmachinery:blockauraproviderinput>)
   .create();
 
 RecipeBuilder.get("mage")

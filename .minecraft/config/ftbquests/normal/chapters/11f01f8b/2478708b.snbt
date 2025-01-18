@@ -2,6 +2,10 @@
 	x: 6.0d,
 	y: -3.75d,
 	shape: "hexagon",
+	text: [
+		"可以充当骨粉使用，只有成功催熟作物/树苗时才有 5% 几率消耗。",
+		"可以直接被发射器使用。"
+	],
 	hide_dependency_lines: 1b,
 	dependencies: [
 		"3bfe0259"
@@ -25,9 +29,9 @@
 				TrophyColorGreen: 205,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					id: "contenttweaker:vibrant_crystal",
+					Damage: 0s,
 					Count: 1,
-					Damage: 0s
+					id: "contenttweaker:vibrant_crystal"
 				},
 				TrophyName: ""
 			},

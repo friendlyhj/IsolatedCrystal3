@@ -16,6 +16,7 @@ ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
 ArcaneWorkbench.removeRecipe(<thaumicenergistics:essentia_terminal>);
 ArcaneWorkbench.removeRecipe(<thaumicenergistics:arcane_terminal>);
 ArcaneWorkbench.removeRecipe(<thaumicenergistics:arcane_inscriber>);
+ArcaneWorkbench.removeRecipe(<thaumicaugmentation:glass_tube>);
 Crucible.registerRecipe("undead_water", "", <forge:bucketfilled>.withTag({FluidName: "undead_water", Amount: 1000}), <minecraft:water_bucket>, [<aspect:exanimis> * 80]);
 Crucible.registerRecipe("blood_magic_dagger", "", <bloodmagic:sacrificial_dagger>, <thaumcraft:thaumium_sword>, [<aspect:victus> * 48, <aspect:mortuus> * 12]);
 Crucible.registerRecipe("soul_snare", "", <bloodmagic:soul_snare>, <botania:manaresource:16>, [<aspect:vinculum> * 4]);

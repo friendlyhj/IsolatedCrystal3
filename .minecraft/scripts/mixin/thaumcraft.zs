@@ -13,3 +13,12 @@ zenClass MixinConfigAspect {
         // NO-OP
     }
 }
+
+#mixin Mixin
+#{targets: "thaumcraft.common.tiles.crafting.TileCrucible"}
+zenClass MixinTileCrucible {
+    #mixin Overwrite
+    function attemptSmelt(item as ItemStack, userName as string) as ItemStack {
+        return item;
+    }
+}

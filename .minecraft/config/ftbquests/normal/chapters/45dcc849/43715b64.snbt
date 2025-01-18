@@ -17,8 +17,7 @@
 			},
 			id: "forge:bucketfilled"
 		}],
-		ignore_damage: 1b,
-		ignore_nbt: 1b
+		ignore_damage: 1b
 	}],
 	rewards: [{
 		uid: "bb0adf9c",

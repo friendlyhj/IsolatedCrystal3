@@ -1,6 +1,10 @@
 {
 	x: 6.0d,
 	y: -5.0d,
+	text: [
+		"Factory Tech 的 JEI 显示，液体无法点击查看其的配方。",
+		"请自行搜索再看配方。"
+	],
 	dependencies: [
 		"03a14ed6"
 	],

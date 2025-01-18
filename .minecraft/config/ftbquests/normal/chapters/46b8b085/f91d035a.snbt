@@ -12,12 +12,12 @@
 				slot2: "Crafting",
 				slot4: "Energy Module",
 				slot3: "Storage",
-				3: {},
-				slot1: "Dynamic",
-				2: {},
-				slot0: "Flawless",
-				1: {},
 				0: {},
+				slot1: "Dynamic",
+				1: {},
+				slot0: "Flawless",
+				2: {},
+				3: {},
 				4: {}
 			},
 			id: "calculator:flawlesscalculator"

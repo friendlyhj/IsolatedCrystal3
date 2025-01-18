@@ -107,6 +107,8 @@ modpack.tooltip.flux_releaser.perditio=释放 10 点咒波
 modpack.tooltip.flux_releaser.vitium=释放 40 点咒波
 modpack.tooltip.mechanical_artisan=使配方瞬间完成
 modpack.tooltip.aura_consume=§2末影设备，消耗 %s 灵气/tick
+modpack.tooltip.netherrack_fail.0=这显然不是你想要的产物
+modpack.tooltip.netherrack_fail.1=也许应该尝试下该产物的原生环境内处理
 
 modpack.info.time_real=现实时间 %s
 modpack.info.time_game=已游玩 %s 小时 %s 分钟

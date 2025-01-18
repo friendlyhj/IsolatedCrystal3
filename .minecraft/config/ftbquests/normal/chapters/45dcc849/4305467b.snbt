@@ -1,0 +1,15 @@
+{
+	x: 3.5d,
+	y: -1.4d,
+	dependencies: [
+		"a5943fff"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "0897f940",
+		type: "item",
+		items: [{
+			item: "factorytech:pulser"
+		}]
+	}]
+}

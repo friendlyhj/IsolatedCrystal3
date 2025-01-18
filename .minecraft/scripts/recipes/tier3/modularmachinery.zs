@@ -112,7 +112,7 @@ function checkCircuit(controller as IMachineController, high as bool, required a
 }
 
 RecipeBuilder.newBuilder("calculation_crystal", "digital_calculator", 120)
-    .addItemInputs(<contenttweaker:logic_crystal>, <appliedenergistics2:material:37>, <calculator:flawlessassembly>, <contenttweaker:advanced_network_module>)
+    .addItemInputs(<contenttweaker:logic_crystal>, <appliedenergistics2:material:37>, <calculator:flawlessassembly>, <contenttweaker:network_module>)
     .addItemOutput(<contenttweaker:calculation_crystal>)
     .addEnergyPerTickInput(2400)
     .addStartHandler(function(event as RecipeStartEvent) {
@@ -303,7 +303,6 @@ MMEvents.onMachinePreTick("mine_catalyst", function(event as MachineTickEvent) {
             val minValue = max(-1500, -fluidAmount);
             val maxValue = min(1500, 128000 - fluidAmount);
             val amount = world.random.nextInt(minValue, maxValue);
-            // logger.logWarning(amount);
             if (amount > 0) {
                 liquidHandler.fill(<liquid:mine_medium>.withAmount(amount), true);
             } else if (amount < 0) {

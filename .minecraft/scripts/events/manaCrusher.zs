@@ -40,7 +40,7 @@ addRecipe([<minecraft:gravel>], <minecraft:cobblestone>);
 addRecipe([<minecraft:sand>], <minecraft:gravel>);
 addRecipe([<contenttweaker:sand_dust>], <minecraft:sand>);
 addRecipe([<minecraft:prismarine_crystals> * 4], <minecraft:prismarine>);
-addRecipe([<contenttweaker:crushed_crushed> * 2], <advancedmortars:mortar:1>);
+addRecipe([<contenttweaker:crushed_crushed> * 4], <advancedmortars:mortar:1>);
 addRecipe([<contenttweaker:destruction_crystal>], <contenttweaker:destruction_matrix>);
 
 // tier2

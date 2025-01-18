@@ -28,9 +28,9 @@
 				TrophyColorGreen: 49,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					id: "contenttweaker:space_time_crystal",
+					Damage: 0s,
 					Count: 1,
-					Damage: 0s
+					id: "contenttweaker:space_time_crystal"
 				},
 				TrophyVariant: "classic"
 			},

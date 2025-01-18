@@ -1,6 +1,9 @@
 {
 	x: 0.0d,
 	y: -6.5d,
+	text: [
+		"在管道输出之前，需要对罐子标记可存入的源质。"
+	],
 	dependencies: [
 		"6953c020"
 	],
@@ -15,5 +18,23 @@
 		uid: "992e0830",
 		type: "random",
 		table: 0
+	},
+	{
+		uid: "ca2d8797",
+		type: "item",
+		item: "thaumcraft:label",
+		count: 8
+	},
+	{
+		uid: "1edfab08",
+		type: "item",
+		item: "thaumcraft:phial",
+		count: 8
+	},
+	{
+		uid: "fad53bf9",
+		type: "item",
+		team_reward: 0b,
+		item: "thaumcraft:resonator"
 	}]
 }

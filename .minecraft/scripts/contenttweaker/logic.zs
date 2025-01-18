@@ -14,7 +14,7 @@ val purpleFruit as Item = <cotItem:purple_fruit>;
 
 val affc as Item = <cotItem:completed_afflatus_of_crafting>;
 
-val natureCrystal as Item = <cotItem:nature_crystal>;
+val vibrantCrystal as Item = <cotItem:vibrant_crystal>;
 
 orangeFruit.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     if (!world.remote) {
@@ -48,7 +48,7 @@ yellowFruit.itemRightClick = function(item, world, player, hand) {
     return "SUCCESS";
 };
 
-natureCrystal.onItemUse = function(player, world, pos, hand, facing, blockHit) {
+vibrantCrystal.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     if (!world.remote) {
         val origin = world.getBlockState(pos);
         player.simulateRightClickBlock(<minecraft:dye:15>);
@@ -62,7 +62,7 @@ natureCrystal.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 
 affc.glowing = true;
 
-<contenttweaker:nature_crystal>.definition.addDispenserBehavior(function(source, item) {
+<contenttweaker:vibrant_crystal>.definition.addDispenserBehavior(function(source, item) {
     val world = source.world;
     val player = world.fakePlayer;
     val pos = source.pos.getOffset(source.facing, 1);
@@ -71,17 +71,6 @@ affc.glowing = true;
     val now = world.getBlockState(pos);
     if (origin != now && world.random.nextInt(20) == 0) {
         item.mutable().shrink(1);
-    }
-    return item;
-});
-
-<contenttweaker:cyan_fruit>.definition.addDispenserBehavior(function(source, item) {
-    val world = source.world;
-    val pos = source.pos.getOffset(source.facing, 1);
-    val block = world.getBlockState(pos);
-    val blockItem = block.block.getItem(world, pos, block);
-    if (<ore:logWood>.matches(blockItem)) {
-        world.setBlockState(<blockstate:minecraft:crafting_table>, pos);
     }
     return item;
 });
