@@ -1,6 +1,7 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
 import scripts.libs.Vector3D;
 
@@ -20,7 +21,7 @@ recipes.addShaped(<minecraft:cobblestone>, [
 recipes.remove(<minecraft:crafting_table>);
 recipes.addShapeless(<minecraft:crafting_table>, [<ore:logWood>, affc]);
 recipes.addShapeless(<minecraft:crafting_table> * 3, [<ore:logWood>, <ore:logWood>, <ore:logWood>, <contenttweaker:cyan_fruit>]);
-static craftingAfflatusInfo as function(IItemStack)int[] = function(item as IItemStack)as int[]{
+function craftingAfflatusInfo(item as IItemStack)as int[]{
     //return [numberOfCompletedCrafts, leastUncompletedCrafts]
     var T as int[] = [0,0] as int[];
     if(!aff.matches(item)) return T;
@@ -41,45 +42,43 @@ static craftingAfflatusInfo as function(IItemStack)int[] = function(item as IIte
         t*=2;
     }
     return [count,minMissing] as int[];
-};
-recipes.addShapeless("afflatus_of_crafting_process", affc*7, [aff,aff,aff,aff,aff,aff,aff],
-    function(out, ins, cinfo){
-        var nullsT = [] as int[];
-        if(cinfo.inventory.width!=3) return null;
-        if(cinfo.inventory.height!=3) return null;
-        var f = false;
+}
+function affIndexRecipeFunction(i as int, j as int) as IRecipeFunction {
+    return function(out, ins, cInfo) {
         var lastNBT as IData = null;
-        for i in 0 to 9{
-            var t = cinfo.inventory.items[i/3][i%3];
-            if(isNull(t))nullsT+=i;
-            else{
-                if(f){
-                    if(lastNBT!=t.tag) return null;
-                }
-                else{
-                    lastNBT = t.tag;
-                    f = true;
-                }
+        for item in cInfo.inventory.itemArray {
+            if (!isNull(item)) {
+                lastNBT = item.tag;
+                break;
             }
         }
-        if(nullsT.length!=2) return null;
-        var i = nullsT[0];
-        var j = nullsT[1];
         var index as int = i*(17-i)/2 + j - i - 1; //The index for current recipe
         if(isNull(lastNBT)) lastNBT = IData.createEmptyMutableDataMap(); 
-        print(isNull(lastNBT));
-        //print(lastNBT has "affCounting0");
-        //print(lastNBT.affCrafting0.asInt());
         var a = (lastNBT has "affCounting0") ? lastNBT.affCounting0.asInt() : 0;
         var b = (lastNBT has "affCounting1") ? lastNBT.affCounting1.asInt() : 0;
         if(index<24) a=a|Vector3D.pow2(index);
         else b=b|Vector3D.pow2(index - 24);
         var out2 = aff.withTag(lastNBT + {"affCounting0":a, "affCounting1":b} as IData);
         var affInfo = craftingAfflatusInfo(out2);
-        if(affInfo[0]>=requiredNum) return affc*7;//M.shimmer(aff).withTag({"completed":true})*7;
-        return out2*7;
-    }, null
-);
+        if(affInfo[0]>=requiredNum)  {
+            return affc * 7;//M.shimmer(aff).withTag({"completed":true})*7;
+        } else {
+            return out2 * 7;
+        }
+    };
+}
+for i in 0 .. 8 {
+    for j in (i + 1) .. 9 {
+        val inputs as IItemStack[][] = [
+            [aff, aff, aff],
+            [aff, aff, aff],
+            [aff, aff, aff]
+        ];
+        inputs[i / 3][i % 3] = null;
+        inputs[j / 3][j % 3] = null;
+        recipes.addShaped(`afflatus_of_crafting_process_${i}_${j}`, affc, inputs, affIndexRecipeFunction(i, j), null);
+    }
+}
 static affFindI as int[] = [
     0,0,0,0,0,0,0,0,
     1,1,1,1,1,1,1,
