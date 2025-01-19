@@ -78,14 +78,18 @@ log.blockLayer = "TRANSLUCENT";
 log.fullBlock = false;
 log.translucent = true;
 log.blockHardness = -1;
+log.toolClass = "";
+log.toolLevel = 0;
 log.register();
 
-val leaves = VanillaFactory.createBlock("crystal_leaves", <blockmaterial:leaves>);
+val leaves = VanillaFactory.createBlock("crystal_leaves", <blockmaterial:plants>);
 leaves.blockResistance = 1800000.0f;
 leaves.blockLayer = "TRANSLUCENT";
 leaves.translucent = true;
 leaves.fullBlock = false;
 leaves.blockHardness = -1;
+leaves.toolClass = "";
+leaves.toolLevel = 0;
 leaves.register();
 
 val crusher = VanillaFactory.createBlock("mana_crusher", <blockmaterial:rock>);
