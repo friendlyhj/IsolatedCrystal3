@@ -4,9 +4,7 @@
 	text: [
 		"绿色化为树苗"
 	],
-	dependencies: [
-		"f57488ce"
-	],
+	dependency_requirement: "one_started",
 	tasks: [{
 		uid: "2abbd1f3",
 		type: "item",

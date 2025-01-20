@@ -4,9 +4,7 @@
 	text: [
 		"黄色化为泥土"
 	],
-	dependencies: [
-		"f57488ce"
-	],
+	dependency_requirement: "one_started",
 	tasks: [{
 		uid: "36078dcd",
 		type: "item",

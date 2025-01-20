@@ -25,7 +25,7 @@ Blueprint.addRecipe("modules", <contenttweaker:advanced_network_module>, [
     <contenttweaker:logic_crystal>
 ]);
 
-Blueprint.addRecipe("modules", <contenttweaker:crafting_module> * 2, [
+Blueprint.addRecipe("modules", <contenttweaker:crafting_module> * 3, [
     <appliedenergistics2:material:25>,
     <botania:dreamwood>,
     <contenttweaker:crafting_crystal>,

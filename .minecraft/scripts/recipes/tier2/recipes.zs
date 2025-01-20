@@ -325,3 +325,8 @@ recipes.addShaped(<thaumicaugmentation:glass_tube> * 8, [
     [<thaumcraft:tube>, <minecraft:glass>, <thaumcraft:tube>],
     [<thaumcraft:tube>, <thaumcraft:tube>, <thaumcraft:tube>]
 ]);
+
+recipeTweak(true, <botania:pool:3>, [
+    [<astralsorcery:blockmarble>, <botania:manaresource:9>, <astralsorcery:blockmarble>],
+    [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>]
+]);

@@ -45,7 +45,7 @@ RecipeBuilder.get("engineer")
     [<appliedenergistics2:material:38>, <calculator:flawlessglass>, <appliedenergistics2:material:38>],
     [<calculator:flawlessglass>, <calculator:calculatorlocator>, <calculator:flawlessglass>],
     [<appliedenergistics2:controller>, <calculator:flawlessglass>, <appliedenergistics2:controller>]])
-  .addTool(<artisanworktables:artisans_solderer_invar>, 50)
+  .addTool(<ore:artisansSolderer>, 50)
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<modularmachinery:digital_calculator_controller>)
   .create();
@@ -271,7 +271,7 @@ RecipeBuilder.get("engineer")
     [<appliedenergistics2:material:47>, <contenttweaker:space_matrix>, <appliedenergistics2:material:47>],
     [<appliedenergistics2:spatial_pylon>, <ore:blockLead>, <appliedenergistics2:spatial_pylon>],
     [<appliedenergistics2:material:47>, <contenttweaker:space_matrix>, <appliedenergistics2:material:47>]])
-  .addTool(<artisanworktables:artisans_spanner_invar>, 25)
+  .addTool(<ore:artisansSolderer>, 25)
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<modularmachinery:time_transmutator_controller>)
   .create();
@@ -329,7 +329,7 @@ RecipeBuilder.get("mage")
     [<contenttweaker:logic_crystal>, <contenttweaker:astral_crystal>, <contenttweaker:logic_crystal>],
     [<thaumcraft:plate:3>, <thaumcraft:metal_thaumium>, <thaumcraft:plate:3>],
     [<contenttweaker:warp_crystal>, <thaumadditions:flux_concentrator>, <contenttweaker:warp_crystal>]])
-  .addTool(<artisanworktables:artisans_grimoire_wood>, 50)
+  .addTool(<ore:artisansGrimoire>, 50)
   .setFluid(<liquid:mercury> * 288)
   .addOutput(<modularmachinery:flux_releaser_controller>)
   .create();

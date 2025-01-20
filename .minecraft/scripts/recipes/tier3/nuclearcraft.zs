@@ -7,6 +7,7 @@ import mods.nuclearcraft.ChanceItemIngredient;
 
 IngotFormer.addRecipe(<liquid:poly_lactic_acid> * 80, <nuclearcraft:part:6>);
 Manufactory.removeRecipeWithOutput(<nuclearcraft:part:6>);
+Manufactory.removeRecipeWithOutput(<nuclearcraft:gem:6>);
 RockCrusher.addRecipe(<ore:stoneLimestone>, <minecraft:dye:15>, ChanceItemIngredient.create(<nuclearcraft:dust:5>, 60), ChanceItemIngredient.create(<nuclearcraft:dust:7>, 30));
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:1> * 2);
 AlloyFurnace.addRecipe(<contenttweaker:metal_crystal>, <nuclearcraft:ingot:5> * 5, <nuclearcraft:alloy:1> * 6);

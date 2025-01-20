@@ -1,9 +1,10 @@
 {
 	x: 1.5d,
 	y: -5.5d,
-	dependencies: [
-		"f57488ce"
+	text: [
+		"红色果实给予生命。"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "4b37e09e",
 		type: "item",

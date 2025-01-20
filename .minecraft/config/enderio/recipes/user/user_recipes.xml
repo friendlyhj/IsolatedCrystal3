@@ -11,6 +11,7 @@
 	<recipe name="Soul Chassis" disabled= "true"/>
 	<recipe name="Sagmill: Silicon" disabled="true"/>
 	<recipe name="Sagmill: ClayBlock" disabled="true"/>
+	<recipe name="Sagmill: oreRedstone Ore" disabled="true"/>
 	<recipe name="Alloy: Tough Alloy (Nuclearcraft)" disabled="true"/>
 	<recipe name="Alloy: Tough Alloy (Nuclearcraft) Tweak" required="true">
 		<alloying energy="9000" exp="0.6" >

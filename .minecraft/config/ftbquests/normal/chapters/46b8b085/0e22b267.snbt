@@ -15,5 +15,10 @@
 		uid: "1e82b345",
 		type: "random",
 		table: 1
+	},
+	{
+		uid: "ea383fdb",
+		type: "item",
+		item: "calculator:wrench"
 	}]
 }

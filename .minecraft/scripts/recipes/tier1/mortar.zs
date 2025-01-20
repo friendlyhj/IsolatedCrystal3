@@ -1,6 +1,6 @@
 import mods.advancedmortars.Mortar;
 
-static allLevels as string[] = ["wood", "stone", "iron", "diamond"];
+static allLevels as string[] = ["wood", "stone", "iron", "diamond", "emerald"];
 
 Mortar.addRecipe(allLevels, <minecraft:gravel>, 8, [<botania:manaresource:21> * 4]);
 Mortar.addRecipe(allLevels, <minecraft:sand>, 6, [<minecraft:gravel>]);

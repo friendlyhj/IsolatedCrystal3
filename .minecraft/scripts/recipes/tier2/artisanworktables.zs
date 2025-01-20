@@ -78,9 +78,9 @@ for bus in buses {
 
   RecipeBuilder.get("engineer")
     .setShaped([
-      [<calculator:enrichedgoldingot>, <factorytech:machinepart:14>, <calculator:enrichedgoldingot>],
+      [<thaumcraft:ingot:2>, <factorytech:machinepart:14>, <thaumcraft:ingot:2>],
       [null, normal, null],
-      [<calculator:enrichedgoldingot>, null, <calculator:enrichedgoldingot>]])
+      [<thaumcraft:ingot:2>, null, <thaumcraft:ingot:2>]])
     .addTool(<ore:artisansSolderer>, 20)
     .addOutput(reinforced)
     .create();
@@ -454,4 +454,14 @@ RecipeBuilder.get("mage")
   .setFluid(<liquid:mercury> * 288)
   .addTool(<ore:artisansGrimoire>, 25)
   .addOutput(<modularmachinery:blockwillproviderinput>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateElectrum>, <thaumcraft:salis_mundus>, <ore:plateElectrum>],
+    [<thaumcraft:salis_mundus>, <minecraft:redstone_block>, <thaumcraft:salis_mundus>],
+    [<ore:plateElectrum>, <immersiveengineering:metal_decoration0>, <ore:plateElectrum>]])
+  .setFluid(<liquid:soldering> * 288)
+  .addTool(<ore:artisansSolderer>, 10)
+  .addOutput(<modularmachinery:blockenergyinputhatch>)
   .create();

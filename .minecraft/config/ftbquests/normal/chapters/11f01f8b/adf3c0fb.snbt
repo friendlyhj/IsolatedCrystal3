@@ -4,9 +4,7 @@
 	text: [
 		"橙色化为熔岩"
 	],
-	dependencies: [
-		"f57488ce"
-	],
+	dependency_requirement: "one_started",
 	tasks: [{
 		uid: "44963579",
 		type: "item",

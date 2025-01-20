@@ -81,7 +81,7 @@ for item in organic {
 
 val input = <ore:organicMatter>;
 
-RecipeBuilder.newBuilder("oil", "oil_fabricator", 800)
+RecipeBuilder.newBuilder("oil", "oil_fabricator", 400)
     .addItemInput(input)
     .addFluidOutput(<liquid:oil> * 80)
     .addAspectInput("terra", 1)

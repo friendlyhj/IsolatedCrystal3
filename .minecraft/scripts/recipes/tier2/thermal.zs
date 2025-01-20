@@ -13,4 +13,4 @@ Pulverizer.addRecipe(<naturesaura:gold_powder> * 2, <naturesaura:gold_leaf>, 300
 Insolator.addRecipe(<naturesaura:gold_leaf> * 3, <naturesaura:gold_leaf>, <thermalfoundation:fertilizer>, 4800);
 Insolator.addRecipe(<naturesaura:gold_leaf> * 6, <naturesaura:gold_leaf>, <thermalfoundation:fertilizer:1>, 6400);
 Insolator.addRecipe(<naturesaura:gold_leaf> * 9, <naturesaura:gold_leaf>, <thermalfoundation:fertilizer:2>, 9600);
-Crucible.addRecipe(<liquid:mercury>, <thaumcraft:quicksilver>, 800);
+Crucible.addRecipe(<liquid:mercury>, <thaumcraft:quicksilver> * 144, 800);

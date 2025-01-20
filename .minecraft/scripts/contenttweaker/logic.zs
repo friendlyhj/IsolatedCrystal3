@@ -2,9 +2,10 @@
 
 import crafttweaker.world.IWorld;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.ItemFood;
 import mods.contenttweaker.ActionResult;
 
-val redFruit as Item = <cotItem:red_fruit>;
+// val redFruit as Item = <cotItem:red_fruit>;
 val orangeFruit as Item = <cotItem:orange_fruit>;
 val yellowFruit as Item = <cotItem:yellow_fruit>;
 val greenFruit as Item = <cotItem:green_fruit>;
@@ -15,6 +16,7 @@ val purpleFruit as Item = <cotItem:purple_fruit>;
 val affc as Item = <cotItem:completed_afflatus_of_crafting>;
 
 val vibrantCrystal as Item = <cotItem:vibrant_crystal>;
+
 
 orangeFruit.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     if (!world.remote) {
@@ -51,9 +53,11 @@ yellowFruit.itemRightClick = function(item, world, player, hand) {
 vibrantCrystal.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     if (!world.remote) {
         val origin = world.getBlockState(pos);
+        val originUp = world.getBlockState(pos.up());
         player.simulateRightClickBlock(<minecraft:dye:15>);
         val now = world.getBlockState(pos);
-        if (origin != now && world.random.nextInt(20) == 0) {
+        val nowUp = world.getBlockState(pos.up());
+        if ((origin != now || originUp != now) && world.random.nextInt(20) == 0) {
             player.getHeldItem(hand).shrink(1);
         } 
     }
@@ -67,9 +71,11 @@ affc.glowing = true;
     val player = world.fakePlayer;
     val pos = source.pos.getOffset(source.facing, 1);
     val origin = world.getBlockState(pos);
+    val originUp = world.getBlockState(pos.up());
     player.simulateRightClickBlock(<minecraft:dye:15>, mainHand, pos, source.facing.opposite, 0.0f, 0.0f, 0.0f);
     val now = world.getBlockState(pos);
-    if (origin != now && world.random.nextInt(20) == 0) {
+    val nowUp = world.getBlockState(pos.up());
+    if ((origin != now || originUp != nowUp) && world.random.nextInt(20) == 6) {
         item.mutable().shrink(1);
     } 
     return item;

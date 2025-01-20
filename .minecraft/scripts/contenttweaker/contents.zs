@@ -6,6 +6,7 @@ import mods.contenttweaker.MaterialBuilder;
 import mods.contenttweaker.PartBuilder;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.Item;
 
 val itemNames as string[] = [
     // basic rainbow materials
@@ -127,7 +128,23 @@ for name, color in colors {
     };
     block.register();
 
-    val item = VanillaFactory.createItem(name ~ "_fruit");
+    val fruitItemName = name ~ "_fruit";
+    var item as Item = null;
+    if (name == "red") {
+        val food = VanillaFactory.createItemFood(fruitItemName, 4);
+        food.alwaysEdible = true;
+        food.saturation = 0.5f;
+        food.onItemFoodEaten = function(item, world, player) {
+            if (!world.remote) {
+                player.clearActivePotions();
+                player.getAttribute("generic.maxHealth").removeModifier("299b5fd4-7f4f-456e-bbd6-a3db8da075e0");
+                player.heal(18.0f);
+            }
+        };
+        item = food;
+    } else {
+        item = VanillaFactory.createItem(fruitItemName);
+    }
     item.itemColorSupplier = function(item, tintIndex) {
         return tintIndex == 0 ? Color.fromInt(color) : Color.fromInt(0xffffff);
     };

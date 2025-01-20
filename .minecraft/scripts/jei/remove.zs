@@ -55,6 +55,7 @@ val banList as IItemStack[] = [
     <emergingtechnology:piezoelectric>,
     <thermalexpansion:augment:337>,
     <immersiveengineering:mold:1>,
+    <immersiveengineering:metal_device1:3>,
     <thaumcraft:smelter_basic>,
     <thaumcraft:smelter_thaumium>,
     <thaumcraft:smelter_void>,

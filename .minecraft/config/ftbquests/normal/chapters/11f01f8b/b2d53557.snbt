@@ -4,9 +4,7 @@
 	text: [
 		"紫色赋予了破坏的能力"
 	],
-	dependencies: [
-		"f57488ce"
-	],
+	dependency_requirement: "one_started",
 	tasks: [{
 		uid: "13199864",
 		type: "item",
