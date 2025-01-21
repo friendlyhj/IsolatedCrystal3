@@ -52,16 +52,16 @@ RuneAltar.addRecipe(<botania:rune:6> * 2, [
     <ore:treeLeaves>,
     <ore:treeLeaves>,
     <naturesaura:gold_leaf>
-], 5200);
+], 8000);
 
 RuneAltar.removeRecipe(<botania:rune:2>);
 RuneAltar.addRecipe(<botania:rune:2> * 2, [
     <botania:manaresource:23>,
     <botania:manaresource>,
-    <ore:stone>,
+    <minecraft:stone>,
     <minecraft:coal_block>,
     <contenttweaker:earth_crystal>
-], 8000);
+], 5200);
 
 Apothecary.addRecipe(<tconstruct:slime_sapling>, [
     <ore:petalLightBlue>,

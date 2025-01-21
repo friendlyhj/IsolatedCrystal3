@@ -20,6 +20,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 import crafttweaker.util.IRandom;
+import crafttweaker.util.Math;
 import crafttweaker.world.IVector3d;
 
 static Inputs as IBlockStateMatcher[] = [] as IBlockStateMatcher[];
@@ -56,22 +57,24 @@ events.register(function(event as EntityJoinWorldEvent) {
                     builder.run(function(world, ctx) {
                         val posVec = IVector3d.create(entity.x, entity.y, entity.z);
                         val motionVec = posVec.add(IVector3d.create(entity.motionX, entity.motionY - 0.04, entity.motionZ));
-                        val result = world.rayTraceBlocks(posVec, motionVec);
-                        if (isNull(result) || !result.isBlock) {
-                            return;
-                        }
-                        val pos = result.blockPos;
-                        if (!world.isAirBlock(pos)) {
-                            val state = world.getBlockState(pos);
-                            for i, matcher in Inputs {
-                                if (matcher.matches(state)) {
-                                    world.destroyBlock(pos, false);
-                                    for output in Outputs[i] {
-                                        if (output.chance > world.random.nextFloat()) {
-                                            world.spawnEntity(output.stack.createEntityItem(world, pos));
+                        for i in 0 .. Math.ceil(motionVec.y) {
+                            val result = world.rayTraceBlocks(posVec, motionVec);
+                            if (isNull(result) || !result.isBlock) {
+                                return;
+                            }
+                            val pos = result.blockPos;
+                            if (!world.isAirBlock(pos)) {
+                                val state = world.getBlockState(pos);
+                                for i, matcher in Inputs {
+                                    if (matcher.matches(state)) {
+                                        world.destroyBlock(pos, false);
+                                        for output in Outputs[i] {
+                                            if (output.chance > world.random.nextFloat()) {
+                                                world.spawnEntity(output.stack.createEntityItem(world, pos));
+                                            }
                                         }
+                                        // entity.motionY = entity.motionY * 0.7 + 0.1;
                                     }
-                                    // entity.motionY = entity.motionY * 0.7 + 0.1;
                                 }
                             }
                         }
