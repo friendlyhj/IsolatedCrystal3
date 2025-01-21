@@ -1,9 +1,11 @@
 #reloadable
 
 import crafttweaker.world.IWorld;
+import crafttweaker.world.IFacing;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.ItemFood;
 import mods.contenttweaker.ActionResult;
+import mods.contenttweaker.Facing;
 
 // val redFruit as Item = <cotItem:red_fruit>;
 val orangeFruit as Item = <cotItem:orange_fruit>;
@@ -50,11 +52,28 @@ yellowFruit.itemRightClick = function(item, world, player, hand) {
     return "SUCCESS";
 };
 
+function toCrTFacing(facing as Facing) as IFacing {
+    if (facing == Facing.down()) {
+        return IFacing.down();
+    } else if (facing == Facing.up()) {
+        return IFacing.up();
+    } else if (facing == Facing.south()) {
+        return IFacing.south();
+    } else if (facing == Facing.west()) {
+        return IFacing.west();
+    } else if (facing == Facing.north()) {
+        return IFacing.north();
+    } else if (facing == Facing.east()) {
+        return IFacing.east();
+    }
+    return null;
+}
+
 vibrantCrystal.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     if (!world.remote) {
         val origin = world.getBlockState(pos);
         val originUp = world.getBlockState(pos.up());
-        player.simulateRightClickBlock(<minecraft:dye:15>);
+        player.simulateRightClickBlock(<minecraft:dye:15>, hand, pos, toCrTFacing(facing), blockHit.x, blockHit.y, blockHit.z);
         val now = world.getBlockState(pos);
         val nowUp = world.getBlockState(pos.up());
         if ((origin != now || originUp != now) && world.random.nextInt(20) == 0) {
