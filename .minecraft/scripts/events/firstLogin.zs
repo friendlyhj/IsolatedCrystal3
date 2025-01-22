@@ -9,11 +9,13 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     val player = event.player;
     if (!player.data.deepGetBool("PlayerPersisted.FirstLogin")) {
         player.update(player.data.deepUpdate({PlayerPersisted: {FirstLogin: true}}, MERGE));
-        server.commandManager.executeCommandSilent(server, `/thaumcraft research ${player.name} all`);
-        server.commandManager.executeCommandSilent(server, `/astralsorcery research ${player.name} all`);
         val created = player.world.getCustomWorldData() has "Created";
         player.world.setCustomWorldData(player.world.getCustomWorldData().deepUpdate({Created: true}, MERGE));
         val builder = player.world.catenation()
+            .then(function(w, ctx) {
+                server.commandManager.executeCommandSilent(server, `/thaumcraft research ${player.name} all`);
+                server.commandManager.executeCommandSilent(server, `/astralsorcery research ${player.name} all`);
+            })
             .then(function(w, ctx) {
                 player.warpNormal = 0;
                 player.warpPermanent = 0;

@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.event.WorldTickEvent;
 import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.block.IBlockStateMatcher;
+import crafttweaker.world.IBlockPos;
 import crafttweaker.util.Math;
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipeStartEvent;
@@ -39,6 +40,16 @@ val coords as double[][] = [
     [-159, 131, -55],
     [-211, 131, -130],
     [-203, 131, -200]
+];
+
+val controllerCoords as int[][] = [
+    [-139, 99, -228],
+    [-83, 73, -196],
+    [-31, 90, -123],
+    [-76, 86, -48],
+    [-159, 74, -57],
+    [-209, 84, -130],
+    [-201, 72, -200]
 ];
 
 val crystals as IItemStack[string] = {
@@ -99,6 +110,29 @@ events.onWorldTick(function(event as WorldTickEvent) {
         if (success != world.getGameRuleHelper().getBoolean("doDaylightCycle")) {
             world.getGameRuleHelper().setBoolean("doDaylightCycle", success);
         }
+        // tick event to transform old saves
+        val transformed = world.getCustomWorldData() has "PillarTransformed";
+        if (!transformed) {
+            for pos in controllerCoords {
+                val x = pos[0];
+                val y = pos[1];
+                val z = pos[2];
+                val block = world.getBlock(x, y, z);
+                val blockState = world.getBlockState(IBlockPos.create(x, y, z));
+                if (block.definition.id.startsWith("modularmachinery:crystal_pillar_")) {
+                    if (block.data has "owner") {
+                        world.destroyBlock(IBlockPos.create(x, y, z), false);
+                        world.setBlockState(
+                            blockState, 
+                            block.data.deepUpdate({"owner": "0"}, DataUpdateOperation.REMOVE),
+                            IBlockPos.create(x, y, z)
+                        );
+                    }
+                }
+            }
+            world.setCustomWorldData(world.getCustomWorldData().deepUpdate({PillarTransformed: true}, DataUpdateOperation.MERGE));
+        }
+        
     } else {
         if (world.getGameRuleHelper().getBoolean("doDaylightCycle")) {
             world.getGameRuleHelper().setBoolean("doDaylightCycle", false);

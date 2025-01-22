@@ -63,6 +63,16 @@ RuneAltar.addRecipe(<botania:rune:2> * 2, [
     <contenttweaker:earth_crystal>
 ], 5200);
 
+RuneAltar.addRecipe(<tconstruct:slime_grass>, [
+    <minecraft:dirt>,
+    <contenttweaker:vibrant_crystal>,
+    <contenttweaker:vibrant_crystal>,
+    <contenttweaker:earth_crystal>,
+    <contenttweaker:ocean_crystal>,
+    <botania:rune>,
+    <botania:rune:5>
+], 12000);
+
 Apothecary.addRecipe(<tconstruct:slime_sapling>, [
     <ore:petalLightBlue>,
     <ore:petalLightBlue>,

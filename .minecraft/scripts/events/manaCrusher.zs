@@ -44,8 +44,6 @@ addRecipe([<minecraft:prismarine_crystals> * 4], <minecraft:prismarine>);
 addRecipe([<contenttweaker:crushed_crushed> * 4], <advancedmortars:mortar:1>);
 addRecipe([<contenttweaker:destruction_crystal>], <contenttweaker:destruction_matrix>);
 
-// tier2
-
 events.register(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
     if (entity.world.remote) return;

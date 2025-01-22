@@ -3,9 +3,10 @@
 import native.java.util.ArrayList;
 import native.net.minecraft.item.ItemStack;
 import native.thaumcraft.api.aspects.AspectList;
+import native.thaumcraft.api.capabilities.IPlayerKnowledge.EnumResearchStatus;
+import mixin.CallbackInfoReturnable;
 
-#mixin Mixin
-#{targets: "thaumcraft.common.config.ConfigAspects"}
+#mixin {targets: "thaumcraft.common.config.ConfigAspects"}
 zenClass MixinConfigAspect {
     #mixin Static
     #mixin Overwrite
@@ -14,11 +15,26 @@ zenClass MixinConfigAspect {
     }
 }
 
-#mixin Mixin
-#{targets: "thaumcraft.common.tiles.crafting.TileCrucible"}
-zenClass MixinTileCrucible {
+#mixin {targets: "thaumcraft.common.lib.capabilities.PlayerKnowledge$DefaultImpl"}
+zenClass MixinPlayerKnowledge {
     #mixin Overwrite
-    function attemptSmelt(item as ItemStack, userName as string) as ItemStack {
-        return item;
+    function isResearchKnown(res as string) as bool {
+        return true;
+    }
+
+    #mixin Overwrite
+    function getResearchStatus(res as string) as EnumResearchStatus {
+        return EnumResearchStatus.COMPLETE;
+    }
+}
+
+#mixin {targets: "thaumcraft.common.tiles.crafting.TileCrucible"}
+zenClass MixinTileCrucible {
+    #mixin Inject{method: "attemptSmelt", at: {value: "HEAD"}, cancellable: true}
+    function removeItemSmelt(item as ItemStack, userName as string, cir as CallbackInfoReturnable) as ItemStack {
+        val name = item.item.registryName.toString();
+        if (name != "thaumcraft:crystal_essence" && name != "thaumcraft:phial") {
+            cir.setReturnValue(item);
+        }
     }
 }
