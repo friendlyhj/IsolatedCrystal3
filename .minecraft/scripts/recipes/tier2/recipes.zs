@@ -233,27 +233,39 @@ recipes.addShaped(<appliedenergistics2:material:28>, [
     [<pneumaticcraft:plastic:7>, <appliedenergistics2:material:23>, <ore:dustRedstone>],
     [null, <pneumaticcraft:plastic:7>, <minecraft:diamond>]
 ]);
+val allPlastic = <pneumaticcraft:plastic:7> | <nuclearcraft:part:6> | <mekanism:polyethene:2>;
 recipes.remove(<appliedenergistics2:material:26>);
 recipes.remove(<appliedenergistics2:material:52>);
 recipes.addShaped(<appliedenergistics2:material:52>, [
     [<appliedenergistics2:quartz_glass>, <ore:dustGlowstone>, <appliedenergistics2:quartz_glass>],
     [<ore:dustGlowstone>, <factorytech:machinepart:130>, <ore:dustGlowstone>],
-    [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
+    [allPlastic, <contenttweaker:usb_module>, allPlastic]
 ]);
 recipes.remove(<appliedenergistics2:material:39>);
 recipes.addShaped(<appliedenergistics2:material:39>, [
     [<appliedenergistics2:quartz_glass>, <ore:dustRedstone>, <appliedenergistics2:quartz_glass>],
     [<ore:dustRedstone>, <ore:dustGlowstone>, <ore:dustRedstone>],
-    [<pneumaticcraft:plastic:7>, <contenttweaker:usb_module>, <pneumaticcraft:plastic:7>]
+    [allPlastic, <contenttweaker:usb_module>, allPlastic]
 ]);
+recipes.remove(<appliedenergistics2:molecular_assembler>);
+recipes.addShapeless(<appliedenergistics2:molecular_assembler>, [f, c, <appliedenergistics2:quartz_glass>]);
 recipes.remove(f);
-recipes.addShaped(f, [
+recipes.addShaped(f * 4, [
     [<pneumaticcraft:plastic:7>, <ore:plateAluminum>, <pneumaticcraft:plastic:7>],
     [<ore:plateAluminum>, <contenttweaker:crafting_crystal>, <ore:plateAluminum>],
     [<pneumaticcraft:plastic:7>, <ore:plateAluminum>, <pneumaticcraft:plastic:7>]
 ]);
-recipes.remove(<bloodmagic:activation_crystal:1>);
 
+recipes.remove(<thaumicenergistics:essentia_import>);
+recipes.addShapeless(<thaumicenergistics:essentia_import>, [wire, e, d]);
+recipes.remove(<thaumicenergistics:essentia_export>);
+recipes.addShapeless(<thaumicenergistics:essentia_export>, [wire, e, b]);
+recipes.remove(<thaumicenergistics:essentia_storage>);
+recipes.addShapeless(<thaumicenergistics:essentia_storage>, [wire, e, b, d]);
+recipes.addShapeless(<thaumicenergistics:infusion_provider>, [f, e, n]);
+recipes.addShapeless(<thaumicenergistics:arcane_assembler>, [f, e, c, <appliedenergistics2:quartz_glass>]);
+
+recipes.remove(<bloodmagic:activation_crystal:1>);
 recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_1k");
 recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_4k");
 recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_16k");
@@ -294,7 +306,7 @@ recipes.addShaped(<appliedenergistics2:controller>, [
 ]);
 
 recipes.remove(<appliedenergistics2:material:53>);
-recipes.addShapeless(<appliedenergistics2:material:53>, [c]);
+recipes.addShapeless(<appliedenergistics2:material:53>, [c, c, c]);
 
 recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "modules"}), [
     [null, <pneumaticcraft:printed_circuit_board>, null],

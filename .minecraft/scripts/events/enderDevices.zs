@@ -12,7 +12,7 @@ import mods.zenutils.DataUpdateOperation;
 static enderDevices as int[][IItemStack] = {
     // name: [aura consumption, ignore meta]
     <enderstorage:ender_storage:0>: [50, 1],
-    <enderstorage:ender_storage:1>: [50, 1], // getItem of ender tank returns ender storage, ignore meta
+    <enderstorage:ender_storage:1>: [50, 1], // getItem of ender tank returns ender chest, ignore meta
     <mekanism:machineblock3>: [100, 0],
     <enderio:block_normal_wireless_charger>: [40, 1],
     <enderio:block_enhanced_wireless_charger:0>: [40, 1],

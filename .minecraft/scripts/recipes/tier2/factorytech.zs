@@ -4,6 +4,7 @@ import mods.factorytech.DrillGrinder;
 import mods.factorytech.ScrapFurnace;
 
 Agitator.addRecipe(<liquid:h2so4> * 50, null, <mekanism:salt>, <liquid:liquidhydrogenchloride> * 100, null);
+Agitator.addRecipe(<liquid:h2so4> * 250, null, <mekanism:saltblock>, <liquid:liquidhydrogenchloride> * 400, null);
 ElectricFurnace.removeRecipe(<appliedenergistics2:material:5>);
 Agitator.removeRecipe(null, <liquid:energite> * 200);
 Agitator.addRecipe(<liquid:pyrotheum> * 100, <liquid:h2so4> * 100, <factorytech:intermediate:3>, <liquid:energite> * 200, null);

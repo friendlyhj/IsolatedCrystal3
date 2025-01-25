@@ -1,8 +1,10 @@
 {
-	x: 6.0d,
+	x: 3.0d,
 	y: 1.0d,
 	dependencies: [
-		"b72cdb97"
+		"b8ac3adc",
+		"20b2c5a3",
+		"f5fcd281"
 	],
 	tasks: [{
 		uid: "e02e95e8",
@@ -10,10 +12,5 @@
 		items: [{
 			item: "nuclearcraft:cobblestone_generator"
 		}]
-	}],
-	rewards: [{
-		uid: "23d364e3",
-		type: "random",
-		table: 0
 	}]
 }

@@ -1,13 +1,13 @@
-filename = 'ae2-uel-v0.56.6.jar'
+filename = 'ae2-uel-v0.56.5.jar'
 name = 'AE2 Unofficial Extended Life'
 side = 'both'
 
 [download]
-hash = '5cdc64def700aa1554bca3584dc3d278ba608d22'
+hash = '6eb5fb7611ef073b5fb58e1cf41c2374f608797f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5411078
+file-id = 5378163
 project-id = 570458

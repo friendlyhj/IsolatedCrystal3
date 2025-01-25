@@ -111,7 +111,7 @@ val colors as int[string] = {
 };
 
 for name, color in colors {
-    val block = VanillaFactory.createBlock(name ~ "_fruit_block", <blockmaterial:plants>);
+    val block = VanillaFactory.createBlock(name ~ "_fruit_block", <blockmaterial:grass>);
     block.blockHardness = 1.0f;
     block.textureLocation = ResourceLocation.create("contenttweaker:blocks/crystal_fruit_block");
     block.blockLayer = "TRANSLUCENT";
