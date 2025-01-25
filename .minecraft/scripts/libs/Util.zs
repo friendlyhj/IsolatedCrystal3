@@ -133,7 +133,7 @@ $expand IBlockPos$rotateYNorthUntil(facing as IFacing) as IBlockPos {
     var current as IFacing = north;
     var rot = this;
     while (current != facing) {
-        current = facing.rotateY();
+        current = current.rotateY();
         rot = IBlockPos.create(-rot.getZ(), rot.getY(), rot.getX());
     }
     return rot;

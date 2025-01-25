@@ -87,7 +87,7 @@ RecipeBuilder.newBuilder("oil", "oil_fabricator", 400)
     .addAspectInput("terra", 1)
     .addStartHandler(function(event as RecipeStartEvent) {
         val controller = event.controller;
-        val inputBus = controller.world.getItemHandler(controller.pos.offset(IBlockPos.create(2, 0, 2).rotateYNorthUntil(controller.facing)), up);
+        val inputBus = controller.world.getItemHandler(controller.relativePos(2, 0, 2), up);
         val consumeSlots as int[string] = {};
         var mmMatchedItem as string = null;
         for slot, item in inputBus {
@@ -113,7 +113,7 @@ RecipeBuilder.newBuilder("oil", "oil_fabricator", 400)
         val extraOil = Math.round(0.00018939 * pow(extra, 5) - 0.01044 * pow(extra, 4) + 0.1532 * pow(extra, 3) + 0.3753 * pow(extra, 2) + 79.48 * extra);
         val preTickOutput = extraOil / 800;
         val moduloOutput = extraOil % 800;
-        val outputBus = controller.world.getLiquidHandler(controller.pos.offset(IBlockPos.create(-2, 0, 2).rotateYNorthUntil(controller.facing)), up);
+        val outputBus = controller.world.getLiquidHandler(controller.relativePos(-2, 0, 2), up);
         if (event.activeRecipe.tick <= moduloOutput) {
             outputBus.fill(<liquid:oil> * (preTickOutput + 1), true);
         } else if (preTickOutput != 0) {

@@ -342,3 +342,5 @@ recipeTweak(true, <botania:pool:3>, [
     [<astralsorcery:blockmarble>, <botania:manaresource:9>, <astralsorcery:blockmarble>],
     [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>]
 ]);
+
+recipes.replaceAllOccurences(<factorytech:machinepart:71>, <factorytech:machinepart:72>);
