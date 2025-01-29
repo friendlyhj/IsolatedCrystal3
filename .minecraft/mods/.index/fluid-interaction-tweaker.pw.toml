@@ -1,13 +1,13 @@
-filename = 'fluidintetweaker-1.5.1.jar'
+filename = 'fluidintetweaker-1.5.2.jar'
 name = 'Fluid Interaction Tweaker'
 side = 'both'
 
 [download]
-hash = '3afe6c6e55d64d590ad3969eb802316d112854b6'
+hash = '861e5d3bb1b09a48a5594c23a2ef3fcb1319948d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5991805
+file-id = 6136015
 project-id = 1094214
