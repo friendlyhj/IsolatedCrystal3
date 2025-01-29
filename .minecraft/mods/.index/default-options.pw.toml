@@ -1,0 +1,13 @@
+filename = 'DefaultOptions_1.12.2-9.2.8.jar'
+name = 'Default Options'
+side = 'both'
+
+[download]
+hash = 'e3197fc44aa2f59897713a8889a5a56c0f8ccbf3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 2624732
+project-id = 232131
