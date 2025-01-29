@@ -13,5 +13,10 @@
 		items: [{
 			item: "contenttweaker:crushed_crushed"
 		}]
+	}],
+	rewards: [{
+		uid: "681a522f",
+		type: "random",
+		table: 2
 	}]
 }

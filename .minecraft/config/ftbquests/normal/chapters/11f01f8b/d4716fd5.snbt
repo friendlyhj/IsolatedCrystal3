@@ -11,5 +11,10 @@
 			item: "advancedmortars:mortar"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5993c8e6",
+		type: "random",
+		table: 2
 	}]
 }

@@ -14,5 +14,10 @@
 		items: [{
 			item: "minecraft:blaze_powder"
 		}]
+	}],
+	rewards: [{
+		uid: "0e88ca02",
+		type: "random",
+		table: 2
 	}]
 }

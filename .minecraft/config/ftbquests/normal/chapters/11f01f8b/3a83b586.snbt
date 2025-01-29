@@ -14,5 +14,10 @@
 		items: [{
 			item: "minecraft:fire_charge"
 		}]
+	}],
+	rewards: [{
+		uid: "5ebc1ce0",
+		type: "random",
+		table: 2
 	}]
 }

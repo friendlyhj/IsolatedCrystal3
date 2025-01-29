@@ -16,5 +16,10 @@
 		type: "item",
 		team_reward: 0b,
 		item: "naturesaura:eye_improved"
+	},
+	{
+		uid: "77b7fc61",
+		type: "random",
+		table: 2
 	}]
 }

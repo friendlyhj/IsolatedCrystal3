@@ -18,5 +18,10 @@
 		items: [{
 			item: "botania:livingwood"
 		}]
+	}],
+	rewards: [{
+		uid: "ac1674f3",
+		type: "random",
+		table: 2
 	}]
 }

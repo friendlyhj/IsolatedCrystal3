@@ -14,5 +14,10 @@
 		items: [{
 			item: "contenttweaker:blazing_spark"
 		}]
+	}],
+	rewards: [{
+		uid: "89c1e958",
+		type: "random",
+		table: 2
 	}]
 }

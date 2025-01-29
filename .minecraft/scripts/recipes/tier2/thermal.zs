@@ -14,3 +14,5 @@ Insolator.addRecipe(<naturesaura:gold_leaf> * 3, <naturesaura:gold_leaf>, <therm
 Insolator.addRecipe(<naturesaura:gold_leaf> * 6, <naturesaura:gold_leaf>, <thermalfoundation:fertilizer:1>, 6400);
 Insolator.addRecipe(<naturesaura:gold_leaf> * 9, <naturesaura:gold_leaf>, <thermalfoundation:fertilizer:2>, 9600);
 Crucible.addRecipe(<liquid:mercury> * 144, <thaumcraft:quicksilver>, 800);
+InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:golden_rail>);
+InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:rail>);

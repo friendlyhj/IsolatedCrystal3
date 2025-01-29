@@ -10,5 +10,10 @@
 		items: [{
 			item: "minecraft:gunpowder"
 		}]
+	}],
+	rewards: [{
+		uid: "e707a05e",
+		type: "random",
+		table: 2
 	}]
 }

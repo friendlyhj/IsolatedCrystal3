@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	dependencies: [
+		"25eb07da",
+		"a3d6f725",
+		"9a101ae6",
+		"42b6afe1",
+		"af05325f",
+		"194cde31",
+		"05f59ccb"
+	],
+	tasks: [{
+		uid: "8f39981f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:iris_crystal"
+		}]
+	}]
+}

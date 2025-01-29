@@ -19,5 +19,10 @@
 			item: "naturesaura:gold_powder"
 		}],
 		count: 16L
+	}],
+	rewards: [{
+		uid: "d7723746",
+		type: "random",
+		table: 2
 	}]
 }

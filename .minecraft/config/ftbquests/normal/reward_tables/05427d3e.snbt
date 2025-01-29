@@ -1,6 +1,6 @@
 {
 	title: "tier2",
-	icon: "minecraft:chest",
+	icon: "thaumcraft:hungry_chest",
 	loot_size: 1,
 	rewards: [{
 		team_reward: 1b,

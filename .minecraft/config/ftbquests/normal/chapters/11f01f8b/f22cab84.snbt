@@ -39,5 +39,10 @@
 			},
 			id: "botania:specialflower"
 		}]
+	}],
+	rewards: [{
+		uid: "2464372a",
+		type: "random",
+		table: 2
 	}]
 }

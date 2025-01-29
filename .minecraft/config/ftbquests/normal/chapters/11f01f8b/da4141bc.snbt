@@ -10,5 +10,10 @@
 		items: [{
 			item: "minecraft:furnace"
 		}]
+	}],
+	rewards: [{
+		uid: "0cac06db",
+		type: "random",
+		table: 2
 	}]
 }

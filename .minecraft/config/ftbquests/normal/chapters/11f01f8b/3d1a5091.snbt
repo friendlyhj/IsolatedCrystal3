@@ -29,5 +29,10 @@
 			id: "tconstruct:rack"
 		},
 		count: 4
+	},
+	{
+		uid: "53a5443a",
+		type: "random",
+		table: 2
 	}]
 }

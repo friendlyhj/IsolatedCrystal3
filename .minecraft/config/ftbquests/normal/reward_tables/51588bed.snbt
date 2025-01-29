@@ -1,0 +1,97 @@
+{
+	title: "tier1",
+	icon: "minecraft:chest",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:bread",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 17",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 15",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 10",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 19",
+		count: 8
+	},
+	{
+		item: "minecraft:cookie",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 12",
+		count: 8
+	},
+	{
+		item: "minecraft:cooked_porkchop",
+		count: 8
+	},
+	{
+		item: "minecraft:cooked_fish",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 11",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 13",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 14",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 18",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 20",
+		count: 8
+	},
+	{
+		item: "minecraft:cooked_fish 1 1",
+		count: 8
+	},
+	{
+		item: "minecraft:cooked_chicken",
+		count: 8
+	},
+	{
+		item: "minecraft:cooked_rabbit",
+		count: 8
+	},
+	{
+		item: "minecraft:cooked_mutton",
+		count: 8
+	},
+	{
+		item: "minecraft:cooked_beef",
+		count: 8
+	},
+	{
+		item: "minecraft:pumpkin_pie",
+		count: 8
+	},
+	{
+		item: "minecraft:baked_potato",
+		count: 8
+	},
+	{
+		item: "calculator:cookedbroccoli",
+		count: 8
+	},
+	{
+		item: "actuallyadditions:item_food 1 5",
+		count: 8
+	}]
+}

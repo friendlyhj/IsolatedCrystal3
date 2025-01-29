@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:felpumpkin"
 		}]
+	}],
+	rewards: [{
+		uid: "45908a3c",
+		type: "random",
+		table: 2
 	}]
 }

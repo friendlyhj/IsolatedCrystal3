@@ -10,5 +10,10 @@
 		items: [{
 			item: "tconstruct:smeltery_controller"
 		}]
+	}],
+	rewards: [{
+		uid: "1fd1f4ff",
+		type: "random",
+		table: 2
 	}]
 }

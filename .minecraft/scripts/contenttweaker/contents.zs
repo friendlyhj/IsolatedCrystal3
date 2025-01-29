@@ -100,7 +100,7 @@ crusher.register();
 val destructionMatrix = VanillaFactory.createBlock("destruction_matrix", <blockmaterial:rock>);
 destructionMatrix.register();
 
-val colors as int[string] = {
+val colors as int[string]$orderly = {
     "red": 0xb92837,
     "orange": 0xf19149,
     "yellow": 0xfff45c,
@@ -234,3 +234,8 @@ for name, color in materials {
         .build();
     material.registerPart(sacrifice);
 }
+
+val flower  = VanillaFactory.createSubTileGenerating("irisotos");
+flower.range = 1;
+flower.maxMana = 10000000;
+flower.register();

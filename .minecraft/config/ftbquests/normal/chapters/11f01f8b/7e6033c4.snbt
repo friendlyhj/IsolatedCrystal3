@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:fertilizer"
 		}]
+	}],
+	rewards: [{
+		uid: "5dbce1e1",
+		type: "random",
+		table: 2
 	}]
 }

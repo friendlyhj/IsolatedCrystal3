@@ -1,0 +1,85 @@
+{
+	x: -3.0d,
+	y: 0.0d,
+	dependencies: [
+		"b3c85646"
+	],
+	tasks: [{
+		uid: "d15b43f2",
+		type: "item",
+		items: [{
+			tag: {
+				Energy: 16000000
+			},
+			id: "draconicevolution:draconic_helm"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c33a24ee",
+		type: "item",
+		items: [{
+			tag: {
+				Energy: 16000000
+			},
+			id: "draconicevolution:draconic_chest"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3e33da0a",
+		type: "item",
+		items: [{
+			tag: {
+				Energy: 16000000
+			},
+			id: "draconicevolution:draconic_legs"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "962ea85b",
+		type: "item",
+		items: [{
+			tag: {
+				Energy: 16000000
+			},
+			id: "draconicevolution:draconic_boots"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "54dc4efc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 27
+				}
+			},
+			tag: {
+				Energy: 48000000
+			},
+			id: "draconicevolution:draconic_staff_of_power"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a50524f7",
+		type: "item",
+		items: [{
+			tag: {
+				Energy: 16000000
+			},
+			id: "draconicevolution:draconic_bow"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

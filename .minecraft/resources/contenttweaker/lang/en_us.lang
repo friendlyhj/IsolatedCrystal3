@@ -108,10 +108,12 @@ modpack.tooltip.mechanical_artisan=Make recipe complete instantly
 modpack.tooltip.aura_consume=§2Ender device，consume %s aura/tick
 modpack.tooltip.netherrack_fail.0=It's obviously not the product you wanted.
 modpack.tooltip.netherrack_fail.1=It might be worth trying to process within its native environment
-
+modpack.tooltip.ender_star=Right-click to transport to The End
+modpack.tooltip.irisotos=The Color of Miracles
 
 modpack.info.time_real=Real time: %s
 modpack.info.time_game=Played for %s hours, %s minutes
 
 contenttweaker.part.ore_sacrifice=%s Scarifice
 
+tile.botania:flower.irisotos.name=Irisotos

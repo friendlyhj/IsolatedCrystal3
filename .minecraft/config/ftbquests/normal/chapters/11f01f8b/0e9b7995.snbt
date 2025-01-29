@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:terraplate"
 		}]
+	}],
+	rewards: [{
+		uid: "2afd8aa7",
+		type: "random",
+		table: 2
 	}]
 }

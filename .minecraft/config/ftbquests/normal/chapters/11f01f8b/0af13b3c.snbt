@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:cocoon"
 		}]
+	}],
+	rewards: [{
+		uid: "7961a07a",
+		type: "random",
+		table: 2
 	}]
 }

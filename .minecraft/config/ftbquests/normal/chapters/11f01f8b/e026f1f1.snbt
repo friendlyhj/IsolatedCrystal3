@@ -11,5 +11,10 @@
 		items: [{
 			item: "botania:alchemycatalyst"
 		}]
+	}],
+	rewards: [{
+		uid: "dc8ef351",
+		type: "random",
+		table: 2
 	}]
 }

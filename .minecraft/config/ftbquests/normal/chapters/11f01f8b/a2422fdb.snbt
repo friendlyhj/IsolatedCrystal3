@@ -12,5 +12,10 @@
 		items: [{
 			item: "minecraft:cobblestone"
 		}]
+	}],
+	rewards: [{
+		uid: "d3816b6b",
+		type: "random",
+		table: 2
 	}]
 }

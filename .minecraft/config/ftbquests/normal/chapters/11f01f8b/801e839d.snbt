@@ -11,5 +11,10 @@
 		items: [{
 			item: "contenttweaker:completed_afflatus_of_crafting"
 		}]
+	}],
+	rewards: [{
+		uid: "b8f4cc12",
+		type: "random",
+		table: 2
 	}]
 }

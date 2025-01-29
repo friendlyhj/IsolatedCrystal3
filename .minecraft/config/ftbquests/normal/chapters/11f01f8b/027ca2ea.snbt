@@ -14,5 +14,10 @@
 		items: [{
 			item: "contenttweaker:blood_clot"
 		}]
+	}],
+	rewards: [{
+		uid: "9e6f3ef2",
+		type: "random",
+		table: 2
 	}]
 }

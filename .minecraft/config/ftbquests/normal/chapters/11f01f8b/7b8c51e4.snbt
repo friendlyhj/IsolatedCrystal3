@@ -18,5 +18,10 @@
 		type: "item",
 		item: "minecraft:torch",
 		count: 16
+	},
+	{
+		uid: "cf0cdc8a",
+		type: "random",
+		table: 2
 	}]
 }

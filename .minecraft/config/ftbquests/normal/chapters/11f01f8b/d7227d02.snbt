@@ -31,5 +31,10 @@
 			tag: {},
 			id: "botania:managun"
 		}
+	},
+	{
+		uid: "ef0f0177",
+		type: "random",
+		table: 2
 	}]
 }

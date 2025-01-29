@@ -1,0 +1,18 @@
+{
+	x: 4.0d,
+	y: 3.0d,
+	text: [
+		"右键以传送至末地"
+	],
+	dependencies: [
+		"194cde31",
+		"a3d6f725"
+	],
+	tasks: [{
+		uid: "e0641120",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 1 19"
+		}]
+	}]
+}

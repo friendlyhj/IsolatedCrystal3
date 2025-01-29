@@ -49,10 +49,30 @@ Infusion.registerRecipe("essentia_module", "", <contenttweaker:essentia_module> 
     <thaumcraft:quicksilver>
 ]);
 
-for name, part in MaterialSystem.getMaterialPartsByRegex(".*ore_sacrifice.*") {
-    val materialName = part.getMaterial().getName();
-    val block = oreDict.get("block" ~ StaticString.capitalize(materialName));
-    Infusion.registerRecipe(name, "", part.getItemStack(), 7.5, [
+val sacrifices as string[] = [
+    "iron",
+    "coal",
+    "copper",
+    "lead",
+    "tin",
+    "nickel",
+    "silver",
+    "lapis",
+    "aluminum",
+    "gold",
+    "iridium",
+    "osmium",
+    "redstone",
+    "certus",
+    "diamond",
+    "emerald",
+    "platinum",
+    "uranium"
+];
+
+for name in sacrifices {
+    val block = oreDict.get("block" ~ StaticString.capitalize(name));
+    Infusion.registerRecipe(name + "_ore_sacrifices", "", <item:contenttweaker:${name}_ore_sacrifice>, 7.5, [
         <aspect:desiderium> * 50, <aspect:terra> * 40, <aspect:alienis> * 20, <aspect:vacuos> * 20
     ], block, [
         <contenttweaker:metal_crystal>,

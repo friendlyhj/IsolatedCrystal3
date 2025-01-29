@@ -10,5 +10,10 @@
 		items: [{
 			item: "naturesaura:gold_fiber"
 		}]
+	}],
+	rewards: [{
+		uid: "b2de2447",
+		type: "random",
+		table: 2
 	}]
 }

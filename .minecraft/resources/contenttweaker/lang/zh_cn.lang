@@ -95,6 +95,7 @@ gas.lpg=石油气
 
 material.iron_compressed.name=压缩铁
 material.tin.name=锡
+material.aluminum.name=铝
 
 modpack.tooltip.afflatus_of_crafting.requirement=需要进行%s/%s次不同的合成
 modpack.tooltip.afflatus_of_crafting.next=未进行的合成样例：
@@ -109,6 +110,8 @@ modpack.tooltip.mechanical_artisan=使配方瞬间完成
 modpack.tooltip.aura_consume=§2末影设备，消耗 %s 灵气/tick
 modpack.tooltip.netherrack_fail.0=这显然不是你想要的产物
 modpack.tooltip.netherrack_fail.1=也许应该尝试下该产物的原生环境内处理
+modpack.tooltip.ender_star=右键以传送至末地
+modpack.tooltip.irisotos=奇迹的颜色
 
 modpack.info.time_real=现实时间 %s
 modpack.info.time_game=已游玩 %s 小时 %s 分钟
@@ -134,3 +137,5 @@ modularmachinery.crystal_pillar_blue=水晶柱（蓝）
 modularmachinery.crystal_pillar_purple=水晶柱（紫）
 
 contenttweaker.part.ore_sacrifice=%s祭品
+
+tile.botania:flower.irisotos.name=彩虹莲
