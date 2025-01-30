@@ -43,3 +43,22 @@ Altar.addTraitAltarRecipe("isloatedcrystal:ender_star", <actuallyadditions:item_
     <minecraft:prismarine:1>, <actuallyadditions:block_misc:2>, <calculator:purifiedobsidian>, <tconstruct:metal:3>
 ]);
 
+Altar.addTraitAltarRecipe("isloatedcrystal:draconic_core", <draconicevolution:draconic_core>, 2000, 20, [
+    <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>,
+    null,
+    <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>, <ore:ingotDraconium>,
+    null, null, null, null,
+    <extrautils2:decorativesolid:8>, <botania:bifrostperm>, <botania:bifrostperm>, <extrautils2:decorativesolid:8>,
+    <extrautils2:decorativesolid:8>, <botania:bifrostperm>, <botania:bifrostperm>, <extrautils2:decorativesolid:8>,
+    <ore:ingotGold>, <thaumcraft:quicksilver>, <thaumcraft:quicksilver>, <ore:ingotGold>
+]);
+
+Altar.addTraitAltarRecipe("isolatedcrystal:wyvern_core", <draconicevolution:wyvern_core>, 3000, 40, [
+    null, <draconicevolution:draconic_core>, null, <draconicevolution:draconic_core>,
+    <contenttweaker:iris_crystal>,
+    <draconicevolution:draconic_core>, null, <draconicevolution:draconic_core>, null,
+    null, null, null, null,
+    <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>,
+    <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>,
+    <thaumcraft:ingot:1>, <thaumcraft:ingot:1>, <thaumcraft:ingot:1>, <thaumcraft:ingot:1>
+]);

@@ -71,12 +71,29 @@ function getFlowerMana(w as IWorld,p as IBlockPos)as int{
     if(!isNull(d) && d has "subTileCmp")return d.subTileCmp.mana.asInt();
     return 0;
 }
-function irisotosWork(world as IWorld,pos as IBlockPos) as void {
+function irisotosWork(world as IWorld, pos as IBlockPos) as void {
     for entity in world.getEntitiesInArea(pos.add(-1, -1, -1), pos.add(1, 1, 1)) {
         if (entity instanceof IEntityItem) {
             val entityItem as IEntityItem = entity;
+            val item = entityItem.item;
             if (<botania:elfglass>.matches(entityItem.item)) {
-                entityItem.setItem(<botania:bifrostperm> * entityItem.item.amount);
+                val time as int = entityItem.forgeData.deepGetInt("iris");
+                entityItem.update({iris: time + 1});
+                if (time >= 40) {
+                    if (item.amount == 1) {
+                        entityItem.setDead();
+                    } else {
+                        entityItem.setItem(<botania:elfglass> * (item.amount - 1));
+                        entityItem.update({iris: 0});
+                    }
+                    world.spawnEntity(<botania:bifrostperm>.createEntityItem(world, entity.x as float, entity.y as float, entity.z as float));
+                }
+                NetworkHandler.sendToAllAround("IrisotosTransform", entity.x, entity.y, entity.z, 10, world.getDimension(), function(b) {
+                    b.writeDouble(entity.x);
+                    b.writeDouble(entity.y);
+                    b.writeDouble(entity.z);
+                });
+                return;
             }
         }
     }
@@ -225,6 +242,32 @@ NetworkHandler.registerServer2ClientMessage("IrisotosBotFXDat",function(p,b){
             }
         }
     }
+});
+
+static colors as int[] = [
+    0xb92837,
+    0xf19149,
+    0xfff45c,
+    0x32b16c,
+    0x13b5b1,
+    0x0068b7,
+    0x66188b
+];
+
+NetworkHandler.registerServer2ClientMessage("IrisotosTransform",function(player,buf){
+    val x = buf.readDouble();
+    val y = buf.readDouble();
+    val z = buf.readDouble();
+    val random = player.world.random;
+    val rad = random.nextDouble(0, 3.1416 * 2);
+    val motionX = Math.sin(rad) * 0.05;
+    val motionY = 0.1;
+    val motionZ = Math.cos(rad) * 0.05;
+    val color = colors[random.nextInt(7)];
+    val r = 1.0f * (color / 0x10000) / 255.0f;
+    val g = 1.0f * ((color / 0x100) & 0xff) / 255.0f;
+    val b = 1.0f * (color & 0xff) / 255.0f;
+    IBotaniaFXHelper.wispFX(x, y, z, r, g, b, 0.3f, motionX, motionY, motionZ);
 });
 
 <botania:specialflower>.withTag({type: "irisotos"}).addTooltip(game.localize("modpack.tooltip.irisotos"));
