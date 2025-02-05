@@ -19,6 +19,7 @@
 	{
 		uid: "ea383fdb",
 		type: "item",
+		team_reward: 0b,
 		item: "calculator:wrench"
 	}]
 }

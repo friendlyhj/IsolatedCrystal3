@@ -254,15 +254,15 @@ static colors as int[] = [
     0x66188b
 ];
 
-NetworkHandler.registerServer2ClientMessage("IrisotosTransform",function(player,buf){
+NetworkHandler.registerServer2ClientMessage("IrisotosTransform", function(player, buf){
     val x = buf.readDouble();
     val y = buf.readDouble();
     val z = buf.readDouble();
     val random = player.world.random;
-    val rad = random.nextDouble(0, 3.1416 * 2);
-    val motionX = Math.sin(rad) * 0.05;
+    val d = random.nextInt(360);
+    val motionX = Vector3D.sin(d) * 0.05;
     val motionY = 0.1;
-    val motionZ = Math.cos(rad) * 0.05;
+    val motionZ = Vector3D.cos(d) * 0.05;
     val color = colors[random.nextInt(7)];
     val r = 1.0f * (color / 0x10000) / 255.0f;
     val g = 1.0f * ((color / 0x100) & 0xff) / 255.0f;

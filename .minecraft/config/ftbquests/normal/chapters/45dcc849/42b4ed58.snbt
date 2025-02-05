@@ -1,0 +1,33 @@
+{
+	x: 16.5d,
+	y: -16.5d,
+	text: [
+		"利用星辰水晶免去星座共鸣步骤直接制作天辉聚能水晶。",
+		"水晶将会自动随机与五个明亮星座其一共鸣。"
+	],
+	dependencies: [
+		"90164c6a"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "137ba919",
+		type: "item",
+		items: [{
+			tag: {
+				astralsorcery: {
+					constellationName: "astralsorcery.constellation.discidia",
+					crystalProperties: {
+						size: 900,
+						sizeOverride: -1,
+						purity: 100,
+						collectiveCapability: 100,
+						fract: 0
+					},
+					collectorType: 1
+				}
+			},
+			id: "astralsorcery:blockcelestialcollectorcrystal"
+		}],
+		ignore_nbt: 1b
+	}]
+}

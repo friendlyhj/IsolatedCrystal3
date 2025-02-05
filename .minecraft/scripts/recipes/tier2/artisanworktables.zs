@@ -1,6 +1,7 @@
 #reloadable
 
 import crafttweaker.item.IItemStack;
+import mods.zenutils.DataUpdateOperation;
 import scripts.recipes.lib.ArtisanRecipeBuilder as RecipeBuilder;
 import scripts.libs.Util;
 import native.slimeknights.tconstruct.library.TinkerRegistry;
@@ -464,4 +465,27 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addTool(<ore:artisansSolderer>, 10)
   .addOutput(<modularmachinery:blockenergyinputhatch>)
+  .create();
+
+RecipeBuilder.get("mage", "celestial_crystal", true)
+  .setShaped([
+    [<contenttweaker:astral_crystal>, <thermalfoundation:storage_alloy:6>, <contenttweaker:astral_crystal>],
+    [<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcelestialcrystal>.marked("c"), <astralsorcery:itemcraftingcomponent:4>],
+    [<contenttweaker:astral_crystal>, <astralsorcery:itemcraftingcomponent:4>, <contenttweaker:astral_crystal>]])
+  .addTool(<ore:artisansGrimoire>, 42)
+  .setFluid(<liquid:mercury> * 1440)
+  .addOutput(<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {collectorType: 1}}))
+  .setRecipeFunction(function(out, ins, info) {
+    val inputTag = ins.c.tag;
+    val constellations as string[] = [
+      "astralsorcery.constellation.discidia",
+      "astralsorcery.constellation.armara",
+      "astralsorcery.constellation.vicio",
+      "astralsorcery.constellation.aevitas",
+      "astralsorcery.constellation.evorsio",
+    ];
+    val constellation = constellations[info.world.random.nextInt(constellations.length)];
+    val outputTag = inputTag.deepUpdate({astralsorcery: {constellationName: constellation, collectorType: 1}}, DataUpdateOperation.MERGE);
+    return out.withTag(outputTag);
+  })
   .create();

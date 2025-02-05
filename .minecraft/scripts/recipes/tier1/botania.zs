@@ -24,13 +24,6 @@ RuneAltar.addRecipe(<contenttweaker:crafting_crystal>, [
     <contenttweaker:completed_afflatus_of_crafting>,
     <contenttweaker:completed_afflatus_of_crafting>,
     <contenttweaker:completed_afflatus_of_crafting>,
-    <contenttweaker:completed_afflatus_of_crafting>,
-    <contenttweaker:completed_afflatus_of_crafting>,
-    <contenttweaker:completed_afflatus_of_crafting>,
-    <contenttweaker:completed_afflatus_of_crafting>,
-    <contenttweaker:completed_afflatus_of_crafting>,
-    <contenttweaker:completed_afflatus_of_crafting>,
-    <contenttweaker:completed_afflatus_of_crafting>,
     <botania:manaresource:23>,
     <appliedenergistics2:material>
 ], 6000);

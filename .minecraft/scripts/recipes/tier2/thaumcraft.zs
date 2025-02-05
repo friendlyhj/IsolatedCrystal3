@@ -98,3 +98,7 @@ Infusion.registerRecipe("awakened_activation_crystal", "", <bloodmagic:activatio
 
 Infusion.removeRecipe(<thaumicenergistics:infusion_provider>);
 Infusion.removeRecipe(<thaumicenergistics:arcane_assembler>);
+
+Crucible.removeRecipe(<minecraft:string>);
+Crucible.removeRecipe(<minecraft:glowstone_dust>);
+Crucible.removeRecipe(<minecraft:slime_ball>);

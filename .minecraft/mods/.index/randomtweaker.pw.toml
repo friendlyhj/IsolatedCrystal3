@@ -1,13 +1,13 @@
-filename = 'RandomTweaker-1.4.7.jar'
+filename = 'RandomTweaker-1.4.8.jar'
 name = 'RandomTweaker'
 side = 'both'
 
 [download]
-hash = 'acae8e8f95d1d1215205cb049c7c3cddfe9ba1d6'
+hash = '4807365b2decdc808785f5d404586f5ffa75e2b2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5528753
+file-id = 6159498
 project-id = 514170

@@ -25,22 +25,27 @@ zenClass ArtisanRecipeBuilder {
     val outputs as int[IItemStack] = {};
     val extraOutputs as float[IItemStack] = {};
 
-    zenConstructor(type as string, name as string) {
+    zenConstructor(type as string, name as string, noMMRecipe as bool) {
         artisan = scripts.libs.Util.getArtisanRecipeBuilder(type).setName(name);
-        mm = mods.modularmachinery.RecipeBuilder.newBuilder(name, "mechanical_artisan", 120).addEnergyPerTickInput(100);
-        val worktable = IBlockState.getBlockState("artisanworktables:worktable", "variant=" ~ type);
-        mm.addCatalystInput(<artisanworktables:worktable>.withDamage(worktable.meta), [], []);
-        mm.addPostCheckHandler(function(event as RecipeCheckEvent) {
-            val controller = event.controller;
-            val worktablePos = controller.relativePos(0, 1, 1);
-            if (controller.world.getBlockState(worktablePos) != worktable) {
-                event.setFailed("Mismatched worktable");
-            }
-        });
+        if (!noMMRecipe) {
+            mm = mods.modularmachinery.RecipeBuilder.newBuilder(name, "mechanical_artisan", 120).addEnergyPerTickInput(100);
+            val worktable = IBlockState.getBlockState("artisanworktables:worktable", "variant=" ~ type);
+            mm.addCatalystInput(<artisanworktables:worktable>.withDamage(worktable.meta), [], []);
+            mm.addPostCheckHandler(function(event as RecipeCheckEvent) {
+                val controller = event.controller;
+                val worktablePos = controller.relativePos(0, 1, 1);
+                if (controller.world.getBlockState(worktablePos) != worktable) {
+                    event.setFailed("Mismatched worktable");
+                }
+            });
+        }
     }
 
     function setShaped(inputs as IIngredient[][]) as ArtisanRecipeBuilder {
         artisan.setShaped(inputs);
+        if (isNull(mm)) {
+            return this;
+        }
         for item, count in countIngredients(inputs) {
             mm.addItemInput(item * count);
         }
@@ -49,6 +54,9 @@ zenClass ArtisanRecipeBuilder {
 
     function setShapeless(inputs as IIngredient[]) as ArtisanRecipeBuilder {
         artisan.setShapeless(inputs);
+                if (isNull(mm)) {
+            return this;
+        }
         for item, count in countIngredients([inputs]) {
             mm.addItemInput(item * count);
         }
@@ -57,6 +65,9 @@ zenClass ArtisanRecipeBuilder {
 
     function addTool(tool as IIngredient, damage as int) as ArtisanRecipeBuilder {
         artisan.addTool(tool, damage);
+        if (isNull(mm)) {
+            return this;
+        }
         mm.addCatalystInput(tool, ["-" ~ damage], []);
         mm.addPostCheckHandler(function(event as RecipeCheckEvent) {
             val controller = event.controller;
@@ -100,12 +111,18 @@ zenClass ArtisanRecipeBuilder {
 
     function setFluid(liquid as ILiquidStack) as ArtisanRecipeBuilder {
         artisan.setFluid(liquid);
+        if (isNull(mm)) {
+            return this;
+        }
         mm.addFluidInput(liquid);
         return this;
     }
 
     function setSecondaryIngredients(items as IIngredient[]) as ArtisanRecipeBuilder {
         artisan.setSecondaryIngredients(items);
+        if (isNull(mm)) {
+            return this;
+        }
         mm.addItemInputs(items);
         return this;
     }
@@ -142,6 +159,9 @@ zenClass ArtisanRecipeBuilder {
 
     function create() as void {
         artisan.create();
+        if (isNull(mm)) {
+            return;
+        }
         if (outputs.length == 1) {
             mm.addItemOutput(outputs.keys[0]);
         } else {
@@ -201,11 +221,11 @@ zenClass ArtisanRecipeBuilder {
 }
 
 static noNameId as int = 0;
-function get(type as string, name as string = null) as ArtisanRecipeBuilder {
+function get(type as string, name as string = null, noMMRecipe as bool = false) as ArtisanRecipeBuilder {
     var recipeName = name;
     if (isNull(recipeName)) {
         recipeName = "recipe" ~ noNameId;
         noNameId += 1;
     }
-    return ArtisanRecipeBuilder(type, recipeName);
+    return ArtisanRecipeBuilder(type, recipeName, noMMRecipe);
 }

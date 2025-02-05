@@ -11,7 +11,7 @@ import crafttweaker.world.IBlockPos;
 
 function newEssentiaGeneratorRecipe(item as IItemStack, aspect as string) as void {
     RecipeBuilder.newBuilder(aspect, "essentia_generator", 100)
-        .addAspectOutput(aspect, 16)
+        .addAspectOutput(aspect, 36)
         .addItemInput(item)
         .addManaInput(8000, false)
         .build();

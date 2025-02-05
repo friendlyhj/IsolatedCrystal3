@@ -6,6 +6,7 @@ import crafttweaker.data.IData;
 import crafttweaker.event.BlockNeighborNotifyEvent;
 import crafttweaker.event.WorldTickEvent;
 import crafttweaker.event.PlayerRightClickItemEvent;
+import crafttweaker.util.Math;
 import mods.zenutils.I18n;
 import mods.zenutils.DataUpdateOperation;
 
@@ -138,8 +139,8 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     blockName ~= block.meta;
                 }
                 if (name == blockName) {
-                    val drained = world.getAuraChunk(pos).drainAura(pos, auraConsumption);
-                    if (drained != auraConsumption) {
+                    val drained = world.getAuraChunk(pos).drainAura(pos, auraConsumption, true, false);
+                    if (Math.abs(world.dimension) > 1 || drained != auraConsumption) {
                         world.destroyBlock(pos, true);
                     }
                 } else {
