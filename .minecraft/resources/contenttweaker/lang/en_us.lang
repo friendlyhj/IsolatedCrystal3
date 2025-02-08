@@ -111,6 +111,21 @@ modpack.tooltip.netherrack_fail.1=It might be worth trying to process within its
 modpack.tooltip.ender_star=Right-click to transport to The End
 modpack.tooltip.irisotos=The Color of Miracles
 
+modpack.festival.new_year=New Year's Day
+modpack.festival.valentine=Valentine's Day
+modpack.festival.white_valentine=White Valentine's Day
+modpack.festival.520=520
+modpack.festival.halloween=Halloween
+modpack.festival.christmas_eve=Christmas Eve
+modpack.festival.christmas=Christmas
+modpack.festival.new_year_chinese=Chinese New Year's Day
+modpack.festival.lantern=Lantern Festival
+modpack.festival.loong_boat=Loong Boat Festival
+modpack.festival.qixi=Qixi Festival
+modpack.festival.mid_autumn=Mid-Autumn Festival
+
+modpack.festival=§6§lHappy %s!
+
 modpack.info.time_real=Real time: %s
 modpack.info.time_game=Played for %s hours, %s minutes
 

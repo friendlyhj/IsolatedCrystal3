@@ -266,8 +266,10 @@ RecipeBuilder.newBuilder("mine_crystal", "mine_catalyst", 120)
     .addItemInputs(
         <contenttweaker:metal_crystal>,
         <mekanism:scrap> * 12,
-        <extrautils2:compressedcobblestone:2>,
+        <enderio:item_material:75> * 12,
         <calculator:purifiedobsidian> * 4,
+        <extrautils2:compressedcobblestone:2>,
+        <extrautils2:compressednetherrack:2>,
         <nuclearcraft:gem>* 4,
         <nuclearcraft:gem:1>* 4,
         <nuclearcraft:gem:2>* 4,

@@ -397,16 +397,6 @@ RecipeBuilder.get("mage")
   .addOutput(<modularmachinery:blood_resonator_controller>)
   .create();
 
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, <ore:plateIron>, null],
-    [<ore:plateIron>, <contenttweaker:bearing>, <ore:plateIron>],
-    [null, <ore:plateIron>, null]])
-  .addTool(<ore:artisansHammer>, 5)
-  .setFluid(<liquid:soldering> * 72)
-  .addOutput(<factorytech:machinepart:40>)
-  .create();
-
 RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateIron>, <ore:gearTin>, <ore:plateIron>],

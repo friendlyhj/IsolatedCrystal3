@@ -116,6 +116,21 @@ modpack.tooltip.irisotos=奇迹的颜色
 modpack.info.time_real=现实时间 %s
 modpack.info.time_game=已游玩 %s 小时 %s 分钟
 
+modpack.festival.new_year=元旦节
+modpack.festival.valentine=情人节
+modpack.festival.white_valentine=白色情人节
+modpack.festival.520=520
+modpack.festival.halloween=万圣节
+modpack.festival.christmas_eve=平安夜
+modpack.festival.christmas=圣诞节
+modpack.festival.new_year_chinese=春节
+modpack.festival.lantern=元宵节
+modpack.festival.loong_boat=端午节
+modpack.festival.qixi=七夕节
+modpack.festival.mid_autumn=中秋节
+
+modpack.festival=§6§l隔壁家叔叔%s还在玩异次元水晶，你可千万不要像他那样
+
 modularmachinery.essentia_generator=源质生成器
 modularmachinery.mechanical_artisan=机械工匠台
 modularmachinery.oil_fabricator=原油制造机

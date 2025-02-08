@@ -2,22 +2,23 @@
 
 import crafttweaker.data.IData;
 import crafttweaker.event.PlayerLoggedInEvent;
+import crafttweaker.text.ITextComponent;
 import scripts.libs.Util;
 
 static festivals as IData[] = [
     // [name, month, day, isLunar]
-    ["元旦节", 1, 1, false],
-    ["情人节", 2, 14, false],
-    ["白色情人节", 3, 14, false],
+    ["new_year", 1, 1, false],
+    ["valentine", 2, 14, false],
+    ["white_valentine", 3, 14, false],
     ["520", 5, 20, false],
-    ["万圣节", 10, 31, false],
-    ["平安夜", 12, 24, false],
-    ["圣诞节", 12, 25, false],
-    ["春节", 1, 1, true],
-    ["元宵节", 1, 15, true],
-    ["端午节", 5, 5, true],
-    ["七夕节", 7, 7, true],
-    ["中秋节", 8, 15, true],
+    ["halloween", 10, 31, false],
+    ["christmas_eve", 12, 24, false],
+    ["christmas", 12, 25, false],
+    ["new_year_chinese", 1, 1, true],
+    ["lantern", 1, 15, true],
+    ["loong_boat", 5, 5, true],
+    ["qixi", 7, 7, true],
+    ["mid_autumn", 8, 15, true],
 ];
 
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
@@ -29,11 +30,17 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         val isLunar = festival[3].asBool();
         if (isLunar) {
             if (lunar.month == month && lunar.day == day && !lunar.leapMonth.asBool()) {
-                event.player.sendMessage(`§6§l隔壁家叔叔${festival[0]}还在玩异次元水晶，你可千万不要像他那样`);
+                event.player.sendRichTextMessage(
+                    ITextComponent.fromTranslation("modpack.festival", ITextComponent.fromTranslation("modpack.festival." ~ festival[0]))
+                );
+                return;
             }
         } else {
             if (now.month + 1 == month && now.day == day) {
-                event.player.sendMessage(`§6§l隔壁家叔叔${festival[0]}还在玩异次元水晶，你可千万不要像他那样`);
+                event.player.sendRichTextMessage(
+                    ITextComponent.fromTranslation("modpack.festival", ITextComponent.fromTranslation("modpack.festival." ~ festival[0]))
+                );
+                return;
             }
         }
     }

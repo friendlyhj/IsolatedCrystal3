@@ -89,7 +89,6 @@ recipes.remove(<bloodmagic:altar>);
 recipes.remove(<bloodmagic:soul_snare>);
 recipes.remove(<bloodmagic:soul_forge>);
 recipes.remove(<factorytech:intermediate:4>);
-recipes.remove(<factorytech:machinepart:40>);
 recipes.remove(<nuclearcraft:cobblestone_generator>);
 recipes.remove(<thermalexpansion:machine:15>);
 recipes.removeByRecipeName("factorytech:parts/motor");
@@ -336,6 +335,29 @@ recipes.addShaped(<thaumicaugmentation:glass_tube> * 8, [
     [<thaumcraft:tube>, <thaumcraft:tube>, <thaumcraft:tube>],
     [<thaumcraft:tube>, <minecraft:glass>, <thaumcraft:tube>],
     [<thaumcraft:tube>, <thaumcraft:tube>, <thaumcraft:tube>]
+]);
+
+recipes.remove(<botania:manaresource:12>);
+recipes.addShapeless(<botania:manaresource:12> * 2, [
+    <botania:manaresource:16>,
+    <botania:manaresource:16>,
+    <botania:manaresource:8>,
+    <contenttweaker:aura_crystal>,
+    <minecraft:redstone_block>
+]);
+
+recipes.remove(<botania:corporeaspark>);
+recipes.addShapeless(<botania:corporeaspark>, [
+    <botania:spark>,
+    <botania:manaresource:8>,
+    <contenttweaker:aura_crystal>,
+]);
+
+recipes.remove(<botania:corporeaindex>);
+recipes.addShaped(<botania:corporeaindex>, [
+    [<minecraft:ender_pearl>, <minecraft:obsidian>, <minecraft:ender_pearl>],
+    [<minecraft:obsidian>, <botania:corporeaspark>, <minecraft:obsidian>],
+    [<botania:manaresource:9>, <minecraft:obsidian>, <botania:manaresource:9>]
 ]);
 
 recipeTweak(true, <botania:pool:3>, [
