@@ -2,8 +2,8 @@
 	x: 4.5d,
 	y: -18.5d,
 	text: [
-		"从此开始，可以制作末影设备减少走线压力。某些自动化可能还强制使用。但需注意所有末影设备都会持续消耗自然灵气的灵气！",
-		"只有原版三维度的灵气能够支持末影设备的运作。"
+		"{isolatedcrystal.quests.55b6d560.text.1}",
+		"{isolatedcrystal.quests.55b6d560.text.2}"
 	],
 	dependencies: [
 		"5377bba3"

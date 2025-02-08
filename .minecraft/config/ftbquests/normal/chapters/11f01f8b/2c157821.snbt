@@ -2,7 +2,7 @@
 	x: 4.5d,
 	y: -5.5d,
 	text: [
-		"黄色化为泥土"
+		"{isolatedcrystal.quests.2c157821.text.1}"
 	],
 	dependency_requirement: "one_started",
 	tasks: [{

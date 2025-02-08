@@ -2,7 +2,7 @@
 	x: 8.0d,
 	y: 3.7d,
 	text: [
-		"可以当作剪刀使用，来采集高神秘花。"
+		"{isolatedcrystal.quests.723b3d0d.text.1}"
 	],
 	dependencies: [
 		"7e6033c4"
@@ -13,6 +13,22 @@
 		type: "item",
 		items: [{
 			tag: {
+				Special: {
+					Categories: [
+						"tool",
+						"aoe",
+						"harvest",
+						"weapon"
+					]
+				},
+				Stats: {
+					FreeModifiers: 3,
+					MiningSpeed: 2.0f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 0,
+					Attack: 2.0f,
+					Durability: 75
+				},
 				TinkerData: {
 					Materials: [
 						"wood",
@@ -21,22 +37,6 @@
 					],
 					Modifiers: [
 						"toolleveling"
-					]
-				},
-				Stats: {
-					MiningSpeed: 2.0f,
-					FreeModifiers: 3,
-					AttackSpeedMultiplier: 1.0f,
-					HarvestLevel: 0,
-					Attack: 2.0f,
-					Durability: 75
-				},
-				Special: {
-					Categories: [
-						"tool",
-						"aoe",
-						"harvest",
-						"weapon"
 					]
 				},
 				Modifiers: [{
@@ -50,8 +50,8 @@
 					level: 1
 				}],
 				StatsOriginal: {
-					MiningSpeed: 2.0f,
 					FreeModifiers: 3,
+					MiningSpeed: 2.0f,
 					AttackSpeedMultiplier: 1.0f,
 					HarvestLevel: 0,
 					Attack: 2.0f,

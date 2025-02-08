@@ -2,7 +2,7 @@
 	x: 0.0d,
 	y: -6.5d,
 	text: [
-		"在管道输出之前，需要对罐子标记可存入的源质。"
+		"{isolatedcrystal.quests.69fb64c9.text.1}"
 	],
 	dependencies: [
 		"6953c020"

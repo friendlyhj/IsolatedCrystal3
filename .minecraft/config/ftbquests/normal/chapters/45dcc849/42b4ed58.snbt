@@ -2,8 +2,8 @@
 	x: 16.5d,
 	y: -16.5d,
 	text: [
-		"利用星辰水晶免去星座共鸣步骤直接制作天辉聚能水晶。",
-		"水晶将会自动随机与五个明亮星座其一共鸣。"
+		"{isolatedcrystal.quests.42b4ed58.text.1}",
+		"{isolatedcrystal.quests.42b4ed58.text.2}"
 	],
 	dependencies: [
 		"90164c6a"

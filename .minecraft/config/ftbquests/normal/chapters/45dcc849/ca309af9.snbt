@@ -2,8 +2,8 @@
 	x: 3.0d,
 	y: -11.0d,
 	text: [
-		"进入下界，但下界空无一物……",
-		"但下界特殊的环境依然是某些特殊配方的必要条件。如将圆石转换为下界岩。"
+		"{isolatedcrystal.quests.ca309af9.text.1}",
+		"{isolatedcrystal.quests.ca309af9.text.2}"
 	],
 	dependencies: [
 		"73079b58"

@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 3.0d,
 	text: [
-		"玩家受伤后有 20% 几率掉落。"
+		"{isolatedcrystal.quests.027ca2ea.text.1}"
 	],
 	hide_dependency_lines: 1b,
 	dependencies: [

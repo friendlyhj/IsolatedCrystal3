@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: -5.5d,
 	text: [
-		"蓝色化为水源"
+		"{isolatedcrystal.quests.00f479b1.text.1}"
 	],
 	dependency_requirement: "one_started",
 	tasks: [{

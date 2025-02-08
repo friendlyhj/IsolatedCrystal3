@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: -5.5d,
 	text: [
-		"紫色赋予了破坏的能力"
+		"{isolatedcrystal.quests.b2d53557.text.1}"
 	],
 	dependency_requirement: "one_started",
 	tasks: [{

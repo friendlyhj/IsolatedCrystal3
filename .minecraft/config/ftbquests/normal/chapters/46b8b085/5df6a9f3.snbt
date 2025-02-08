@@ -2,8 +2,8 @@
 	x: 11.0d,
 	y: -14.5d,
 	text: [
-		"用于血魔法坠星位标仪式，以实现定向大量矿物的获取。",
-		"发射器可以自动使用激活水晶，以实现自动化仪式。"
+		"{isolatedcrystal.quests.5df6a9f3.text.1}",
+		"{isolatedcrystal.quests.5df6a9f3.text.2}"
 	],
 	hide_dependency_lines: 1b,
 	dependencies: [

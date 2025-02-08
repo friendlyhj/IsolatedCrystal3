@@ -18,8 +18,8 @@
 					2b,
 					2b
 				],
-				RSControl: 0b,
 				Facing: 3b,
+				RSControl: 0b,
 				Level: 0b,
 				Energy: 0
 			},

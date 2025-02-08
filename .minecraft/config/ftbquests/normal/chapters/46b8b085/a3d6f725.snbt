@@ -3,7 +3,7 @@
 	y: -16.75d,
 	shape: "hexagon",
 	text: [
-		"制造时空水晶的机器只能占满一个 9*9*9 的压缩空间，且需要材料同时输入，否则配方将失败。"
+		"{isolatedcrystal.quests.a3d6f725.text.1}"
 	],
 	dependencies: [
 		"24665397",
@@ -28,9 +28,9 @@
 				TrophyColorGreen: 49,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:space_time_crystal",
 					Count: 1,
-					id: "contenttweaker:space_time_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

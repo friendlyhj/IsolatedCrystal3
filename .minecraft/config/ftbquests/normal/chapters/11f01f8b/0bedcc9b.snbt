@@ -2,7 +2,7 @@
 	x: 6.0d,
 	y: -5.5d,
 	text: [
-		"绿色化为树苗"
+		"{isolatedcrystal.quests.0bedcc9b.text.1}"
 	],
 	dependency_requirement: "one_started",
 	tasks: [{

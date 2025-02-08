@@ -2,8 +2,8 @@
 	x: 9.0d,
 	y: -3.5d,
 	text: [
-		"施加红石信号将铁锭以及铁制部件钢化，以得到更高性能的材料与部件。",
-		"但要注意，若钢化时间超过所需时间将会失败，请设法控制工作时间长度。"
+		"{isolatedcrystal.quests.14ba2c02.text.1}",
+		"{isolatedcrystal.quests.14ba2c02.text.2}"
 	],
 	dependencies: [
 		"7ff98f5a"

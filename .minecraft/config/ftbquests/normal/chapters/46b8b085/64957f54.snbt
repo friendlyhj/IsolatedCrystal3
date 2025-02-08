@@ -2,7 +2,7 @@
 	x: 0.5d,
 	y: -13.5d,
 	text: [
-		"高浓度的二氧化碳促进作物生长，是种植琴露果的必要环境。"
+		"{isolatedcrystal.quests.64957f54.text.1}"
 	],
 	dependencies: [
 		"aff11070",

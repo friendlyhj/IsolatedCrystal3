@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 1.0d,
 	text: [
-		"用高热水晶获得你的第二桶熔岩。"
+		"{isolatedcrystal.quests.ae6012ff.text.1}"
 	],
 	dependencies: [
 		"b8ac3adc"

@@ -1,5 +1,5 @@
 {
-	title: "tier2",
+	title: "{isolatedcrystal.quests.05427d3e.title}",
 	icon: "thaumcraft:hungry_chest",
 	loot_size: 1,
 	rewards: [{

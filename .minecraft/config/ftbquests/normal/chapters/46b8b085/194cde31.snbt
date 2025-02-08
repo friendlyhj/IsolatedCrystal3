@@ -3,9 +3,9 @@
 	y: -15.5d,
 	shape: "hexagon",
 	text: [
-		"需要在机器内部需要收容一个一百尺寸的裂隙。",
-		"合成时需要按顺序输入六基础要素各二十，需要哪种要素会根据红石灯笼的信号强度说明。",
-		"奥术强化玻璃并不会阻止裂隙破坏方块，护手核心：守护可以防止裂隙破坏。"
+		"{isolatedcrystal.quests.194cde31.text.1}",
+		"{isolatedcrystal.quests.194cde31.text.2}",
+		"{isolatedcrystal.quests.194cde31.text.3}"
 	],
 	hide_dependency_lines: 1b,
 	dependencies: [
@@ -31,9 +31,9 @@
 				TrophyColorGreen: 47,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:perditio_crystal",
 					Count: 1,
-					id: "contenttweaker:perditio_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

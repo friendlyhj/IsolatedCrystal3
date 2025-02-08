@@ -2,8 +2,8 @@
 	x: 0.0d,
 	y: 0.0d,
 	text: [
-		"供奉七色水晶柱。当七色水晶柱均工作时，它们将汇聚至一点，使日月重新转动。",
-		"当时间流动到第二十四天时，完成该任务。整合包完结。"
+		"{isolatedcrystal.quests.80ea82f3.text.1}",
+		"{isolatedcrystal.quests.80ea82f3.text.2}"
 	],
 	dependencies: [
 		"25eb07da",
@@ -17,7 +17,7 @@
 	tasks: [{
 		uid: "ad2d9530",
 		type: "custom",
-		title: "达到第 24 天",
+		title: "{isolatedcrystal.quests.80ea82f3.title}",
 		icon: "minecraft:clock",
 		tags: [
 			"day_24"

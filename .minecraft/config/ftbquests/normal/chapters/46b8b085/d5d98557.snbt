@@ -2,9 +2,9 @@
 	x: 5.25d,
 	y: -9.0d,
 	text: [
-		"在稳定器东南西北间隔两个方块放置固化磁铁，并给固化磁铁同相位红石脉冲，便可稳定能量核心供后续使用。",
-		"充能到 80% 的能量核心效果最好。",
-		"注意稳定器无能量核心时，继续给固化磁铁红石脉冲会导致其烧毁。"
+		"{isolatedcrystal.quests.d5d98557.text.1}",
+		"{isolatedcrystal.quests.d5d98557.text.2}",
+		"{isolatedcrystal.quests.d5d98557.text.3}"
 	],
 	dependencies: [
 		"1e01b57e"

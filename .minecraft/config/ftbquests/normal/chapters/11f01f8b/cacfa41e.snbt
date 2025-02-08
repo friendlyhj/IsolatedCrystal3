@@ -2,7 +2,7 @@
 	x: 13.5d,
 	y: 6.0d,
 	text: [
-		"将恶魔南瓜头和两个铁栏杆按雪傀儡方式摆放，生成人造烈焰人。"
+		"{isolatedcrystal.quests.cacfa41e.text.1}"
 	],
 	dependencies: [
 		"6cd84d30",

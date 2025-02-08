@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: -3.0d,
 	text: [
-		"右键以传送至末地"
+		"{isolatedcrystal.quests.a785c939.text.1}"
 	],
 	dependencies: [
 		"194cde31",

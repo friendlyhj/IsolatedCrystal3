@@ -3,7 +3,7 @@
 	y: -15.5d,
 	shape: "hexagon",
 	text: [
-		"需要事先往机器内部发射一百道魔力风暴产生的魔力脉冲。"
+		"{isolatedcrystal.quests.25eb07da.text.1}"
 	],
 	dependencies: [
 		"942d87b1",
@@ -28,9 +28,9 @@
 				TrophyColorGreen: 205,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:nature_crystal",
 					Count: 1,
-					id: "contenttweaker:nature_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

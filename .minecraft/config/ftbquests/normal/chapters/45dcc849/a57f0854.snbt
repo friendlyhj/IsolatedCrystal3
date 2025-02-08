@@ -3,7 +3,7 @@
 	y: -8.0d,
 	shape: "hexagon",
 	text: [
-		"合成所需的红石灯笼为15信号强度，合成完成后归零。"
+		"{isolatedcrystal.quests.a57f0854.text.1}"
 	],
 	dependencies: [
 		"ba7df738"
@@ -27,9 +27,9 @@
 				TrophyColorGreen: 118,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:logic_crystal",
 					Count: 1,
-					id: "contenttweaker:logic_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

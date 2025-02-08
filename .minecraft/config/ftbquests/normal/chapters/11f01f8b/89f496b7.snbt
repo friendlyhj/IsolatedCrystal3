@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 1.5d,
 	text: [
-		"研钵用完耐久后获得，之后可以用研钵粉碎研钵获得。"
+		"{isolatedcrystal.quests.89f496b7.text.1}"
 	],
 	dependencies: [
 		"d4716fd5"

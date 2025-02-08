@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 0.0d,
 	text: [
-		"粉碎卵石，再粉碎沙砾以及沙子，最后丢入水中。"
+		"{isolatedcrystal.quests.3d1a5091.text.1}"
 	],
 	dependencies: [
 		"d4716fd5"
@@ -20,9 +20,9 @@
 		item: {
 			tag: {
 				textureBlock: {
-					Damage: 0s,
+					id: "minecraft:wooden_slab",
 					Count: 1,
-					id: "minecraft:wooden_slab"
+					Damage: 0s
 				}
 			},
 			Damage: 1s,

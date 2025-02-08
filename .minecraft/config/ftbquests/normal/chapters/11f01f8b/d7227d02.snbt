@@ -2,7 +2,7 @@
 	x: 21.0d,
 	y: 4.5d,
 	text: [
-		"附有重力效果的魔力脉冲击中魔力粉碎砧，其掉落时会粉碎其下的方块。"
+		"{isolatedcrystal.quests.d7227d02.text.1}"
 	],
 	dependencies: [
 		"d8c7e712"

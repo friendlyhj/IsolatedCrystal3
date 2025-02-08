@@ -3,9 +3,9 @@
 	y: -14.25d,
 	shape: "hexagon",
 	text: [
-		"需要在物品展示台放置两个稳定电路板，每次运行的稳定电路板所需的种类都不同。",
-		"对应的水晶灯会提示电路板编号是否正确。",
-		"绿色：正确；红色：过大：紫色：过小。"
+		"{isolatedcrystal.quests.9a101ae6.text.1}",
+		"{isolatedcrystal.quests.9a101ae6.text.2}",
+		"{isolatedcrystal.quests.9a101ae6.text.3}"
 	],
 	dependencies: [
 		"aff11070"
@@ -29,9 +29,9 @@
 				TrophyColorGreen: 118,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:calculation_crystal",
 					Count: 1,
-					id: "contenttweaker:calculation_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

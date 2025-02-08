@@ -2,7 +2,7 @@
 	x: 3.0d,
 	y: 0.0d,
 	text: [
-		"彩虹莲工作时，其上的精灵玻璃掉落物会转变为彩虹桥方块"
+		"{isolatedcrystal.quests.d0cc0d94.text.1}"
 	],
 	dependencies: [
 		"204c3001"

@@ -1,5 +1,5 @@
 {
-	title: "tier3",
+	title: "{isolatedcrystal.quests.e57fa055.title}",
 	icon: "calculator:reinforcedchest",
 	loot_size: 1,
 	rewards: [{

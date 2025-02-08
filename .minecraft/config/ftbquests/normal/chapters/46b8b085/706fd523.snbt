@@ -2,7 +2,7 @@
 	x: -10.0d,
 	y: -12.0d,
 	text: [
-		"mek 发电机已全部禁用，no 瓜聚变。"
+		"{isolatedcrystal.quests.706fd523.text.1}"
 	],
 	dependencies: [
 		"5e210560"

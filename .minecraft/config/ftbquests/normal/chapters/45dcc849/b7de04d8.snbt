@@ -24,9 +24,9 @@
 				TrophyColorGreen: 47,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:warp_crystal",
 					Count: 1,
-					id: "contenttweaker:warp_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

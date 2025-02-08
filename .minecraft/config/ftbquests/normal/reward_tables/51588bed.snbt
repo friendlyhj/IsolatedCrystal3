@@ -1,5 +1,5 @@
 {
-	title: "tier1",
+	title: "{isolatedcrystal.quests.51588bed.title}",
 	icon: "minecraft:chest",
 	loot_size: 1,
 	rewards: [{

@@ -2,7 +2,7 @@
 	x: 4.5d,
 	y: 1.5d,
 	text: [
-		"树叶有几率掉落。"
+		"{isolatedcrystal.quests.b1d7f72b.text.1}"
 	],
 	dependencies: [
 		"711d709c"

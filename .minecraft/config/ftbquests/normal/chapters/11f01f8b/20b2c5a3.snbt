@@ -26,9 +26,9 @@
 				TrophyColorGreen: 49,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:ocean_crystal",
 					Count: 1,
-					id: "contenttweaker:ocean_crystal"
+					Damage: 0s
 				},
 				TrophyName: ""
 			},

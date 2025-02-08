@@ -3,7 +3,7 @@
 	y: -16.75d,
 	shape: "hexagon",
 	text: [
-		"矿藏触媒中间铁桶内的媒介液数量会实时变化，但只有保持在半桶左右才可进行水晶生产。"
+		"{isolatedcrystal.quests.05f59ccb.text.1}"
 	],
 	dependencies: [
 		"168604d7"
@@ -27,9 +27,9 @@
 				TrophyColorGreen: 207,
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
-					Damage: 0s,
+					id: "contenttweaker:mine_crystal",
 					Count: 1,
-					id: "contenttweaker:mine_crystal"
+					Damage: 0s
 				},
 				TrophyVariant: "classic"
 			},

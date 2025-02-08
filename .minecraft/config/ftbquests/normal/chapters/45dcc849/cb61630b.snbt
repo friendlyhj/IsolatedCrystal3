@@ -1,13 +1,13 @@
 {
-	title: "部件替换",
+	title: "{isolatedcrystal.quests.cb61630b.title}",
 	x: 2.0d,
 	y: -4.2d,
 	text: [
-		"是的，Factory Tech 的机器的运作不需要能量，取而代之的是各种部件的耐久。",
-		"要使机器持续运作，你同时需要一个制作部件的自动化。幸运的是，大部分部件损坏后可以进行回收，并制作成全新的。",
-		"机器可以设置一个面进行插入部件，使用活动扳手潜行右键设置。",
-		"你可以用放大镜查看机器的插入部件面。",
-		"在机器旁边放置一个板条箱可以自动收集其损坏的部件。"
+		"{isolatedcrystal.quests.cb61630b.text.1}",
+		"{isolatedcrystal.quests.cb61630b.text.2}",
+		"{isolatedcrystal.quests.cb61630b.text.3}",
+		"{isolatedcrystal.quests.cb61630b.text.4}",
+		"{isolatedcrystal.quests.cb61630b.text.5}"
 	],
 	dependencies: [
 		"bbf92bd1"

@@ -2,7 +2,7 @@
 	x: -2.5d,
 	y: -16.5d,
 	text: [
-		"水培种植，消耗水、灯光、二氧化碳。是种植水晶海藻的必要环境。"
+		"{isolatedcrystal.quests.3d65b201.text.1}"
 	],
 	dependencies: [
 		"ce74a728",

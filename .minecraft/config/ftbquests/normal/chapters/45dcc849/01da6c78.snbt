@@ -2,7 +2,7 @@
 	x: -1.5d,
 	y: -9.5d,
 	text: [
-		"由于静止的永夜，灵气场的自我恢复也被停止。需要一种特殊的方式强行恢复灵气。"
+		"{isolatedcrystal.quests.01da6c78.text.1}"
 	],
 	dependencies: [
 		"58184d87"

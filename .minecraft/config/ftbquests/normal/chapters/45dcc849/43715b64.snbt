@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: -12.5d,
 	text: [
-		"动物接触后，将会持续受伤，死亡后生成僵尸或骷髅。"
+		"{isolatedcrystal.quests.43715b64.text.1}"
 	],
 	dependencies: [
 		"e308ab89"
