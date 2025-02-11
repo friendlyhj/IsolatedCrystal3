@@ -360,6 +360,8 @@ recipes.addShaped(<botania:corporeaindex>, [
     [<botania:manaresource:9>, <minecraft:obsidian>, <botania:manaresource:9>]
 ]);
 
+recipes.remove(<naturesaura:generator_limit_remover>);
+
 recipeTweak(true, <botania:pool:3>, [
     [<astralsorcery:blockmarble>, <botania:manaresource:9>, <astralsorcery:blockmarble>],
     [<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, <astralsorcery:blockmarble>]

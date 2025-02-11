@@ -1,6 +1,4 @@
 #loader preinit
-#debug
-
 import native.net.minecraft.init.Blocks;
 import native.net.minecraft.block.Block;
 import native.net.minecraft.block.BlockCrops;

@@ -479,3 +479,13 @@ RecipeBuilder.get("mage", "celestial_crystal", true)
     return out.withTag(outputTag);
   })
   .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<naturesaura:sky_ingot>, <botania:manaresource:4>, <naturesaura:sky_ingot>],
+    [<naturesaura:token_euphoria>, <botania:rune:8>, <naturesaura:token_terror>],
+    [<naturesaura:infused_stone>, <naturesaura:infused_stone>, <naturesaura:infused_stone>]])
+  .addTool(<ore:artisansGrimoire>, 40)
+  .setFluid(<liquid:mercury> * 576)
+  .addOutput(<naturesaura:generator_limit_remover>)
+  .create();

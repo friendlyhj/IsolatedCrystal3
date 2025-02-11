@@ -1,6 +1,4 @@
 #reloadable
-#debug
-
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipeStartEvent;
 import mods.modularmachinery.RecipeCheckEvent;

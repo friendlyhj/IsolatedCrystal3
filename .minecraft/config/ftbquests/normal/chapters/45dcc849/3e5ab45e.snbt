@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: -17.0d,
+	dependencies: [
+		"e75c103a"
+	],
+	tasks: [{
+		uid: "f3baffa6",
+		type: "item",
+		items: [{
+			item: "naturesaura:generator_limit_remover"
+		}]
+	}],
+	rewards: [{
+		uid: "b49e12c9",
+		type: "random",
+		table: 1
+	}]
+}

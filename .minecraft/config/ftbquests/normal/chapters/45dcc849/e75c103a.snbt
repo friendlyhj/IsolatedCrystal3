@@ -1,0 +1,19 @@
+{
+	x: 4.5d,
+	y: -17.0d,
+	dependencies: [
+		"9d745ca5"
+	],
+	tasks: [{
+		uid: "b4386815",
+		type: "item",
+		items: [{
+			item: "naturesaura:projectile_generator"
+		}]
+	}],
+	rewards: [{
+		uid: "498be3c9",
+		type: "random",
+		table: 1
+	}]
+}

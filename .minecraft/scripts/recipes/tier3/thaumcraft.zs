@@ -107,6 +107,21 @@ Infusion.registerRecipe("grinder", "", <draconicevolution:grinder>, 6, [
     <calculator:flawlessdiamondsword>
 ]);
 
+Infusion.registerRecipe("accelerator", "", <modularmachinery:essentia_accelerator_controller>, 4, [
+    <aspect:permutatio> * 144,
+    <aspect:fabrico> * 144,
+    <aspect:vacuos> * 144
+], <thaumcraft:metal_thaumium>, [
+    <thaumcraft:matrix_speed>,
+    <thaumcraft:matrix_speed>,
+    <thaumcraft:matrix_speed>,
+    <thaumcraft:matrix_speed>,
+    <contenttweaker:logic_crystal>,
+    <contenttweaker:logic_crystal>,
+    <contenttweaker:warp_crystal>,
+    <contenttweaker:warp_crystal>
+]);
+
 Crucible.registerRecipe("exchange_tablet", "", <embers:alchemy_tablet>, <embers:alchemy_pedestal>, [
     <aspect:permutatio> * 50,
     <aspect:potentia> * 50

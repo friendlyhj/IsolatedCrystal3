@@ -1,7 +1,5 @@
 #reloadable
 #priority 100
-#debug
-
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.block.IBlockState;
