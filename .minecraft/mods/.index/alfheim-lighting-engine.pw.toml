@@ -1,13 +1,13 @@
-filename = 'Alfheim-1.5-Dev-4.jar'
+filename = 'Alfheim-1.6-Dev-1.jar'
 name = 'Alfheim'
 side = 'both'
 
 [download]
-hash = 'f8e043eea7c125df7cec6113f4ea0fd5e6322a4d'
+hash = '459fde2a8041aec0b827747115b39d8a85a4c289'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6003953
+file-id = 6192282
 project-id = 910715
