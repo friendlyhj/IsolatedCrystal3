@@ -18,14 +18,15 @@
 					2b,
 					2b
 				],
-				Facing: 3b,
 				RSControl: 0b,
+				Facing: 3b,
 				Level: 0b,
 				Energy: 0
 			},
 			Damage: 3s,
 			id: "thermalexpansion:machine"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "a44e4f84",

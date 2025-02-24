@@ -168,7 +168,7 @@ RecipeBuilder.newBuilder("nature_crystal", "natural_grace", 120)
         <botania:rune:6>,
         <botania:rune:7>
     )
-    .addFluidInput(<liquid:ender> * 500)
+    .addFluidInput(<liquid:cloud_seed_concentrated> * 2000)
     .addAuraInput(800)
     .addItemOutput(<contenttweaker:nature_crystal>)
     .addPostCheckHandler(function(event as RecipeCheckEvent) {

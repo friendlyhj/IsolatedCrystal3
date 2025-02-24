@@ -4,9 +4,9 @@ import scripts.recipes.lib.ArtisanRecipeBuilder as RecipeBuilder;
 
 RecipeBuilder.get("mage")
   .setShaped([
-    [<nuclearcraft:lithium_ion_battery_basic>.withTag({energyStorage: {capacity: 32000000 as long, energy: 0 as long}}), <contenttweaker:iris_crystal>, <nuclearcraft:lithium_ion_battery_basic>.withTag({energyStorage: {capacity: 32000000 as long, energy: 0 as long}})],
+    [<nuclearcraft:lithium_ion_battery_basic>, <contenttweaker:iris_crystal>, <nuclearcraft:lithium_ion_battery_basic>],
     [<enderio:item_basic_capacitor:2>, <draconicevolution:draconic_core>, <enderio:item_basic_capacitor:2>],
-    [<nuclearcraft:lithium_ion_battery_basic>.withTag({energyStorage: {capacity: 32000000 as long, energy: 0 as long}}), <factorytech:machinepart:170>, <nuclearcraft:lithium_ion_battery_basic>.withTag({energyStorage: {capacity: 32000000 as long, energy: 0 as long}})]])
+    [<nuclearcraft:lithium_ion_battery_basic>, <factorytech:machinepart:170>, <nuclearcraft:lithium_ion_battery_basic>]])
   .addTool(<ore:artisansGrimoire>, 40)
   .setFluid(<liquid:mercury> * 864)
   .addOutput(<draconicevolution:wyvern_energy_core>)

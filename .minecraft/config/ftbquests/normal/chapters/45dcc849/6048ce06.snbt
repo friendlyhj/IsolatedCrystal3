@@ -1,0 +1,22 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"b72cdb97"
+	],
+	tasks: [{
+		uid: "9ac1e63d",
+		type: "item",
+		items: [{
+			item: "enderio:item_item_conduit"
+		}]
+	},
+	{
+		uid: "3a23ac94",
+		type: "item",
+		items: [{
+			item: "enderio:item_liquid_conduit"
+		}]
+	}]
+}

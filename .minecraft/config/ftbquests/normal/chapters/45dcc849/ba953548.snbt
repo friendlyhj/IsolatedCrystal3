@@ -1,0 +1,29 @@
+{
+	x: 4.5d,
+	y: 1.0d,
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"b72cdb97"
+	],
+	tasks: [{
+		uid: "b94ff994",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_32"
+		}]
+	},
+	{
+		uid: "9a1e94e6",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_16 1 2"
+		}]
+	},
+	{
+		uid: "3e95b2d9",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:servo"
+		}]
+	}]
+}

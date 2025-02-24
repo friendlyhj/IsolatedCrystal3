@@ -6,8 +6,11 @@ import mods.tconstruct.Melting;
 
 Casting.addTableRecipe(<thaumcraft:quicksilver>, null, <liquid:mercury>, 144, false, 20);
 Melting.addRecipe(<liquid:mercury> * 144, <thaumcraft:quicksilver>, 312);
+Alloy.addRecipe(<liquid:soldering> * 360, [<liquid:tin> * 216, <liquid:lead> * 144]);
 Alloy.addRecipe(<liquid:soldering> * 5, [<liquid:tin> * 3, <liquid:lead> * 2]);
 Melting.addRecipe(<liquid:compressed_iron> * 144, <ore:ingotIronCompressed>, 624);
+Alloy.addRecipe(<liquid:lead_platinum> * 144, [<liquid:lead> * 108, <liquid:platinum> * 36]);
+Alloy.addRecipe(<liquid:metal_crystal_liquid> * 72, [<liquid:osmium> * 432, <liquid:lead_platinum> * 288, <liquid:xu_enchanted_metal> * 288, <liquid:conductive_iron> * 288, <liquid:temped_iron> * 288, <liquid:signalum> * 72, <liquid:lumium> * 72]);
 Alloy.addRecipe(<liquid:metal_crystal_liquid>, [<liquid:osmium> * 6, <liquid:lead_platinum> * 4, <liquid:xu_enchanted_metal> * 4, <liquid:conductive_iron> * 4, <liquid:temped_iron> * 4, <liquid:signalum>, <liquid:lumium>]);
 Casting.addTableRecipe(<contenttweaker:metal_crystal>, <contenttweaker:earth_crystal>, <liquid:metal_crystal_liquid>, 144, true, 1000);
 Melting.addRecipe(<liquid:temped_iron> * 144, <factorytech:ingot:4>, 700);

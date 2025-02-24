@@ -368,3 +368,28 @@ recipeTweak(true, <botania:pool:3>, [
 ]);
 
 recipes.replaceAllOccurences(<factorytech:machinepart:71>, <factorytech:machinepart:72>);
+
+recipes.remove(<thermaldynamics:duct_16:2>);
+recipes.remove(<thermaldynamics:duct_32>);
+recipes.addShaped(<thermaldynamics:duct_16:2> * 6, [
+    [<ore:ingotInvar>, <botania:managlass>, <ore:ingotInvar>]
+]);
+recipes.addShaped(<thermaldynamics:duct_32> * 6, [
+    [<ore:ingotTin>, <botania:managlass>, <ore:ingotTin>]
+]);
+recipes.remove(<enderio:item_material:22>);
+recipes.addShapeless(<enderio:item_material:22> * 3, [
+    <botania:manaresource:23>, <minecraft:clay_ball>, <minecraft:dye:15>
+]);
+recipes.remove(<enderio:item_liquid_conduit>);
+recipes.addShaped(<enderio:item_liquid_conduit> * 8, [
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
+    [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
+]);
+recipes.remove(<enderio:item_item_conduit>);
+recipes.addShaped(<enderio:item_item_conduit> * 8, [
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
+    [<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>],
+    [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
+]);

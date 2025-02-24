@@ -432,7 +432,7 @@ RecipeBuilder.get("engineer")
     [null, <minecraft:glass>, null],
     [<nuclearcraft:cobblestone_generator>, <thermalexpansion:frame>, <nuclearcraft:cobblestone_generator>],
     [<nuclearcraft:cobblestone_generator>, <thermalfoundation:material:513>, <nuclearcraft:cobblestone_generator>]])
-  .addTool(<artisanworktables:artisans_solderer_wood>, 10)
+  .addTool(<ore:artisansSolderer>, 10)
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<thermalexpansion:machine:15>)
   .create();

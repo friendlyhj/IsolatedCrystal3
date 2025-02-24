@@ -38,3 +38,12 @@ zenClass MixinBlockGoldenLeaves extends BlockLeaves {
         }
     }
 }
+
+#mixin {targets: "de.ellpeck.naturesaura.api.NaturesAuraAPI"}
+zenClass MixinNaturesAuraAPI {
+    #mixin Static
+    #mixin ModifyConstant{method: <clinit>, constant: {intValue: 12513828}}
+    function changeOverworldAuraColor(value as int) as int {
+        return 0xb0a0ff;
+    }
+}
