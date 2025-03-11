@@ -1,13 +1,13 @@
-filename = 'XU2-Patcher-1.0.0.jar'
-name = 'XU2-Patcher'
+filename = 'XU2-Patcher-1.0.1.jar'
+name = 'XU2 Patcher'
 side = 'both'
 
 [download]
-hash = 'b54f4913a6f059601ac8225847cb02e273c0c6b3'
+hash = '85a52528fa5847f138e03fee08f76d1eacff003c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5332230
+file-id = 6259473
 project-id = 1016395

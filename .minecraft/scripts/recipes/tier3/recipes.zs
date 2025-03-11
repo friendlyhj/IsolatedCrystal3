@@ -284,3 +284,5 @@ recipes.addShaped(<mekanism:energycube>.withTag({tier: 0}), [
     [<ore:ingotOsmium>, <ore:blockSteel>, <ore:ingotOsmium>],
     [<minecraft:redstone>, <ore:battery>, <minecraft:redstone>]
 ]);
+
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<thaumcraft:nugget:10>, <thermalfoundation:material:134>, 1200);

@@ -20,3 +20,7 @@ Casting.addTableRecipe(<thermalfoundation:material:136>, <tconstruct:cast_custom
 Casting.addTableRecipe(<pneumaticcraft:ingot_iron_compressed>, <tconstruct:cast_custom>, <liquid:compressed_iron>, 144, false, 40);
 Alloy.removeRecipe(<liquid:conductive_iron>);
 
+Alloy.addRecipe(<liquid:alubrass> * 72, [<liquid:aluminum> * 54, <liquid:copper> * 18]);
+Alloy.addRecipe(<liquid:bronze> * 72, [<liquid:copper> * 54, <liquid:tin> * 18]);
+Alloy.addRecipe(<liquid:electrum> * 72, [<liquid:silver> * 36, <liquid:gold> * 36]);
+Alloy.addRecipe(<liquid:ferroboron> * 72, [<liquid:boron> * 36, <liquid:steel> * 36]);

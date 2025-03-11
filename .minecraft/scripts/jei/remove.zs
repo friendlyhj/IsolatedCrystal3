@@ -69,7 +69,8 @@ val banList as IItemStack[] = [
     <tconstruct:cast_custom:4>,
     <extrautils2:quarry>,
     <extrautils2:quarryproxy>,
-    <extrautils2:teleporter:*>
+    <extrautils2:teleporter:*>,
+    <extrautils2:bagofholding>
 ];
 
 for ban in banList {

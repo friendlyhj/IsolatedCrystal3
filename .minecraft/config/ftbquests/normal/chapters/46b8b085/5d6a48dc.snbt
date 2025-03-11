@@ -2,7 +2,7 @@
 	x: 12.0d,
 	y: -16.5d,
 	text: [
-		"加速16x16范围（以信标为中心）的源质离心机和源质合成器的速度。"
+		"{isolatedcrystal.quests.5d6a48dc.text.1}"
 	],
 	dependencies: [
 		"ce779d72",

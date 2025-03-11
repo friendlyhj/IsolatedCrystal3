@@ -22,5 +22,11 @@
 		uid: "dedacf77",
 		type: "random",
 		table: 1
+	},
+	{
+		uid: "7b4ba7c3",
+		type: "item",
+		team_reward: 0b,
+		item: "extrautils2:angelring"
 	}]
 }

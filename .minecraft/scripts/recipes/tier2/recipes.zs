@@ -393,3 +393,14 @@ recipes.addShaped(<enderio:item_item_conduit> * 8, [
     [<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>],
     [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>],
 ]);
+
+recipeTweak(true, <immersivecables:relay_fluix> * 8, [
+    [null, <appliedenergistics2:material:12>, null],
+    [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:12>, <sonarcore:reinforcedstoneblock>],
+]);
+
+recipeTweak(true, <immersivecables:relay_fluix:1> * 8, [
+    [null, <appliedenergistics2:material:7>, null],
+    [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:7>, <sonarcore:reinforcedstoneblock>],
+    [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:7>, <sonarcore:reinforcedstoneblock>],
+]);

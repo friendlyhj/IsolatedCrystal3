@@ -97,6 +97,9 @@ material.iron_compressed.name=压缩铁
 material.tin.name=锡
 material.aluminum.name=铝
 
+base.material.certus=赛特斯
+base.material.aluminum=铝
+
 modpack.tooltip.afflatus_of_crafting.requirement=需要进行%s/%s次不同的合成
 modpack.tooltip.afflatus_of_crafting.next=未进行的合成样例：
 modpack.tooltip.afflatus_of_crafting.shift=按下shift查看未完成的合成编号
