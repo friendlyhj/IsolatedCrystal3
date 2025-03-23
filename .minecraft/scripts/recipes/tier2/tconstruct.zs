@@ -24,3 +24,4 @@ Alloy.addRecipe(<liquid:alubrass> * 72, [<liquid:aluminum> * 54, <liquid:copper>
 Alloy.addRecipe(<liquid:bronze> * 72, [<liquid:copper> * 54, <liquid:tin> * 18]);
 Alloy.addRecipe(<liquid:electrum> * 72, [<liquid:silver> * 36, <liquid:gold> * 36]);
 Alloy.addRecipe(<liquid:ferroboron> * 72, [<liquid:boron> * 36, <liquid:steel> * 36]);
+Alloy.addRecipe(<liquid:steel> * 72, [<liquid:iron> * 72, <liquid:coal> * 200]);

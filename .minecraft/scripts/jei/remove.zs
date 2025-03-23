@@ -70,7 +70,8 @@ val banList as IItemStack[] = [
     <extrautils2:quarry>,
     <extrautils2:quarryproxy>,
     <extrautils2:teleporter:*>,
-    <extrautils2:bagofholding>
+    <extrautils2:bagofholding>,
+    <ae2fc:fluid_level_maintainer>
 ];
 
 for ban in banList {

@@ -1,13 +1,13 @@
-filename = 'NotEnoughEnergistics-1.12.2-2.0.7.jar'
-name = 'Not Enough Energistics'
+filename = 'NotEnoughEnergistics-1.12.2-2.0.9.jar'
+name = 'NotEnoughEnergistics'
 side = 'both'
 
 [download]
-hash = '73831135cde6afd3c9cc71048376aad971121c3f'
+hash = '353d2a8362e0e0b421b4a1e44a0249bb91fa9866'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5234732
+file-id = 6325382
 project-id = 515565

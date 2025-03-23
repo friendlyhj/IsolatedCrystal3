@@ -156,7 +156,7 @@ recipes.addShapeless(<appliedenergistics2:part:281>, [wire, l, n, r]);
 recipes.remove(<appliedenergistics2:part:80>);
 recipes.addShapeless(<appliedenergistics2:part:80>, [wire, r]);
 recipes.remove(<appliedenergistics2:part:460>);
-recipes.addShapeless(<appliedenergistics2:part:460>, [wire, an]);
+recipes.addShapeless(<appliedenergistics2:part:460> * 2, [wire, wire, an]);
 recipes.remove(<item:appliedenergistics2:crafting_unit>);
 recipes.addShapeless(<item:appliedenergistics2:crafting_unit>, [f, i, n, c, c, c, c]);
 recipes.remove(<item:appliedenergistics2:crafting_monitor>);
@@ -254,6 +254,21 @@ recipes.addShaped(f * 4, [
     [<ore:plateAluminum>, <contenttweaker:crafting_crystal>, <ore:plateAluminum>],
     [<pneumaticcraft:plastic:7>, <ore:plateAluminum>, <pneumaticcraft:plastic:7>]
 ]);
+
+recipes.remove(<ae2fc:part_dual_interface>);
+recipes.remove(<ae2fc:dual_interface>);
+recipes.addShapeless(<ae2fc:dual_interface>, [f, i, l, c, n, u]);
+recipes.addShapeless(<ae2fc:part_dual_interface>, [wire, i, l, c, n, u]);
+recipes.addShapeless(<ae2fc:dual_interface>, [<appliedenergistics2:interface>, l]);
+recipes.addShapeless(<ae2fc:part_dual_interface>, [<appliedenergistics2:part:440>, l]);
+recipes.remove(<ae2fc:trio_interface>);
+recipes.remove(<ae2fc:part_trio_interface>);
+recipes.addShapeless(<ae2fc:trio_interface>, [f, i, l, g, c, n, u]);
+recipes.addShapeless(<ae2fc:part_trio_interface>, [wire, i, l, g, c, n, u]);
+recipes.addShapeless(<ae2fc:trio_interface>, [<ae2fc:dual_interface>, g]);
+recipes.addShapeless(<ae2fc:part_trio_interface>, [<ae2fc:part_dual_interface>, g]);
+recipes.addShapeless(<ae2fc:trio_interface>, [<appliedenergistics2:interface>, l, g]);
+recipes.addShapeless(<ae2fc:part_trio_interface>, [<appliedenergistics2:part:440>, l, g]);
 
 recipes.remove(<thaumicenergistics:essentia_import>);
 recipes.addShapeless(<thaumicenergistics:essentia_import>, [wire, e, d]);
@@ -403,4 +418,8 @@ recipeTweak(true, <immersivecables:relay_fluix:1> * 8, [
     [null, <appliedenergistics2:material:7>, null],
     [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:7>, <sonarcore:reinforcedstoneblock>],
     [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:7>, <sonarcore:reinforcedstoneblock>],
+]);
+
+recipeTweak(false, <pneumaticcraft:regulator_tube_module>, [
+    [<pneumaticcraft:pressure_tube>, <minecraft:comparator>, <minecraft:dye:4>]
 ]);

@@ -1,13 +1,13 @@
-filename = 'modularui-2.4.3.jar'
+filename = 'modularui-2.5.0-rc4.jar'
 name = 'ModularUI'
 side = 'both'
 
 [download]
-hash = '6b2500f19c2c423bb3a32bc1aa2c5f7414157ab1'
+hash = '8ba0cf5d5f461a0939d20558704b6432ef341b06'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5153413
+file-id = 6206809
 project-id = 624243

@@ -331,6 +331,12 @@ function getOrtho(v as double[])as double[]{
     if(v[1]==0 && v[2]==0) return [1,0,0] as double[];
     return unify([0.0,v[2],-v[1]]);
 }
+function rebase(v as double[], mat as double[][]) as double[] {
+    val x = mat[0];
+    val y = mat[1];
+    val z = mat[2];
+    return [v[0]*x[0]+v[1]*y[0]+v[2]*z[0],v[0]*x[1]+v[1]*y[1]+v[2]*z[1],v[0]*x[2]+v[1]*y[2]+v[2]*z[2]];
+}
 //print(para([PIE,PIE,PIE],[1.14,1.14,1.14]));
 
 //Random

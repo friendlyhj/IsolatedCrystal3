@@ -114,7 +114,7 @@ Orechid.addOre("oreRedstone", 100);
 Orechid.addOre("oreLapis", 96);
 Orechid.addOre("oreDiamond", 20);
 Orechid.addOre("oreEmerald", 10);
-Orechid.addOre("oreCertusQuartz", 90);
+Orechid.addOre("oreCertusQuartz", 115);
 Orechid.addOre("oreChargedCertusQuartz", 4);
 Orechid.addOre("oreCinnabar", 75);
 Orechid.addOre("oreOsmium", 90);
