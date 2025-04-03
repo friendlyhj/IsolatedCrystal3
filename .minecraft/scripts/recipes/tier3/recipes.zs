@@ -40,6 +40,13 @@ recipes.addShaped(<calculator:atomicmodule> * 4, [
     [<calculator:smalltanzanite>, <calculator:advancedassembly>, <calculator:smalltanzanite>]
 ]);
 
+recipes.remove(<calculator:stoneseparator>);
+recipes.addShaped(<calculator:stoneseparator>, [
+    [<calculator:material:2>, <sonarcore:reinforcedstoneblock>, <calculator:material:2>],
+    [<calculator:powercube>, <contenttweaker:warp_crystal>, <calculator:powercube>],
+    [<calculator:material:2>, <sonarcore:reinforcedstoneblock>, <calculator:material:2>]
+]);
+
 val ex = <extrautils2:machine>.only(function(item) {return !item.hasTag; });
 val ed = <extrautils2:machine>.withTag({Type:"extrautils2:generator"});
 val gc = <immersiveengineering:metal_decoration0:6>;

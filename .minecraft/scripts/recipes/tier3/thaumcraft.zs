@@ -74,7 +74,7 @@ Infusion.registerRecipe("broken_spawner", "", <enderio:item_broken_spawner>.with
     <contenttweaker:astral_crystal>
 ]);
 
-Infusion.registerRecipe("alchemy_pedestal", "", <embers:alchemy_pedestal>, 6, [
+Infusion.registerRecipe("alchemy_pedestal", "", <embers:alchemy_pedestal>, 4, [
     <aspect:praecantatio> * 100,
     <aspect:ignis> * 100,
     <aspect:metallum> * 100,
@@ -91,7 +91,7 @@ Infusion.registerRecipe("alchemy_pedestal", "", <embers:alchemy_pedestal>, 6, [
     <contenttweaker:aura_crystal>
 ]);
 
-Infusion.registerRecipe("grinder", "", <draconicevolution:grinder>, 6, [
+Infusion.registerRecipe("grinder", "", <draconicevolution:grinder>, 3, [
     <aspect:exitium> * 250,
     <aspect:sensus> * 200,
     <aspect:machina> * 200,

@@ -4,8 +4,6 @@ import crafttweaker.util.IRandom;
 import crafttweaker.event.PlayerTickEvent;
 import scripts.libs.Vector3D;
 import scripts.libs.Util;
-import mods.zenutils.command.ZenCommand;
-import mods.zenutils.command.CommandUtils;
 import mods.zenutils.NetworkHandler;
 import mods.randomtweaker.botania.IBotaniaFXHelper;
 import mods.ctintegration.util.DateUtil;
@@ -173,8 +171,10 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
     val player = event.player;
     val world = player.world;
     if (!world.remote && aprilFool && world.random.nextInt(6000) == 401) {
-        NetworkHandler.sendToDimension("pop_pipi", world.dimension, function(b) {
-            b.writeBoolean(world.random.nextBoolean());
-        });
+        for i in 0 .. world.random.nextInt(4, 20) {
+            NetworkHandler.sendToDimension("pop_pipi", world.dimension, function(b) {
+                b.writeBoolean(world.random.nextBoolean());
+            });
+        }
     }
 });

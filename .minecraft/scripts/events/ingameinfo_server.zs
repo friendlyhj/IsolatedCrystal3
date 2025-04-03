@@ -6,6 +6,9 @@ import mods.zenutils.NetworkHandler;
 import mods.zenutils.PlayerStat;
 
 NetworkHandler.registerServer2ClientMessage("sync_server_info", function(player, buf) {
+    if (isNull(player)) {
+        return;
+    }
     player.update({PlayTime: buf.readInt()});
     player.update({Mspt: buf.readDouble()});
 });

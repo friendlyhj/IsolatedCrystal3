@@ -57,4 +57,4 @@ ElvenTrade.addRecipe([<astralsorcery:itemcraftingcomponent>], [
     <contenttweaker:ocean_crystal>,
     <contenttweaker:ocean_crystal>
 ]);
-ManaInfusion.addAlchemy(<minecraft:netherrack>, <minecraft:cobblestone>, 800);
+ManaInfusion.addAlchemy(<minecraft:netherrack>, <minecraft:cobblestone>, 60);

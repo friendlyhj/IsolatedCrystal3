@@ -1,3 +1,5 @@
+#reloadable
+
 import crafttweaker.event.BlockHarvestDropsEvent;
 
 events.register(function(event as BlockHarvestDropsEvent) {

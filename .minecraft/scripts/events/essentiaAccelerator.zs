@@ -63,6 +63,6 @@ function newRecipe(aspect1 as string, aspect2 as string, accelerate as int, time
         .build();
 }
 
-newRecipe("fabrico", "vacuos", 4, 50);
-newRecipe("permutatio", "auram", 10, 25);
-newRecipe("caeles", "visum", 20, 15);
+newRecipe("fabrico", "vacuos", 4, 100);
+newRecipe("permutatio", "auram", 10, 50);
+newRecipe("caeles", "visum", 20, 40);
