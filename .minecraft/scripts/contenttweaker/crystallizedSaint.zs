@@ -12,8 +12,7 @@ import mods.contenttweaker.VanillaFactory;
 import mods.randomtweaker.botania.IBotaniaFXHelper;
 
 
-// author: jey_yz
-
+// author: Jey_yz
 function maximium(ints as int[])as int{
     var max = 0;
     for i in ints{
