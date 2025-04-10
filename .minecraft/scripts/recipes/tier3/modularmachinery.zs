@@ -251,6 +251,8 @@ for i, combination in otherCombinations {
 RecipeBuilder.newBuilder("energy_crystal", "energy_field_emitter", 120)
     .addEnergyPerTickInput(512000)
     .addItemInputs(
+        <contenttweaker:electric_crystal>,
+        <enderio:block_alloy:1>,
         <contenttweaker:superconductor>,
         <mekanism:basicblock2:3>.withTag({tier: 1}),
         <soot:mundane_stone>,

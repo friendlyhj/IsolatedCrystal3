@@ -17,14 +17,15 @@
 					2b,
 					2b
 				],
-				RSControl: 0b,
 				Facing: 3b,
+				RSControl: 0b,
 				Level: 0b,
 				Energy: 0
 			},
 			Damage: 15s,
 			id: "thermalexpansion:machine"
-		}]
+		}],
+		ignore_nbt: 1b
 	},
 	{
 		uid: "e3b08c4c",

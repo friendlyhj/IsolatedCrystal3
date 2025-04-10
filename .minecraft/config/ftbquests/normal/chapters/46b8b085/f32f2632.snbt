@@ -9,15 +9,15 @@
 		type: "item",
 		items: [{
 			item: "embers:alchemy_pedestal"
-		}]
+		}],
+		count: 4L
 	},
 	{
 		uid: "0bb7892f",
 		type: "item",
 		items: [{
 			item: "embers:alchemy_tablet"
-		}],
-		count: 4L
+		}]
 	}],
 	rewards: [{
 		uid: "ca08fafb",

@@ -67,16 +67,12 @@ recipes.addShaped(<extrautils2:interactionproxy>, [
 ]);
 
 recipes.remove(<nae2:upgrade:1>);
-recipes.addShaped(<nae2:upgrade:1>, [
-    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>],
-    [<contenttweaker:calculation_crystal>, <appliedenergistics2:material:53>, <contenttweaker:calculation_crystal>],
-    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>]
+recipes.addShapeless(<nae2:upgrade:1>, [
+    <appliedenergistics2:material:53>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>
 ]);
 
-recipes.addShaped(<nae2:part:1>, [
-    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>],
-    [<contenttweaker:calculation_crystal>, <appliedenergistics2:part:460>, <contenttweaker:calculation_crystal>],
-    [<contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>]
+recipes.addShapeless(<nae2:part:1>, [
+    <appliedenergistics2:part:460>, <contenttweaker:calculation_crystal>, <contenttweaker:calculation_crystal>
 ]);
 
 recipes.remove(<appliedenergistics2:material:58>);

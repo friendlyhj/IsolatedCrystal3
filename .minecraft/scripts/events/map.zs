@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.event.WorldTickEvent;
 import crafttweaker.event.ClientTickEvent;
 import crafttweaker.event.BlockBreakEvent;
+import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.block.IBlockStateMatcher;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IWorld;
@@ -214,6 +215,21 @@ events.onBlockBreak(function(event as BlockBreakEvent) {
         } else {
             event.cancel();
         }
+    }
+});
+
+events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
+    var protectedArea = false;
+    val x = event.x;
+    val z = event.z;
+    for center in coords {
+        if (Math.abs(x - center.x) < 12 && Math.abs(z - center.z) < 12) {
+            protectedArea = true;
+            break;
+        }
+    }
+    if (protectedArea && protectedBlocks.matches(event.blockState)) {
+        event.drops = [];
     }
 });
 

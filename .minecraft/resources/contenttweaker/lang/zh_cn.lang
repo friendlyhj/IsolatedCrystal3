@@ -76,6 +76,7 @@ tile.contenttweaker.mana_crusher.name=魔力粉碎砧
 tile.contenttweaker.destruction_matrix.name=破坏矩阵
 tile.contenttweaker.ember_ore.name=灰烬矿石
 tile.contenttweaker.superconductor.name=超导体
+tile.contenttweaker.crystalline_saint.name=晶化圣灵
 
 fluid.soldering=焊锡
 fluid.compressed_iron=熔融压缩铁

@@ -1,17 +1,20 @@
 {
 	x: 13.0d,
 	y: -16.5d,
+	text: [
+		"{isolatedcrystal.quests.bbe7df5c.text.1}",
+		"{isolatedcrystal.quests.bbe7df5c.text.2}",
+		"{isolatedcrystal.quests.bbe7df5c.text.3}"
+	],
+	hide_dependency_lines: 1b,
 	dependencies: [
-		"a57f0854",
-		"90164c6a",
-		"ce779d72",
-		"b7de04d8"
+		"25eb07da"
 	],
 	tasks: [{
-		uid: "8a3f485d",
+		uid: "f473dd17",
 		type: "item",
 		items: [{
-			item: "modularmachinery:flux_releaser_controller"
+			item: "contenttweaker:crystalline_saint"
 		}]
 	}]
 }

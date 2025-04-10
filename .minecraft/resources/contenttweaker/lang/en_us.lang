@@ -76,6 +76,7 @@ tile.contenttweaker.mana_crusher.name=Mana Crusher
 tile.contenttweaker.destruction_matrix.name=Destruction Matrix
 tile.contenttweaker.ember_ore.name=Ember Ore
 tile.contenttweaker.superconductor.name=Superconductor
+tile.contenttweaker.crystalline_saint.name=Crystalline Saint
 
 fluid.soldering=Soldering
 fluid.iron_compressed=Molten Compressed Iron

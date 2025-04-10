@@ -6,6 +6,7 @@ import mods.contenttweaker.MaterialBuilder;
 import mods.contenttweaker.PartBuilder;
 import mods.contenttweaker.ResourceLocation;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.AxisAlignedBB;
 import mods.contenttweaker.Item;
 
 val itemNames as string[] = [
@@ -239,3 +240,15 @@ val flower  = VanillaFactory.createSubTileGenerating("irisotos");
 flower.range = 1;
 flower.maxMana = 10000000;
 flower.register();
+
+val crystallineSaintTE = VanillaFactory.createActualTileEntity(114);
+crystallineSaintTE.register();
+
+val crystallineSaintBlock = VanillaFactory.createExpandBlock("crystalline_saint", <blockmaterial:iron>);
+crystallineSaintBlock.tileEntity = crystallineSaintTE;
+crystallineSaintBlock.blockLayer = "TRANSLUCENT";
+crystallineSaintBlock.translucent = true;
+crystallineSaintBlock.fullBlock = false;
+crystallineSaintBlock.lightValue = 15;
+crystallineSaintBlock.axisAlignedBB = AxisAlignedBB.create(3.0 / 16.0, 0.0, 3.0 / 16.0, 13.0 / 16.0, 1.0, 13.0 / 16.0);
+crystallineSaintBlock.register();

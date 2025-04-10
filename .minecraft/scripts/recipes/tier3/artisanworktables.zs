@@ -333,3 +333,13 @@ RecipeBuilder.get("mage")
   .setFluid(<liquid:mercury> * 288)
   .addOutput(<modularmachinery:flux_releaser_controller>)
   .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<thaumcraft:log_greatwood>, <naturesaura:sky_ingot>, <thaumcraft:log_greatwood>],
+    [<naturesaura:sky_ingot>, <contenttweaker:nature_crystal>, <naturesaura:sky_ingot>],
+    [<botania:elfglass>, <thaumicaugmentation:rift_jar>, <botania:elfglass>]])
+  .addTool(<ore:artisansGrimoire>, 50)
+  .setFluid(<liquid:mercury> * 1440)
+  .addOutput(<contenttweaker:crystalline_saint>)
+  .create();

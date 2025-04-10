@@ -35,13 +35,13 @@ Infusion.registerRecipe("electric_separator", "", <mekanism:machineblock2:4>, 2,
     <botania:manaresource:2>
 ]);
 
-Infusion.registerRecipe("emptiness_energizer", "", <modularmachinery:emptiness_energizer_controller>, 10, [
-    <aspect:vitium> * 400,
-    <aspect:praecantatio> * 200,
-    <aspect:alienis> * 200,
-    <aspect:potentia> * 200,
-    <aspect:machina> * 200,
-    <aspect:fluctus> * 100
+Infusion.registerRecipe("emptiness_energizer", "", <modularmachinery:emptiness_energizer_controller>, 5, [
+    <aspect:vitium> * 200,
+    <aspect:praecantatio> * 50,
+    <aspect:alienis> * 50,
+    <aspect:potentia> * 50,
+    <aspect:machina> * 50,
+    <aspect:fluctus> * 50
 ], <actuallyadditions:block_misc:9>, [
     <thaumicaugmentation:material:3>,
     <thaumicaugmentation:material:3>,
@@ -56,11 +56,11 @@ Infusion.registerRecipe("emptiness_energizer", "", <modularmachinery:emptiness_e
     <enderio:item_material:56>
 ]);
 
-Infusion.registerRecipe("broken_spawner", "", <enderio:item_broken_spawner>.withTag({entityId: "minecraft:zombie"}), 8, [
-    <aspect:exanimis> * 128,
-    <aspect:spiritus> * 128,
-    <aspect:praecantatio> * 128,
-    <aspect:infernum> * 128
+Infusion.registerRecipe("broken_spawner", "", <enderio:item_broken_spawner>.withTag({entityId: "minecraft:zombie"}), 5, [
+    <aspect:exanimis> * 120,
+    <aspect:spiritus> * 120,
+    <aspect:praecantatio> * 120,
+    <aspect:infernum> * 120
 ], <enderio:item_material:53>, [
     <thaumcraft:brain>,
     <thaumcraft:brain>,
@@ -91,12 +91,12 @@ Infusion.registerRecipe("alchemy_pedestal", "", <embers:alchemy_pedestal>, 4, [
     <contenttweaker:aura_crystal>
 ]);
 
-Infusion.registerRecipe("grinder", "", <draconicevolution:grinder>, 3, [
+Infusion.registerRecipe("grinder", "", <draconicevolution:grinder>, 1, [
     <aspect:exitium> * 250,
-    <aspect:sensus> * 200,
-    <aspect:machina> * 200,
-    <aspect:aversio> * 200,
-    <aspect:draco> * 200
+    <aspect:draco> * 200,
+    <aspect:sensus> * 100,
+    <aspect:machina> * 100,
+    <aspect:aversio> * 100,
 ], <enderio:item_material:53>, [
     <contenttweaker:perditio_crystal>,
     <contenttweaker:perditio_crystal>,

@@ -2,8 +2,8 @@
 	x: 0.0d,
 	y: -11.0d,
 	text: [
-		"坩埚本身仅能使用魔力水晶碎片和源质安瓿作为源质输入，且仅能制作魔力水晶碎片。",
-		"故请使用神秘炼金塔。"
+		"{isolatedcrystal.quests.e308ab89.text.1}",
+		"{isolatedcrystal.quests.e308ab89.text.2}"
 	],
 	dependencies: [
 		"58184d87"

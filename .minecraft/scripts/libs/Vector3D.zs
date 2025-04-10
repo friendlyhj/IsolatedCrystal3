@@ -35,9 +35,9 @@ function floor(x as double)as int{
     return Math.floor(x)as int;
 }
 // Fast trigonometric
-static sinfans as double[]=[]as double[];
+static sinfans as double[]=doubleArrayOf(900);
 for i in 0 to 900{
-    sinfans+=Math.sin(PIE*0.1*i/180);
+    sinfans[i] = Math.sin(PIE*0.1*i/180);
 }
 function getsinfans(x1 as int)as double{
     var x=(x1%3600+3600)%3600;

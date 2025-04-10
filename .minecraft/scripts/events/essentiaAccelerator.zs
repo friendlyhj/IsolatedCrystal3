@@ -4,6 +4,7 @@ import crafttweaker.event.BlockNeighborNotifyEvent;
 import mods.modularmachinery.RecipeBuilder;
 import mods.zenutils.DataUpdateOperation;
 import mods.modularmachinery.RecipeTickEvent;
+import mods.modularmachinery.Sync;
 import crafttweaker.util.Math;
 import native.net.minecraft.util.ITickable;
 import native.org.zeith.thaumicadditions.tiles.TileAspectCombiner;
@@ -31,33 +32,36 @@ function newRecipe(aspect1 as string, aspect2 as string, accelerate as int, time
         .addManaInput(1000, false)
         .addAuraInput(300)
         .addPreTickHandler(function(event as RecipeTickEvent) {
-            val controller = event.controller;
-            val world = controller.world;
-            val centralPos = controller.relativePos(0, 0, 3);
-            for posData in world.getCustomWorldData().deepGet("EssentiaDevices").asList() {
-                val pos = posData.asBlockPos();
-                if (Math.abs(pos.x - centralPos.x) > 16 || Math.abs(pos.z - centralPos.z) > 16) {
-                    continue;
-                }
-                val device = world.getBlock(pos).definition.id;
-                val te = world.native.getTileEntity(pos);
-                if (device == "thaumcraft:centrifuge") {
-                    for i in 0 .. (accelerate - 1) {
-                        (te as ITickable).update();
+            Sync.addSyncTask(function() {
+                val controller = event.controller;
+                val world = controller.world;
+                val centralPos = controller.relativePos(0, 0, 3);
+                for posData in world.getCustomWorldData().deepGet("EssentiaDevices").asList() {
+                    val pos = posData.asBlockPos();
+                    if (Math.abs(pos.x - centralPos.x) > 16 || Math.abs(pos.z - centralPos.z) > 16) {
+                        continue;
                     }
-                } else if (device == "thaumadditions:aspect_combiner") {
-                    val combiner = te as TileAspectCombiner;
-                    if (!combiner.prevPowered) {
-                        combiner.craftingTime = min(100, combiner.craftingTime + accelerate - 1);
+                    val device = world.getBlock(pos).definition.id;
+                    val te = world.native.getTileEntity(pos);
+                    if (device == "thaumcraft:centrifuge") {
+                        for i in 0 .. (accelerate - 1) {
+                            (te as ITickable).update();
+                        }
+                    } else if (device == "thaumadditions:aspect_combiner") {
+                        val combiner = te as TileAspectCombiner;
+                        if (!combiner.prevPowered) {
+                            combiner.craftingTime = min(100, combiner.craftingTime + accelerate - 1);
+                        }
+                    } else {
+                        logger.logWarning("Removed device: " + posData.asString());
+                        world.setCustomWorldData(world.getCustomWorldData().deepUpdate({
+                            EssentiaDevices: [
+                                pos.asData()
+                            ]
+                        }, {EssentiaDevices: DataUpdateOperation.REMOVE}));
                     }
-                } else {
-                    world.setCustomWorldData(world.getCustomWorldData().deepUpdate({
-                        EssentiaDevices: [
-                            pos.asData()
-                        ]
-                    }, DataUpdateOperation.REMOVE));
                 }
-            }
+            });
         })
         .addRecipeTooltip(`${accelerate}x Speed`)
         .build();
