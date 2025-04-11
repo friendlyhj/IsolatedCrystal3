@@ -17,5 +17,11 @@
     val player = world.fakePlayer;
     val pos = source.pos.getOffset(source.facing, 1);
     val origin = world.getBlockState(pos);
-    return player.simulateRightClickBlock(item, mainHand, pos, source.facing.opposite, 0.0f, 0.0f, 0.0f).item;
+    val result = player.simulateRightClickBlock(item, mainHand, pos, source.facing.opposite, 0.0f, 0.0f, 0.0f).item;
+    if (!isNull(result)) {
+        return result;
+    } else {
+        item.mutable().shrink(1);
+        return item;
+    }
 });
