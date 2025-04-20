@@ -1,13 +1,13 @@
-filename = 'ae2wut-1.1.1.jar'
+filename = 'ae2wut-1.1.2.jar'
 name = 'AE2UELWirelessUniversalTerminal'
 side = 'both'
 
 [download]
-hash = 'a1fb4fb09f7398024cd926930a124afb6bd62d2f'
+hash = 'a0cc81f724b6b656a38bc070aefac3be071b8727'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6370943
+file-id = 6426666
 project-id = 1196988

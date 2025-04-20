@@ -18,12 +18,14 @@ import mods.modularmachinery.RecipeStartEvent;
 import mods.modularmachinery.RecipeModifierBuilder;
 
 zenClass ArtisanRecipeBuilder {
+    val name as string;
     val artisan as Artisan;
     val mm as ModularMachinery;
     val outputs as int[IItemStack] = {};
     val extraOutputs as float[IItemStack] = {};
 
     zenConstructor(type as string, name as string, noMMRecipe as bool) {
+        this.name = name;
         artisan = scripts.libs.Util.getArtisanRecipeBuilder(type).setName(name);
         if (!noMMRecipe) {
             mm = mods.modularmachinery.RecipeBuilder.newBuilder(name, "mechanical_artisan", 120).addEnergyPerTickInput(100);
@@ -156,6 +158,7 @@ zenClass ArtisanRecipeBuilder {
     }
 
     function create() as void {
+        print("Creating Artisan Recipe: " ~ name);
         artisan.create();
         if (isNull(mm)) {
             return;
@@ -192,6 +195,7 @@ zenClass ArtisanRecipeBuilder {
                 .setValue(120)
                 .build()
         ]).setChance(0.005f);
+        print("Creating Modular Machinery Recipe: " ~ name);
         mm.build();
     }
 

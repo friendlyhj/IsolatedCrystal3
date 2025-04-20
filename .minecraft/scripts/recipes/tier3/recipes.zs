@@ -287,5 +287,16 @@ recipes.addShaped(<mekanism:energycube>.withTag({tier: 0}), [
     [<ore:ingotOsmium>, <ore:blockSteel>, <ore:ingotOsmium>],
     [<minecraft:redstone>, <ore:battery>, <minecraft:redstone>]
 ]);
+recipeTweak(true, <nuclearcraft:salt_fission_controller>, [
+    [<nuclearcraft:part:3>, <nuclearcraft:alloy:10>, <nuclearcraft:part:3>],
+    [<nuclearcraft:alloy:10>, <nuclearcraft:part:12>, <nuclearcraft:alloy:10>],
+    [<nuclearcraft:part:3>, <nuclearcraft:alloy:10>, <nuclearcraft:part:3>]
+]);
+recipeTweak(true, <nuclearcraft:salt_fission_vessel> * 4, [
+    [<nuclearcraft:part:3>, <nuclearcraft:alloy:10>, <nuclearcraft:part:3>],
+    [<nuclearcraft:alloy:12>, <nuclearcraft:part:12>, <nuclearcraft:alloy:12>],
+    [<nuclearcraft:part:3>, <nuclearcraft:alloy:10>, <nuclearcraft:part:3>]
+]);
+
 
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<thaumcraft:nugget:10>, <thermalfoundation:material:134>, 1200);

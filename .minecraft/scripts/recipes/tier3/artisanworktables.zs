@@ -229,11 +229,10 @@ RecipeBuilder.get("engineer")
 
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<calculator:reinforcedironingot>, <thermalfoundation:material:256>, <calculator:reinforcedironingot>],
+    [<calculator:reinforcedironingot>, <ore:gearCopper>, <calculator:reinforcedironingot>],
     [null, <embers:block_caminite_brick>, null],
-    [<calculator:reinforcedironingot>, <thermalfoundation:material:256>, <calculator:reinforcedironingot>]])
+    [<calculator:reinforcedironingot>, <ore:gearCopper>, <calculator:reinforcedironingot>]])
   .addTool(<ore:artisansHammer>, 10)
-  .setFluid(<liquid:soldering> * 144)
   .addOutput(<embers:mech_core>)
   .create();
 
@@ -315,12 +314,12 @@ RecipeBuilder.get("mage")
   .addOutput(<modularmachinery:blockimpetusproviderinput>)
   .create();
 
-RecipeBuilder.get("engineer")
+RecipeBuilder.get("engineer", "superconductor")
   .setShaped([
     [<nuclearcraft:ingot_block:14>, <thermaldynamics:duct_0:5>, <ore:blockElectrum>],
     [<thermaldynamics:duct_0:5>, <factorytech:machinepart:170>, <thermaldynamics:duct_0:5>],
     [<ore:blockElectrum>, <thermaldynamics:duct_0:5>, <nuclearcraft:ingot_block:14>]])
-  .setFluid(<liquid:emergency_coolant> * 2000)
+  // .setFluid(<liquid:emergency_coolant> * 2000)
   .addOutput(<contenttweaker:superconductor>)
   .create();
 

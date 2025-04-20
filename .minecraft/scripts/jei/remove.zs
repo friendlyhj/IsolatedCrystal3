@@ -78,4 +78,18 @@ for ban in banList {
     JEI.removeAndHide(ban);
 }
 
-JEI.hideCategory("thermalexpansion.compactor_gear");
+val categoryHideList as string[] = [
+    "thermalexpansion.compactor_gear",
+    "artisanworktables_blacksmith_workstation",
+    "artisanworktables_engineer_workstation",
+    "artisanworktables_mage_workstation",
+    "artisanworktables_chef_workstation",
+    "artisanworktables_blacksmith_workshop",
+    "artisanworktables_engineer_workshop",
+    "artisanworktables_mage_workshop",
+    "artisanworktables_chef_workshop"
+];
+
+for category in categoryHideList {
+    JEI.hideCategory(category);
+}
