@@ -1,13 +1,13 @@
-filename = 'ModularMachinery-CE-2.1.4.jar'
+filename = 'ModularMachinery-CE-2.1.5.jar'
 name = 'Modular Machinery: Community Edition'
 side = 'both'
 
 [download]
-hash = '597fc2903256b09c9ba97994eaea04a8631cf829'
+hash = 'f9b9c8eb99de3c447d153704d39a2e617acc14cb'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5952626
+file-id = 6480528
 project-id = 817377

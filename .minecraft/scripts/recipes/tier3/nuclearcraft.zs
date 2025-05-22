@@ -4,6 +4,7 @@ import mods.nuclearcraft.RockCrusher;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.nuclearcraft.SaltMixer;
 import mods.nuclearcraft.ChanceItemIngredient;
+import mods.nuclearcraft.ElectricFurnace;
 
 IngotFormer.addRecipe(<liquid:poly_lactic_acid> * 80, <nuclearcraft:part:6>);
 Manufactory.removeRecipeWithOutput(<nuclearcraft:part:6>);
@@ -15,3 +16,4 @@ SaltMixer.removeRecipeWithOutput(<liquid:tough> * 144);
 SaltMixer.addRecipe(<liquid:metal_crystal_liquid> * 144, <liquid:boron> * 720, <liquid:tough> * 864);
 SaltMixer.addRecipe(<liquid:tin> * 216, <liquid:lead> * 144, <liquid:soldering> * 360);
 SaltMixer.addRecipe(<liquid:mithril> * 72, <liquid:flibe> * 72, <liquid:mine_medium> * 100);
+ElectricFurnace.removeAllRecipes();

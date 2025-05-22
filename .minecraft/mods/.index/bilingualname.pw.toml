@@ -1,13 +1,13 @@
-filename = 'bilingualname-2.0.jar'
-name = 'BilingualName'
+filename = 'bilingualname-2.1.jar'
+name = 'bilingual Name'
 side = 'both'
 
 [download]
-hash = '0c2c5cf9a726bd744402a18af7a91ef9fb6cb541'
+hash = '70e6191a53785c5e8dbbe7061d4f20b1c0b91e25'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5797200
+file-id = 6528166
 project-id = 417557

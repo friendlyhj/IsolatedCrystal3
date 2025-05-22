@@ -3,7 +3,8 @@
 	y: -15.5d,
 	shape: "hexagon",
 	text: [
-		"{isolatedcrystal.quests.25eb07da.text.1}"
+		"{isolatedcrystal.quests.25eb07da.text.1}",
+		"{isolatedcrystal.quests.25eb07da.text.2}"
 	],
 	dependencies: [
 		"942d87b1",
@@ -29,8 +30,8 @@
 				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "contenttweaker:nature_crystal",
-					Count: 1,
-					Damage: 0s
+					Damage: 0s,
+					Count: 1
 				},
 				TrophyVariant: "classic"
 			},

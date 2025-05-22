@@ -4,6 +4,7 @@ import mods.modularmachinery.RecipeStartEvent;
 import mods.modularmachinery.RecipeCheckEvent;
 import mods.modularmachinery.RecipeTickEvent;
 import mods.modularmachinery.RecipeFinishEvent;
+import mods.modularmachinery.MachineStructureFormedEvent;
 import mods.modularmachinery.RecipeEvent;
 import mods.modularmachinery.IMachineController;
 import mods.modularmachinery.MMEvents;
@@ -15,6 +16,7 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.util.Math;
 import mods.zenutils.StringList;
+import mods.zenutils.DataUpdateOperation;
 import scripts.libs.Util.basicAspects;
 import native.thaumcraft.common.entities.EntityFluxRift;
 import native.kport.modularmagic.common.tile.TileAspectProvider;
@@ -88,6 +90,16 @@ RecipeBuilder.newBuilder("perditio_crystal", "emptiness_energizer", 120)
     })
     .build();
 
+MMEvents.onStructureFormed("emptiness_energizer", function(event as MachineStructureFormedEvent) {
+    val controller = event.controller;
+    val world = controller.world;
+    world.setCustomWorldData(world.getCustomWorldData().deepUpdate({
+        EmptinessEnergizer: [
+            controller.pos.asData()
+        ]
+    }, DataUpdateOperation.MERGE));
+});
+
 function checkCircuit(controller as IMachineController, high as bool, required as int) as bool {
     val offset as int = high ? -2 : 2;
     val itemHandler = controller.world.getItemHandler(controller.relativePos(offset, 0, 2), up);
@@ -142,10 +154,17 @@ MMEvents.onMachinePreTick("natural_grace", function(event as MachineTickEvent) {
     val world = controller.world;
     val pos = controller.pos;
     var stormBurstCount as int = 0;
-    for burst in world.nearbyEntities(IVector3d.create(0.5 + pos.x, 0.5 + pos.y, 0.5 + pos.z), 2.0).filterType(<entity:botania:mana_burst>).entities {
-        if (burst.tags has "storm") {
-            burst.setDead();
+    for entity in world.nearbyEntities(IVector3d.create(0.5 + pos.x, 0.5 + pos.y, 0.5 + pos.z), 2.0).entities {
+        val def = entity.definition;
+        if (isNull(def)) {
+            continue;
+        }
+        if (def.id == "botania:mana_burst" && entity.tags has "storm") {
+            entity.setDead();
             stormBurstCount += 1;
+        } else if (def.id == "botania:mana_storm") {
+            entity.setDead();
+            world.performExplosion(null, entity.x, entity.y, entity.z, 1.5f, false, false);
         }
     }
     if (isNull(controller.customData.Bursts)) {
@@ -287,7 +306,7 @@ RecipeBuilder.newBuilder("mine_crystal", "mine_catalyst", 120)
         if (content.definition.name == "mine_medium" && Math.abs(content.amount - 128000) <= 500) {
             return;
         }
-        event.setFailed(false, "mine medium out of 128000±500");
+        event.preventProgressing("mine medium out of 128000±500");
     })
     .build();
 

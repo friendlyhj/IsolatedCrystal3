@@ -63,12 +63,12 @@ function getColor(name as string, random as IRandom)as int{
 }
 function getFlowerName(w as IWorld, p as IBlockPos)as string{
     var d as IData=w.getBlock(p).data;
-    if(!isNull(d) && d has "subTileName")return d.subTileName.asString();
+    if(!isNull(d))return d.deepGetString("subTileName");
     return "";
 }
 function getFlowerMana(w as IWorld,p as IBlockPos)as int{
     var d as IData=w.getBlock(p).data;
-    if(!isNull(d) && d has "subTileCmp")return d.subTileCmp.mana.asInt();
+    if(!isNull(d)) return d.deepGetInt("subTileCmp.mana");
     return 0;
 }
 function irisotosWork(world as IWorld, pos as IBlockPos) as void {
