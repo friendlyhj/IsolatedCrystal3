@@ -2,6 +2,7 @@
 
 import mods.thaumcraft.Infusion;
 import mods.thaumcraft.Crucible;
+import mods.thaumcraft.ArcaneWorkbench;
 
 Infusion.registerRecipe("metal_infuser", "", <mekanism:machineblock:8>, 2, [
     <aspect:potentia> * 60,
@@ -112,10 +113,10 @@ Infusion.registerRecipe("accelerator", "", <modularmachinery:essentia_accelerato
     <aspect:fabrico> * 144,
     <aspect:vacuos> * 144
 ], <thaumcraft:metal_thaumium>, [
-    <thaumcraft:matrix_speed>,
-    <thaumcraft:matrix_speed>,
-    <thaumcraft:matrix_speed>,
-    <thaumcraft:matrix_speed>,
+    <appliedenergistics2:material:47>,
+    <ore:nitor>,
+    <ore:nitor>,
+    <thaumcraft:mechanism_complex>,
     <contenttweaker:logic_crystal>,
     <contenttweaker:logic_crystal>,
     <contenttweaker:warp_crystal>,
@@ -129,3 +130,10 @@ Crucible.registerRecipe("exchange_tablet", "", <embers:alchemy_tablet>, <embers:
 Crucible.registerRecipe("ancient_brick", "", <embers:archaic_brick>, <embers:ingot_dawnstone>, [
     <aspect:humanus> * 5
 ]);
+
+ArcaneWorkbench.removeRecipe(<thaumcraft:matrix_speed>);
+Crucible.registerRecipe("matrix_speed", "", <thaumcraft:matrix_speed>, <thaumcraft:stone_eldritch_tile>, [
+    <aspect:tempus> * 180
+]);
+
+<thaumcraft:matrix_speed>.addTooltip(game.localize("isolatedcrystal.tooltip.matrix_speed"));

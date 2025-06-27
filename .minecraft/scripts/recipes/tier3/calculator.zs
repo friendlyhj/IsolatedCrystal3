@@ -4,6 +4,13 @@ import mods.calculator.atomic as Atomic;
 import mods.calculator.flawless as Flawless;
 import mods.calculator.algorithmSeparator as AlgorithmSeparator;
 import mods.calculator.stoneSeparator as StoneSeparator;
+import crafttweaker.item.IItemStack;
+
+import native.sonar.calculator.mod.common.recipes.AnalysingChamberRecipes;
+import native.sonar.core.integration.crafttweaker.SonarRemoveRecipe;
+import native.sonar.core.recipes.RecipeObjectType;
+import native.crafttweaker.CraftTweakerAPI;
+
 
 Basic.removeRecipe(<calculator:reinforcedironingot>);
 Basic.removeRecipe(<sonarcore:reinforcedstoneblock>);
@@ -19,6 +26,10 @@ Flawless.removeRecipe(<minecraft:emerald>);
 Flawless.removeRecipe(<minecraft:obsidian>);
 Flawless.removeRecipe(<minecraft:blaze_rod>);
 Flawless.addRecipe(<minecraft:sea_lantern>, <actuallyadditions:item_misc:24>, <bloodmagic:slate:4>, <minecraft:sea_lantern>, <contenttweaker:crystal_alga_seeds>);
+Atomic.addRecipe(<calculator:healthprocessor>, <calculator:atomicbinder>, <calculator:calculatorscreen>, <calculator:healthmodule>);
+Atomic.addRecipe(<calculator:hungerprocessor>, <calculator:atomicbinder>, <calculator:calculatorscreen>, <calculator:hungermodule>);
+Atomic.removeRecipe(<calculator:nutritionmodule>);
+Atomic.addRecipe(<calculator:healthmodule>, <calculator:energymodule>, <calculator:hungermodule>, <calculator:nutritionmodule>);
 
 Scientific.addRecipe(<astralsorcery:itemcraftingcomponent>, <contenttweaker:warp_crystal>, <calculator:smalltanzanite>);
 Scientific.addRecipe(<appliedenergistics2:material:7>, <contenttweaker:warp_crystal>, <calculator:smallamethyst>);
@@ -33,3 +44,11 @@ StoneSeparator.removeRecipe(<calculator:smallamethyst>, <calculator:shardamethys
 
 Atomic.addRecipe(<sonarcore:reinforcedstoneblock>, <embers:archaic_circuit>, <sonarcore:reinforcedstoneblock>, <thaumicaugmentation:stone>);
 
+function removeAnalysingChamberRecipe(output as IItemStack) {
+    CraftTweakerAPI.apply(SonarRemoveRecipe(AnalysingChamberRecipes.instance(), RecipeObjectType.OUTPUT, [output]));
+}
+
+removeAnalysingChamberRecipe(<calculator:healthprocessor>);
+removeAnalysingChamberRecipe(<calculator:hungerprocessor>);
+removeAnalysingChamberRecipe(<calculator:healthmodule>);
+removeAnalysingChamberRecipe(<calculator:hungermodule>);

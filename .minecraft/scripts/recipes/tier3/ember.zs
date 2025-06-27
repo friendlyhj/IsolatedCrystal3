@@ -2,6 +2,7 @@
 import mods.embers.Alchemy;
 import mods.embers.Mixer;
 
+Alchemy.remove(<embers:dust_metallurgic>);
 Alchemy.addAspect("antimony", <soot:signet_antimony>);
 Mixer.remove(<liquid:dawnstone> * 8);
 Mixer.add(<liquid:dawnstone> * 12, [<liquid:energetic_alloy> * 4, <liquid:constantan> * 4, <liquid:osgloglas>]);

@@ -8,7 +8,7 @@
   },
   "components": [
     {
-      "weight": 350,
+      "weight": 150,
       "oreName": "minecraft:stone"
     },
     {
@@ -22,7 +22,7 @@
   ],
   "explosionStrength": 15.0,
   "radius": 4,
-  "maxWeight": 600,
+  "maxWeight": 400,
   "version": 3,
-  "cost": 100000
+  "cost": 66666
 }

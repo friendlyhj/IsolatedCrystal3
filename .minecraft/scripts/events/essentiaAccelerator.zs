@@ -70,3 +70,4 @@ function newRecipe(aspect1 as string, aspect2 as string, accelerate as int, time
 newRecipe("fabrico", "vacuos", 4, 100);
 newRecipe("permutatio", "auram", 10, 50);
 newRecipe("caeles", "visum", 20, 40);
+newRecipe("tempus", "draco", 50, 200);

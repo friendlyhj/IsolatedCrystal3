@@ -1,28 +1,28 @@
 {
-    "catalystStack": {
-      "registryName": {
-        "domain": "contenttweaker",
-        "path": "lapis_ore_sacrifice"
-      },
-      "meta": 0
+  "catalystStack": {
+    "registryName": {
+      "domain": "contenttweaker",
+      "path": "lapis_ore_sacrifice"
     },
-    "components": [
-      {
-        "weight": 350,
-        "oreName": "minecraft:stone"
-      },
-      {
-        "weight": 200,
-        "oreName": "minecraft:lapis_ore"
-      },
-      {
-        "weight": 50,
-        "oreName": "minecraft:lapis_block"
-      }
-    ],
-    "explosionStrength": 15.0,
-    "radius": 4,
-    "maxWeight": 600,
-    "version": 3,
-    "cost": 100000
-  }
+    "meta": 0
+  },
+  "components": [
+    {
+      "weight": 150,
+      "oreName": "minecraft:stone"
+    },
+    {
+      "weight": 200,
+      "oreName": "minecraft:lapis_ore"
+    },
+    {
+      "weight": 50,
+      "oreName": "minecraft:lapis_block"
+    }
+  ],
+  "explosionStrength": 15.0,
+  "radius": 4,
+  "maxWeight": 400,
+  "version": 3,
+  "cost": 66666
+}

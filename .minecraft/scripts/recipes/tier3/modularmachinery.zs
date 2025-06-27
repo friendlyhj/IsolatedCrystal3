@@ -358,3 +358,5 @@ RecipeBuilder.newBuilder("flux_release_vitium", "flux_releaser", 10)
     })
     .addRecipeTooltip(game.localize("modpack.tooltip.flux_releaser.vitium"))
     .build();
+
+scripts.recipes.tier2.modualrmachinery.newEssentiaGeneratorRecipe(<contenttweaker:space_time_crystal>, "tempus");

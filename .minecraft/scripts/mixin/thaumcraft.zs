@@ -54,3 +54,12 @@ zenClass MixinTilePedestal {
         }
     }
 }
+
+#mixin {targets: ["thaumcraft.common.tiles.essentia.TileTube", "thaumcraft.common.tiles.essentia.TileTubeBuffer", "thaumcraft.common.tiles.essentia.TileTubeValve"]}
+zenClass MixinTubeSpeedup {
+    #mixin ModifyConstant {method: "func_73660_a", constant: {intValue: 5}}
+    function speedup(value as int) as int {
+        return 2;
+    }
+}
+

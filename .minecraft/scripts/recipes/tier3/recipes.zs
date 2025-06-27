@@ -297,6 +297,18 @@ recipeTweak(true, <nuclearcraft:salt_fission_vessel> * 4, [
     [<nuclearcraft:alloy:12>, <nuclearcraft:part:12>, <nuclearcraft:alloy:12>],
     [<nuclearcraft:part:3>, <nuclearcraft:alloy:10>, <nuclearcraft:part:3>]
 ]);
+recipeTweak(true, <calculator:healthprocessor>, [
+    [<calculator:largetanzanite>, <contenttweaker:life_crystal>, <calculator:largetanzanite>],
+    [<calculator:atomicassembly>, <calculator:largetanzanite>, <calculator:atomicassembly>],
+    [<calculator:largetanzanite>, <contenttweaker:life_crystal>, <calculator:largetanzanite>]
+]);
+recipeTweak(true, <calculator:hungerprocessor>, [
+    [<calculator:largeamethyst>, <contenttweaker:life_crystal>, <calculator:largeamethyst>],
+    [<calculator:atomicassembly>, <calculator:largeamethyst>, <calculator:atomicassembly>],
+    [<calculator:largeamethyst>, <contenttweaker:life_crystal>, <calculator:largeamethyst>]
+]);
+recipes.remove(<calculator:hungermodule>);
+recipes.remove(<calculator:healthmodule>);
 
 
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<thaumcraft:nugget:10>, <thermalfoundation:material:134>, 1200);

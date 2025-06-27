@@ -1,0 +1,13 @@
+filename = 'thaumtweaks-0.3.5.4.jar'
+name = 'ThaumTweaks'
+side = 'both'
+
+[download]
+hash = '3baa55f150fdd6752da56f926d0e578866534ea6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5095243
+project-id = 403676
