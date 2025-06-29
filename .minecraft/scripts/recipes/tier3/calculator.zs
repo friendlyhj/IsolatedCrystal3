@@ -48,7 +48,15 @@ function removeAnalysingChamberRecipe(output as IItemStack) {
     CraftTweakerAPI.apply(SonarRemoveRecipe(AnalysingChamberRecipes.instance(), RecipeObjectType.OUTPUT, [output]));
 }
 
-removeAnalysingChamberRecipe(<calculator:healthprocessor>);
+function removeAnalysingChamberRecipeByInput(inputArgs as [int]) {
+    val recipes = AnalysingChamberRecipes.instance();
+    recipes.removeRecipe(recipes.getRecipeFromInputs(null, inputArgs));
+}
+
+// health processor
+removeAnalysingChamberRecipeByInput([2, 8]);
+removeAnalysingChamberRecipeByInput([3, 7]);
+
 removeAnalysingChamberRecipe(<calculator:hungerprocessor>);
 removeAnalysingChamberRecipe(<calculator:healthmodule>);
 removeAnalysingChamberRecipe(<calculator:hungermodule>);

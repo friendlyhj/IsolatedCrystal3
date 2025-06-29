@@ -67,7 +67,7 @@ RecipeBuilder.newBuilder("perditio_crystal", "emptiness_energizer", 120)
             } else if (aspectInputBus.aspect.tag != requireAspectName) {
                 event.setFailed(true, "wrong aspect input type");
             } else if (aspectInputBus.amount < 40) {
-                event.preventProgressing("not enough aspect input");
+                event.preventProgressing("not enough aspect input, requires 40, but only " ~ aspectInputBus.amount);
             } else {
                 aspectInputBus.takeFromContainer(aspectInputBus.aspect, aspectInputBus.amount);
                 world.setBlockState(<blockstate:extrautils2:redstonelantern>, pos.up(8));

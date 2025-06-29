@@ -1,10 +1,13 @@
 #loader mixin
 
 import native.java.util.ArrayList;
+import native.java.util.Random;
 import native.net.minecraft.item.ItemStack;
 import native.net.minecraft.entity.player.EntityPlayerMP;
 import native.thaumcraft.api.aspects.AspectList;
 import native.thaumcraft.api.capabilities.IPlayerKnowledge.EnumResearchStatus;
+import native.net.minecraft.nbt.NBTTagCompound;
+import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
 
 #mixin {targets: "thaumcraft.common.config.ConfigAspects"}
@@ -63,3 +66,24 @@ zenClass MixinTubeSpeedup {
     }
 }
 
+#mixin {targets: "thaumcraft.common.tiles.essentia.TileCentrifuge"}
+zenClass MixinTileCentrifuge {
+    var outputSecond as bool = false;
+
+    #mixin Inject{method: "readSyncNBT", at: {value: "RETURN"}}
+    function readOutputSecond(nbt as NBTTagCompound, ci as CallbackInfo) as void {
+        this.outputSecond = nbt.getBoolean("outputSecond");
+    }
+
+    #mixin Inject{method: "writeSyncNBT", at: {value: "RETURN"}}
+    function writeOutputSecond(nbt as NBTTagCompound, ci as CallbackInfoReturnable) as void {
+        nbt.setBoolean("outputSecond", this.outputSecond);
+    }
+
+    #mixin Redirect{method: "processEssentia", at: {value: "INVOKE", target: "Ljava/util/Random;nextInt(I)I"}}
+    function processEssentiaRandom(random as Random, value as int) as int {
+        val x = this.outputSecond ? 1 : 0;
+        this.outputSecond = !this.outputSecond;
+        return x;
+    }
+}

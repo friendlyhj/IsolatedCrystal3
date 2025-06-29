@@ -1,6 +1,9 @@
 {
 	x: 0.0d,
 	y: -8.0d,
+	text: [
+		"{isolatedcrystal.quests.8610840e.text.1}"
+	],
 	dependencies: [
 		"69fb64c9"
 	],
