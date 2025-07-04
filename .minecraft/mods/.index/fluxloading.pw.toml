@@ -1,0 +1,13 @@
+filename = 'fluxloading-1.1.5.jar'
+name = 'FluxLoading'
+side = 'both'
+
+[download]
+hash = '3f9befc82c02d3abe2f9ad638efa96b24058eec1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6436912
+project-id = 1207328

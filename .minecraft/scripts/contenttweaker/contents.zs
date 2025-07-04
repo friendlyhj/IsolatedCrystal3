@@ -82,6 +82,10 @@ log.translucent = true;
 log.blockHardness = -1;
 log.toolClass = "";
 log.toolLevel = 0;
+log.witherProof = true;
+log.dropHandler = function(drops, world, pos, state, fortune) {
+    drops.clear();
+};
 log.register();
 
 val leaves = VanillaFactory.createBlock("crystal_leaves", <blockmaterial:plants>);
@@ -92,6 +96,10 @@ leaves.fullBlock = false;
 leaves.blockHardness = -1;
 leaves.toolClass = "";
 leaves.toolLevel = 0;
+leaves.witherProof = true;
+leaves.dropHandler = function(drops, world, pos, state, fortune) {
+    drops.clear();
+};
 leaves.register();
 
 val crusher = VanillaFactory.createBlock("mana_crusher", <blockmaterial:rock>);

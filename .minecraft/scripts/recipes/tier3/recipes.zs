@@ -136,6 +136,8 @@ recipes.remove(<embers:mech_core>);
 recipes.remove(<embers:ember_relay>);
 recipes.remove(<immersiveengineering:metal_decoration0:6>);
 recipes.remove(<draconicevolution:grinder>);
+recipes.remove(<industrialforegoing:laser_base>);
+recipes.remove(<industrialforegoing:laser_drill>);
 
 recipeTweak(true, <extrautils2:machine>.withTag({Type:"extrautils2:generator_survival"}),[
     [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],

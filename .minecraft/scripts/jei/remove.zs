@@ -89,7 +89,8 @@ val categoryHideList as string[] = [
     "artisanworktables_blacksmith_workshop",
     "artisanworktables_engineer_workshop",
     "artisanworktables_mage_workshop",
-    "artisanworktables_chef_workshop"
+    "artisanworktables_chef_workshop",
+    "thermaldynamics.covers"
 ];
 
 for category in categoryHideList {

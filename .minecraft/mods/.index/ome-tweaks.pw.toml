@@ -1,13 +1,13 @@
-filename = 'ometweaks-1.5.0.jar'
-name = 'OME Tweaks'
+filename = 'ometweaks-1.5.2.jar'
+name = 'OME-Tweaks'
 side = 'both'
 
 [download]
-hash = 'e7a9902b21c8b6be5b097329b78288ec23960084'
+hash = '6ac105fcc4b537edde61ccf934adeb0883ec6e09'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6646361
+file-id = 6720978
 project-id = 1159298

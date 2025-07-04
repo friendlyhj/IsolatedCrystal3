@@ -342,3 +342,23 @@ RecipeBuilder.get("mage")
   .setFluid(<liquid:mercury> * 1440)
   .addOutput(<contenttweaker:crystalline_saint>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<contenttweaker:astral_crystal>, <industrialforegoing:laser_lens>, <contenttweaker:astral_crystal>],
+    [<thaumicaugmentation:fortified_glass>, <minecraft:beacon>, <thaumicaugmentation:fortified_glass>],
+    [<thermalfoundation:material:294>, <extrautils2:machine>, <thermalfoundation:material:294>]])
+  .addTool(<ore:artisansSpanner>, 40)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<industrialforegoing:laser_drill>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<nuclearcraft:part:6>, <contenttweaker:astral_crystal>, <nuclearcraft:part:6>],
+    [<contenttweaker:metal_crystal>, <calculator:material:7>, <thaumicaugmentation:fortified_glass>],
+    [<thermalfoundation:material:294>, <extrautils2:machine>, <thermalfoundation:material:294>]])
+  .addTool(<ore:artisansSpanner>, 20)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<industrialforegoing:laser_base>)
+  .create();
