@@ -1,9 +1,10 @@
 {
 	icon: "botania:terraplate",
 	x: 21.0d,
-	y: 6.0d,
+	y: 3.0d,
 	dependencies: [
-		"d8c7e712"
+		"d8c7e712",
+		"0af13b3c"
 	],
 	tasks: [{
 		uid: "7e66ab74",

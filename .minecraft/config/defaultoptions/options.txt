@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.0
+gamma:1.0
 saturation:0.0
 renderDistance:8
 guiScale:5
@@ -15,7 +15,7 @@ difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:true
-resourcePacks:["Minecraft-Mod-Language-Modpack.zip","Modernity-f3-3.10.2.zip","ModernityAdjunct-f3-1.5.zip","Dark Mode-2.4.1.zip","AE2_Storage_Components_1.0.1.zip"]
+resourcePacks:["Minecraft-Mod-Language-Modpack.zip","Modernity-f3-3.10.2.zip","ModernityAdjunct-f3-1.5.zip","Dark Mode-2.4.1.zip","AE2_Storage_Components_1.0.1.zip","Natures-Aurora-1.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:zh_cn

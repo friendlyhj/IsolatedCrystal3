@@ -360,3 +360,10 @@ RecipeBuilder.newBuilder("flux_release_vitium", "flux_releaser", 10)
     .build();
 
 scripts.recipes.tier2.modualrmachinery.newEssentiaGeneratorRecipe(<contenttweaker:space_time_crystal>, "tempus");
+
+RecipeBuilder.newBuilder("vitium", "essentia_generator", 100)
+        .addAspectOutput("vitium", 48)
+        .addItemInput(<contenttweaker:perditio_crystal>)
+        .setChance(0.01)
+        .addManaInput(8000, false)
+        .build();

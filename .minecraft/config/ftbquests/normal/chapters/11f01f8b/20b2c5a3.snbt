@@ -4,8 +4,7 @@
 	shape: "hexagon",
 	hide_dependency_lines: 1b,
 	dependencies: [
-		"0e9b7995",
-		"3e77fdb0"
+		"0e9b7995"
 	],
 	size: 1.5d,
 	tasks: [{

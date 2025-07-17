@@ -1,12 +1,16 @@
 #loader mixin
 
 import native.java.util.ArrayList;
+import native.java.lang.Math;
 import native.java.util.Random;
 import native.net.minecraft.item.ItemStack;
 import native.net.minecraft.entity.player.EntityPlayerMP;
 import native.thaumcraft.api.aspects.AspectList;
 import native.thaumcraft.api.capabilities.IPlayerKnowledge.EnumResearchStatus;
+import native.thaumcraft.common.world.aura.AuraHandler;
 import native.net.minecraft.nbt.NBTTagCompound;
+import native.net.minecraft.world.World;
+import native.net.minecraft.util.math.BlockPos;
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
 
@@ -85,5 +89,21 @@ zenClass MixinTileCentrifuge {
         val x = this.outputSecond ? 1 : 0;
         this.outputSecond = !this.outputSecond;
         return x;
+    }
+}
+
+#mixin {targets: "thaumcraft.common.entities.EntityFluxRift"}
+zenClass MixinEntityFluxRift {
+    #mixin Static
+    #mixin ModifyVariable {method: "createRift", at: {value: "LOAD", ordinal: 0}, name: "size"}
+    function setRiftSizeMax100(origin as double, world as World, pos as BlockPos) as double {
+        val flux = AuraHandler.getFlux(world, pos);
+        if (origin < 90) {
+            return origin;
+        }
+        val mu = Math.min(origin, 100.0);
+        val sigma = 11.0 - Math.cbrt(Math.max(0.0, 0.0 + flux - 3000)) / 3;
+        val gaussian = world.rand.nextGaussian();
+        return Math.round(mu - sigma * Math.abs(gaussian)) as double;
     }
 }

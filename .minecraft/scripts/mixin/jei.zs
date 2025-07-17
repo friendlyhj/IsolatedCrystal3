@@ -1,4 +1,5 @@
 #loader mixin
+#norun
 
 import native.mezz.jei.api.recipe.IRecipeCategory;
 import native.com.google.common.collect.ImmutableList;
@@ -60,26 +61,24 @@ zenClass MixinRecipeCategoryComparator {
             "draconicevolution"
         ];
 
-        val categoriesReorder as [IRecipeCategory][string]$orderly = {};
+        val categoriesReorder as [string][string]$orderly = {};
         for name in orders {
             categoriesReorder[name] = [];
         }
         categoriesReorder["Others"] = [];
 
         for category in categories {
-            var modCategories as [IRecipeCategory];
+            var modCategories as [string];
             if (orders has category.modName) {
                 modCategories = categoriesReorder[category.modName];
             } else {
                 modCategories = categoriesReorder["Others"];
             }
-            modCategories += category;
+            modCategories.add(category.uid);
         }
-        var reorderedCategories = [] as string[];
-        for modName, categories in categoriesReorder {
-            for category in categories {
-                reorderedCategories += category.uid;
-            }
+        val reorderedCategories = [] as string[];
+        for modName, reorderedCategories in categoriesReorder {
+            reorderedCategories.addAll(reorderedCategories as string[]);
         }
         recipeCategories = ImmutableList.copyOf(reorderedCategories);
     }

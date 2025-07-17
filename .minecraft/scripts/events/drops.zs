@@ -7,3 +7,5 @@ events.register(function(event as BlockHarvestDropsEvent) {
         event.addItem(<contenttweaker:jade_leaf> % 5);
     }
 });
+
+<entity:thaumcraft:wisp>.clearDrops();

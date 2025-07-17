@@ -35,7 +35,7 @@ events.onRenderTick(function(event as RenderTickEvent) {
                 barColor = "§6";
             }
             val usedBarCount = Math.ceil(mspt / 2.5);
-            msptBar = `MSPT:[${barColor}${StaticString.repeat("|", "", usedBarCount)}§7${StaticString.repeat("|", "", 20 - usedBarCount)}§r] ${StaticString.format("%s%.2f", [barColor, mspt])}ms   `;
+            msptBar = `MSPT:[${barColor}${StaticString.repeat("|", "", usedBarCount)}§7${StaticString.repeat("|", "", 20 - usedBarCount)}§r] ${barColor}${twoDecimal(mspt)}ms   `;
         } else {
             val tps = Math.min(20.0, 1000.0 / mspt);
             barColor = "§a";
@@ -44,7 +44,7 @@ events.onRenderTick(function(event as RenderTickEvent) {
             } else if (tps < 15) {
                 barColor = "§6";
             }
-            msptBar = StaticString.format("TPS: %s%.2f", [barColor, tps]);
+            msptBar = `TPS: ${barColor}${twoDecimal(tps)} `;
         }
         val fontRender = mc.fontRenderer;
         val textHeight = fontRender.FONT_HEIGHT;
@@ -65,4 +65,8 @@ events.onRenderTick(function(event as RenderTickEvent) {
 
 function twoLength(x as int) as string {
     return x < 10 ? "0" ~ x : x;
+}
+
+function twoDecimal(x as float) as string {
+    return StaticString.format("%.2f", [x]);
 }

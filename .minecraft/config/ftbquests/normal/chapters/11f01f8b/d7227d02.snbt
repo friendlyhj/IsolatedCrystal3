@@ -1,5 +1,5 @@
 {
-	x: 21.0d,
+	x: 22.5d,
 	y: 4.5d,
 	text: [
 		"{isolatedcrystal.quests.d7227d02.text.1}"
@@ -18,8 +18,8 @@
 		uid: "9a8a25fa",
 		type: "item",
 		items: [{
-			tag: {},
 			Damage: 13s,
+			tag: {},
 			id: "botania:lens"
 		}],
 		ignore_nbt: 1b

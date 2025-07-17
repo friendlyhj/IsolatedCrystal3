@@ -73,7 +73,8 @@ val banList as IItemStack[] = [
     <extrautils2:bagofholding>,
     <ae2fc:fluid_level_maintainer>,
     <nuclearcraft:electric_furnace>,
-    <embers:dust_metallurgic>
+    <embers:dust_metallurgic>,
+    <mekanism:cardboardbox>
 ];
 
 for ban in banList {
@@ -90,7 +91,8 @@ val categoryHideList as string[] = [
     "artisanworktables_engineer_workshop",
     "artisanworktables_mage_workshop",
     "artisanworktables_chef_workshop",
-    "thermaldynamics.covers"
+    "thermaldynamics.covers",
+    "Painter"
 ];
 
 for category in categoryHideList {

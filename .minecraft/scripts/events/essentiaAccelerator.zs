@@ -11,7 +11,9 @@ import native.org.zeith.thaumicadditions.tiles.TileAspectCombiner;
 
 static essentiaDevices as string[] = [
     "thaumcraft:centrifuge",
-    "thaumadditions:aspect_combiner"
+    "thaumadditions:aspect_combiner",
+    "thaumicaugmentation:rift_mover_input",
+    "thaumicaugmentation:rift_mover_output"
 ];
 
 events.onBlockNeighborNotify(function(event as BlockNeighborNotifyEvent) {
@@ -38,19 +40,21 @@ function newRecipe(aspect1 as string, aspect2 as string, accelerate as int, time
                 val centralPos = controller.relativePos(0, 0, 3);
                 for posData in world.getCustomWorldData().deepGet("EssentiaDevices").asList() {
                     val pos = posData.asBlockPos();
-                    if (Math.abs(pos.x - centralPos.x) > 16 || Math.abs(pos.z - centralPos.z) > 16) {
+                    if (Math.abs(pos.x - centralPos.x) > 32 || Math.abs(pos.z - centralPos.z) > 32) {
                         continue;
                     }
                     val device = world.getBlock(pos).definition.id;
                     val te = world.native.getTileEntity(pos);
-                    if (device == "thaumcraft:centrifuge") {
-                        for i in 0 .. (accelerate - 1) {
-                            (te as ITickable).update();
-                        }
-                    } else if (device == "thaumadditions:aspect_combiner") {
-                        val combiner = te as TileAspectCombiner;
-                        if (!combiner.prevPowered) {
-                            combiner.craftingTime = min(100, combiner.craftingTime + accelerate - 1);
+                    if (essentiaDevices has device) {
+                        if (device == "thaumadditions:aspect_combiner") {
+                            val combiner = te as TileAspectCombiner;
+                            if (!combiner.prevPowered) {
+                                combiner.craftingTime = Math.min(100, combiner.craftingTime + accelerate - 1);
+                            }
+                        } else {
+                            for i in 0 .. (accelerate - 1) {
+                                (te as ITickable).update();
+                            }
                         }
                     } else {
                         logger.logWarning("Removed device: " + posData.asString());
