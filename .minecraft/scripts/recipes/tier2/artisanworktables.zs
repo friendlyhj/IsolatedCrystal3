@@ -236,6 +236,7 @@ RecipeBuilder.get("mage")
 <ore:gearBrass>.add(<contenttweaker:brass_gear>);
 
 print("registering recipes of gears");
+mods.immersiveengineering.MetalPress.removeRecipeByMold(<immersiveengineering:mold:1>);
 for od in oreDict {
   if (!od.empty && od.name.startsWith("gear")) {
     val type = od.name.substring(4);
@@ -251,6 +252,7 @@ for od in oreDict {
       }
       val rod = <tconstruct:tool_rod>.withTag({Material: material.identifier});
       recipes.remove(od);
+      mods.tconstruct.Casting.removeTableRecipe(od.firstItem);
       RecipeBuilder.get("blacksmith")
         .setShaped([
           [rod, ingot, rod],

@@ -25,6 +25,7 @@ events.onRenderTick(function(event as RenderTickEvent) {
         val height as int = res.scaledHeight;
         val playTime = Data.getInt(player.data, "PlayTime");
         val mspt = Data.getDouble(player.data, "Mspt");
+        val LowMspt = Data.getDouble(player.data, "LowMspt");
         var msptBar as string = null;
         var barColor as string = null;
         if (mspt < 50) {
@@ -35,7 +36,7 @@ events.onRenderTick(function(event as RenderTickEvent) {
                 barColor = "§6";
             }
             val usedBarCount = Math.ceil(mspt / 2.5);
-            msptBar = `MSPT:[${barColor}${StaticString.repeat("|", "", usedBarCount)}§7${StaticString.repeat("|", "", 20 - usedBarCount)}§r] ${barColor}${twoDecimal(mspt)}ms   `;
+            msptBar = `MSPT:[${barColor}${StaticString.repeat("|", "", usedBarCount)}§7${StaticString.repeat("|", "", 20 - usedBarCount)}§r] ${barColor}${twoDecimal(mspt)}/${twoDecimal(LowMspt)}ms   `;
         } else {
             val tps = Math.min(20.0, 1000.0 / mspt);
             barColor = "§a";

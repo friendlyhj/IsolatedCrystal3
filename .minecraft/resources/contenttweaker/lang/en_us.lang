@@ -95,6 +95,8 @@ gas.lpg=LPG
 
 material.iron_compressed.name=Compressed Iron
 material.tin.name=Tin
+material.gold.name=Gold
+material.aluminum.name=Aluminum
 
 modpack.tooltip.afflatus_of_crafting.requirement=Require [%s/%s] Different Crafts.
 modpack.tooltip.afflatus_of_crafting.next=An example of uncompleted craft:

@@ -29,3 +29,9 @@ FITweaker.addRecipe(
     <liquid:astralsorcery.liquidstarlight>,
     <blockstate:minecraft:gravel>
 );
+
+FITweaker.addRecipe(
+    <liquid:pyrotheum>,
+    <liquid:astralsorcery.liquidstarlight>,
+    <blockstate:minecraft:glass>
+);

@@ -1,9 +1,9 @@
 import mods.astralsorcery.Altar;
 
 Altar.addTraitAltarRecipe("isolatedcrystal:iris_crystal", <contenttweaker:iris_crystal>, 6000, 100, [
-    <calculator:smalltanzanite>, <calculator:smallamethyst>, <calculator:smalltanzanite>, <calculator:smallamethyst>,
-    <astralsorcery:itemcraftingcomponent:3>,
-    <calculator:smallamethyst>, <calculator:smalltanzanite>, <calculator:smallamethyst>, <calculator:smalltanzanite>,
+    <calculator:largetanzanite>, <calculator:largeamethyst>, <calculator:largetanzanite>, <calculator:largeamethyst>,
+    <extrautils2:suncrystal>,
+    <calculator:largeamethyst>, <calculator:largetanzanite>, <calculator:largeamethyst>, <calculator:largetanzanite>,
     <appliedenergistics2:fluix_block>, <appliedenergistics2:fluix_block>, <appliedenergistics2:fluix_block>, <appliedenergistics2:fluix_block>,
     <contenttweaker:life_crystal>,
     <contenttweaker:energy_crystal>,
@@ -12,7 +12,7 @@ Altar.addTraitAltarRecipe("isolatedcrystal:iris_crystal", <contenttweaker:iris_c
     <contenttweaker:calculation_crystal>,
     <contenttweaker:space_time_crystal>,
     <contenttweaker:perditio_crystal>,
-    <actuallyadditions:item_crystal_empowered:4>,
+    <actuallyadditions:item_crystal_empowered:3>,
     <botania:petalblock:14>,
     <botania:petalblock:13>,
     <botania:petalblock:11>,

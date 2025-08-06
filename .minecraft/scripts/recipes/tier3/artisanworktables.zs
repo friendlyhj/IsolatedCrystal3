@@ -362,3 +362,13 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<industrialforegoing:laser_base>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<mekanism:controlcircuit:3>, <contenttweaker:energy_crystal>, <mekanism:controlcircuit:3>],
+    [<contenttweaker:energy_crystal>, <contenttweaker:energy_crystal>, <contenttweaker:energy_crystal>],
+    [<extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"}), <appliedenergistics2:material:47>, <extrautils2:machine>.withTag({Type: "extrautils2:generator_netherstar"})]])
+  .addTool(<ore:artisansSpanner>, 40)
+  .setFluid(<liquid:soldering> * 288)
+  .addOutput(<extrautils2:passivegenerator:6>)
+  .create();

@@ -1,0 +1,25 @@
+[
+  {
+    "matchItems": [
+      {
+        "meta": 0,
+        "id": "minecraft:gold_ingot"
+      },
+      {
+        "oreName": "ingotGold"
+      }
+    ],
+    "targetID": "minecraft:gold_ingot",
+    "targetMeta": 0
+  },
+  {
+    "matchItems": [
+      {
+        "meta": 0,
+        "id": "minecraft:iron_ingot"
+      }
+    ],
+    "targetID": "minecraft:iron_ingot",
+    "targetMeta": 0
+  }
+]

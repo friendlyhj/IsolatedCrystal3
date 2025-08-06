@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Item",
+    "name": "minecraft:gold_ingot",
+    "meta": 0
+  },
+  {
+    "type": "OreDict",
+    "name": "ingotGlod",
+    "meta": -1
+  },
+  {
+    "type": "ModID",
+    "name": "minecraft",
+    "meta": -1
+  }
+]

@@ -284,7 +284,7 @@ RecipeBuilder.newBuilder("energy_crystal", "energy_field_emitter", 120)
 RecipeBuilder.newBuilder("mine_crystal", "mine_catalyst", 120)
     .addItemInputs(
         <contenttweaker:metal_crystal>,
-        <mekanism:scrap> * 12,
+        <thermalfoundation:material:864> * 8,
         <enderio:item_material:75> * 12,
         <calculator:purifiedobsidian> * 4,
         <extrautils2:compressedcobblestone:2>,

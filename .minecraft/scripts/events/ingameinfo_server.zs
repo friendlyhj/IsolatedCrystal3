@@ -11,23 +11,32 @@ NetworkHandler.registerServer2ClientMessage("sync_server_info", function(player,
     }
     player.update({PlayTime: buf.readInt()});
     player.update({Mspt: buf.readDouble()});
+    player.update({LowMspt: buf.readDouble()});
 });
 
 events.onPlayerTick(function(event as PlayerTickEvent) {
-    if (event.side != "SERVER" || event.phase != "END" || event.player.world.getWorldTime() % 20 != 0) {
+    if (event.side != "SERVER" || event.phase != "END" || event.player.world.getWorldTime() % 20 != 4) {
         return;
     }
     NetworkHandler.sendTo("sync_server_info", event.player, function(buf) {
         buf.writeInt(event.player.readStat(PlayerStat.getBasicStat("stat.playOneMinute")));
-        buf.writeDouble(getMspt(event.player.world));
+        val mspt as double[] = getMspt(event.player.world);
+        buf.writeDouble(mspt[0]);
+        buf.writeDouble(mspt[1]);
     });
 });
 
-function getMspt(world as IWorld) as double {
+function getMspt(world as IWorld) as double[] {
     val history as long[] = server.native.worldTickTimes[world.dimension];
     var sum as long = 0L;
+    var max as long = 0L;
     for i in history {
         sum += i;
+        if (i > max) {
+            max = i;
+        }
     }
-    return 0.000001 * sum / history.length;
+    val average = 0.000001 * sum / history.length;
+    val maxMs = 0.000001 * max;
+    return [average, maxMs];
 }

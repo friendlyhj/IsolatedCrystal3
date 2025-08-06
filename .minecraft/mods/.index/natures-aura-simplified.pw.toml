@@ -1,0 +1,13 @@
+filename = 'NaturesAura-r20.jar'
+name = "Nature's Aura Simplified"
+side = 'both'
+
+[download]
+hash = '09730f8d60d12f1973b243841a75130876a488e4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6845640
+project-id = 1319143

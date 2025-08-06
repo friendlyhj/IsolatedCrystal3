@@ -97,6 +97,7 @@ gas.lpg=石油气
 material.iron_compressed.name=压缩铁
 material.tin.name=锡
 material.aluminum.name=铝
+material.gold.name=金
 
 base.material.certus=赛特斯
 base.material.aluminum=铝
