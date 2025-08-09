@@ -144,8 +144,10 @@ events.onWorldTick(function(event as WorldTickEvent) {
                     blockName ~= block.meta;
                 }
                 if (name == blockName) {
-                    val drained = world.getAuraChunk(pos).drainAura(pos, auraConsumption, true, false);
-                    if (Math.abs(world.dimension) > 1 || drained != auraConsumption) {
+                    val drainPos = world.getHighestSpot(pos, 35, pos);
+                    val drainChunk = world.getAuraChunk(drainPos);
+                    drainChunk.drainAura(drainPos, auraConsumption, false, false);
+                    if (Math.abs(world.dimension) > 1 || drainChunk.getDrainSpot(drainPos) < -1400000) {
                         world.destroyBlock(pos, true);
                     }
                 } else {
@@ -165,6 +167,6 @@ events.onWorldTick(function(event as WorldTickEvent) {
 
 events.register(function(event as PlayerRightClickItemEvent) {
     if (!event.world.remote && <naturesaura:eye>.matches(event.item)) {
-        event.player.sendMessage(event.world.getAuraInArea(event.position, 10));
+        event.player.sendMessage(event.world.getAuraInArea(event.position, 0));
     }
 });

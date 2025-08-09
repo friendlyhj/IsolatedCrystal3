@@ -3,11 +3,11 @@ name = 'Akashic Tome'
 side = 'both'
 
 [download]
-hash = 'bfebaa5a38069ae9d550950e588132f9c18a0a93100bd55d8333c2ef9affc19bbe451bf4dc488db0f91873c5c10c9603d70f83c91d8ee6b009b18d25c1770233'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/JBthPdnp/versions/qAZUyIdA/AkashicTome-1.2-12.jar'
+hash = 'b11bf9d93f4bd7a2eeb8cfe49c1b30ce1a2f5a37'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update.modrinth]
-mod-id = 'JBthPdnp'
-version = 'qAZUyIdA'
+[update.curseforge]
+file-id = 2648656
+project-id = 250577
