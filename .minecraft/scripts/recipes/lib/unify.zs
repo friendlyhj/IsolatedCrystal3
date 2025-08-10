@@ -91,3 +91,7 @@ ConversionItem.create(<thermalfoundation:storage_resource:1>)
 ConversionItem.create(<thermalfoundation:material:864>)
     .addMatchItem(<immersiveengineering:material:7>)
     .register();
+
+ConversionItem.create(<thermalfoundation:storage_resource>)
+    .addMatchItem(<ore:blockCharcoal>)
+    .register();
