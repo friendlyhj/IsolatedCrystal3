@@ -21,7 +21,6 @@ function maximium(ints as int[])as int{
     return max;
 }
 
-static effectRadius as int = 10;
 static fuels as int[IItemStack] = {
     <contenttweaker:nature_crystal>: 300 * 20,
     <contenttweaker:iris_crystal>: 1500 * 20
@@ -59,15 +58,15 @@ VanillaFactory.putTileEntityTickFunction(114, function(te, w, p){
     }else{
         restfuel -= 1;
         val redstone = world.native.getRedstonePowerFromNeighbors(pos.native);
-        val aura = world.getAuraInArea(pos, effectRadius);
+        val aura = world.getAuraInArea(pos, 0);
         val changedAura = -500000 + redstone * 3000000 / 15 - aura;
         if(changedAura<0){
-            world.getAuraChunk(pos).drainAura(pos, -1*changedAura, true, false);
+            world.getAuraChunk(pos).drainAura(pos, -1*changedAura, false, false);
         }else{
-            world.getAuraChunk(pos).storeAura(pos, changedAura, true, false);
+            world.getAuraChunk(pos).storeAura(pos, changedAura, false, false);
         }
         NetworkHandler.sendToAllAround("AuraConfigurator",
-            pos.x,pos.y,pos.z,effectRadius,world.getDimension(),function(b){
+            pos.x,pos.y,pos.z,10,world.getDimension(),function(b){
                 b.writeBlockPos(pos);
                 b.writeInt(restfuel);
                 b.writeInt(redstone);
