@@ -309,9 +309,6 @@ recipes.addShapeless(<extrautils2:scanner>, [<minecraft:dropper>, <minecraft:red
 furnace.remove(<appliedenergistics2:material:5>);
 recipes.remove(<thermalexpansion:frame>);
 
-recipes.replaceAllOccurrences(<ore:ingotCupronickel>, <ore:ingotConstantan>);
-recipes.replaceAllOccurrences(<factorytech:ore_dust:12>, <ore:dustLapis>);
-
 recipes.remove(<appliedenergistics2:controller>);
 recipes.addShaped(<appliedenergistics2:controller>, [
     [<sonarcore:reinforcedstoneblock>, <appliedenergistics2:material:12>, <sonarcore:reinforcedstoneblock>],

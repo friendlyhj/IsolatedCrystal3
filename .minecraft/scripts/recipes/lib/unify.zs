@@ -13,6 +13,9 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:meatRaw>.add(<minecraft:porkchop>);
 <ore:nuggetIron>.add(<minecraft:iron_nugget>);
 
+<ore:ingotConstantan>.add(<factorytech:ingot:2>);
+<ore:blockConstantan>.add(<factorytech:oreblock:2>);
+
 val b as string[] = [
     "stickWood"
 ];
