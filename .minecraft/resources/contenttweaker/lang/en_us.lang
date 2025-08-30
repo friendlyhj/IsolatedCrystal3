@@ -127,11 +127,11 @@ modpack.festival.loong_boat=Loong Boat Festival
 modpack.festival.qixi=Qixi Festival
 modpack.festival.mid_autumn=Mid-Autumn Festival
 
-modpack.festival=§6§lHappy %s!
+modpack.festival=§6§lHappy %s§6§l!
 
 modpack.info.time_real=Real time: %s
 modpack.info.time_game=Played for %s hours, %s minutes
 
-contenttweaker.part.ore_sacrifice=%s Scarifice
+contenttweaker.part.ore_sacrifice=%s Sacrifice
 
 tile.botania:flower.irisotos.name=Irisotos
