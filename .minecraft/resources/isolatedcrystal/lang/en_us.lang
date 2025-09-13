@@ -110,3 +110,6 @@ isolatedcrystal.quests.bbe7df5c.text.2=The amount of aura is determined by the s
 isolatedcrystal.quests.bbe7df5c.text.3=Nature Crystal 5min, Iris Crystal 25min
 isolatedcrystal.tooltip.matrix_speed=Effect x2, and does not increase Essentia cost
 isolatedcrystal.quests.8610840e.text.1=Modification: Essentia centrifugation will be strictly one-to-one output.
+isolatedcrystal.quests.1fec861a.text.1=Automated Arcane Crafting. Its top features a brightly lit area, with the corresponding side used for vis crystal input. Other sides are used for material IO. The bottom outputs the product.
+isolatedcrystal.quests.1fec861a.text.2=Arcane filler is used to fill the empty slots for crafting.
+isolatedcrystal.quests.35a056bd.text.1=Supplement the current chunk's aura by consuming auram aspects.

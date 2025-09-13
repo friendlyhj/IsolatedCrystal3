@@ -65,6 +65,7 @@ item.contenttweaker.lactic_acid_mixture.name=Lactic Acid Ferment Mixture
 item.contenttweaker.lactic_acid_bacteria.name=Lactic Acid Bacteria Growth Medium
 item.contenttweaker.space_grid.name=Space Grid
 item.contenttweaker.space_matrix.name=Space Matrix
+item.contenttweaker.insightful_crystal.name=Insightful Crystal
 
 tile.contenttweaker.crystal_log.name=Crystal Log
 tile.contenttweaker.crystal_leaves.name=Crystal Leaves
@@ -113,6 +114,7 @@ modpack.tooltip.netherrack_fail.0=It's obviously not the product you wanted.
 modpack.tooltip.netherrack_fail.1=It might be worth trying to process within its native environment
 modpack.tooltip.ender_star=Right-click to transport to The End
 modpack.tooltip.irisotos=The Color of Miracles
+modpack.tooltip.arcane_assembler=Banned, use Arcane Crafter instead 
 
 modpack.festival.new_year=New Year's Day
 modpack.festival.valentine=Valentine's Day

@@ -65,6 +65,7 @@ item.contenttweaker.lactic_acid_mixture.name=乳酸发酵物
 item.contenttweaker.lactic_acid_bacteria.name=乳酸菌培养基
 item.contenttweaker.space_grid.name=空间网格
 item.contenttweaker.space_matrix.name=空间矩阵
+item.contenttweaker.insightful_crystal.name=洞见水晶
 
 tile.contenttweaker.crystal_log.name=水晶树原木
 tile.contenttweaker.crystal_leaves.name=水晶树树叶
@@ -117,6 +118,7 @@ modpack.tooltip.netherrack_fail.0=这显然不是你想要的产物
 modpack.tooltip.netherrack_fail.1=也许应该尝试下该产物的原生环境内处理
 modpack.tooltip.ender_star=右键以传送至末地
 modpack.tooltip.irisotos=奇迹的颜色
+modpack.tooltip.arcane_assembler=已被禁用，请使用奥术合成器
 
 modpack.info.time_real=现实时间 %s
 modpack.info.time_game=已游玩 %s 小时 %s 分钟

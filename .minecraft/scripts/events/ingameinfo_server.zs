@@ -27,16 +27,19 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
 });
 
 function getMspt(world as IWorld) as double[] {
-    val history as long[] = server.native.worldTickTimes[world.dimension];
-    var sum as long = 0L;
-    var max as long = 0L;
-    for i in history {
-        sum += i;
-        if (i > max) {
-            max = i;
+    var average as double = 0.0;
+    var maxMs as double = 0.0;
+    for dim, history in server.native.worldTickTimes {
+        var sum as long = 0L;
+        var max as long = 0L;
+        for i in history {
+            sum += i;
+            if (i > max) {
+                max = i;
+            }
         }
+        average += 0.000001 * sum / history.length;
+        maxMs += 0.000001 * max;
     }
-    val average = 0.000001 * sum / history.length;
-    val maxMs = 0.000001 * max;
     return [average, maxMs];
 }

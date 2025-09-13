@@ -12,7 +12,7 @@ Altar.addTraitAltarRecipe("isolatedcrystal:iris_crystal", <contenttweaker:iris_c
     <contenttweaker:calculation_crystal>,
     <contenttweaker:space_time_crystal>,
     <contenttweaker:perditio_crystal>,
-    <actuallyadditions:item_crystal_empowered:3>,
+    <contenttweaker:insightful_crystal>,
     <botania:petalblock:14>,
     <botania:petalblock:13>,
     <botania:petalblock:11>,

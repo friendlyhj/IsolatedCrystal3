@@ -1,0 +1,27 @@
+{
+	icon: "thaumtweaks:crafter",
+	x: -1.05d,
+	y: -9.1d,
+	text: [
+		"{isolatedcrystal.quests.1fec861a.text.1}",
+		"{isolatedcrystal.quests.1fec861a.text.2}"
+	],
+	dependencies: [
+		"58184d87"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "0fb53b1e",
+		type: "item",
+		items: [{
+			item: "thaumtweaks:crafter"
+		}]
+	},
+	{
+		uid: "8f613a8c",
+		type: "item",
+		items: [{
+			item: "thaumtweaks:filler"
+		}]
+	}]
+}

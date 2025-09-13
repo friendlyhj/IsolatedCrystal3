@@ -277,7 +277,8 @@ recipes.addShapeless(<thaumicenergistics:essentia_export>, [wire, e, b]);
 recipes.remove(<thaumicenergistics:essentia_storage>);
 recipes.addShapeless(<thaumicenergistics:essentia_storage>, [wire, e, b, d]);
 recipes.addShapeless(<thaumicenergistics:infusion_provider>, [f, e, n]);
-recipes.addShapeless(<thaumicenergistics:arcane_assembler>, [f, e, c, <appliedenergistics2:quartz_glass>]);
+// recipes.addShapeless(<thaumicenergistics:arcane_assembler>, [f, e, c, <appliedenergistics2:quartz_glass>]);
+<thaumicenergistics:arcane_assembler>.addTooltip(game.localize("modpack.tooltip.arcane_assembler"));
 
 recipes.remove(<bloodmagic:activation_crystal:1>);
 recipes.removeByRecipeName("appliedenergistics2:network/cells/storage_cell_1k");

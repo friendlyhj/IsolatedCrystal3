@@ -1,0 +1,18 @@
+{
+	x: -1.05d,
+	y: -9.799999999999999d,
+	text: [
+		"{isolatedcrystal.quests.35a056bd.text.1}"
+	],
+	dependencies: [
+		"58184d87"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "cbb2e9fa",
+		type: "item",
+		items: [{
+			item: "thaumadditions:aura_charger"
+		}]
+	}]
+}

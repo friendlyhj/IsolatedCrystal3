@@ -1,6 +1,6 @@
 #reloadable
 
-import native.thecodex6824.thaumcraftfix.api.event.FluxRiftDestroyBlockEvent;
+import native.thecodex6824.thaumicaugmentation.api.event.FluxRiftDestroyBlockEvent;
 import crafttweaker.block.IBlockStateMatcher;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IWorld;

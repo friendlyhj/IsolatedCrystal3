@@ -110,3 +110,6 @@ isolatedcrystal.quests.bbe7df5c.text.2=灵气量由接受到的红石信号强�
 isolatedcrystal.quests.bbe7df5c.text.3=自然水晶 5min 绚彩水晶 25min
 isolatedcrystal.tooltip.matrix_speed=效果 x2，且不增加源质消耗
 isolatedcrystal.quests.8610840e.text.1=修改：源质离心将严格一比一输出。
+isolatedcrystal.quests.1fec861a.text.1=自动化奥术合成。其顶部有一个亮色的区域，其对应的侧面用于水晶输入。其他侧面用于材料的输入输出。底面输出成品。
+isolatedcrystal.quests.1fec861a.text.2=奥术填充物用于合成的空栏占位。
+isolatedcrystal.quests.35a056bd.text.1=通过消耗灵气要素来补充当前区块的灵气。

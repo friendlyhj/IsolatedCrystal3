@@ -1,0 +1,8 @@
+# Items
+item.thaumtweaks:filler.name=奥术填充物
+item.thaumtweaks:arcane_crafter.name=奥术合成器
+
+tile.thaumtweaks:crafter.name=奥术合成器
+
+
+itemGroup.thaumtweaks=神秘修改

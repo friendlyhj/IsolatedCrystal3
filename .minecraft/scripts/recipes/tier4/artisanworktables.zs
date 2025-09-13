@@ -29,3 +29,13 @@ RecipeBuilder.get("mage")
   .addTool(<ore:artisansGrimoire>, 40)
   .addOutput(<draconicevolution:crafting_injector>)
   .create();
+
+RecipeBuilder.get("mage")
+  .setShaped([
+    [<actuallyadditions:item_crystal_empowered:1>, <enderio:item_alloy_endergy_ingot:6>, <actuallyadditions:item_crystal_empowered:1>],
+    [<enderio:item_material:78>, <actuallyadditions:item_crystal_empowered:4>, <enderio:item_material:79>],
+    [<actuallyadditions:item_crystal_empowered:1>, <enderio:item_alloy_endergy_ingot:6>, <actuallyadditions:item_crystal_empowered:1>]])
+  .addTool(<ore:artisansGrimoire>, 20)
+  .setFluid(<liquid:mercury> * 288)
+  .addOutput(<contenttweaker:insightful_crystal:200>)
+  .create();

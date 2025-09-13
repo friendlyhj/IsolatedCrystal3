@@ -261,5 +261,9 @@ crystallineSaintBlock.lightValue = 15;
 crystallineSaintBlock.axisAlignedBB = AxisAlignedBB.create(3.0 / 16.0, 0.0, 3.0 / 16.0, 13.0 / 16.0, 1.0, 13.0 / 16.0);
 crystallineSaintBlock.register();
 
+val insightfulCrystal = VanillaFactory.createItem("insightful_crystal");
+insightfulCrystal.maxDamage = 200;
+insightfulCrystal.register();
+
 val tempus = VanillaFactory.createAspect("tempus", 0x0068b7);
 tempus.register();
