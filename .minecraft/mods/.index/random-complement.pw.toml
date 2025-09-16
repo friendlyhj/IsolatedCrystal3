@@ -1,13 +1,13 @@
-filename = 'random_complement-1.6.2.jar'
+filename = 'random_complement-1.6.8.jar'
 name = 'RandomComplement'
 side = 'both'
 
 [download]
-hash = 'c133fbcc3d4a3ac4ef261f6e3d34082a1a14565b'
+hash = '75ecdf425fb763467068f1237f9f9501ab4bdca4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6983035
+file-id = 7000100
 project-id = 1198138
