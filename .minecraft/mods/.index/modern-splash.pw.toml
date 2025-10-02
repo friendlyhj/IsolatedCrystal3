@@ -1,13 +1,13 @@
-filename = 'modernsplash-1.12.2-1.3.1.jar'
-name = 'Modern Splash'
+filename = 'modernsplash-1.4.0.jar'
+name = 'ModernSplash'
 side = 'both'
 
 [download]
-hash = 'd6322e333820cbda7253d7832a0d35e36949bd00'
+hash = 'bdcf9fa0bd36771cd0ed88609a3a8d6f09ec9086'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5282442
+file-id = 6501489
 project-id = 629058

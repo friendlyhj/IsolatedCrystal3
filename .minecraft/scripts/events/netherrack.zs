@@ -8,6 +8,8 @@ events.onPoolTrade(function(event as PoolTradeEvent) {
         event.setOutput(<chisel:cobblestone>.withTag({
             "failed": true
         }));
+    } else {
+        event.setOutput(<minecraft:netherrack>);
     }
 });
 

@@ -2,6 +2,7 @@
 
 import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 val banList as IItemStack[] = [
     <bloodmagic:ritual_controller:1>,
@@ -99,3 +100,30 @@ val categoryHideList as string[] = [
 for category in categoryHideList {
     JEI.hideCategory(category);
 }
+
+val chiselWhiteList = 
+    <chisel:antiblock:*> |
+    <chisel:brownstone> |
+    <chisel:cloud> |
+    <chisel:factory:*> |
+    <chisel:laboratory:*> |
+    <chisel:futura:*> |
+    <chisel:lavastone> |
+    <chisel:limestone2:7> |
+    <chisel:technical:*> |
+    <chisel:temple> |
+    <chisel:templemossy> |
+    <chisel:tyrian:*> |
+    <chisel:valentines:*> |
+    <chisel:voidstone> |
+    <chisel:waterstone> |
+    <chisel:auto_chisel>;
+
+for item in loadedMods["chisel"].items {
+    if (item.isBlock && !(chiselWhiteList.matches(item))) {
+        JEI.hide(item);
+    }
+}
+
+// AE2-UEL already supports drag in JEI, disable Just Enough Drags intergration to prevent conflicts
+native.com.warmthdawn.justenoughdrags.compact.Enables.APPLIED_ENERGISTICS = false;

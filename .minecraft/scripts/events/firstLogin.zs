@@ -16,6 +16,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
                 server.commandManager.executeCommandSilent(server, `/thaumcraft research ${player.name} all`);
                 server.commandManager.executeCommandSilent(server, `/astralsorcery research ${player.name} all`);
             })
+            .sleep(5)
             .then(function(w, ctx) {
                 player.warpNormal = 0;
                 player.warpPermanent = 0;

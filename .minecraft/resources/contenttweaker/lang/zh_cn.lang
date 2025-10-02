@@ -119,6 +119,7 @@ modpack.tooltip.netherrack_fail.1=也许应该尝试下该产物的原生环境�
 modpack.tooltip.ender_star=右键以传送至末地
 modpack.tooltip.irisotos=奇迹的颜色
 modpack.tooltip.arcane_assembler=已被禁用，请使用奥术合成器
+modpack.tooltip.netherrack=必须在下界进行
 
 modpack.info.time_real=现实时间 %s
 modpack.info.time_game=已游玩 %s 小时 %s 分钟

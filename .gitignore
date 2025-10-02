@@ -3,6 +3,7 @@
 /mmc-pack.json
 /.packignore
 /natives/*
+/patches/*
 
 # Modpack files (whitelist)
 /.minecraft/*

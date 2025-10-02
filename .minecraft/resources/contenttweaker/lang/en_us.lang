@@ -115,6 +115,7 @@ modpack.tooltip.netherrack_fail.1=It might be worth trying to process within its
 modpack.tooltip.ender_star=Right-click to transport to The End
 modpack.tooltip.irisotos=The Color of Miracles
 modpack.tooltip.arcane_assembler=Banned, use Arcane Crafter instead 
+modpack.tooltip.netherrack=Must be done in The Nether
 
 modpack.festival.new_year=New Year's Day
 modpack.festival.valentine=Valentine's Day

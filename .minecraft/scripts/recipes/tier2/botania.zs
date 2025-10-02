@@ -57,7 +57,7 @@ ElvenTrade.addRecipe([<astralsorcery:itemcraftingcomponent>], [
     <contenttweaker:ocean_crystal>,
     <contenttweaker:ocean_crystal>
 ]);
-ManaInfusion.addAlchemy(<minecraft:netherrack>, <minecraft:cobblestone>, 60);
+ManaInfusion.addAlchemy(<minecraft:netherrack>.withLore([game.localize("modpack.tooltip.netherrack")]), <minecraft:cobblestone>, 60);
 ElvenTrade.addRecipe([<thaumcraft:shimmerleaf> * 8], [
     <contenttweaker:vibrant_crystal>,
     <contenttweaker:vibrant_crystal>,
