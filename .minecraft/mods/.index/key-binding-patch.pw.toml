@@ -1,0 +1,13 @@
+filename = '[MC-1.12.2] Key Binding Patch v1.3.3.3 - 2024-12-1.jar'
+name = 'Key Binding Patch'
+side = 'both'
+
+[download]
+hash = '9c4f758e158ae780dbf091d7c05e30eb13d8175f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5951859
+project-id = 928895

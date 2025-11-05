@@ -5,13 +5,13 @@ import native.net.minecraft.util.math.BlockPos;
 import native.net.minecraft.block.state.IBlockState;
 import native.net.minecraft.util.EnumFacing;
 import native.net.minecraft.block.properties.PropertyInteger;
-import native.de.ellpeck.naturesaura.blocks.BlockGoldenLeaves;
 import native.net.minecraft.block.BlockLeaves;
 import native.net.minecraft.entity.Entity;
 import native.net.minecraft.entity.item.EntityMinecart;
 import native.net.minecraftforge.common.util.ITeleporter;
 import native.java.lang.Integer;
 import native.java.util.Random;
+import native.de.ellpeck.naturesaura.blocks.BlockGoldenLeaves;
 
 #mixin {targets: "de.ellpeck.naturesaura.blocks.BlockGoldenLeaves"}
 zenClass MixinBlockGoldenLeaves extends BlockLeaves {

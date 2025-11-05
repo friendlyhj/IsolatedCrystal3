@@ -14,6 +14,7 @@ import native.net.minecraftforge.event.RegistryEvent;
 zenClass CrystalAlga extends BlockCrops {
     zenConstructor() {
         super();
+        this.setTickRandomly(false);
     }
 
     // canUseBonemeal

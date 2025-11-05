@@ -4,6 +4,7 @@
 /.packignore
 /natives/*
 /patches/*
+cleanroom.png
 
 # Modpack files (whitelist)
 /.minecraft/*

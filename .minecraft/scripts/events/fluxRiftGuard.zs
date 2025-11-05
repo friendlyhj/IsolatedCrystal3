@@ -1,10 +1,12 @@
 #reloadable
 
-import native.thecodex6824.thaumicaugmentation.api.event.FluxRiftDestroyBlockEvent;
+import native.thecodex6824.thaumcraftfix.api.event.FluxRiftDestroyBlockEvent;
 import crafttweaker.block.IBlockStateMatcher;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IWorld;
 import crafttweaker.data.IData;
+import crafttweaker.util.IAxisAlignedBB;
+import crafttweaker.world.IVector3d;
 import mods.modularmachinery.MachineController;
 
 static strongBlocks as IBlockStateMatcher =
@@ -34,7 +36,7 @@ events.register(function(event as FluxRiftDestroyBlockEvent) {
         }
         val posA = controller.relativePos(-5, -1, 0);
         val posB = controller.relativePos(5, 9, 10);
-        if (pos.x >= posA.x && pos.x <= posB.x && pos.y >= posA.y && pos.y <= posB.y && pos.z >= posA.z && pos.z <= posB.z) {
+        if (IAxisAlignedBB.create(posA, posB).contains(IVector3d.create(pos.x, pos.y, pos.z))) {
             event.setCanceled(true);
             return;
         }
