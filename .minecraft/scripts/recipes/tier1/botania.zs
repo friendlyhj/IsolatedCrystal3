@@ -38,7 +38,7 @@ RuneAltar.addRecipe(<botania:rune:1> * 2, [
 ], 5200);
 
 RuneAltar.removeRecipe(<botania:rune:6>);
-RuneAltar.addRecipe(<botania:rune:6> * 2, [
+RuneAltar.addRecipe(<botania:rune:6>, [
     <botania:rune:1>,
     <botania:rune:3>,
     <ore:treeLeaves>,
