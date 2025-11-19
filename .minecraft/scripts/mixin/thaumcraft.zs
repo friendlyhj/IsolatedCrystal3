@@ -14,6 +14,8 @@ import native.net.minecraft.util.math.BlockPos;
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
 
+// Removing Thaumcraft's item aspect registration.
+
 #mixin {targets: "thaumcraft.common.config.ConfigAspects"}
 zenClass MixinConfigAspect {
     #mixin Static
@@ -22,6 +24,8 @@ zenClass MixinConfigAspect {
         // NO-OP
     }
 }
+
+// Removing Thaumcraft's player knowledge system, so that all research is considered known.
 
 #mixin {targets: "thaumcraft.common.lib.capabilities.PlayerKnowledge$DefaultImpl"}
 zenClass MixinPlayerKnowledge {
@@ -36,6 +40,8 @@ zenClass MixinPlayerKnowledge {
     }
 }
 
+// Removing all Crucible smelting recipes, except vis crystal and essential phial
+
 #mixin {targets: "thaumcraft.common.tiles.crafting.TileCrucible"}
 zenClass MixinTileCrucible {
     #mixin Inject{method: "attemptSmelt", at: {value: "HEAD"}, cancellable: true}
@@ -46,6 +52,8 @@ zenClass MixinTileCrucible {
         }
     }
 }
+
+// Allows pedestals to accept multiple items, allows infusion recipe to output multiple items
 
 #mixin {targets: "thaumcraft.common.tiles.crafting.TilePedestal"}
 zenClass MixinTilePedestal {
@@ -62,6 +70,8 @@ zenClass MixinTilePedestal {
     }
 }
 
+// Speeds up 2.5x of tube transportation.
+
 #mixin {targets: ["thaumcraft.common.tiles.essentia.TileTube", "thaumcraft.common.tiles.essentia.TileTubeBuffer", "thaumcraft.common.tiles.essentia.TileTubeValve"]}
 zenClass MixinTubeSpeedup {
     #mixin ModifyConstant {method: "func_73660_a", constant: {intValue: 5}}
@@ -69,6 +79,8 @@ zenClass MixinTubeSpeedup {
         return 2;
     }
 }
+
+// Make the centrifuge output strictly one-to-one, rather than randomly
 
 #mixin {targets: "thaumcraft.common.tiles.essentia.TileCentrifuge"}
 zenClass MixinTileCentrifuge {

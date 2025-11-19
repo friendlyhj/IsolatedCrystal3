@@ -8,6 +8,9 @@ import native.net.minecraft.world.World;
 import native.net.minecraft.block.state.IBlockState;
 import mixin.CallbackInfoReturnable;
 
+// Makes Calculator Leaves always drop itself, although not using shears
+// This aims to allow Drum of the Canopy to collect them
+
 #mixin {targets: "sonar.calculator.mod.common.block.CalculatorLeaves"}
 zenClass MixinCalculatorLeaves {
     #mixin Inject{method: "func_149745_a", at: {value: "HEAD"}, cancellable: true}
@@ -20,6 +23,8 @@ zenClass MixinCalculatorLeaves {
         return false;
     }
 }
+
+// Denies Crystal Alga to be planted in Calculator Greenhouse
 
 #mixin {targets: "sonar.core.handlers.planting.vanilla.VanillaFertiliser"}
 zenClass MixinVanillaFertiliser {

@@ -9,6 +9,8 @@ import native.net.minecraft.world.World;
 import native.net.minecraft.util.ResourceLocation;
 import native.net.minecraftforge.fml.common.registry.ForgeRegistries;
 
+// Allows fake players to use Astral Sorcery's altars
+
 #mixin {targets: "hellfirepvp.astralsorcery.common.tile.TileAltar"}
 zenClass MixinTileAltar {
     #mixin Redirect {method: "findRecipe", at: {value: "INVOKE", target: "hellfirepvp/astralsorcery/common/crafting/IGatedRecipe.hasProgressionServer(Lnet/minecraft/entity/player/EntityPlayer;)Z"}}
@@ -17,6 +19,8 @@ zenClass MixinTileAltar {
     }
 }
 
+// Allows fake players to harvest celestial crystals
+
 #mixin {targets: "hellfirepvp.astralsorcery.common.block.BlockCelestialCrystals"}
 zenClass MixinBlockCelestialCrystals {
     #mixin Overwrite
@@ -24,6 +28,8 @@ zenClass MixinBlockCelestialCrystals {
         return true;
     }
 }
+
+// Changes the transformation state of celestial crystals from iron ore to tin ore
 
 #mixin {targets: "hellfirepvp.astralsorcery.common.tile.TileCelestialCrystals"}
 zenClass MixinTileCelestialCrystals {

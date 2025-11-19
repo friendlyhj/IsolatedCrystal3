@@ -8,6 +8,8 @@ import native.vazkii.botania.common.entity.EntityManaBurst;
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
 
+// Allows fake players to drop loot from dopplegangers
+
 #mixin {targets: "vazkii.botania.common.entity.EntityDoppleganger"}
 zenClass MixinEntityDoppleganger extends EntityLiving {
     var lootDropped as bool = false;
@@ -33,11 +35,15 @@ zenClass MixinEntityDoppleganger extends EntityLiving {
 
 #mixin {targets: "vazkii.botania.common.entity.EntityManaStorm"}
 zenClass MixinEntityManaStorm {
+
+    // Prevents the last explosion of mana storms, it is produced on both sides, but other 
+    // explosion prevention mechanisms only work on server side, which causes desync issues.
     #mixin Inject{method: "func_70071_h_", at = {value: "INVOKE", target: "net/minecraft/world/World.func_72885_a(Lnet/minecraft/entity/Entity;DDDFZZ)Lnet/minecraft/world/Explosion;"}, cancellable: true}
     function removeLastExplosion(ci as CallbackInfo) as void {
         ci.cancel();
     }
 
+    // Tags the mana burst spawned by the storm, to allow Natural Grace (Green crystal tier 3) to identify it.
     #mixin ModifyVariable{method: "spawnBurst", at = {value: "RETURN"}}
     function tagBurst(burst as EntityManaBurst) as EntityManaBurst {
         burst.addTag("storm");

@@ -2,6 +2,8 @@
 
 import native.net.minecraft.util.EnumFacing;
 
+// Fixes Modular Machinery Aspect Provider suction amounts to fix issues with aspect transfer system.
+
 #mixin {targets: "kport.modularmagic.common.tile.TileAspectProvider$Input"}
 zenClass MixinTileAspectProviderInput {
     function getSuctionAmount(facing as EnumFacing) as int {

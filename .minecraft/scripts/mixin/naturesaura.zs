@@ -13,6 +13,8 @@ import native.java.lang.Integer;
 import native.java.util.Random;
 import native.de.ellpeck.naturesaura.blocks.BlockGoldenLeaves;
 
+// Speed up 9x of golden leaves spreading
+
 #mixin {targets: "de.ellpeck.naturesaura.blocks.BlockGoldenLeaves"}
 zenClass MixinBlockGoldenLeaves extends BlockLeaves {
     #mixin Shadow

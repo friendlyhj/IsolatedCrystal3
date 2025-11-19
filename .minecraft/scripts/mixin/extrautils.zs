@@ -5,6 +5,9 @@ import native.net.minecraft.world.World;
 import native.net.minecraft.util.math.BlockPos;
 import native.com.google.common.collect.Lists;
 
+// Makes XU2 devices not receive redstone signal from its front side.
+// This is needed when a User are switching a Redstone Latten
+
 #mixin {targets: "com.rwtema.extrautils2.tile.TileAdvInteractor"}
 zenClass MixinTileAdvInteractor {
     #mixin Redirect{method: "onNeighborBlockChange", at: {value: "INVOKE", target: "net/minecraft/world/World.func_175687_A(Lnet/minecraft/util/math/BlockPos;)I"}}

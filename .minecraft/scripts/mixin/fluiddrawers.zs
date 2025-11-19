@@ -3,6 +3,8 @@
 import native.net.minecraftforge.fluids.FluidStack;
 import mixin.CallbackInfoReturnable;
 
+// Fixes NullPointerException when filling or draining a DrawerFluidHandler with null FluidStack.
+
 #mixin {targets: "xyz.phanta.fluiddrawers.util.DrawerFluidHandler"}
 zenClass MixinDrawerFluidHandler {
     #mixin Inject {method: "fill", at: {value: "HEAD"}, cancellable: true}

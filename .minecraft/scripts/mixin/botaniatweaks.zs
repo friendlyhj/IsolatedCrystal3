@@ -8,6 +8,8 @@ import native.net.minecraftforge.fluids.FluidUtil;
 import native.net.minecraftforge.fluids.IFluidBlock;
 import mixin.CallbackInfoReturnable;
 
+// Fixes the display of fluid block in JEI, showing the bucket item
+
 #mixin Mixin
 #{targets: "quaternary.botaniatweaks.modules.shared.helper.MiscHelpers"}
 zenClass MixinMiscHelpers {
@@ -30,6 +32,8 @@ zenClass MixinMiscHelpers {
         }
     }
 }
+
+// Allows the agglomeration multiblock to accept air as a valid block pattern.
 
 #mixin Mixin
 #{targets: "quaternary.botaniatweaks.modules.crafttweaker.CTAgglomeration"}

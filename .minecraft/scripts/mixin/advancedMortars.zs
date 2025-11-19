@@ -7,6 +7,8 @@ import native.net.minecraft.item.Item;
 import native.net.minecraft.item.ItemStack;
 import mixin.CallbackInfo;
 
+// Adds Crushed^2 drop when the mortar is worn
+
 #mixin Mixin
 #{targets: "com.codetaylor.mc.advancedmortars.modules.mortar.tile.TileEntityMortarBase"}
 zenClass MixinTileEntityMortarBase {
