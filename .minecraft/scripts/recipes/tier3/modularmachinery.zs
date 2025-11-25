@@ -63,30 +63,36 @@ RecipeBuilder.newBuilder("perditio_crystal", "emptiness_energizer", 120)
             val aspectInputBus = world.native.getTileEntity(controller.relativePos(0, 0, 10)) as TileAspectProvider;
             if (aspectInputBus.aspect == null) {
                 event.preventProgressing("Requires aspect: " ~ requireAspectName);
-                world.setBlockState(<blockstate:extrautils2:redstonelantern>.withProperty("power", requireAspectId + 1), pos.up(8));
+                Sync.addSyncTask(function() {
+                    world.setBlockState(<blockstate:extrautils2:redstonelantern>.withProperty("power", requireAspectId + 1), pos.up(8));
+                });
             } else if (aspectInputBus.aspect.tag != requireAspectName) {
                 event.setFailed(true, "wrong aspect input type");
             } else if (aspectInputBus.amount < 40) {
                 event.preventProgressing("not enough aspect input, requires 40, but only " ~ aspectInputBus.amount);
             } else {
-                aspectInputBus.takeFromContainer(aspectInputBus.aspect, aspectInputBus.amount);
-                world.setBlockState(<blockstate:extrautils2:redstonelantern>, pos.up(8));
+                Sync.addSyncTask(function() {
+                    aspectInputBus.takeFromContainer(aspectInputBus.aspect, aspectInputBus.amount);
+                    world.setBlockState(<blockstate:extrautils2:redstonelantern>, pos.up(8));
+                });
             }
         }
     })
     .addFinishHandler(function(event as RecipeFinishEvent) {
-        val controller = event.controller;
-        val world = controller.world;
-        val pos = controller.pos;
-        val posA as IBlockPos = controller.relativePos(-5, 0, 0);
-        val posB as IBlockPos = controller.relativePos(5, 10, 10);
-        for entity in world.getEntitiesInArea(posA, posB) {
-            if (entity.native instanceof EntityFluxRift) {
-                world.performExplosion(null, entity.x, entity.y, entity.z, 1.5f, false, false);
-                entity.setDead();
+        Sync.addSyncTask(function() {
+            val controller = event.controller;
+            val world = controller.world;
+            val pos = controller.pos;
+            val posA as IBlockPos = controller.relativePos(-5, 0, 0);
+            val posB as IBlockPos = controller.relativePos(5, 10, 10);
+            for entity in world.getEntitiesInArea(posA, posB) {
+                if (entity.native instanceof EntityFluxRift) {
+                    world.performExplosion(null, entity.x, entity.y, entity.z, 1.5f, false, false);
+                    entity.setDead();
+                }
             }
-        }
-        world.setBlockState(<blockstate:extrautils2:redstonelantern>, controller.pos.up(8));
+            world.setBlockState(<blockstate:extrautils2:redstonelantern>, controller.pos.up(8));
+        });
     })
     .build();
 

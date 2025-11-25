@@ -1,13 +1,13 @@
-filename = '++relauncher-0.5.1-beta-shadow.jar'
-name = 'Cleanroom Relauncher'
+filename = '++relauncher-0.5.4-beta-shadow.jar'
+name = 'Cleanroom relauncher unofficial'
 side = 'both'
 
 [download]
-hash = '7e52442b5f01fbf116c83439bd3c2d5978c4aa74'
+hash = '1754b9fc4a2852e5d6af6f2abc7dd97b313bce53'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7177652
+file-id = 7292567
 project-id = 1214906

@@ -1,13 +1,13 @@
-filename = 'loliasm-5.29.jar'
+filename = 'loliasm-5.30.jar'
 name = 'LoliASM'
 side = 'both'
 
 [download]
-hash = 'd7a189360c484e0bd1ee5cdf1dc6a5db23cb81e1'
+hash = '9f1fa93f44e10c095f826dd25c537b42afd3f4aa'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6854259
+file-id = 7267368
 project-id = 460609

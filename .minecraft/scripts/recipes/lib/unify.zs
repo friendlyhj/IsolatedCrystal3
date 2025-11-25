@@ -98,3 +98,15 @@ ConversionItem.create(<thermalfoundation:material:864>)
 ConversionItem.create(<thermalfoundation:storage_resource>)
     .addMatchItem(<ore:blockCharcoal>)
     .register();
+
+// ConversionItem.create(<thermalfoundation:material:164>)
+//     .addMatchItem(<factorytech:ingot:2>)
+//     .register();
+
+// ConversionItem.create(<thermalfoundation:storage_alloy:4>)
+//     .addMatchItem(<factorytech:oreblock:2>)
+//     .register();
+
+// ConversionItem.create(<thermalfoundation:material:100>)
+//     .addMatchItem(<factorytech::3>)
+//     .register();
