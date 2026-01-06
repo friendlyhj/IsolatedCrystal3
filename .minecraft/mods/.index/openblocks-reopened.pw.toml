@@ -1,13 +1,13 @@
-filename = 'OpenBlocksReopened-1.12.2-1.8.3.jar'
+filename = 'OpenBlocksReopened-1.12.2-1.8.3.1.jar'
 name = 'OpenBlocks Reopened'
 side = 'both'
 
 [download]
-hash = '67756bb209e32f504d336139b8bfd1baf1c7a974'
+hash = 'd26e0ee0a0b9cf7f0ee0c49e4b10801d14d587b8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7274663
+file-id = 7294306
 project-id = 1342654

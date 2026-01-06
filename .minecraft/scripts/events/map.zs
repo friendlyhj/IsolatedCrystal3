@@ -16,6 +16,7 @@ import mods.modularmachinery.Sync;
 import mods.zenutils.DataUpdateOperation;
 import mods.zenutils.NetworkHandler;
 import mods.randomtweaker.botania.IBotaniaFXHelper;
+import native.thecodex6824.thaumcraftfix.api.event.FluxRiftDestroyBlockEvent;
 import scripts.libs.Vector3D;
 
 static colors as int[string]$orderly = {
@@ -196,11 +197,13 @@ static protectedBlocks as IBlockStateMatcher =
     <blockstate:minecraft:quartz_stairs>.matchBlock() |
     <blockstate:minecraft:iron_door>.matchBlock() |
     <blockstate:minecraft:iron_trapdoor>.matchBlock() |
-    <blockstate:minecraft:double_stone_slab:variant=quartz> |
-    <blockstate:modularmachinery:blockinputbus:size=tiny>;
+    <blockstate:minecraft:double_stone_slab:variant=quartz>;
+
+static inputBus as IBlockStateMatcher = <blockstate:modularmachinery:blockinputbus:size=tiny>;
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
     var protectedArea = false;
+    var isInputBus = false;
     val x = event.x;
     val z = event.z;
     for center in coords {
@@ -209,12 +212,35 @@ events.onBlockBreak(function(event as BlockBreakEvent) {
             break;
         }
     }
-    if (protectedArea && protectedBlocks.matches(event.blockState)) {
+    for controllerPos in controllerCoords {
+        if (controllerPos.x == event.x && controllerPos.y + 1 == event.y && controllerPos.z == event.z) {
+            isInputBus = true;
+            break;
+        }
+    }
+    if ((protectedArea && protectedBlocks.matches(event.blockState)) || (isInputBus && inputBus.matches(event.blockState))) {
         if (event.isPlayer && event.player.creative) {
             return;
         } else {
             event.cancel();
         }
+    }
+});
+
+events.register(function(event as FluxRiftDestroyBlockEvent) {
+    val pos = event.position as IBlockPos;
+    val world = event.entity.world as IWorld;
+    var protectedArea = false;
+    val x = pos.x;
+    val z = pos.z;
+    for center in coords {
+        if (Math.abs(x - center.x) < 12 && Math.abs(z - center.z) < 12) {
+            protectedArea = true;
+            break;
+        }
+    }
+    if (protectedArea && (protectedBlocks | inputBus).matches(world.getBlockState(pos))) {
+        event.setCanceled(true);
     }
 });
 

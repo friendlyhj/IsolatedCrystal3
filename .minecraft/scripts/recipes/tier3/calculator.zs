@@ -30,6 +30,8 @@ Atomic.addRecipe(<calculator:healthprocessor>, <calculator:atomicbinder>, <calcu
 Atomic.addRecipe(<calculator:hungerprocessor>, <calculator:atomicbinder>, <calculator:calculatorscreen>, <calculator:hungermodule>);
 Atomic.removeRecipe(<calculator:nutritionmodule>);
 Atomic.addRecipe(<calculator:healthmodule>, <calculator:energymodule>, <calculator:hungermodule>, <calculator:nutritionmodule>);
+Atomic.removeRecipe(<calculator:weatherstation>);
+Atomic.removeRecipe(<calculator:transmitter>);
 
 Scientific.addRecipe(<astralsorcery:itemcraftingcomponent>, <contenttweaker:warp_crystal>, <calculator:smalltanzanite>);
 Scientific.addRecipe(<appliedenergistics2:material:7>, <contenttweaker:warp_crystal>, <calculator:smallamethyst>);

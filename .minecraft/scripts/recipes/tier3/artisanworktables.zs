@@ -372,3 +372,21 @@ RecipeBuilder.get("engineer")
   .setFluid(<liquid:soldering> * 288)
   .addOutput(<extrautils2:passivegenerator:6>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<calculator:energymodule>, <calculator:firediamond>, <calculator:energymodule>],
+    [null, <tconstruct:large_plate>.withTag({Material: "tough"}), null],
+    [<ore:plateSteel>, <enderio:block_alloy:4>, <ore:plateSteel>]])
+  .addTool(<ore:artisansSpanner>, 15)
+  .addOutput(<calculator:weatherstation> * 8)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<nuclearcraft:alloy:1>, <calculator:firediamond>, <nuclearcraft:alloy:1>],
+    [<calculator:advancedassembly>, <calculator:electricdiamond>, <calculator:advancedassembly>],
+    [<mekanism:controlcircuit:2>, <thermalfoundation:storage_alloy>, <mekanism:controlcircuit:2>]])
+  .addTool(<ore:artisansSpanner>, 25)
+  .addOutput(<calculator:transmitter>)
+  .create();
