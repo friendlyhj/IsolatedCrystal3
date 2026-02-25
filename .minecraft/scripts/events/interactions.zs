@@ -42,3 +42,5 @@ events.onPlayerLeftClickBlock(function(event as PlayerLeftClickBlockEvent) {
 });
 
 <actuallyadditions:item_misc:19>.addTooltip(game.localize("modpack.tooltip.ender_star"));
+
+native.net.minecraft.block.material.Material.TNT.setNoPushMobility();
