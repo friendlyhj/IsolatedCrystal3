@@ -1,13 +1,13 @@
-filename = 'bogosorter-1.6.1.jar'
+filename = 'bogosorter-1.6.2.jar'
 name = 'Inventory Bogo Sorter'
 side = 'both'
 
 [download]
-hash = '35d11d6e3c01ca55ab6b03008c2ad3d0928f7f3a'
+hash = '6f0d8fe6cb6e41d6a4ab614eca506e821f12d44a'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7412409
+file-id = 7650535
 project-id = 632327
