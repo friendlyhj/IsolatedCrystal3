@@ -43,4 +43,23 @@ events.onPlayerLeftClickBlock(function(event as PlayerLeftClickBlockEvent) {
 
 <actuallyadditions:item_misc:19>.addTooltip(game.localize("modpack.tooltip.ender_star"));
 
+<contenttweaker:iris_crystal>.modifyTooltip(function(item, tooltip, shiftPressed, advanced) {
+    val formatters as string[] = ["c", "6", "e", "a", "b", "9", "d"];
+    if (isNull(client)) return;
+    val name = tooltip.get(0);
+    val time = client.player.world.worldInfo.worldTotalTime;
+    formatters.shift((time / 10) % formatters.length);
+    var newName = "";
+    for i in 0 .. (name.length - 2) {
+        val c = name[i];
+        if (c == ' ') {
+            newName += c;
+        } else {
+            newName += "§" + formatters[i % formatters.length] + c;
+        }
+    }
+    newName += "§r";
+    tooltip.set(0, newName);
+});
+
 native.net.minecraft.block.material.Material.TNT.setNoPushMobility();
