@@ -5,6 +5,7 @@ import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.event.PlayerLeftClickBlockEvent;
 import crafttweaker.item.IIngredient;
 import crafttweaker.world.IBlockPos;
+import scripts.libs.Util;
 import scripts.libs.Vector3D;
 
 static interfaces as IIngredient = <appliedenergistics2:interface> | <appliedenergistics2:part:440> | <ae2fc:dual_interface> | <ae2fc:part_dual_interface>;
@@ -47,8 +48,7 @@ events.onPlayerLeftClickBlock(function(event as PlayerLeftClickBlockEvent) {
     val formatters as string[] = ["c", "6", "e", "a", "b", "9", "d"];
     if (isNull(client)) return;
     val name = tooltip.get(0);
-    val time = client.player.world.worldInfo.worldTotalTime;
-    formatters.shift((time / 10) % formatters.length);
+    formatters.shift(Util.now().timeInMillis / 128);
     var newName = "";
     for i in 0 .. (name.length - 2) {
         val c = name[i];

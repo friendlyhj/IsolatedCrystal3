@@ -36,7 +36,10 @@ events.onRenderTick(function(event as RenderTickEvent) {
                 barColor = "§6";
             }
             val usedBarCount = Math.ceil(mspt / 2.5);
-            msptBar = `MSPT:[${barColor}${StaticString.repeat("|", "", usedBarCount)}§7${StaticString.repeat("|", "", 20 - usedBarCount)}§r] ${barColor}${twoDecimal(mspt)}/${twoDecimal(LowMspt)}ms   `;
+            msptBar = `MSPT:[${barColor}${StaticString.repeat("|", "", usedBarCount)}§7${StaticString.repeat("|", "", 20 - usedBarCount)}§r] ${barColor}${twoDecimal(mspt)}/${twoDecimal(LowMspt)}ms`;
+            if (mc.fontRenderer.unicodeFlag) {
+                msptBar += "   ";
+            }
         } else {
             val tps = Math.min(20.0, 1000.0 / mspt);
             barColor = "§a";
@@ -45,7 +48,10 @@ events.onRenderTick(function(event as RenderTickEvent) {
             } else if (tps < 15) {
                 barColor = "§6";
             }
-            msptBar = `TPS: ${barColor}${twoDecimal(tps)} `;
+            msptBar = `TPS: ${barColor}${twoDecimal(tps)}`;
+            if (mc.fontRenderer.unicodeFlag) {
+                msptBar += " ";
+            }
         }
         val fontRender = mc.fontRenderer;
         val textHeight = fontRender.FONT_HEIGHT;

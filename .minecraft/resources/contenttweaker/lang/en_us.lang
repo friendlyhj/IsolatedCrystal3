@@ -1,34 +1,35 @@
-item.contenttweaker.red_fruit.name=Red Crystal Fruit
-item.contenttweaker.orange_fruit.name=Orange Crystal Fruit
-item.contenttweaker.yellow_fruit.name=Yellow Crystal Fruit
-item.contenttweaker.green_fruit.name=Green Crystal Fruit
-item.contenttweaker.cyan_fruit.name=Cyan Crystal Fruit
-item.contenttweaker.blue_fruit.name=Blue Crystal Fruit
-item.contenttweaker.purple_fruit.name=Purple Crystal Fruit
+item.contenttweaker.red_fruit.name=§cRed Crystal Fruit
+item.contenttweaker.orange_fruit.name=§6Orange Crystal Fruit
+item.contenttweaker.yellow_fruit.name=§eYellow Crystal Fruit
+item.contenttweaker.green_fruit.name=§aGreen Crystal Fruit
+item.contenttweaker.cyan_fruit.name=§bCyan Crystal Fruit
+item.contenttweaker.blue_fruit.name=§9Blue Crystal Fruit
+item.contenttweaker.purple_fruit.name=§dPurple Crystal Fruit
 
-item.contenttweaker.flesh_crystal.name=Flesh Crystal
-item.contenttweaker.heated_crystal.name=Heated Crystal
-item.contenttweaker.earth_crystal.name=Earth Crystal
-item.contenttweaker.vibrant_crystal.name=Vibrant Crystal
-item.contenttweaker.crafting_crystal.name=Crafting Crystal
-item.contenttweaker.ocean_crystal.name=Ocean Crystal
-item.contenttweaker.warp_crystal.name=Warp Crystal
+item.contenttweaker.flesh_crystal.name=§cFlesh Crystal
+item.contenttweaker.heated_crystal.name=§6Heated Crystal
+item.contenttweaker.earth_crystal.name=§eEarth Crystal
+item.contenttweaker.vibrant_crystal.name=§aVibrant Crystal
+item.contenttweaker.crafting_crystal.name=§bCrafting Crystal
+item.contenttweaker.ocean_crystal.name=§9Ocean Crystal
+item.contenttweaker.warp_crystal.name=§dWarp Crystal
 
-item.contenttweaker.blood_crystal.name=Blood Crystal
-item.contenttweaker.electric_crystal.name=Electric Crystal
-item.contenttweaker.metal_crystal.name=Metal Crystal
-item.contenttweaker.aura_crystal.name=Aura Crystal
-item.contenttweaker.logic_crystal.name=Logic Crystal
-item.contenttweaker.astral_crystal.name=Astral Crystal
-item.contenttweaker.perditio_crystal.name=Perditio Crystal
+item.contenttweaker.blood_crystal.name=§cBlood Crystal
+item.contenttweaker.electric_crystal.name=§6Electric Crystal
+item.contenttweaker.metal_crystal.name=§eMetal Crystal
+item.contenttweaker.aura_crystal.name=§aAura Crystal
+item.contenttweaker.logic_crystal.name=§bLogic Crystal
+item.contenttweaker.astral_crystal.name=§9Astral Crystal
+item.contenttweaker.perditio_crystal.name=§dPerditio Crystal
 
-item.contenttweaker.life_crystal.name=Life Crystal
-item.contenttweaker.energy_crystal.name=Energy Crystal
-item.contenttweaker.mine_crystal.name=Mine Crystal
-item.contenttweaker.nature_crystal.name=Nature Crystal
-item.contenttweaker.calculation_crystal.name=Calculation Crystal
-item.contenttweaker.space_time_crystal.name=Space-Time Crystal
-item.contenttweaker.destruction_crystal.name=Destruction Crystal
+item.contenttweaker.life_crystal.name=§cLife Crystal
+item.contenttweaker.energy_crystal.name=§6Energy Crystal
+item.contenttweaker.mine_crystal.name=§eMine Crystal
+item.contenttweaker.nature_crystal.name=§aNature Crystal
+item.contenttweaker.calculation_crystal.name=§bCalculation Crystal
+item.contenttweaker.space_time_crystal.name=§9Space-Time Crystal
+item.contenttweaker.destruction_crystal.name=§dDestruction Crystal
+
 item.contenttweaker.iris_crystal.name=Iris Crystal
 
 item.contenttweaker.blood_clot.name=Blood Clot
