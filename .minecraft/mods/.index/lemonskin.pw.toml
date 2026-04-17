@@ -1,25 +1,25 @@
-filename = 'flare-0.8.0.jar'
-name = 'Flare (Spark for 1.12.2)'
+filename = 'lemonskin-4.0.0.jar'
+name = 'LemonSkin (AppleSkin Fork)'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'Flare 0.8.0'
+x-prismlauncher-version-number = 'LemonSkin v4.0.0'
 
 [download]
-hash = '13d7a4bc80805f7a92fd8d41c90e7dfd53df2ddb'
+hash = 'a3445db181f0837da44d0434f4bef31ac34bd098'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7857037
-project-id = 692142
+file-id = 7763338
+project-id = 1337144
+
+[[x-prismlauncher-dependencies]]
+addonId = '224472'
+type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '419286'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '870276'
 type = 'REQUIRED'

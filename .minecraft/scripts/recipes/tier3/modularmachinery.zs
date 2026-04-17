@@ -156,28 +156,30 @@ RecipeBuilder.newBuilder("calculation_crystal", "digital_calculator", 120)
     .build();
 
 MMEvents.onMachinePreTick("natural_grace", function(event as MachineTickEvent) {
-    val controller = event.controller;
-    val world = controller.world;
-    val pos = controller.pos;
-    var stormBurstCount as int = 0;
-    for entity in world.nearbyEntities(IVector3d.create(0.5 + pos.x, 0.5 + pos.y, 0.5 + pos.z), 2.0).entities {
-        val def = entity.definition;
-        if (isNull(def)) {
-            continue;
+    Sync.addSyncTask(function() {
+        val controller = event.controller;
+        val world = controller.world;
+        val pos = controller.pos;
+        var stormBurstCount as int = 0;
+        for entity in world.nearbyEntities(IVector3d.create(0.5 + pos.x, 0.5 + pos.y, 0.5 + pos.z), 2.0).entities {
+            val def = entity.definition;
+            if (isNull(def)) {
+                continue;
+            }
+            if (def.id == "botania:mana_burst" && entity.tags has "storm") {
+                entity.setDead();
+                stormBurstCount += 1;
+            } else if (def.id == "botania:mana_storm") {
+                entity.setDead();
+                world.performExplosion(null, entity.x, entity.y, entity.z, 1.5f, false, false);
+            }
         }
-        if (def.id == "botania:mana_burst" && entity.tags has "storm") {
-            entity.setDead();
-            stormBurstCount += 1;
-        } else if (def.id == "botania:mana_storm") {
-            entity.setDead();
-            world.performExplosion(null, entity.x, entity.y, entity.z, 1.5f, false, false);
+        if (isNull(controller.customData.Bursts)) {
+            controller.customData = {Bursts: 0};
         }
-    }
-    if (isNull(controller.customData.Bursts)) {
-        controller.customData = {Bursts: 0};
-    }
-    val prev = controller.customData.Bursts.asInt();
-    controller.customData = {Bursts : (prev + stormBurstCount)};
+        val prev = controller.customData.Bursts.asInt();
+        controller.customData = {Bursts : (prev + stormBurstCount)};
+    });
 });
 
 RecipeBuilder.newBuilder("nature_crystal", "natural_grace", 120)

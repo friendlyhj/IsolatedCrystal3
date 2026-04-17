@@ -3,6 +3,7 @@
 import native.thecodex6824.thaumcraftfix.api.event.FluxRiftDestroyBlockEvent;
 import crafttweaker.block.IBlockStateMatcher;
 import crafttweaker.world.IBlockPos;
+import crafttweaker.item.IIngredient;
 import crafttweaker.world.IWorld;
 import crafttweaker.data.IData;
 import crafttweaker.util.IAxisAlignedBB;
@@ -16,7 +17,20 @@ static strongBlocks as IBlockStateMatcher =
     <blockstate:thaumicaugmentation:rift_feeder>.matchBlock() |
     <blockstate:thaumicaugmentation:fortified_glass>.matchBlock() |
     <blockstate:thaumicaugmentation:rift_jar>.matchBlock() |
-    <blockstate:thaumadditions:dawn_totem>.matchBlock();
+    <blockstate:thaumadditions:dawn_totem>.matchBlock() |
+    <blockstate:thaumadditions:puriflower>.matchBlock() |
+    <blockstate:thaumicaugmentation:fortified_glass_pane>.matchBlock();
+
+static items as IIngredient = 
+    <item:thaumicaugmentation:rift_mover_input> |
+    <item:thaumicaugmentation:rift_mover_output> |
+    <item:thaumicaugmentation:rift_monitor> |
+    <item:thaumicaugmentation:rift_feeder> |
+    <item:thaumicaugmentation:fortified_glass> |
+    <item:thaumicaugmentation:rift_jar> |
+    <item:thaumadditions:dawn_totem> |
+    <item:thaumadditions:puriflower> |
+    <item:thaumicaugmentation:fortified_glass_pane>;
 
 events.register(function(event as FluxRiftDestroyBlockEvent) {
     val pos = event.position as IBlockPos;
@@ -42,3 +56,5 @@ events.register(function(event as FluxRiftDestroyBlockEvent) {
         }
     }
 });
+
+items.addTooltip(game.localize("isolatedcrystal.tooltip.flux_rift_guard"));

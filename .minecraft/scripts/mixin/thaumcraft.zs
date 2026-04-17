@@ -4,12 +4,14 @@ import native.java.util.ArrayList;
 import native.java.lang.Math;
 import native.java.util.Random;
 import native.net.minecraft.item.ItemStack;
+import native.net.minecraft.entity.player.EntityPlayer;
 import native.net.minecraft.entity.player.EntityPlayerMP;
 import native.thaumcraft.api.aspects.AspectList;
 import native.thaumcraft.api.capabilities.IPlayerKnowledge.EnumResearchStatus;
 import native.thaumcraft.common.world.aura.AuraHandler;
 import native.net.minecraft.nbt.NBTTagCompound;
 import native.net.minecraft.world.World;
+import native.net.minecraft.world.WorldProvider;
 import native.net.minecraft.util.math.BlockPos;
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
@@ -41,6 +43,7 @@ zenClass MixinPlayerKnowledge {
 }
 
 // Removing all Crucible smelting recipes, except vis crystal and essential phial
+// Make items thrown by machines can be smelted in crucible
 
 #mixin {targets: "thaumcraft.common.tiles.crafting.TileCrucible"}
 zenClass MixinTileCrucible {
@@ -49,6 +52,15 @@ zenClass MixinTileCrucible {
         val name = item.item.registryName.toString();
         if (name != "thaumcraft:crystal_essence" && name != "thaumcraft:phial" && name != "thaumcraft:nugget") {
             cir.setReturnValue(item);
+        }
+    }
+
+    #mixin Redirect{method: "attemptSmelt", at: {value: "INVOKE", target: "net/minecraft/world/World.func_72924_a(Ljava/lang/String;)Lnet/minecraft/entity/player/EntityPlayer;"}}
+    function getPlayer(world as World, name as string) as EntityPlayer {
+        if (world.playerEntities.isEmpty()) {
+            return null;
+        } else {
+            return world.playerEntities[0] as EntityPlayer;
         }
     }
 }
@@ -117,5 +129,11 @@ zenClass MixinEntityFluxRift {
         val sigma = 11.0 - Math.cbrt(Math.max(0.0, 0.0 + flux - 3000)) / 3;
         val gaussian = world.rand.nextGaussian();
         return Math.round(mu - sigma * Math.abs(gaussian)) as double;
+    }
+
+    #mixin Static
+    #mixin Redirect {method: "createRift", at: {value: "INVOKE", target: "net/minecraft/world/WorldProvider.func_191066_m()Z"}}
+    function spawnAtTopInAllWorlds(provider as WorldProvider) as bool {
+        return true;
     }
 }
