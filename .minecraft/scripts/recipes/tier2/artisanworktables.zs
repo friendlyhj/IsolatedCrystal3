@@ -491,3 +491,39 @@ RecipeBuilder.get("mage")
   .setFluid(<liquid:mercury> * 576)
   .addOutput(<naturesaura:generator_limit_remover>)
   .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<contenttweaker:heated_crystal>, <ore:plateInvar>, <contenttweaker:heated_crystal>],
+    [<ore:plateInvar>, <ore:gearBronze>, <ore:plateInvar>],
+    [<contenttweaker:crafting_crystal>, <ore:plateInvar>, <contenttweaker:crafting_crystal>]])
+  .addTool(<ore:artisansSpanner>, 20)
+  .addOutput(<thermalfoundation:upgrade>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermalfoundation:glass:3>, <ore:plateElectrum>, <thermalfoundation:glass:3>],
+    [<ore:plateElectrum>, <factorytech:machinepart:14>, <ore:plateElectrum>],
+    [<contenttweaker:electric_crystal>, <ore:plateElectrum>, <contenttweaker:electric_crystal>]])
+  .addTool(<ore:artisansSpanner>, 20)
+  .addOutput(<thermalfoundation:upgrade:1>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<thermalfoundation:material:1025>, <ore:plateSignalum>, <thermalfoundation:material:1025>],
+    [<ore:plateSignalum>, <embers:winding_gears>, <ore:plateSignalum>],
+    [<nuclearcraft:part:7>, <ore:plateSignalum>, <nuclearcraft:part:7>]])
+  .addTool(<ore:artisansSpanner>, 20)
+  .addOutput(<thermalfoundation:upgrade:2>)
+  .create();
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<mekanism:controlcircuit:3>, <ore:plateEnderium>, <mekanism:controlcircuit:3>],
+    [<ore:plateEnderium>, <thaumadditions:mithrillium_resonator>, <ore:plateEnderium>],
+    [<contenttweaker:space_time_crystal>, <ore:plateEnderium>, <contenttweaker:space_time_crystal>]])
+  .addTool(<ore:artisansSpanner>, 20)
+  .addOutput(<thermalfoundation:upgrade:3>)
+  .create();

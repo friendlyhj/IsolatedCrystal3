@@ -421,3 +421,8 @@ recipeTweak(true, <immersivecables:relay_fluix:1> * 8, [
 recipeTweak(false, <pneumaticcraft:regulator_tube_module>, [
     [<pneumaticcraft:pressure_tube>, <minecraft:comparator>, <minecraft:dye:4>]
 ]);
+
+recipes.remove(<thermalfoundation:upgrade>);
+recipes.remove(<thermalfoundation:upgrade:1>);
+recipes.remove(<thermalfoundation:upgrade:2>);
+recipes.remove(<thermalfoundation:upgrade:3>);
