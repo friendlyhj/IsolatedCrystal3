@@ -58,7 +58,16 @@ zenClass MixinTileCrucible {
     #mixin Redirect{method: "attemptSmelt", at: {value: "INVOKE", target: "net/minecraft/world/World.func_72924_a(Ljava/lang/String;)Lnet/minecraft/entity/player/EntityPlayer;"}}
     function getPlayer(world as World, name as string) as EntityPlayer {
         if (world.playerEntities.isEmpty()) {
-            return null;
+            val server = world.minecraftServer;
+            if (isNull(server)) {
+                return null;
+            }
+            val serverPlayers = server.playerList.players;
+            if (serverPlayers.isEmpty()) {
+                return null;
+            }
+            return serverPlayers[0] as EntityPlayer;
+            
         } else {
             return world.playerEntities[0] as EntityPlayer;
         }

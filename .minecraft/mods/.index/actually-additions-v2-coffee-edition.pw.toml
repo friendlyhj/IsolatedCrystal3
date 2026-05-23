@@ -1,0 +1,18 @@
+filename = 'ActuallyAdditions-1.12.2-r154.jar'
+name = 'Actually Additions V2 Coffee Edition'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ActuallyAdditions-1.12.2-r154.jar'
+
+[download]
+hash = '4008a7d36e42516322d3243beeca360e50217bb4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8124044
+project-id = 1547732
