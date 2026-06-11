@@ -1,19 +1,19 @@
-filename = 'loliasm-5.32.jar'
+filename = 'loliasm-5.33.jar'
 name = 'LoliASM'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'censoredasm5.32.jar'
+x-prismlauncher-version-number = 'chibi-5.33.jar'
 
 [download]
-hash = '2402aa4be7740722f34f04cd8574f3eeb749d508'
+hash = '71eea31ddedc783b02bee6490d4c1f3aae10cc9c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8043208
+file-id = 8225778
 project-id = 460609
 
 [[x-prismlauncher-dependencies]]

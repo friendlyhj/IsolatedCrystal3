@@ -1,0 +1,28 @@
+{
+	title: "{isolatedcrystal.quests.891d2584.title}",
+	x: 12.6d,
+	y: -4.2d,
+	text: [
+		"{isolatedcrystal.quests.891d2584.text.1}",
+		"{isolatedcrystal.quests.891d2584.text.2}",
+		"{isolatedcrystal.quests.891d2584.text.3}"
+	],
+	dependencies: [
+		"ee7abc7b"
+	],
+	size: 0.7d,
+	tasks: [{
+		uid: "e6ac31a8",
+		type: "item",
+		items: [{
+			item: "factorytech:upgrade 1 4"
+		}]
+	},
+	{
+		uid: "b2befedd",
+		type: "item",
+		items: [{
+			item: "factorytech:upgrade"
+		}]
+	}]
+}

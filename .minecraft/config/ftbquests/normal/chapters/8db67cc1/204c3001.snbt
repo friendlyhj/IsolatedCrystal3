@@ -3,7 +3,8 @@
 	y: -2.1d,
 	text: [
 		"{isolatedcrystal.quests.204c3001.text.1}",
-		"{isolatedcrystal.quests.204c3001.text.2}"
+		"{isolatedcrystal.quests.204c3001.text.2}",
+		"{isolatedcrystal.quests.204c3001.text.3}"
 	],
 	dependencies: [
 		"a785c939",

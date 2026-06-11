@@ -4,7 +4,9 @@ import native.net.minecraft.entity.Entity;
 import native.net.minecraft.entity.player.EntityPlayer;
 import native.net.minecraft.util.DamageSource;
 import native.net.minecraft.entity.EntityLiving;
+import native.net.minecraft.tileentity.TileEntity;
 import native.vazkii.botania.common.entity.EntityManaBurst;
+import native.vazkii.botania.api.item.IFloatingFlower;
 import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
 
@@ -48,5 +50,18 @@ zenClass MixinEntityManaStorm {
     function tagBurst(burst as EntityManaBurst) as EntityManaBurst {
         burst.addTag("storm");
         return burst;
+    }
+}
+
+#mixin {targets: "vazkii.botania.common.block.subtile.generating.SubTileRafflowsia"}
+zenClass MixinSubTileRafflowsia {
+
+    // Prevents rafflowsias from consuming floating flowers, consistent with 1.14+ behavior
+    #mixin ModifyExpressionValue{method: "onUpdate", at = {value: "MIXINEXTRAS:EXPRESSION"}}
+    #mixin Expression{value: "? instanceof SubTileRafflowsia"}
+    #mixin Definition{id: "SubTileRafflowsia", type: "Lvazkii/botania/common/block/subtile/generating/SubTileRafflowsia;"}
+    #mixin Local
+    function notEatFloatingFlowers(original as bool, tile as TileEntity) as bool {
+        return original || tile instanceof IFloatingFlower;
     }
 }

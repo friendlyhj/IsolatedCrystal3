@@ -8,6 +8,7 @@
 		uid: "02b66680",
 		type: "item",
 		items: [{
+			Damage: 15s,
 			tag: {
 				SideCache: [B;
 					1b,
@@ -22,7 +23,6 @@
 				Level: 0b,
 				Energy: 0
 			},
-			Damage: 15s,
 			id: "thermalexpansion:machine"
 		}],
 		ignore_nbt: 1b

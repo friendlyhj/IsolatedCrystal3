@@ -110,7 +110,7 @@ Orechid.addOre("oreGold", 100);
 Orechid.addOre("oreNickel", 100);
 Orechid.addOre("oreAluminum", 120);
 Orechid.addOre("orePlatinum", 5);
-Orechid.addOre("oreRedstone", 100);
+Orechid.addOre("oreRedstone", 140);
 Orechid.addOre("oreLapis", 75);
 Orechid.addOre("oreDiamond", 20);
 Orechid.addOre("oreEmerald", 10);

@@ -10,6 +10,7 @@ import mods.zenutils.NetworkHandler;
 import crafttweaker.player.IPlayer;
 import crafttweaker.world.IWorld;
 import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockStateMatcher;
 import crafttweaker.data.IData;
 import crafttweaker.util.Math;
 import crafttweaker.util.IRandom;
@@ -34,6 +35,10 @@ static flowers as int[string] = {
     "rafflowsia":11,
     "shulk_me_not":12
 };
+
+static deniedBlocks as IBlockStateMatcher =
+    <blockstate:botania:redstringrelay>.matchBlock();
+
 function getColor(name as string, random as IRandom)as int{
     if(name=="hydroangeas")return 0x8888FF;
     if(name=="endoflame")return 0xFF8800;
@@ -106,8 +111,9 @@ function irisotosWork(world as IWorld, pos as IBlockPos) as void {
         for j in 0 to d*2+1{
             for k in 0 to d*2+1{
                 var pos1 as IBlockPos=IBlockPos.create(pos.x+i-d,pos.y+j-d,pos.z+k-d);
+                var denied as bool = deniedBlocks.matches(world.getBlockState(pos1));
                 var name as string=getFlowerName(world,pos1);
-                if(pos1.x!=pos.x||pos1.y!=pos.y||pos1.z!=pos.z)if(name=="irisotos"){
+                if(pos1.x!=pos.x||pos1.y!=pos.y||pos1.z!=pos.z)if(name=="irisotos" || denied){
                     //world.setBlockState(<blockstate:minecraft:air>,pos1);
                     if(!world.remote)//world.spawnEntity(<botania:specialflower>.withTag({type: "irisotos"}).createEntityItem(world,pos1));
                         world.destroyBlock(pos1, true);

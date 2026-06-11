@@ -48,8 +48,8 @@ events.register(function(event as FluxRiftDestroyBlockEvent) {
         if (isNull(controller) || isNull(controller.formedMachineName)) {
             continue;
         }
-        val posA = controller.relativePos(-5, -1, 0);
-        val posB = controller.relativePos(5, 9, 10);
+        val posA = controller.relativePos(-6, -2, -1);
+        val posB = controller.relativePos(6, 10, 11);
         if (IAxisAlignedBB.create(posA, posB).contains(IVector3d.create(pos.x, pos.y, pos.z))) {
             event.setCanceled(true);
             return;

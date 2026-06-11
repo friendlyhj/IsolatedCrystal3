@@ -21,6 +21,7 @@ val b as string[] = [
 ];
 
 BlackList.addMatchItem("chisel");
+BlackList.addMatchItem(<ore:oreChargedCertusQuartz>);
 
 static modPreference as string[] = [
     "minecraft",

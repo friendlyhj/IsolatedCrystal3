@@ -19,16 +19,14 @@
 			tag: {
 				"akashictome:data": {
 					factorytech: {
-						id: "factorytech:handbook",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "factorytech"
-						}
+						},
+						id: "factorytech:handbook",
+						Count: 1
 					},
 					thaumcraft: {
-						id: "thaumcraft:thaumonomicon",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "thaumcraft",
@@ -37,59 +35,59 @@
 								Name: "§r阿卡什宝典（§a魔导手册§r）"
 							},
 							"akashictome:displayName": "魔导手册"
-						}
+						},
+						id: "thaumcraft:thaumonomicon",
+						Count: 1
 					},
 					actuallyadditions: {
-						id: "actuallyadditions:item_booklet",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "actuallyadditions"
-						}
+						},
+						id: "actuallyadditions:item_booklet",
+						Count: 1
 					},
 					tconstruct: {
-						id: "tconstruct:book",
-						Count: 1,
 						Damage: 0s,
 						tag: {
-							"akashictome:definedMod": "tconstruct",
 							mantle: {
 								book: {
 									page: "tools.longsword"
 								}
-							}
-						}
+							},
+							"akashictome:definedMod": "tconstruct"
+						},
+						id: "tconstruct:book",
+						Count: 1
 					},
 					astralsorcery: {
-						id: "astralsorcery:itemjournal",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "astralsorcery"
-						}
+						},
+						id: "astralsorcery:itemjournal",
+						Count: 1
 					},
 					thermalfoundation: {
-						id: "thermalfoundation:tome_lexicon",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "thermalfoundation"
-						}
+						},
+						id: "thermalfoundation:tome_lexicon",
+						Count: 1
 					},
 					botania: {
-						id: "botania:lexicon",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "botania",
 							knowledge.relic: 1b,
 							knowledge.minecraft: 1b,
 							knowledge.alfheim: 1b
-						}
+						},
+						id: "botania:lexicon",
+						Count: 1
 					},
 					naturesaura: {
-						id: "patchouli:guide_book",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "naturesaura",
@@ -99,36 +97,36 @@
 								Name: "§r阿卡什宝典（§a自然灵气之书§r）"
 							},
 							"akashictome:displayName": "自然灵气之书"
-						}
+						},
+						id: "patchouli:guide_book",
+						Count: 1
 					},
 					embers: {
-						id: "embers:codex",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "embers"
-						}
+						},
+						id: "embers:codex",
+						Count: 1
 					},
 					industrialforegoing: {
-						id: "industrialforegoing:book_manual",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "industrialforegoing"
-						}
+						},
+						id: "industrialforegoing:book_manual",
+						Count: 1
 					},
 					bloodmagic: {
-						id: "guideapi:bloodmagic-guide",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							G-API_Category_Page: 0,
 							"akashictome:definedMod": "bloodmagic"
-						}
+						},
+						id: "guideapi:bloodmagic-guide",
+						Count: 1
 					},
 					extrautils2: {
-						id: "extrautils2:book",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "extrautils2",
@@ -137,41 +135,43 @@
 								Name: "§r阿卡什宝典（§a实用设备手册§r）"
 							},
 							"akashictome:displayName": "实用设备手册"
-						}
+						},
+						id: "extrautils2:book",
+						Count: 1
 					},
 					nuclearcraft: {
-						id: "patchouli:guide_book",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "nuclearcraft",
 							"patchouli:book": "nuclearcraft:guide"
-						}
+						},
+						id: "patchouli:guide_book",
+						Count: 1
 					},
 					immersiveengineering: {
-						id: "immersiveengineering:tool",
-						Count: 1,
 						Damage: 3s,
 						tag: {
 							"akashictome:definedMod": "immersiveengineering"
-						}
+						},
+						id: "immersiveengineering:tool",
+						Count: 1
 					},
 					pneumaticcraft: {
-						id: "patchouli:guide_book",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "pneumaticcraft",
 							"patchouli:book": "pneumaticcraft:book"
-						}
+						},
+						id: "patchouli:guide_book",
+						Count: 1
 					},
 					modularrouters: {
-						id: "guideapi:modularrouters-guidebook",
-						Count: 1,
 						Damage: 0s,
 						tag: {
 							"akashictome:definedMod": "modularrouters"
-						}
+						},
+						id: "guideapi:modularrouters-guidebook",
+						Count: 1
 					}
 				},
 				"akashictome:is_morphing": 1b
