@@ -1,13 +1,37 @@
-filename = 'RandomTweaker-1.4.10.jar'
+filename = 'RandomTweaker-1.4.11.jar'
 name = 'RandomTweaker'
-side = 'both'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'RandomTweaker-1.4.11.jar'
 
 [download]
-hash = '55e0e3dd859cfed958c4cbc88c2eeac78adc2190'
+hash = 'ffa2a5f30af8b8cb117b81061edf371d7cd7abf5'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7407160
+file-id = 8436737
 project-id = 514170
+
+[[x-prismlauncher-dependencies]]
+addonId = '237065'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '401178'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '870276'
+type = 'REQUIRED'

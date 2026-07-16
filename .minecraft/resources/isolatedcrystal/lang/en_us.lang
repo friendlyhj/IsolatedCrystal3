@@ -104,6 +104,7 @@ isolatedcrystal.tips.18=/xu_powersharing allows you to share GP with other playe
 isolatedcrystal.tips.19=/wandOops can undo last block place by Better Builder's Wand.
 isolatedcrystal.tips.20=Building Gadget can automatically use items from the ME network. Just hold the it Shift+right-click on a security terminal.
 isolatedcrystal.tips.21=In the Thermal Machine configuration, hold down Shift and click on the front to cancel all side configurations.
+isolatedcrystal.tips.22=After equipping the Ash Amulet, blocks mined and mobs killed will only drop Ash Pile. It can even be worn by the Mechanical User!
 isolatedcrystal.quests.e308ab89.text.1=The Crucible itself can only use Vis Crystal and Phial of Essentia as aspect inputs, and can only craft Vis Crystals.
 isolatedcrystal.quests.e308ab89.text.2=So please use Thaumatorium instead.
 isolatedcrystal.quests.e308ab89.text.3=You can use machines like Open Crate to throw items, and you can use this to automate Vis Crystal production instead of the Thaumatorium.

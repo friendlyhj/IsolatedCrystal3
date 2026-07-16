@@ -80,7 +80,7 @@ zenClass MixinTileCrucible {
 zenClass MixinTilePedestal {
     #mixin Overwrite
     function setInventorySlotContentsFromInfusion(slot as int, item as ItemStack) as void {
-        this0.getItems()[slot] = item;
+        this0.getItems().set(slot, item);
         this0.markDirty();
         if (slot == 0) {
             this0.syncSlots(null);

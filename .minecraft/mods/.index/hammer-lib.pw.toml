@@ -1,18 +1,18 @@
-filename = 'HammerLib-1.12.2-12.2.62.jar'
+filename = 'HammerLib-1.12.2-12.2.66.jar'
 name = 'HammerLib'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '[1.12.2] HammerLib - 12.2.62'
+x-prismlauncher-version-number = '[1.12.2] HammerLib - 12.2.66'
 
 [download]
-hash = '80692d5ae41ba5b70217f66fe53e6822717b63a6'
+hash = 'c7ac28f4c7b83648611134023fdd6e3581212ff8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8211649
+file-id = 8428179
 project-id = 247401

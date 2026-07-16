@@ -118,7 +118,6 @@ modpack.tooltip.aura_consume=§2末影设备，消耗 %s 灵气/tick
 modpack.tooltip.netherrack_fail.0=这显然不是你想要的产物
 modpack.tooltip.netherrack_fail.1=也许应该尝试下该产物的原生环境内处理
 modpack.tooltip.ender_star=右键以传送至末地
-modpack.tooltip.irisotos=奇迹的颜色
 modpack.tooltip.arcane_assembler=已被禁用，请使用奥术合成器
 modpack.tooltip.netherrack=必须在下界进行
 
@@ -164,3 +163,4 @@ modularmachinery.crystal_pillar_purple=水晶柱（紫）
 contenttweaker.part.ore_sacrifice=%s祭品
 
 tile.botania:flower.irisotos.name=彩虹莲
+tile.botania:flower.irisotos.reference=奇迹的颜色

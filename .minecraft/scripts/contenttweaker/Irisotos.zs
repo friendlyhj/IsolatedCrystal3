@@ -275,5 +275,3 @@ NetworkHandler.registerServer2ClientMessage("IrisotosTransform", function(player
     val b = 1.0f * (color & 0xff) / 255.0f;
     IBotaniaFXHelper.wispFX(x, y, z, r, g, b, 0.3f, motionX, motionY, motionZ);
 });
-
-<botania:specialflower>.withTag({type: "irisotos"}).addTooltip(game.localize("modpack.tooltip.irisotos"));

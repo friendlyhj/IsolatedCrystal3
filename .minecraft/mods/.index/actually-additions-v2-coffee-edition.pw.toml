@@ -1,18 +1,18 @@
-filename = 'ActuallyAdditions-1.12.2-r155.jar'
+filename = 'ActuallyAdditions-1.12.2-r157.jar'
 name = 'Actually Additions V2 Coffee Edition'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
-x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'ActuallyAdditions-1.12.2-r155.jar'
+x-prismlauncher-version-number = 'ActuallyAdditions-1.12.2-r157.jar'
 
 [download]
-hash = '8fdef8c4dc87da80f2e3e0cd6080d264593ad890'
+hash = '93157423fc1547963edaf8e5017256f0b5b6d2e7'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8182153
+file-id = 8406397
 project-id = 1547732

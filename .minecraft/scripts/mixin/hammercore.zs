@@ -1,4 +1,7 @@
 #loader mixin
+#norun
+
+// mod source adapter is async in recent versions, disable the patch.
 
 import native.com.zeitheron.hammercore.utils.java.io.win32.ModSourceAdapter;
 import native.com.zeitheron.hammercore.utils.java.io.win32.ModSourceAdapter.IllegalSite;

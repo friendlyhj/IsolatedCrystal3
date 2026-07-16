@@ -1,0 +1,73 @@
+filename = 'random_complement-1.9.4.jar'
+name = 'RandomComplement'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'random_complement-1.9.4.jar'
+
+[download]
+hash = 'f53b70109450016bf15083348235c64b0c621592'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8437657
+project-id = 1198138
+
+[[x-prismlauncher-dependencies]]
+addonId = '623955'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '817377'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '570458'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223565'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '322861'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '833931'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '322347'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '225643'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1157825'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '849094'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '515565'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '308383'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '811828'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'

@@ -1,13 +1,18 @@
-filename = 'modernsplash-1.4.0.jar'
+filename = 'ModernSplash-1.12.2-1.5.2.jar'
 name = 'ModernSplash'
-side = 'both'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ModernSplash-1.12.2-1.5.2.jar'
 
 [download]
-hash = 'bdcf9fa0bd36771cd0ed88609a3a8d6f09ec9086'
+hash = '55164fa5e5745bbd1de35b658db3c67fd884739a'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6501489
+file-id = 8403612
 project-id = 629058
