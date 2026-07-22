@@ -18,6 +18,11 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
             })
             .sleep(5)
             .then(function(w, ctx) {
+                player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(1000000, 1));
+                player.getAttribute("generic.maxHealth").applyModifier(AttributeModifier.createModifier("NoHealth", -18.0, 0, "299b5fd4-7f4f-456e-bbd6-a3db8da075e0"));
+            })
+            .sleep(20)
+            .then(function(w, ctx) {
                 player.warpNormal = 0;
                 player.warpPermanent = 0;
                 player.warpTemporary = 0;
@@ -26,10 +31,6 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
                 }
                 server.commandManager.executeCommandSilent(server, `/tp ${player.name} -138 68 -130`);
                 server.commandManager.executeCommandSilent(server, `/spawnpoint ${player.name} -138 68 -130`);
-            })
-            .then(function(w, ctx) {
-                player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(1000000, 1));
-                player.getAttribute("generic.maxHealth").applyModifier(AttributeModifier.createModifier("NoHealth", -18.0, 0, "299b5fd4-7f4f-456e-bbd6-a3db8da075e0"));
             });
         if (created) {
             builder.then(function(w, ctx) {
