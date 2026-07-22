@@ -88,7 +88,7 @@ static INSTANT_FLOWER_CACHE as int[] = [
 ];
 
 scripts.mixin.shared.Op.trackMana = function(flowerName as string, manaDifference as int, flower as SubTileGenerating) as void {
-    logger.logWarning(`${flowerName} generates ${manaDifference} mana`);
+    // logger.logWarning(`${flowerName} generates ${manaDifference} mana`);
     if (FLOWER_ID_MAPPING has flowerName) {
         val flowerId = FLOWER_ID_MAPPING[flowerName] as int;
         if (INSTANT_FLOWER_IDS has flowerId) {
