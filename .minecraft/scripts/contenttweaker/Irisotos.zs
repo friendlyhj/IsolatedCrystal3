@@ -89,8 +89,9 @@ static INSTANT_FLOWER_CACHE as int[] = [
 
 scripts.mixin.shared.Op.trackMana = function(flowerName as string, manaDifference as int, flower as SubTileGenerating) as void {
     // logger.logWarning(`${flowerName} generates ${manaDifference} mana`);
-    if (FLOWER_ID_MAPPING has flowerName) {
-        val flowerId = FLOWER_ID_MAPPING[flowerName] as int;
+    val correctedFlowerName = (flowerName == 'shulkmenot') ? 'shulk_me_not' : flowerName;
+    if (FLOWER_ID_MAPPING has correctedFlowerName) {
+        val flowerId = FLOWER_ID_MAPPING[correctedFlowerName] as int;
         if (INSTANT_FLOWER_IDS has flowerId) {
             val world as IWorld = flower.world.wrapper;
             val pos as IBlockPos = flower.pos.wrapper;
@@ -108,10 +109,10 @@ scripts.mixin.shared.Op.trackMana = function(flowerName as string, manaDifferenc
             }
 
             val iristosFlower = world.getSubTileEntityInGame(iristosPos);
-            val currentMana = iristosFlower.data.deepGetInt(flowerName + "_mana");
+            val currentMana = iristosFlower.data.deepGetInt(correctedFlowerName + "_mana");
             val newMana = min(INSTANT_FLOWER_CACHE[INSTANT_FLOWER_IDS.indexOf(flowerId)], currentMana + manaDifference);
 
-            iristosFlower.updateCustomData({(flowerName + "_mana"): newMana});
+            iristosFlower.updateCustomData({(correctedFlowerName + "_mana"): newMana});
         }
     }
 };
