@@ -1,40 +1,20 @@
-filename = 'TinkersAntique-1.12.2-2.13.0.207.jar'
+filename = 'TinkersAntique-1.12.2-2.13.0.208.jar'
 name = "Tinkers' Antique"
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '2.13.0.207'
+x-prismlauncher-version-number = '2.13.0.208'
 
 [download]
-hash = 'bd4157c6db11437a0ea7378b513c7469f8efdc3b'
+hash = 'ea1b196364519ab8d5d338b244757a0b3b754b70'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8089154
+file-id = 8469500
 project-id = 1242239
-
-[[x-prismlauncher-dependencies]]
-addonId = '227877'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '867351'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '1116420'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '223628'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '321139'
-type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '1535236'
@@ -45,9 +25,33 @@ addonId = '384589'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
+addonId = '275408'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
 addonId = '1481734'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '227877'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '867351'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '321139'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '223628'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
 addonId = '74924'
 type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1116420'
+type = 'OPTIONAL'

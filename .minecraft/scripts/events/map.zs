@@ -112,13 +112,22 @@ events.onWorldTick(function(event as WorldTickEvent) {
     val world = event.world;
     if (world.dimension == 0) {
         val mapColors as int = world.getCustomWorldData().deepGetInt("Colors");
-        // logger.logInfo("Map colors: " + mapColors);
         if (!world.remote) {
-            val success = mapColors == 0x7f;
+            var success = mapColors == 0x7f;
+
+            for i in 0 .. 7 {
+                val controllerPos = controllerCoords[i];
+                if (world.native.isBlockPowered(controllerPos)) {
+                    updateColorInfo(world, colors.keys[i], false);
+                    success = false;
+                }
+            }
+
             // logger.logWarning(mapColors);
             if (success != world.getGameRuleHelper().getBoolean("doDaylightCycle")) {
                 world.getGameRuleHelper().setBoolean("doDaylightCycle", success);
             }
+
             // tick event to transform old saves
             val transformed = world.getCustomWorldData() has "PillarTransformed";
             if (!transformed) {

@@ -1,23 +1,23 @@
-filename = 'zenutils-1.27.5.jar'
-name = 'ZenUtils'
+filename = 'zenutils-1.28.0.jar'
+name = 'Zen Utils'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'zenutils-1.27.5.jar'
+x-prismlauncher-version-number = 'zenutils-1.28.0.jar'
 
 [download]
-hash = '28d1104be0ef24cfc908a4c7bb75cc47e61c2b0f'
+hash = '648f133aad70d5811008930684529dcc12ea3f3e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8385068
+file-id = 8483904
 project-id = 401178
 
 [[x-prismlauncher-dependencies]]
-addonId = '870276'
+addonId = '419286'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
@@ -25,5 +25,5 @@ addonId = '239197'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '419286'
+addonId = '870276'
 type = 'REQUIRED'

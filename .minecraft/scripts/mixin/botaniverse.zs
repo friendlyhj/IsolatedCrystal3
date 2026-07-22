@@ -23,7 +23,6 @@ zenClass MixinTileMorePool {
             this0.recieveMana(-event.mana as int);
             stack.shrink(1);
             var outputItem = EntityItem(world, pos.x + 0.5, pos.y + 1.5, pos.z + 0.5, event.output);
-            outputItem.age = 105;
             world.spawnEntity(outputItem);
             this0.craftingFanciness();
             cir.setReturnValue(true);

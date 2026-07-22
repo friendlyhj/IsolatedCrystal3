@@ -194,7 +194,7 @@ zenClass ArtisanRecipeBuilder {
                 .setIOType("input")
                 .setValue(120)
                 .build()
-        ]).setChance(0.005f);
+        ]).setChance(0.003f);
         print("Creating Modular Machinery Recipe: " ~ name);
         mm.build();
     }

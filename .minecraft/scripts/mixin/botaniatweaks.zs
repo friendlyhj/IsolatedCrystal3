@@ -6,7 +6,13 @@ import native.net.minecraft.init.Items;
 import native.net.minecraftforge.fluids.FluidStack;
 import native.net.minecraftforge.fluids.FluidUtil;
 import native.net.minecraftforge.fluids.IFluidBlock;
+import native.vazkii.botania.api.subtile.SubTileGenerating;
+import mixin.CallbackInfo;
 import mixin.CallbackInfoReturnable;
+import scripts.mixin.shared.Op;
+
+import native.top.outlands.foundation.boot.ActualClassLoader;
+import native.net.minecraft.launchwrapper.Launch;
 
 // Fixes the display of fluid block in JEI, showing the bucket item
 
@@ -51,3 +57,19 @@ zenClass MixinCTAgglomerationMultiblock {
         return false;
     }
 }
+
+#mixin Mixin
+#{targets: "quaternary.botaniatweaks.asm.BotaniaTweakerHooks"}
+zenClass MixinBotaniaTweakerHooks {
+    #mixin Static
+    #mixin Inject {method: "beforeFlowerReturn", at: {value: "INVOKE", target: "quaternary/botaniatweaks/modules/botania/wsd/ManaStatisticsWsd.trackMana(Ljava/lang/String;I)V"}}
+    #mixin Local {parameter: -1, name: "manaDifference"}
+    function trackMana(flowerName as string, flower as SubTileGenerating, newMana as int, ci as CallbackInfo, manaDifference as int) as void {
+        if (!isNull(Op.trackMana)) {
+            Op.trackMana(flowerName, manaDifference, flower);
+        }
+    }
+}
+
+(Launch.classLoader as ActualClassLoader).removeTransformerExclusion("quaternary.botaniatweaks.asm");
+

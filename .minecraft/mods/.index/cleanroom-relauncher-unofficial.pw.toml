@@ -1,18 +1,18 @@
-filename = '++relauncher-0.8.0-beta-shadow.jar'
-name = 'Cleanroom Relauncher'
+filename = '++relauncher-0.8.1-beta-shadow.jar'
+name = 'Cleanroom relauncher unofficial'
 side = ''
 x-prismlauncher-dependencies = []
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = '++relauncher-0.8.0-beta-shadow.jar'
+x-prismlauncher-version-number = '++relauncher-0.8.1-beta-shadow.jar'
 
 [download]
-hash = '8c3094a3912be5e6032771c674b62f381593f3be'
+hash = 'dff098c7786eeb8069fcaa31d69b12e69e063ef8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8361787
+file-id = 8471479
 project-id = 1214906

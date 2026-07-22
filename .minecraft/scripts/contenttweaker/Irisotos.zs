@@ -17,51 +17,131 @@ import crafttweaker.util.IRandom;
 import crafttweaker.entity.IEntityItem;
 import mods.zenutils.IByteBuf;
 import scripts.libs.Vector3D;
+import native.vazkii.botania.api.subtile.SubTileGenerating;
 
-static MANA_DRAIN as double=160;
 static IRISOTOS_RADIUS as int=1;
-static flowers as int[string] = {
-    "hydroangeas":0,
-    "endoflame":1,
-    "thermalily":2,
-    "arcanerose":3,
-    "munchdew":4,
-    "entropinnyum":5,
-    "kekimurus":6,
-    "gourmaryllis":7,
-    "narslimmus":8,
-    "spectrolus":9,
-    "dandelifeon":10,
-    "rafflowsia":11,
-    "shulk_me_not":12
+
+static HYDRONAMEAS as string = "hydroangeas";
+static ENDOFLAME as string = "endoflame";
+static THERMALILY as string = "thermalily";
+static ARCANEROSE as string = "arcanerose";
+static MUNCHDEW as string = "munchdew";
+static ENTROPINNYUM as string = "entropinnyum";
+static KEKIMURUS as string = "kekimurus";
+static GOURMARYLLIS as string = "gourmaryllis";
+static NARSLIMMUS as string = "narslimmus";
+static SPECTROLUS as string = "spectrolus";
+static DANDELIFEON as string = "dandelifeon";
+static RAFFLOWSIA as string = "rafflowsia";
+static SHULK_ME_NOT as string = "shulk_me_not";
+
+static HYDRONAMEAS_ID as int = 0;
+static ENDOFLAME_ID as int = 1;
+static THERMALILY_ID as int = 2;
+static ARCANEROSE_ID as int = 3;
+static MUNCHDEW_ID as int = 4;
+static ENTROPINNYUM_ID as int = 5;
+static KEKIMURUS_ID as int = 6;
+static GOURMARYLLIS_ID as int = 7;
+static NARSLIMMUS_ID as int = 8;
+static SPECTROLUS_ID as int = 9;
+static DANDELIFEON_ID as int = 10;
+static RAFFLOWSIA_ID as int = 11;
+static SHULK_ME_NOT_ID as int = 12;
+
+static FLOWER_ID_MAPPING as int[string] = {
+    "hydroangeas": HYDRONAMEAS_ID, 
+    "endoflame": ENDOFLAME_ID,
+    "thermalily": THERMALILY_ID,
+    "arcanerose": ARCANEROSE_ID,
+    "munchdew": MUNCHDEW_ID,
+    "entropinnyum": ENTROPINNYUM_ID,
+    "kekimurus": KEKIMURUS_ID,
+    "gourmaryllis": GOURMARYLLIS_ID,
+    "narslimmus": NARSLIMMUS_ID,
+    "spectrolus": SPECTROLUS_ID,
+    "dandelifeon": DANDELIFEON_ID,
+    "rafflowsia": RAFFLOWSIA_ID,
+    "shulk_me_not": SHULK_ME_NOT_ID
+};
+
+static INSTANT_FLOWER_IDS as int[] = [
+    ARCANEROSE_ID,
+    ENTROPINNYUM_ID,
+    KEKIMURUS_ID,
+    NARSLIMMUS_ID,
+    SPECTROLUS_ID,
+    DANDELIFEON_ID,
+    RAFFLOWSIA_ID,
+    SHULK_ME_NOT_ID
+];
+
+static INSTANT_FLOWER_CACHE as int[] = [
+    6000,
+    6500,
+    9001,
+    12000,
+    16000,
+    50000,
+    9000,
+    75000
+];
+
+scripts.mixin.shared.Op.trackMana = function(flowerName as string, manaDifference as int, flower as SubTileGenerating) as void {
+    // logger.logWarning(`${flowerName} generates ${manaDifference} mana`);
+    if (FLOWER_ID_MAPPING has flowerName) {
+        val flowerId = FLOWER_ID_MAPPING[flowerName] as int;
+        if (INSTANT_FLOWER_IDS has flowerId) {
+            val world as IWorld = flower.world.wrapper;
+            val pos as IBlockPos = flower.pos.wrapper;
+            var iristosPos as IBlockPos = null;
+
+            for p in IBlockPos.getAllInBox(pos.add(-1, -1, -1), pos.add(1, 1, 1)) {
+                if (getFlowerName(world, p) == 'irisotos') {
+                    iristosPos = p;
+                    break;
+                }
+            }
+
+            if (isNull(iristosPos)) {
+                return;
+            }
+
+            val iristosFlower = world.getSubTileEntityInGame(iristosPos);
+            val currentMana = iristosFlower.data.deepGetInt(flowerName + "_mana");
+            val newMana = min(INSTANT_FLOWER_CACHE[INSTANT_FLOWER_IDS.indexOf(flowerId)], currentMana + manaDifference);
+
+            iristosFlower.updateCustomData({(flowerName + "_mana"): newMana});
+        }
+    }
 };
 
 static deniedBlocks as IBlockStateMatcher =
     <blockstate:botania:redstringrelay>.matchBlock();
 
 function getColor(name as string, random as IRandom)as int{
-    if(name=="hydroangeas")return 0x8888FF;
-    if(name=="endoflame")return 0xFF8800;
-    if(name=="thermalily")return 0xFF2222;
-    if(name=="arcanerose")return 0xCC7777;
-    if(name=="munchdew")return 0x77FF77;
-    if(name=="entropinnyum")return 0xAA0000;
-    if(name=="kekimurus"){
+    if(name==HYDRONAMEAS)return 0x8888FF;
+    if(name==ENDOFLAME)return 0xFF8800;
+    if(name==THERMALILY)return 0xFF2222;
+    if(name==ARCANEROSE)return 0xCC7777;
+    if(name==MUNCHDEW)return 0x77FF77;
+    if(name==ENTROPINNYUM)return 0xAA0000;
+    if(name==KEKIMURUS){
         if(random.nextDouble()<0.7)return 0xFFFFFF;
         return 0xFF0000;
     }
-    if(name=="gourmaryllis")return 0xFFFF00;
-    if(name=="narslimmus")return 0x77CC77;
-    if(name=="spectrolus"){
+    if(name==GOURMARYLLIS)return 0xFFFF00;
+    if(name==NARSLIMMUS)return 0x77CC77;
+    if(name==SPECTROLUS){
         var t=random.nextDouble() *3.1416*2;
         var r=(Math.sin(t)*127+128) as int;
         var g=(Math.sin(t+120)*127+128) as int;
         var b=(Math.sin(t+240)*127+128) as int;
         return b+256*(g+256*r);
     }
-    if(name=="rafflowsia")return 0xFF44FF;
-    if(name=="shulk_me_not")return 0xCC00CC;
-    if(name=="dandelifeon"){
+    if(name==RAFFLOWSIA)return 0xFF44FF;
+    if(name==SHULK_ME_NOT)return 0xCC00CC;
+    if(name==DANDELIFEON){
         if(random.nextDouble()<0.5)return 0xFF7777;
         return 0x55FF55;
     }
@@ -77,7 +157,7 @@ function getFlowerMana(w as IWorld,p as IBlockPos)as int{
     return 0;
 }
 function irisotosWork(world as IWorld, pos as IBlockPos) as void {
-    for entity in world.getEntitiesInArea(pos.add(-1, -1, -1), pos.add(1, 1, 1)) {
+    for entity in world.getEntitiesInArea(pos.add(-2, -2, -2), pos.add(2, 2, 2)) {
         if (entity instanceof IEntityItem) {
             val entityItem as IEntityItem = entity;
             val item = entityItem.item;
@@ -107,121 +187,94 @@ function irisotosWork(world as IWorld, pos as IBlockPos) as void {
     var r as int=IRISOTOS_RADIUS;         //radius
     var d as int=r*2+1;     //diameter
 
-    for i in 0 to d*2+1{
-        for j in 0 to d*2+1{
-            for k in 0 to d*2+1{
-                var pos1 as IBlockPos=IBlockPos.create(pos.x+i-d,pos.y+j-d,pos.z+k-d);
-                var denied as bool = deniedBlocks.matches(world.getBlockState(pos1));
-                var name as string=getFlowerName(world,pos1);
-                if(pos1.x!=pos.x||pos1.y!=pos.y||pos1.z!=pos.z)if(name=="irisotos" || denied){
-                    //world.setBlockState(<blockstate:minecraft:air>,pos1);
-                    if(!world.remote)//world.spawnEntity(<botania:specialflower>.withTag({type: "irisotos"}).createEntityItem(world,pos1));
-                        world.destroyBlock(pos1, true);
-                    else{
-                        for ii in 0 to 20{
-                            var rat=0.1*ii;
-                            var v=0.03;
-                            IBotaniaFXHelper.wispFX(
-                                0.5+pos1.x+(0.4-rat)*(i-d),0.5+pos1.y+(0.4-rat)*(j-d),0.5+pos1.z+(0.4-rat)*(k-d),
-                                1,0,0,0.3,
-                                v*(i-d)*(0.1+rat),v*(-0.1+j-d)*(0.1+rat),v*(k-d)*(0.1+rat),2
-                            );
-                            IBotaniaFXHelper.wispFX(
-                                0.5+pos.x+(0.4-rat)*(d-i),0.5+pos.y+(0.4-rat)*(d-j),0.5+pos.z+(0.4-rat)*(d-k),
-                                1,0,0,0.3,
-                                v*(d-i)*(0.1+rat),v*(-0.1+d-j)*(0.1+rat),v*(d-k)*(0.1+rat),2
-                            );
-                        }
-                    }
+    for p in IBlockPos.getAllInBox(pos.add(-d, -d, -d), pos.add(d, d, d)) {
+        var dx = p.x - pos.x;
+        var dy = p.y - pos.y;
+        var dz = p.z - pos.z;
+        var denied as bool = deniedBlocks.matches(world.getBlockState(p));
+        var name as string=getFlowerName(world, p);
+        if(p.x!=pos.x||p.y!=pos.y||p.z!=pos.z)if(name=="irisotos" || denied){
+            //world.setBlockState(<blockstate:minecraft:air>,pos1);
+            if(!world.remote)//world.spawnEntity(<botania:specialflower>.withTag({type: "irisotos"}).createEntityItem(world,pos1));
+                world.destroyBlock(p, true);
+            else{
+                for ii in 0 to 20{
+                    var rat=0.1*ii;
+                    var v=0.03;
+                    IBotaniaFXHelper.wispFX(
+                        0.5+p.x+(0.4-rat)*dx,0.5+p.y+(0.4-rat)*dy,0.5+p.z+(0.4-rat)*dz,
+                        1,0,0,0.3,
+                        v*dx*(0.1+rat),v*(-0.1+dy)*(0.1+rat),v*dz*(0.1+rat),2
+                    );
+                    IBotaniaFXHelper.wispFX(
+                        0.5+p.x+(0.4-rat)*dx,0.5+p.y+(0.4-rat)*dy,0.5+p.z+(0.4-rat)*dz,
+                        1,0,0,0.3,
+                        v*dx*(0.1+rat),v*(-0.1+dy)*(0.1+rat),v*dz*(0.1+rat),2
+                    );
                 }
             }
         }
     }
+
     if(world.remote)return;
 
     var flags as int=0;
     var flagsForClient as int=0;
     var t1 as IData=tile.getCustomData();
-    var manas as IData=(!isNull(t1)&&t1 has "manas")?t1.manas:IData.createEmptyMutableDataMap();
-    var timers as IData=(!isNull(t1)&&t1 has "timers")?t1.timers:IData.createEmptyMutableDataMap();
-    for i in 0 to d{
-        for j in 0 to d{
-            for k in 0 to d{
-                var pos1 as IBlockPos=IBlockPos.create(pos.x+i-r,pos.y+j-r,pos.z+k-r);
-                var compressedIndex as int=(d*(d*i+j)+k);
-                var ci as string=""~compressedIndex; //compressed index
-                var dat as IData=world.getBlock(pos1).data;
-                var name as string=getFlowerName(world,pos1);
-                dat=(isNull(dat)||!(dat has"subTileCmp"))?IData.createEmptyMutableDataMap():dat.subTileCmp;
-                //Run Timer & Update Mana
-                var lastMana=((manas has ci)?manas.memberGet(ci).asInt():0)as double;
-                var mana as int=getFlowerMana(world,pos1);
-                var time as int=(timers has ci)?timers.memberGet(ci).asInt():0;
-                var toUpdate=IData.createEmptyMutableDataMap();
-                toUpdate.memberSet(ci,mana);
-                manas=manas+toUpdate;
-                //Check if flower is working
-                if(flowers has name){
-                    var id as int=flowers[name]as int;
-                    var working=false;
-                    if(id==0||id==2)working=(dat.burnTime.asInt()>0)||(dat.cooldown.asInt()>0);
-                    else if(id==1)working=(dat.burnTime.asInt()>0);
-                    else if(id==7)working=(dat.cooldown>0);
-                    else if(id==4)working=dat.ateOnce.asBool();
-                    else{
-                        var ratio as double=1.0;
-                        if(id==6)ratio=40.0;
-                        if(id==11)ratio=90.0;
-                        if(id==10)ratio=2.0;
-                        if(id==5)ratio=10.0;
-                        if(lastMana<mana)time=((ratio*mana-lastMana)/MANA_DRAIN+time)as int;
-                        if(id==3){
-                            if(dat.collectorY>=0){
-                                var pos2 as IBlockPos=IBlockPos.create(
-                                    dat.collectorX.asInt(),dat.collectorY.asInt(),dat.collectorZ.asInt()
-                                );
-                                var spreader as IBlock=world.getBlock(pos2);
-                                var spreaderDat as IData=spreader.data;
-                                if(!isNull(spreaderDat)&&spreaderDat has"mana"){
-                                    var mana1=spreaderDat.mana;
-                                    var manaCap=(spreader.meta>2)?6400:1000;
-                                    time=time+1;
-                                }
-                            }
-                            working=working||(time>0);
-                        }else working=(time>0);
-                    }
-                    if(working){
-                        flags=flags|Vector3D.pow2(id);
-                        flagsForClient=flagsForClient|Vector3D.pow2(compressedIndex);
-                    }
-                    if(id!=10&&id!=12){
-                        if(time>200)time=200;
-                    }else if(time>5000)time=5000;
+    for p in IBlockPos.getAllInBox(pos.add(-r, -r, -r), pos.add(r, r, r)) {
+        var dx = p.x - pos.x;
+        var dy = p.y - pos.y;
+        var dz = p.z - pos.z;
+        var compressedIndex as int=(d*(d*(dx+r)+dy+r)+dz+r);
+        var dat as IData=world.getBlock(p).data;
+        var name as string=getFlowerName(world, p);
+        dat = (isNull(dat)||!(dat has"subTileCmp"))?IData.createEmptyMutableDataMap():dat.subTileCmp;
+        //Check if flower is working
+        if(FLOWER_ID_MAPPING has name){
+            var id as int = FLOWER_ID_MAPPING[name] as int;
+            var working = false;
+
+            if (id == HYDRONAMEAS_ID || id == THERMALILY_ID) {
+                working = dat.burnTime.asInt() > 0 || dat.cooldown.asInt() > 0;
+            } else if (id == ENDOFLAME_ID) {
+                working = dat.burnTime.asInt() > 0;
+            } else if (id == MUNCHDEW_ID) {
+                working = dat.ateOnce.asBool();
+            } else if (id == GOURMARYLLIS_ID) {
+                working = dat.cooldown.asInt() > 0;
+            } else if (INSTANT_FLOWER_IDS has id) {
+                var partMana = t1.deepGetInt(name + "_mana");
+                if (partMana > 0) {
+                    working = true;
                 }
-                else time=0;
-                toUpdate.memberSet(ci,(time<1)?0:time- 1);
-                timers=timers+toUpdate;
+                var consume = 40;
+                if (id == DANDELIFEON_ID) {
+                    consume = 24;
+                } else if (id == KEKIMURUS_ID) {
+                    consume = 22;
+                } else if (id == ARCANEROSE_ID) {
+                    consume = 35;
+                }
+                partMana = max(0, partMana - consume);
+                tile.updateCustomData({(name + "_mana"): partMana});
+            }
+            if (working) {
+                flags=flags|Vector3D.pow2(id);
+                flagsForClient=flagsForClient|Vector3D.pow2(compressedIndex);
             }
         }
     }
-    if(!world.remote){
-        if(!isNull(world.getBlock(pos).data)&&world.getBlock(pos).data.subTileCmp.ticksExisted>1){
-            tile.updateCustomData({"timers":timers,"manas":manas});
-            if(flags==Vector3D.pow2(flowers.keys.length)- 1){
-                irisotosWork(world,pos);
-                tile.addMana(50000);
-            }
+    if(!isNull(world.getBlock(pos).data) && world.getBlock(pos).data.subTileCmp.ticksExisted > 1){
+        if(flags == Vector3D.pow2(FLOWER_ID_MAPPING.length) - 1){
+            irisotosWork(world,pos);
+            tile.addMana(50000);
         }
-        else{
-            tile.updateCustomData({"manas":manas});
-        }
-        NetworkHandler.sendToAllAround("IrisotosBotFXDat",
-            pos.x,pos.y,pos.z,10,world.getDimension(),function(b){
-                b.writeBlockPos(pos);
-                b.writeInt(flagsForClient);
-            });
     }
+    NetworkHandler.sendToAllAround("IrisotosBotFXDat",
+        pos.x,pos.y,pos.z,10,world.getDimension(),function(b){
+            b.writeBlockPos(pos);
+            b.writeInt(flagsForClient);
+        });
 };
 NetworkHandler.registerServer2ClientMessage("IrisotosBotFXDat",function(p,b){
     var world as IWorld=p.world;
