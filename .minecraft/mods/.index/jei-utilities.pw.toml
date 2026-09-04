@@ -1,13 +1,18 @@
-filename = 'JEI-Utilities-1.12.2-0.2.13.jar'
+filename = 'JEI-Utilities-1.12.2-0.2.15.jar'
 name = 'JEI Utilities'
-side = 'both'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'JEI-Utilities-1.12.2-0.2.15.jar'
 
 [download]
-hash = '453b3e717bc1c522b1d1d1d5385125b73ea239e1'
+hash = '26cd49e01e8171962306de3c5e371ff0f00e60fc'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6937116
+file-id = 8528497
 project-id = 616190

@@ -1,0 +1,18 @@
+filename = '!Red-Core-MC-1.8-1.12-0.7.1.jar'
+name = 'Red Core'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.8', '1.8.8', '1.8.9', '1.9', '1.9.4', '1.10', '1.10.2', '1.11', '1.11.2', '1.12', '1.12.2' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Red Core 1.8-1.12 0.7.1'
+
+[download]
+hash = 'd272efd0c807908138edbac8e6cb2d90127ac01a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7455761
+project-id = 873867

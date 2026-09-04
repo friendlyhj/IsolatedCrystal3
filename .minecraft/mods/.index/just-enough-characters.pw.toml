@@ -1,13 +1,18 @@
 filename = 'jecharacters-1.12.0-3.7.3.jar'
 name = 'Just Enough Characters'
-side = 'both'
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12', '1.12.1', '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'jecharacters-1.12.0-3.7.3.jar'
 
 [download]
-hash = 'c9d2ab3a9cb5593008ca7470c45727fe27235030'
+hash = 'cada3601a67075accc8f8c9f254866cd8d952dd8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7424367
+file-id = 8581272
 project-id = 250702

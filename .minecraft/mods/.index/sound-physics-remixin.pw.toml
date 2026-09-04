@@ -1,35 +1,23 @@
-filename = 'soundphysics-1.2.1.jar'
-name = 'Sound Physics'
+filename = 'soundphysics-1.3.0-beta.jar'
+name = '籁/Sound Physics Remixin'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'soundphysics-1.2.1.jar'
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'soundphysics-1.3.0-beta.jar'
 
 [download]
-hash = '9a54abee593790851eedc45091b7d3ec98fd7613'
+hash = 'dd1a3fd059975c7a38182c40f9b0d8cda5c0cbfa'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 8318196
+file-id = 8569219
 project-id = 951159
 
 [[x-prismlauncher-dependencies]]
-addonId = '242638'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '371784'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
 addonId = '304881'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = '296045'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -37,7 +25,11 @@ addonId = '419286'
 type = 'REQUIRED'
 
 [[x-prismlauncher-dependencies]]
-addonId = '277736'
+addonId = '371784'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '242942'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
@@ -45,5 +37,13 @@ addonId = '238891'
 type = 'OPTIONAL'
 
 [[x-prismlauncher-dependencies]]
-addonId = '242942'
+addonId = '242638'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '296045'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '277736'
 type = 'OPTIONAL'
