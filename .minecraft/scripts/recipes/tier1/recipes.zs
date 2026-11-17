@@ -10,7 +10,7 @@ static affc as IItemStack = <contenttweaker:completed_afflatus_of_crafting>;
 static requiredNum as int = 9;
 recipes.addShaped(aff * 7, [
     [null, <minecraft:cobblestone>, null],
-    [<minecraft:cobblestone>, <minecraft:crafting_table>, <minecraft:cobblestone>],
+    [<minecraft:cobblestone>, <ore:workbench>, <minecraft:cobblestone>],
     [null, <minecraft:cobblestone>, null]
 ]);
 recipes.addShapeless(<botania:manaresource:21> * 4, [<ore:cobblestone>]);

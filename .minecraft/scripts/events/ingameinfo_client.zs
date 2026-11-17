@@ -43,10 +43,10 @@ events.onRenderTick(function(event as RenderTickEvent) {
         } else {
             val tps = Math.min(20.0, 1000.0 / mspt);
             barColor = "§a";
-            if (tps < 18) {
-                barColor = "§c";
-            } else if (tps < 15) {
+            if (tps < 15) {
                 barColor = "§6";
+            } else if (tps < 18) {
+                barColor = "§c";
             }
             msptBar = `TPS: ${barColor}${twoDecimal(tps)}`;
             if (mc.fontRenderer.unicodeFlag) {

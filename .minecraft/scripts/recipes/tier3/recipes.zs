@@ -55,6 +55,10 @@ recipes.removeByRecipeName("extrautils2:machine_base");
 recipes.removeByRegex("industrialforegoing:.*_thermal");
 recipes.removeByRegex("industrialforegoing:.*_enderio");
 recipes.removeByRegex("industrialforegoing:.*_mekanism");
+recipes.removeByRegex("mekanism:machineblock_5.*");
+recipes.removeByRegex("mekanism:machineblock_6.*");
+recipes.removeByRegex("mekanism:machineblock_7.*");
+recipes.removeByRegex("mekanism:machineblock3_7.*");
 recipes.replaceAllOccurrences(<teslacorelib:machine_case>, ex, modItems("industrialforegoing"));
 recipes.replaceAllOccurrences(<industrialforegoing:plastic>, <nuclearcraft:part:6>);
 recipes.remove(<emergingtechnology:machinecase>);
@@ -309,6 +313,23 @@ recipeTweak(true, <calculator:hungerprocessor>, [
     [<calculator:atomicassembly>, <calculator:largeamethyst>, <calculator:atomicassembly>],
     [<calculator:largeamethyst>, <contenttweaker:life_crystal>, <calculator:largeamethyst>]
 ]);
+
+recipeTweak(false, <mekanism:tierinstaller>, [
+    [<thermalfoundation:upgrade>, <mekanism:controlcircuit>, <mekanism:controlcircuit>]
+]);
+
+recipeTweak(false, <mekanism:tierinstaller:1>, [
+    [<thermalfoundation:upgrade:1>, <mekanism:controlcircuit:1>, <mekanism:controlcircuit:1>]
+]);
+
+recipeTweak(false, <mekanism:tierinstaller:2>, [
+    [<thermalfoundation:upgrade:2>, <mekanism:controlcircuit:2>, <mekanism:controlcircuit:2>]
+]);
+
+recipeTweak(false, <mekanism:tierinstaller:3>, [
+    [<thermalfoundation:upgrade:3>, <mekanism:controlcircuit:3>, <mekanism:controlcircuit:3>]
+]);
+
 recipes.remove(<calculator:hungermodule>);
 recipes.remove(<calculator:healthmodule>);
 

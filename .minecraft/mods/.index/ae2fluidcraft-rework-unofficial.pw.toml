@@ -1,13 +1,25 @@
-filename = 'ae2fc-2.7.10-unofficial.jar'
-name = 'AE2FluidCraft-Rework-Unofficial'
-side = 'both'
+filename = 'ae2fc-2.7.11-unofficial.jar'
+name = 'AE2 Fluid Crafting'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.12.2' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ae2fc-2.7.11-unofficial.jar'
 
 [download]
-hash = 'ff7ca3f2ff3fb16aa80963020b7daab1e4509329'
+hash = '6ddbe85b4be5dd81609dd21c0d4d4c50d3f26bed'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7742544
+file-id = 9205999
 project-id = 1404390
+
+[[x-prismlauncher-dependencies]]
+addonId = '419286'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '570458'
+type = 'REQUIRED'

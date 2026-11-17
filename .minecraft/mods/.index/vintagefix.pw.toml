@@ -1,19 +1,19 @@
-filename = 'vintagefix-0.7.0.jar'
+filename = 'vintagefix-0.7.2.jar'
 name = 'VintageFix'
 side = ''
 x-prismlauncher-loaders = [ 'forge' ]
 x-prismlauncher-mc-versions = [ '1.12.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'VintageFix 0.7.0'
+x-prismlauncher-version-number = 'VintageFix 0.7.2'
 
 [download]
-hash = 'a753529902a23e17da091f15b6dee6690f75b217'
+hash = '16cab7d8e035a69733fe6c620bdd228cfe570fae'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7958801
+file-id = 9072529
 project-id = 871198
 
 [[x-prismlauncher-dependencies]]
